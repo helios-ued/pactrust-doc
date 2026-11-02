@@ -1,0 +1,31 @@
+---
+description: Lock UI work to Element —— PacsTrust Design Figma library and docs in this repo
+alwaysApply: true
+---
+
+# Element —— PacsTrust Design（强制）
+
+## Source of truth
+
+- Figma: Element —— PacsTrust Design (`figma-source.json` for node IDs)
+- Repo docs: `docs/SPEC-LOCK.md`, `docs/FOUNDATIONS.md`, `docs/COMPONENTS.md`
+
+## Hard rules
+
+1. Do not introduce alternate UI libraries (shadcn, Ant Design, MUI, etc.) for components listed in `docs/COMPONENTS.md`.
+2. Map Figma component sets to **Element Plus** (`el-*`) with matching variant enums from the docs.
+3. Use design tokens (`--el-*`, spacing/radius/shadow from `docs/FOUNDATIONS.md`); no ad-hoc hex for brand, text, border, or state colors.
+4. Boolean Figma variants use `false` / `true` (not off/on in code).
+5. Figma `Danger` → Element `danger`; `Disable` / `Disabled` → `disabled`.
+6. Respect 2025-10-28 Message rules: no Center variant, content-width layout, Plain prop when specified.
+7. Use Slots where Figma provides Slot; do not hardcode slot content inside wrappers.
+8. Default theme is Light; Dark/Dark Alpha via variables only.
+
+## Before generating UI
+
+- Read the relevant section in `docs/COMPONENTS.md`.
+- If the component variant table is missing, fetch Figma metadata for the page `nodeId` in `figma-source.json` before inventing props.
+
+## If docs and Element Plus docs conflict
+
+Prefer **Figma variant sets documented in this repo** for PacsTrust work.
