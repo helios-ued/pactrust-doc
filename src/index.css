@@ -1,0 +1,71 @@
+@import "./styles/tokens.css";
+@import "tailwindcss";
+
+@theme {
+  --color-el-primary: var(--el-color-primary);
+  --color-el-text-primary: var(--el-text-color-primary);
+  --color-el-text-regular: var(--el-text-color-regular);
+  --color-el-text-placeholder: var(--el-text-color-placeholder);
+  --color-el-text-write: var(--el-text-color-write);
+  --color-el-border: var(--el-border-color);
+  --color-el-border-light: var(--el-border-color-light);
+  --color-el-fill-blank: var(--el-fill-color-blank);
+  --color-el-bg: var(--el-bg-color);
+  --color-el-danger: var(--el-color-danger);
+  --color-el-info-muted: var(--el-color-info-light-3);
+
+  --spacing-pt-lg: var(--pt-spacing-lg);
+  --spacing-pt-xl: var(--pt-spacing-xl);
+  --spacing-pt-3xl: var(--pt-spacing-3xl);
+  --spacing-pt-4xl: var(--pt-spacing-4xl);
+  --spacing-pt-7xl: var(--pt-spacing-7xl);
+  --spacing-pt-8xl: var(--pt-spacing-8xl);
+  --spacing-pt-0: var(--pt-space-0);
+  --spacing-pt-4: var(--pt-space-4);
+  --spacing-pt-8: var(--pt-space-8);
+  --spacing-pt-12: var(--pt-space-default-12);
+
+  --radius-el-base: var(--el-border-radius-base);
+  --radius-el-small: var(--el-border-radius-small);
+  --radius-el-xl: var(--el-border-radius-xl);
+  --radius-el-circle: var(--el-border-radius-circle);
+
+  --font-el: var(--el-font-family);
+  --text-el-base: var(--el-font-size-base);
+  --text-el-xl: var(--el-font-size-extra-large);
+  --leading-el-base: var(--el-font-line-height-base);
+  --leading-el-xl: var(--el-font-line-height-extra-large);
+
+  --shadow-el-light: var(--el-box-shadow-light);
+}
+
+@utility rounded-el-base {
+  border-radius: var(--el-border-radius-base);
+}
+
+@utility rounded-el-small {
+  border-radius: var(--el-border-radius-small);
+}
+
+@utility rounded-el-xl {
+  border-radius: var(--el-border-radius-xl);
+}
+
+@utility rounded-el-circle {
+  border-radius: var(--el-border-radius-circle);
+}
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
+  body {
+    font-family: var(--el-font-family);
+    color: var(--el-text-color-primary);
+    background-color: var(--el-bg-color);
+    margin: 0;
+  }
+}

@@ -1,0 +1,109 @@
+/**
+ * PacsTrust design tokens — values from docs/FOUNDATIONS.md
+ * Components must reference these variables only (no ad-hoc hex in UI code).
+ */
+:root {
+  /* Primary */
+  --el-color-primary: #409eff;
+  --el-color-primary-light-9: #ecf5ff;
+  --el-color-primary-light-8: #d9ecff;
+  --el-color-primary-light-7: #c6e2ff;
+  --el-color-primary-light-5: #a0cfff;
+
+  /* Semantic */
+  --el-color-success: #00b42a;
+  --el-color-warning: #ff7d00;
+  --el-color-danger: #f56c6c;
+  --el-color-info: #909399;
+
+  /* Text */
+  --el-text-color-primary: #303133;
+  --el-text-color-regular: #606266;
+  --el-text-color-placeholder: #909399;
+  --el-text-color-disabled: #c0c4cc;
+  --el-text-color-write: #ffffff;
+
+  /* Background / fill */
+  --el-bg-color: #ffffff;
+  --el-fill-color-blank: #ffffff;
+  --el-color-info-light-3: #b1b3b8;
+
+  /* Border */
+  --el-border-color: #dcdfe6;
+  --el-border-color-light: #e4e7ed;
+  --el-border-width: 1px;
+
+  /* Typography */
+  --el-font-family: "Inter", system-ui, sans-serif;
+  --el-font-size-base: 14px;
+  --el-font-line-height-base: 22px;
+  --el-font-size-extra-large: 32px;
+  --el-font-line-height-extra-large: 40px;
+  --el-font-size-medium: 20px;
+  --el-font-line-height-medium: 28px;
+  --el-font-weight-regular: 400;
+  --el-font-weight-primary: 500;
+  --el-font-weight-bold: 700;
+
+  /* Radius — FOUNDATIONS Radius/* */
+  --el-border-radius-none: 0px;
+  --el-border-radius-small: 2px;
+  --el-border-radius-base: 4px;
+  --el-border-radius-xl: 12px;
+  --el-border-radius-circle: 9999px;
+
+  /* Spacing — FOUNDATIONS spacing-* */
+  --pt-spacing-lg: 12px;
+  --pt-spacing-xl: 16px;
+  --pt-spacing-3xl: 24px;
+  --pt-spacing-4xl: 32px;
+  --pt-spacing-7xl: 64px;
+  --pt-spacing-8xl: 80px;
+
+  /* Element internal spacing aliases (Figma space/*) */
+  --pt-space-0: 0px;
+  --pt-space-4: 4px;
+  --pt-space-8: 8px;
+  --pt-space-default-12: var(--pt-spacing-lg);
+
+  /* Shadows */
+  --el-box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.04), 0px 12px 32px rgba(0, 0, 0, 0.08);
+  --el-box-shadow-light: 0px 12px 32px rgba(0, 0, 0, 0.08);
+  --el-box-shadow-lighter: 0px 6px 16px rgba(0, 0, 0, 0.08);
+  --el-box-shadow-dark: 0px 8px 16px rgba(0, 0, 0, 0.04), 0px 12px 32px rgba(0, 0, 0, 0.12),
+    0px 16px 48px rgba(0, 0, 0, 0.16);
+
+  /* Layout (module screen 01-登录) */
+  --pt-login-panel-width: 50%;
+  --pt-login-form-width: 480px;
+  --pt-login-hero-min-height: 100vh;
+  --pt-login-main-padding-y: calc(
+    var(--pt-spacing-8xl) + var(--pt-spacing-8xl) + var(--pt-spacing-3xl) + var(--pt-spacing-xl)
+  );
+  --pt-logo-height: 30px;
+  --pt-checkbox-size-default: 14px;
+  --pt-checkbox-size-large: 16px;
+  --pt-checkbox-size-small: 12px;
+  --pt-checkbox-check-size: 10px;
+  --pt-checkbox-indeterminate-width: 8px;
+  --pt-checkbox-indeterminate-height: 2px;
+  --pt-login-hero-copy-max-width: 28rem;
+  --pt-login-hero-bg: var(--el-color-info-light-3);
+  --pt-login-hero-gradient: linear-gradient(
+    145deg,
+    color-mix(in srgb, var(--el-color-primary-light-9) 55%, var(--pt-login-hero-bg)) 0%,
+    var(--pt-login-hero-bg) 48%,
+    color-mix(in srgb, var(--el-border-color-light) 40%, var(--pt-login-hero-bg)) 100%
+  );
+  --pt-login-hero-art-max-width: 320px;
+  --pt-login-hero-orb-size: calc(var(--pt-spacing-7xl) + var(--pt-spacing-4xl));
+  --pt-login-hero-orb-size-secondary: calc(var(--pt-spacing-4xl) + var(--pt-spacing-3xl));
+  --pt-login-hero-orb-opacity: 0.35;
+  --pt-login-hero-orb-top: var(--pt-spacing-4xl);
+  --pt-login-hero-orb-right: var(--pt-spacing-3xl);
+  --pt-login-hero-orb-bottom: var(--pt-spacing-7xl);
+  --pt-login-hero-orb-left: var(--pt-spacing-4xl);
+  --pt-login-hero-mascot-max-width: min(72vw, 28rem);
+  --pt-login-hero-mascot-max-height: 72vh;
+  --pt-login-hero-clay-zoom: 1.3;
+}
