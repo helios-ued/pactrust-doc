@@ -1,0 +1,267 @@
+/* Figma C1-权限管理 8370:13257 · Split Layout + Permission Panel 8370:13262
+ * 描边：面板标题 / 表格局部统一 --el-border-color-light (#e4e7ed)
+ * 用户组分割仍用 --el-border-color-lighter (#ebeef5) · 8603:25390
+ */
+.pt-perm-page {
+  --pt-perm-panel-divider: var(--el-border-color-light);
+  --pt-perm-table-border: var(--el-border-color-light);
+  --pt-perm-groups-divider: var(--el-border-color-lighter);
+
+  display: flex;
+  box-sizing: border-box;
+  align-items: stretch;
+  width: 100%;
+  min-width: 0;
+  min-height: 0;
+  flex: 1 1 auto;
+  height: 100%;
+  overflow: hidden;
+  gap: 0;
+  container-type: inline-size;
+  container-name: pt-perm-page;
+}
+
+.pt-perm-panel {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: var(--el-fill-color-blank);
+}
+
+/* 8370:13897 Split Layout */
+.pt-perm-panel--groups {
+  width: 240px;
+  flex-shrink: 0;
+  border-right: 1px solid var(--pt-perm-panel-divider);
+  border-radius: var(--el-border-radius-base) 0 0 var(--el-border-radius-base);
+}
+
+/* 8370:13262 Permission Panel */
+.pt-perm-panel--matrix {
+  min-width: 0;
+  flex: 1 1 auto;
+  border-radius: 0 var(--el-border-radius-base) var(--el-border-radius-base) 0;
+}
+
+.pt-perm-panel--groups .pt-perm-panel__header {
+  border-top-left-radius: var(--el-border-radius-base);
+}
+
+.pt-perm-panel--matrix .pt-perm-panel__header {
+  border-top-right-radius: var(--el-border-radius-base);
+}
+
+.pt-perm-panel__header {
+  display: flex;
+  height: 60px;
+  flex-shrink: 0;
+  align-items: center;
+  border-bottom: 1px solid var(--pt-perm-panel-divider);
+  padding: var(--pt-space-8, 8px) var(--pt-space-20, 20px);
+  font-family: var(--el-font-family);
+  font-size: var(--el-font-size-medium);
+  font-weight: var(--el-font-weight-bold);
+  line-height: var(--el-font-line-height-medium);
+  color: var(--el-text-color-primary);
+}
+
+.pt-perm-groups__section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pt-space-8, 8px);
+  padding: var(--pt-space-16, 16px) var(--pt-spacing-m, 12px);
+}
+
+.pt-perm-groups__title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  padding: 0 var(--pt-spacing-m, 12px);
+  font-family: var(--el-font-family);
+  font-size: var(--el-font-size-extra-small);
+  font-weight: 400;
+  line-height: var(--el-font-line-height-extra-small);
+  color: var(--el-text-color-secondary);
+}
+
+.pt-perm-groups__title span {
+  flex: 1;
+}
+
+.pt-perm-groups__add {
+  display: inline-flex;
+  box-sizing: border-box;
+  width: 16px;
+  height: 16px;
+  flex: 0 0 16px;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  border: none;
+  border-radius: 9999px;
+  background: var(--el-color-primary);
+  color: var(--el-text-color-write);
+  cursor: pointer;
+  padding: 0;
+  line-height: 0;
+  overflow: hidden;
+}
+
+.pt-perm-groups__add-icon {
+  display: block;
+  flex-shrink: 0;
+  color: var(--el-text-color-write);
+}
+
+.pt-perm-groups__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pt-space-4, 4px);
+}
+
+.pt-perm-groups__item {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  border-radius: var(--el-border-radius-base);
+  background: var(--el-fill-color-blank);
+  padding: var(--pt-space-8, 8px) var(--pt-spacing-m, 12px);
+  font-family: var(--el-font-family);
+  font-size: var(--el-font-size-base);
+  font-weight: 400;
+  line-height: var(--el-font-line-height-base);
+  color: var(--el-text-color-primary);
+  cursor: pointer;
+  text-align: left;
+}
+
+.pt-perm-groups__item.is-active {
+  background: var(--el-fill-color);
+}
+
+.pt-perm-groups__item-more {
+  display: inline-flex;
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  color: var(--el-text-color-secondary);
+}
+
+.pt-perm-groups__divider {
+  display: block;
+  flex-shrink: 0;
+  width: 200px;
+  max-width: calc(100% - 24px);
+  height: 2px;
+  margin: 0 auto;
+  border: none;
+  background: var(--pt-perm-groups-divider);
+}
+
+/* 8370:17500 Content · py-16 px-24 */
+.pt-perm-matrix__body {
+  flex: 1 1 auto;
+  min-width: 0;
+  min-height: 0;
+  overflow: auto;
+  padding: var(--pt-space-16, 16px) var(--pt-space-24, 24px);
+  background: var(--el-fill-color-blank);
+}
+
+/* 8370:17858 Table · border-light · radius 4 */
+.pt-perm-matrix__table-wrap {
+  width: 100%;
+  min-width: 0;
+  overflow-x: auto;
+  overflow-y: visible;
+  border: 1px solid var(--pt-perm-table-border);
+  border-radius: var(--el-border-radius-base);
+  background: var(--el-fill-color-blank);
+  -webkit-overflow-scrolling: touch;
+}
+
+.pt-perm-matrix__table {
+  width: 100%;
+  min-width: 600px;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.pt-perm-matrix__table thead th {
+  height: 40px;
+  max-height: 56px;
+  min-height: 36px;
+  border-bottom: 1px solid var(--pt-perm-table-border);
+  padding: var(--pt-space-8, 8px) var(--pt-space-16, 16px);
+  font-family: var(--el-font-family);
+  font-size: var(--el-font-size-base);
+  font-weight: var(--el-font-weight-primary);
+  line-height: var(--el-font-line-height-base);
+  color: var(--el-text-color-secondary);
+  text-align: left;
+  background: var(--el-fill-color-blank);
+}
+
+.pt-perm-matrix__table th:not(:last-child),
+.pt-perm-matrix__table td:not(:last-child) {
+  border-right: 1px solid var(--pt-perm-table-border);
+}
+
+.pt-perm-matrix__table td {
+  height: 64px;
+  border-bottom: 1px solid var(--pt-perm-table-border);
+  padding: 6px 16px;
+  vertical-align: middle;
+  background: var(--el-fill-color-blank);
+}
+
+.pt-perm-matrix__table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.pt-perm-matrix__table .pt-checkbox {
+  display: inline-flex;
+  height: 32px;
+  align-items: center;
+  margin: 0;
+}
+
+.pt-perm-matrix__table .pt-checkbox__label {
+  color: var(--el-text-color-primary);
+}
+
+/* 8370:17859 / 17872 — 200px；第三列 flex */
+.pt-perm-matrix__col-module {
+  width: 200px;
+  min-width: 200px;
+  max-width: 200px;
+  box-sizing: border-box;
+}
+
+.pt-perm-matrix__col-module--span {
+  vertical-align: middle;
+}
+
+.pt-perm-matrix__col-actions {
+  width: auto;
+  min-width: 0;
+}
+
+.pt-perm-matrix__cell-checks {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0 32px;
+}
+
+.pt-perm-matrix__cell-checks .pt-checkbox {
+  flex-shrink: 0;
+}
+
+/* 壳层变窄（含侧栏收起到 60px）时保持 Split Layout，仅主区域宽度伸缩；表格局部横向滚动 */

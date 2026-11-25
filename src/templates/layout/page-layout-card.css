@@ -1,0 +1,82 @@
+/* Figma `Layout` · Global-header 56 + Content */
+
+.pt-page-layout-card {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  background: var(--el-fill-color-blank);
+}
+
+.pt-page-layout-card--rounded {
+  border-radius: var(--el-border-radius-round, 20px);
+}
+
+.pt-page-layout-card__content {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  min-height: 0;
+  box-sizing: border-box;
+}
+
+.pt-page-layout-card__canvas {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  border-radius: var(--el-border-radius-large, 12px);
+  background: var(--el-bg-color-page);
+}
+
+/* Layout-04 · 模块界面（A1 等）：Page Body 顶对齐，无占位灰底 */
+.pt-page-layout-card--page-frame .pt-page-layout-card__canvas {
+  align-items: stretch;
+  justify-content: flex-start;
+  min-height: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+.pt-page-layout-card__placeholder {
+  margin: 0;
+  font-family: var(--el-font-family);
+  font-size: var(--el-font-size-extra-large, 20px);
+  line-height: var(--el-font-line-height-extra-large, 28px);
+  color: var(--el-text-color-disabled);
+  text-align: center;
+}
+
+/* Layout-04 · Page Layout 8745:2606 */
+.pt-page-layout-card--page-frame {
+  flex: 1 1 auto;
+  min-height: 0;
+  border-radius: var(--el-border-radius-base);
+  background: var(--el-fill-color-blank);
+}
+
+/* Figma `8349:5399` Header · 60px */
+.pt-page-layout-card__page-bar {
+  display: flex;
+  height: 60px;
+  flex-shrink: 0;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom: 1px solid var(--el-border-color-light);
+  padding: var(--pt-space-8, 8px) var(--pt-space-20, 20px);
+  font-family: var(--el-font-family);
+  font-size: var(--el-font-size-medium);
+  font-weight: var(--el-font-weight-bold);
+  line-height: var(--el-font-line-height-medium);
+  color: var(--el-text-color-primary);
+}
+
+.pt-page-layout-card__content--page-frame {
+  flex: 1 1 auto;
+  min-height: 0;
+}

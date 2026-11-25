@@ -1,0 +1,9 @@
+/* 汇款 · Layout-04 白卡内滚动（同 A3 module-screen） */
+
+.pt-template-viewport--remittance .pt-page-layout-card__content--page-frame {
+  overflow: auto;
+}
+
+.pt-template-viewport--remittance .pt-page-layout-card__canvas {
+  min-height: min(100%, 720px);
+}

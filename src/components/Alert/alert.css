@@ -1,0 +1,172 @@
+/* Figma Alert `11:878` · radius 2 · px 16 py 8 */
+
+.pt-alert {
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  gap: var(--pt-space-8, 8px);
+  width: fit-content;
+  max-width: min(100%, 400px);
+  padding: var(--pt-space-8, 8px) var(--pt-space-16, 16px);
+  border: 0;
+  /* Figma 明确 rounded-[2px] */
+  border-radius: var(--el-border-radius-small, 2px);
+  font-family: var(--el-font-family);
+  font-size: var(--el-font-size-base);
+  line-height: var(--el-font-line-height-base);
+}
+
+.pt-alert--with-description {
+  /* Figma `12:1159` · items-center：32px 图标相对标题+描述整体垂直居中 */
+  align-items: center;
+  width: fit-content;
+  max-width: min(100%, 516px);
+  gap: var(--pt-space-8, 8px);
+}
+
+.pt-alert--center {
+  justify-content: center;
+  text-align: center;
+}
+
+.pt-alert--center .pt-alert__main {
+  justify-content: center;
+}
+
+.pt-alert__icon {
+  flex-shrink: 0;
+}
+
+.pt-alert__icon--sm {
+  width: 16px;
+  height: 16px;
+}
+
+.pt-alert__icon--lg {
+  width: 32px;
+  height: 32px;
+}
+
+.pt-alert__main {
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+  gap: var(--pt-space-8, 8px);
+  min-width: 0;
+}
+
+.pt-alert__content {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0;
+  min-width: 0;
+}
+
+.pt-alert__title-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: 100%;
+}
+
+.pt-alert__title {
+  flex: 1 1 auto;
+  min-width: 0;
+  font-weight: var(--el-font-weight-bold);
+  line-height: var(--el-font-line-height-base);
+}
+
+.pt-alert__desc-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.pt-alert__description {
+  flex: 1 1 auto;
+  min-width: 0;
+  margin: 0;
+  font-weight: var(--el-font-weight-regular);
+  line-height: var(--el-font-line-height-base);
+}
+
+/* Figma `12:1124` · w 24 · h 14 占位，描述行与标题行右缘对齐 */
+.pt-alert__desc-spacer {
+  flex-shrink: 0;
+  width: 24px;
+  height: 14px;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.pt-alert__close {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  font-size: var(--el-font-size-base);
+  line-height: var(--el-font-line-height-base);
+  color: inherit;
+  cursor: default;
+  opacity: 0.85;
+}
+
+.pt-alert__close-text {
+  font-weight: var(--el-font-weight-regular);
+}
+
+/* Default style · Figma * /color-9 浅底 + 语义色字（MCP `10:5` · `12:1160`） */
+.pt-alert--default.pt-alert--primary {
+  background: var(--pt-feedback-primary-9);
+  color: var(--pt-feedback-primary);
+}
+
+.pt-alert--default.pt-alert--success {
+  background: var(--el-color-success-light-9);
+  color: var(--el-color-success);
+}
+
+.pt-alert--default.pt-alert--warning {
+  background: var(--el-color-warning-light-9);
+  color: var(--el-color-warning);
+}
+
+.pt-alert--default.pt-alert--danger {
+  background: var(--el-color-danger-light-9);
+  color: var(--el-color-danger);
+}
+
+.pt-alert--default.pt-alert--info {
+  background: var(--el-color-info-light-9);
+  color: var(--el-color-info);
+}
+
+/* Fill · 实底 + 白字 */
+.pt-alert--fill {
+  color: var(--el-text-color-write, #fff);
+}
+
+.pt-alert--fill.pt-alert--primary {
+  background: var(--pt-feedback-primary);
+}
+
+.pt-alert--fill.pt-alert--success {
+  background: var(--el-color-success);
+}
+
+.pt-alert--fill.pt-alert--warning {
+  background: var(--el-color-warning);
+}
+
+.pt-alert--fill.pt-alert--danger {
+  background: var(--el-color-danger);
+}
+
+.pt-alert--fill.pt-alert--info {
+  background: var(--el-color-info);
+}

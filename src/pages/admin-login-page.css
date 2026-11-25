@@ -1,0 +1,135 @@
+/* 04-后台登录 · Figma `8375:24178` */
+
+.pt-admin-login-viewport {
+  display: flex;
+  min-height: 100vh;
+  min-height: 100dvh;
+  width: 100%;
+  flex-direction: column;
+  background: var(--el-bg-color-page);
+  box-sizing: border-box;
+}
+
+.pt-admin-login__header {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: var(--pt-space-8, 8px);
+  height: var(--pt-spacing-8xl);
+  min-height: var(--pt-spacing-8xl);
+  padding-inline: var(--pt-space-24, 24px);
+  box-sizing: border-box;
+}
+
+.pt-admin-login__logo-slot {
+  min-width: 0;
+  flex: 1 1 auto;
+}
+
+.pt-admin-login__logo-slot img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  max-height: var(--pt-logo-height);
+  object-fit: contain;
+  object-position: left center;
+}
+
+.pt-admin-login__main {
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: var(--pt-space-24, 24px);
+}
+
+.pt-admin-login__card {
+  display: flex;
+  width: 100%;
+  max-width: var(--pt-login-form-width);
+  flex-direction: column;
+  gap: 40px;
+  align-items: stretch;
+  padding: var(--pt-spacing-4xl) var(--pt-space-32, 32px);
+  border-radius: var(--el-border-radius-round, 20px);
+  background: var(--el-fill-color-blank);
+  box-shadow: var(--el-box-shadow);
+  box-sizing: border-box;
+}
+
+.pt-admin-login__intro {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pt-space-8, 8px);
+  align-items: flex-start;
+}
+
+.pt-admin-login__title {
+  margin: 0;
+  font-family: var(--el-font-family);
+  font-size: var(--el-font-size-extra-large);
+  line-height: var(--el-font-line-height-extra-large);
+  font-weight: var(--el-font-weight-bold);
+  color: var(--el-text-color-primary);
+}
+
+.pt-admin-login__subtitle {
+  margin: 0;
+  font-family: var(--el-font-family);
+  font-size: var(--el-font-size-base);
+  line-height: 20px;
+  font-weight: var(--el-font-weight-regular);
+  color: var(--el-text-color-placeholder);
+}
+
+.pt-admin-login__form {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: var(--pt-spacing-3xl);
+}
+
+.pt-admin-login__form .pt-form-item {
+  width: 100%;
+  max-width: none;
+}
+
+.pt-admin-login__form .pt-form-item__control > * {
+  width: 100%;
+}
+
+.pt-admin-auth__submit-block {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: var(--pt-space-16, 16px);
+  align-items: center;
+}
+
+.pt-admin-auth__footer-text {
+  margin: 0;
+  font-family: var(--el-font-family);
+  font-size: var(--el-font-size-base);
+  line-height: 20px;
+  font-weight: var(--el-font-weight-regular);
+  color: var(--el-text-color-secondary);
+  text-align: center;
+}
+
+@media (max-height: 700px) {
+  .pt-admin-login__header {
+    height: 3.25rem;
+    min-height: 3.25rem;
+  }
+
+  .pt-admin-login__card {
+    gap: var(--pt-spacing-3xl);
+    padding: var(--pt-spacing-3xl) var(--pt-spacing-3xl);
+  }
+
+  .pt-admin-login__title {
+    font-size: var(--el-font-size-large);
+    line-height: var(--el-font-line-height-large);
+  }
+}

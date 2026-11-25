@@ -2,6 +2,29 @@
   "name": "Element —— PacsTrust Design",
   "fileKey": "wEUoBPgPgqLRZ2qBlO7W1C",
   "url": "https://www.figma.com/design/wEUoBPgPgqLRZ2qBlO7W1C/Element-%E2%80%94%E2%80%94-PacsTrust-Design",
+  "fixedTemplatesFileKey": "hVUwZpK4E52BzbhYTQIi4j",
+  "fixedTemplatesFileUrl": "https://www.figma.com/design/hVUwZpK4E52BzbhYTQIi4j/%E5%9B%BA%E5%AE%9A%E6%A8%A1%E7%89%88%E9%A1%B5",
+  "fixedTemplatesWorkflow": {
+    "designSource": "moduleScreens",
+    "moduleScreensPageId": "8349:5392",
+    "deliveryPageId": "0:1",
+    "deliveryPageName": "固定模版",
+    "canvasGrid": { "gapX": 64, "gapY": 120, "frameWidth": 1920, "frameHeight": 1080 },
+    "baselineMethod": "figma-client-copy-paste",
+    "copyFromPageId": "8349:5392",
+    "copyFromPageName": "模块界面",
+    "regenerateScript": "scripts/figma-use-build-fixed-templates.js",
+    "regeneratePayload": "scripts/.figma-use-payload.js",
+    "regenerateTarget": "use_figma"
+  },
+  "fixedTemplatesLoginFlow": [
+    { "name": "01-登录", "moduleNodeId": "8372:22873" },
+    { "name": "02-验证码", "moduleNodeId": "8372:23055" },
+    { "name": "03-图形验证码", "moduleNodeId": "8374:23542" },
+    { "name": "04-后台登录", "moduleNodeId": "8375:24178" },
+    { "name": "05-后台注册", "moduleNodeId": "8375:24188" },
+    { "name": "06-后台验证", "moduleNodeId": "8375:24203" }
+  ],
   "defaultNodeId": "137:25883",
   "extractedAt": "2026-11-02",
   "pages": {
@@ -11,15 +34,33 @@
     "foundations": "5845:15928",
     "docElements": "5827:54231",
     "moduleScreens": "8349:5392",
+    "fixedTemplates": "0:1",
+    "login01": "8372:22873",
+    "permissionManagementC1": "8370:13257",
+    "securityCenterA1": "8349:5393",
+    "changePasswordA2": "8349:5537",
+    "authenticatorBindA3": "8370:5786",
+    "authenticatorBindA3Step2": "8370:10268",
+    "authenticatorBindA3Step3": "8370:11363",
+    "personalProfileB1": "8370:13091",
+    "personalProfileB2Fixed": "209:1848",
+    "personalProfileB2EnFixed": "209:2061",
+    "apiManagementD2": "8770:65333",
+    "verificationCode02": "8372:23055",
+    "imageCaptcha03": "8374:23542",
+    "adminLogin04": "8375:24178",
+    "adminRegister05": "8375:24188",
+    "adminVerification06": "8375:24203",
+    "globalVerification07": "8375:24316",
     "basicIndex": "12:2480",
     "formIndex": "1213:27571",
     "dataIndex": "1213:27572",
     "navigationIndex": "1213:27575",
     "feedbackIndex": "1213:27573",
-    "othersIndex": "1213:27576"
+    "othersIndex": "1213:27576",
+    "layoutIndex": "8655:41369"
   },
   "componentPages": [
-    { "category": "Basic", "name": "Button Group", "nodeId": "5837:16310" },
     { "category": "Basic", "name": "Icon", "nodeId": "6:1102" },
     { "category": "Basic", "name": "Link", "nodeId": "1220:26096" },
     { "category": "Basic", "name": "Text", "nodeId": "5803:2777", "version": "2.3.0" },
@@ -27,6 +68,7 @@
     { "category": "Basic", "name": "Space", "nodeId": "5817:5478" },
     { "category": "Basic", "name": "Splitter", "nodeId": "6589:19102", "version": "2.10.0" },
     { "category": "Basic", "name": "Button", "nodeId": "12:2479" },
+    { "category": "Basic", "name": "Button Group", "nodeId": "5837:16310" },
     { "category": "Form", "name": "Cascader", "nodeId": "49:21191" },
     { "category": "Form", "name": "Checkbox", "nodeId": "33:1507" },
     { "category": "Form", "name": "ColorPickerPanel", "nodeId": "6594:1782", "version": "2.11.0" },
@@ -88,5 +130,49 @@
     { "category": "Feedback", "name": "Tooltip", "nodeId": "68:18412" },
     { "category": "Others", "name": "Divider", "nodeId": "1470:49088" },
     { "category": "Others", "name": "Watermark", "nodeId": "6153:12319", "version": "2.4.0" }
+  ],
+  "layoutPages": [
+    {
+      "slug": "layout-01",
+      "name": "Layout-01",
+      "nodeId": "8655:41370",
+      "figmaPageKey": "layout",
+      "variant": "layout-01",
+      "description": "侧栏 240 画布色 · Menu Style 02 · Footer 隐藏 · Main 16 · Layout 圆角 20"
+    },
+    {
+      "slug": "layout-02",
+      "name": "Layout-02",
+      "nodeId": "8661:44593",
+      "figmaPageKey": "layout",
+      "variant": "layout-02",
+      "description": "侧栏 240 白+阴影 · Menu Style 01 · Footer 40 · Main 满铺 · Header 分割线"
+    },
+    {
+      "slug": "layout-03",
+      "name": "Layout-03",
+      "nodeId": "8661:44736",
+      "figmaPageKey": "layout",
+      "variant": "layout-03",
+      "description": "侧栏 240 白+阴影 · Menu Style 04 分组 · Footer 40 · Header 无分割线 · Content pt-8"
+    },
+    {
+      "slug": "layout-04",
+      "name": "Layout-04",
+      "nodeId": "8745:2586",
+      "figmaPageKey": "layout",
+      "variant": "layout-04",
+      "description": "画布 page 灰 · 侧栏 Style 01 无 Footer · Global-header 满宽 · Page 16 · Page Layout 圆角 4 · 标题区 + Content 24"
+    }
+  ],
+  "moduleScreenFrames": [
+    { "slug": "security-center", "figmaName": "A1-安全中心", "nodeId": "8349:5393" },
+    { "slug": "change-password", "figmaName": "A2-修改登录密码", "nodeId": "8349:5537" },
+    { "slug": "authenticator-bind", "figmaName": "A3-身份验证-01", "nodeId": "8370:5786" },
+    { "slug": "personal-profile", "figmaName": "B1-个人资料", "nodeId": "8370:13091" },
+    { "slug": "personal-profile-b2", "figmaName": "B2-个人信息（Profile）", "nodeId": "209:1848", "file": "fixedTemplates" },
+    { "slug": "personal-profile-b2-en", "figmaName": "B2-Personal profile", "nodeId": "209:2061", "file": "fixedTemplates" },
+    { "slug": "permission-management", "figmaName": "C1-权限管理", "nodeId": "8370:13257" },
+    { "slug": "api-management", "figmaName": "D2-API管理", "nodeId": "8770:65333", "status": "in-figma", "suggestedCanvasPosition": { "x": 3954, "y": 1620 } }
   ]
 }

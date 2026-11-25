@@ -1,0 +1,27 @@
+.pt-global-verification-viewport {
+  position: relative;
+  min-height: 100vh;
+  min-height: 100dvh;
+  width: 100%;
+  background: var(--el-bg-color-page);
+}
+
+.pt-global-verification-underlay {
+  display: flex;
+  min-height: 100vh;
+  min-height: 100dvh;
+  align-items: center;
+  justify-content: center;
+  padding: var(--pt-space-24, 24px);
+  box-sizing: border-box;
+}
+
+.pt-global-verification-underlay__hint {
+  margin: 0;
+  max-width: 28rem;
+  font-family: var(--el-font-family);
+  font-size: var(--el-font-size-base);
+  line-height: var(--el-font-line-height-base);
+  color: var(--el-text-color-secondary);
+  text-align: center;
+}

@@ -1,0 +1,234 @@
+/* Figma `Steps` · `6538:4173` · Line Horizontal/Vertical */
+
+.pt-steps {
+  display: flex;
+  width: 100%;
+  font-family: var(--el-font-family);
+}
+
+.pt-steps--horizontal {
+  align-items: flex-start;
+}
+
+.pt-steps--vertical {
+  flex-direction: column;
+}
+
+.pt-steps__item {
+  display: flex;
+  min-width: 0;
+  flex: 1 1 0;
+}
+
+.pt-steps--horizontal .pt-steps__item {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--pt-space-8, 8px);
+}
+
+.pt-steps--vertical .pt-steps__item {
+  flex: none;
+  flex-direction: row;
+  gap: var(--pt-space-8, 8px);
+  width: 100%;
+  align-items: stretch;
+}
+
+.pt-steps__track {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+}
+
+.pt-steps--horizontal .pt-steps__track {
+  gap: var(--pt-space-12, 12px);
+  padding-right: var(--pt-space-12, 12px);
+  width: 100%;
+}
+
+.pt-steps__track--vertical {
+  position: relative;
+  box-sizing: border-box;
+  flex-direction: column;
+  flex-shrink: 0;
+  align-items: center;
+  align-self: stretch;
+  width: 24px;
+  min-height: 100%;
+  padding-bottom: var(--pt-space-8, 8px);
+}
+
+.pt-steps__icon {
+  display: inline-flex;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  border-radius: var(--el-border-radius-round);
+  font-size: var(--el-font-size-base);
+  line-height: var(--el-font-line-height-base);
+  font-weight: var(--el-font-weight-primary);
+}
+
+.pt-steps__icon--wait {
+  border: 1px solid var(--el-border-color);
+  background: var(--el-color-info-light-9);
+  color: var(--el-color-info);
+}
+
+.pt-steps__icon--success {
+  border: 1px solid var(--el-color-primary-light-8);
+  background: var(--el-color-primary-light-9);
+  color: var(--el-color-primary);
+}
+
+.pt-steps__icon--process {
+  border: none;
+  background: var(--el-color-primary);
+  color: var(--el-text-color-write);
+}
+
+.pt-steps__icon--error {
+  border: none;
+  background: var(--el-color-error);
+  color: var(--el-text-color-write);
+}
+
+.pt-steps__icon--state-success {
+  border: 1px solid color-mix(in srgb, var(--el-color-success) 22%, white);
+  background: color-mix(in srgb, var(--el-color-success) 10%, white);
+  padding: 5px;
+  width: 24px;
+  height: 24px;
+}
+
+.pt-steps__icon-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.pt-steps__icon-state {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+.pt-steps__icon-check {
+  width: 14px;
+  height: 14px;
+}
+
+.pt-steps__line {
+  flex: 1 1 0;
+  min-width: 0;
+  background: var(--el-fill-color-darker);
+}
+
+.pt-steps--horizontal .pt-steps__line {
+  flex: 1 1 auto;
+  align-self: center;
+  min-width: 1px;
+  height: 1px;
+}
+
+/* 圆点 24 + gap 8 → top 32；底留白 8（Figma Line · pb 8） */
+.pt-steps__line--vertical {
+  position: absolute;
+  top: 32px;
+  bottom: 8px;
+  left: 50%;
+  width: 1px;
+  flex: none;
+  min-width: 0;
+  min-height: 0;
+  transform: translateX(-50%);
+}
+
+.pt-steps__line--primary {
+  background: var(--el-color-primary);
+}
+
+.pt-steps__line--error {
+  background: var(--el-color-error);
+}
+
+.pt-steps__body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pt-space-4, 4px);
+  min-width: 0;
+}
+
+/* Figma Component/Text · Align Center=false → 全宽左对齐；true → 相对 24px 图标居中 */
+.pt-steps--horizontal .pt-steps__body--start {
+  box-sizing: border-box;
+  width: 100%;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.pt-steps--horizontal .pt-steps__body--center {
+  box-sizing: border-box;
+  width: 24px;
+  min-width: 24px;
+  overflow: visible;
+  align-items: center;
+  text-align: center;
+}
+
+/* Figma Content · gap 4 · 标题 / 描述分行 */
+.pt-steps__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pt-space-4, 4px);
+}
+
+.pt-steps--horizontal .pt-steps__body--start .pt-steps__content {
+  align-items: flex-start;
+}
+
+.pt-steps--horizontal .pt-steps__body--center .pt-steps__content {
+  align-items: center;
+  width: max-content;
+  min-width: 24px;
+}
+
+.pt-steps--vertical .pt-steps__body {
+  flex: 1 1 auto;
+  gap: var(--pt-spacing-xl, 16px);
+  align-items: flex-start;
+  text-align: left;
+}
+
+/* Figma Steps Item · Content slot 46px */
+.pt-steps__slot {
+  flex-shrink: 0;
+  width: 100%;
+  height: 46px;
+}
+
+.pt-steps__title {
+  display: block;
+  font-size: var(--el-font-size-base);
+  line-height: var(--el-font-line-height-base);
+  font-weight: var(--el-font-weight-regular);
+  color: var(--el-text-color-secondary);
+  white-space: nowrap;
+}
+
+.pt-steps__description {
+  display: block;
+  font-size: var(--el-font-size-extra-small);
+  line-height: var(--el-font-line-height-extra-small);
+  font-weight: var(--el-font-weight-regular);
+  color: var(--el-text-color-placeholder);
+  white-space: nowrap;
+}
+
+.pt-steps__line-preview {
+  width: 200px;
+}

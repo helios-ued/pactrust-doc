@@ -45,7 +45,7 @@
 完整 token 见 [FOUNDATIONS.md](./FOUNDATIONS.md)。强制规则：
 
 - 文本：`--el-text-color-primary` / `--el-text-color-regular` / `--el-text-color-write`
-- 品牌与状态：`--el-color-primary`（`#409eff`）、Success `#00b42a`、Warning `#ff7d00`
+- 品牌与状态：`--pt-brand-color` / `--el-color-primary`（`#1677ff`）、Success `#00b42a`、Warning `#ff7d00`、Danger `#f53f3f`（Figma `Error/color`）
 - 边框：`--el-border-color` 系列（Light `#e4e7ed`，Base `#dcdfe6`）
 - 圆角：`Radius/None` 0 · `Small` 2 · `Base` 4 · `Circle` 9999 · `radius-xl` 12
 - 字体：**Inter**（与 Figma 一致）
@@ -57,9 +57,10 @@
 
 | 文件 | 内容 |
 | --- | --- |
-| `figma-source.json` | Figma 文件 key、页面 nodeId |
+| `figma-source.json` | Figma 文件 key、页面 nodeId、`moduleScreenFrames` |
 | `docs/FOUNDATIONS.md` | 设计基础 token |
 | `docs/COMPONENTS.md` | 组件目录与变体锁定 |
+| `docs/MODULE-SCREENS.md` | 🎨 模块界面帧索引与 D2 等锁定说明 |
 | `docs/CHANGELOG.md` | Figma「文档说明」变更摘要 |
 | `.cursor/rules/*.mdc` | Cursor Agent 强制规范 |
 

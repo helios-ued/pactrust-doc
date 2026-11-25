@@ -1,10 +1,15 @@
 import {
   forwardRef,
+  useEffect,
+  useImperativeHandle,
+  useRef,
   type InputHTMLAttributes,
   type ReactNode,
   useId,
 } from "react";
 import { cn } from "@/lib/cn";
+import { EpIconByName } from "@/components/Icon/EpIconByName";
+import "./checkbox.css";
 
 /** Figma Checkbox — State · Size · Border (node 33:1507) */
 export type CheckboxSize = "Default" | "Large" | "Small";
@@ -17,12 +22,20 @@ export type CheckboxProps = Omit<
   size?: CheckboxSize;
   /** Figma: Border False | True */
   border?: boolean;
+  /** Figma: Selected(Partially) / Not all selected */
+  indeterminate?: boolean;
 };
 
-const boxSize: Record<CheckboxSize, string> = {
-  Default: "size-[length:var(--pt-checkbox-size-default)]",
-  Large: "size-[length:var(--pt-checkbox-size-large)]",
-  Small: "size-[length:var(--pt-checkbox-size-small)]",
+const boxWrap: Record<CheckboxSize, string> = {
+  Default: "size-[length:var(--pt-checkbox-size-default)] pt-checkbox--size-default",
+  Large: "size-[length:var(--pt-checkbox-size-large)] pt-checkbox--size-large",
+  Small: "size-[length:var(--pt-checkbox-size-small)] pt-checkbox--size-small",
+};
+
+const checkIconSize: Record<CheckboxSize, number> = {
+  Default: 12,
+  Large: 12,
+  Small: 10,
 };
 
 const rowHeight: Record<CheckboxSize, string> = {
@@ -31,24 +44,11 @@ const rowHeight: Record<CheckboxSize, string> = {
   Small: "min-h-6",
 };
 
-function CheckIcon() {
-  return (
-    <svg
-      viewBox="0 0 12 12"
-      className="size-[length:var(--pt-checkbox-check-size)] text-el-text-write opacity-0 peer-checked:opacity-100"
-      aria-hidden
-    >
-      <path
-        d="M2.5 6.2 5.1 8.8 9.8 3.5"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="1.6"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  );
-}
+const labelType: Record<CheckboxSize, string> = {
+  Default: "text-el-base leading-el-base",
+  Large: "text-el-base leading-el-base",
+  Small: "text-el-small leading-el-small",
+};
 
 export const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(
   (
@@ -56,15 +56,26 @@ export const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(
       label,
       size = "Default",
       border = false,
+      indeterminate = false,
       className,
       disabled,
       id: idProp,
+      checked,
       ...rest
     },
     ref,
   ) => {
     const autoId = useId();
     const id = idProp ?? autoId;
+    const inputRef = useRef<HTMLInputElement>(null);
+
+    useImperativeHandle(ref, () => inputRef.current as HTMLInputElement);
+
+    useEffect(() => {
+      if (inputRef.current) {
+        inputRef.current.indeterminate = indeterminate;
+      }
+    }, [indeterminate, checked]);
 
     return (
       <label
@@ -73,39 +84,38 @@ export const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(
           "inline-flex cursor-pointer items-center gap-pt-8 p-pt-0",
           rowHeight[size],
           border &&
-            "rounded-el-base border border-el-border px-pt-12 py-pt-4",
+            "rounded-el-base border border-el-border-light px-pt-12 py-pt-4",
           disabled && "cursor-not-allowed opacity-60",
           className,
         )}
       >
-        <span
-          className={cn(
-            "relative inline-flex shrink-0 items-center justify-center",
-            boxSize[size],
-          )}
-        >
+        <span className={cn("relative inline-flex shrink-0", boxWrap[size])}>
           <input
-            ref={ref}
+            ref={inputRef}
             id={id}
             type="checkbox"
             disabled={disabled}
-            className="peer sr-only"
+            checked={checked}
+            className="pt-checkbox__control peer sr-only"
             {...rest}
           />
-          <span
-            className={cn(
-              "pointer-events-none absolute inset-0 flex items-center justify-center rounded-el-base border border-[length:var(--el-border-width)] bg-el-fill-blank transition-colors",
-              "border-el-border-light",
-              "peer-checked:border-el-primary peer-checked:bg-el-primary",
-              "peer-focus-visible:outline peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-[color:var(--el-color-primary)]",
-              "peer-enabled:peer-hover:border-el-text-placeholder",
-            )}
-            aria-hidden
-          />
-          <CheckIcon />
+          <span className="pt-checkbox__box" aria-hidden>
+            <span
+              className="pt-checkbox__check flex size-[length:var(--pt-checkbox-check-size)] items-center justify-center"
+              aria-hidden
+            >
+              <EpIconByName name="Check" size={checkIconSize[size]} />
+            </span>
+            <span className="pt-checkbox__indeterminate-bar" aria-hidden />
+          </span>
         </span>
         {label ? (
-          <span className="font-[family-name:var(--el-font-family)] text-el-base leading-el-base font-[var(--el-font-weight-regular)] text-el-text-primary select-none">
+          <span
+            className={cn(
+              "pt-checkbox__label select-none font-[family-name:var(--el-font-family)] font-[var(--el-font-weight-regular)]",
+              labelType[size],
+            )}
+          >
             {label}
           </span>
         ) : null}

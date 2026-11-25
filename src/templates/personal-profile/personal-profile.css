@@ -1,0 +1,10 @@
+/* Figma B1-个人资料 8370:13091 */
+
+/* Header `8370:13097` · p 16 · 非通用 60px 栏 */
+.pt-template-viewport--personal-profile .pt-page-layout-card__page-bar {
+  height: auto;
+  min-height: 0;
+  padding: var(--pt-space-16, 16px);
+}
+
+/* B1/B2 正文见 DocMetaPanel · docs/layouts/DOC-META-PANEL-LAYOUT.md */

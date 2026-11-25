@@ -1,0 +1,50 @@
+/* Figma `4-Breadcrumb 面包屑` · `105:25236` */
+
+.pt-breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--pt-space-4, 4px);
+  font-family: var(--el-font-family);
+  min-height: 22px;
+}
+
+.pt-breadcrumb__segment {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--pt-space-4, 4px);
+  flex-shrink: 0;
+}
+
+.pt-breadcrumb__sep {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+  color: var(--el-text-color-placeholder);
+}
+
+.pt-breadcrumb__label {
+  font-size: var(--el-font-size-base);
+  line-height: var(--el-font-line-height-base);
+  font-weight: var(--el-font-weight-regular);
+  white-space: nowrap;
+}
+
+.pt-breadcrumb__link {
+  color: var(--el-text-color-primary);
+  text-decoration: none;
+}
+
+.pt-breadcrumb__link:hover,
+.pt-breadcrumb__link--hover {
+  color: var(--el-color-primary);
+  font-weight: var(--el-font-weight-primary);
+}
+
+.pt-breadcrumb__label--current,
+.pt-breadcrumb__ellipsis {
+  color: var(--el-text-color-secondary);
+}

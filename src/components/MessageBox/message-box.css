@@ -1,0 +1,95 @@
+/* Figma MessageBox `1514:47536` · 宽 480 · Title 58 · Footer 64 */
+
+.pt-message-box {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 480px;
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: var(--el-border-radius-base);
+  background: var(--el-fill-color-blank);
+  box-shadow: var(--el-box-shadow-light);
+  font-family: var(--el-font-family);
+}
+
+.pt-message-box__header {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--pt-space-8, 8px);
+  box-sizing: border-box;
+  min-height: 58px;
+  padding: var(--pt-space-16, 16px);
+}
+
+.pt-message-box__title {
+  margin: 0;
+  font-size: var(--el-font-size-large);
+  line-height: var(--el-font-line-height-large);
+  font-weight: var(--el-font-weight-bold);
+  color: var(--el-text-color-primary);
+}
+
+.pt-message-box__close {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--el-text-color-placeholder);
+  cursor: default;
+}
+
+.pt-message-box__content {
+  flex-shrink: 0;
+  padding: 0 var(--pt-space-16, 16px);
+}
+
+.pt-message-box__content--confirm {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--pt-space-8, 8px);
+}
+
+.pt-message-box__status-icon {
+  flex-shrink: 0;
+  margin-top: 3px;
+  color: var(--el-color-warning);
+}
+
+.pt-message-box__content--submit {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pt-space-default-12, 12px);
+}
+
+.pt-message-box__text {
+  margin: 0;
+  font-size: var(--el-font-size-base);
+  line-height: var(--el-font-line-height-base);
+  font-weight: var(--el-font-weight-regular);
+  color: var(--el-text-color-regular);
+}
+
+.pt-message-box__input {
+  width: 100%;
+}
+
+.pt-message-box__footer {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--pt-space-8, 8px);
+  min-height: 64px;
+  padding: var(--pt-space-16, 16px);
+  box-sizing: border-box;
+}
+
+.pt-message-box__btn {
+  flex-shrink: 0;
+}

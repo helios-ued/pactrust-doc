@@ -1,0 +1,7 @@
+.pt-layout-frame-demo.pt-frame-demo-viewport {
+  overflow: auto;
+}
+
+.pt-layout-frame-demo .pt-dashboard-shell {
+  min-height: 100%;
+}

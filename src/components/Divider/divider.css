@@ -1,0 +1,92 @@
+/* Figma Component Set `3045:70832` */
+
+.pt-divider {
+  box-sizing: border-box;
+  font-family: var(--el-font-family);
+  --pt-divider-track: var(--el-border-color-light);
+}
+
+.pt-divider--horizontal {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  max-width: 100%;
+  height: 24px;
+}
+
+.pt-divider__line {
+  flex: 1 1 auto;
+  min-width: 0;
+  height: 0;
+  border: 0;
+  border-top: 1px solid var(--pt-divider-track);
+}
+
+.pt-divider--solid .pt-divider__line {
+  border-top-style: solid;
+}
+
+.pt-divider--dashed .pt-divider__line {
+  border-top-style: dashed;
+}
+
+.pt-divider--point .pt-divider__line {
+  border-top-style: dotted;
+}
+
+.pt-divider__line--full {
+  flex: 1 1 100%;
+  width: 100%;
+}
+
+/* Figma Left / Right 短边固定 20px */
+.pt-divider__line--cap {
+  flex: 0 0 20px;
+  width: 20px;
+}
+
+.pt-divider__line--grow {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.pt-divider__text {
+  flex-shrink: 0;
+  padding: 0 var(--pt-space-large-16, 16px);
+  font-size: var(--el-font-size-extra-small);
+  line-height: var(--el-font-line-height-extra-small);
+  font-weight: var(--el-font-weight-regular);
+  color: var(--el-text-color-primary);
+  white-space: nowrap;
+}
+
+/* 竖 · 槽宽 16px · 线 1px 水平居中（符号 16×16） */
+.pt-divider--vertical {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-self: stretch;
+  width: 16px;
+  min-width: 16px;
+  min-height: 16px;
+  margin: 0;
+}
+
+.pt-divider__v-line {
+  align-self: stretch;
+  width: 0;
+  border: 0;
+  border-left: 1px solid var(--pt-divider-track);
+}
+
+.pt-divider--solid .pt-divider__v-line {
+  border-left-style: solid;
+}
+
+.pt-divider--dashed .pt-divider__v-line {
+  border-left-style: dashed;
+}
+
+.pt-divider--point .pt-divider__v-line {
+  border-left-style: dotted;
+}

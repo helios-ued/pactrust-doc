@@ -1,0 +1,25 @@
+/**
+ * 选中日期/时间数字：12px → 14px + 轻微 scale，形成「放大」强调（Figma / Element 时间滚轮）
+ */
+.pt-date-picker-panel__cell.is-selected,
+.pt-datetime-picker-panel__time-col button.is-active {
+  font-size: var(--el-font-size-base);
+  line-height: 1;
+  font-weight: var(--el-font-weight-bold);
+  transform: scale(1.08);
+  transform-origin: center;
+}
+
+.pt-time-picker-panel__cell--selected {
+  font-size: var(--el-font-size-base);
+  line-height: var(--el-font-line-height-extra-small);
+  font-weight: var(--el-font-weight-bold);
+}
+
+.pt-date-picker-panel__month-cell.is-selected {
+  font-size: var(--el-font-size-medium);
+  line-height: var(--el-font-line-height-medium);
+  font-weight: var(--el-font-weight-bold);
+  transform: scale(1.06);
+  transform-origin: center;
+}

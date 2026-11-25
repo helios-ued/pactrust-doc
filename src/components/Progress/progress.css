@@ -1,0 +1,139 @@
+/* Figma Progress `96:24398` · Bar `6423:61945` */
+
+.pt-progress {
+  --pt-progress-track-bg: var(--el-fill-color-dark);
+  --pt-progress-label-w: 40px;
+
+  display: flex;
+  align-items: center;
+  gap: var(--pt-space-4, 4px);
+  font-family: var(--el-font-family);
+  width: 100%;
+  max-width: 500px;
+}
+
+.pt-progress--line-default {
+  min-height: 20px;
+}
+
+.pt-progress--line-internal {
+  min-height: 24px;
+}
+
+.pt-progress__track {
+  position: relative;
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  border-radius: var(--el-border-radius-circle);
+  background: var(--pt-progress-track-bg);
+}
+
+.pt-progress__track--default {
+  height: 6px;
+}
+
+.pt-progress__track--internal {
+  height: 24px;
+}
+
+.pt-progress__fill {
+  height: 100%;
+  border-radius: inherit;
+  background: var(--pt-progress-fill, var(--el-color-primary));
+  transition: width 0.25s ease;
+}
+
+/* Internal：<10% 左缘 +4px · ≥10% 右缘 +4px · 白字 */
+.pt-progress__track--internal .pt-progress__fill {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+.pt-progress__fill--internal-end {
+  justify-content: flex-end;
+  padding-right: var(--pt-space-4, 4px);
+}
+
+.pt-progress__fill--internal-start {
+  justify-content: flex-start;
+  padding-left: var(--pt-space-4, 4px);
+}
+
+.pt-progress__label {
+  flex: 0 0 var(--pt-progress-label-w);
+  font-size: var(--el-font-size-extra-small);
+  line-height: var(--el-font-line-height-extra-small);
+  font-weight: var(--el-font-weight-regular);
+  color: var(--el-text-color-regular);
+  text-align: left;
+  white-space: nowrap;
+}
+
+.pt-progress__label--internal {
+  flex-shrink: 0;
+  font-size: var(--el-font-size-extra-small);
+  line-height: var(--el-font-line-height-extra-small);
+  font-weight: var(--el-font-weight-regular);
+  color: var(--el-text-color-write);
+  pointer-events: none;
+}
+
+.pt-progress__suffix {
+  flex: 0 0 var(--pt-progress-label-w);
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 20px;
+}
+
+.pt-progress__suffix-icon--success {
+  color: var(--el-color-success);
+}
+
+.pt-progress__suffix-icon--warning {
+  color: var(--el-color-warning);
+}
+
+.pt-progress__suffix-icon--error {
+  color: var(--el-color-danger);
+}
+
+.pt-progress--line-internal .pt-progress__track {
+  flex: 1 1 auto;
+}
+
+/* Circle / Dashboard `6424:62066` */
+.pt-progress--circle,
+.pt-progress--dashboard {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--pt-space-8, 8px);
+  max-width: 126px;
+}
+
+.pt-progress__svg {
+  display: block;
+  width: 126px;
+  height: 126px;
+}
+
+.pt-progress__svg-text {
+  font-size: var(--el-font-size-medium);
+  line-height: var(--el-font-line-height-medium);
+  font-weight: var(--el-font-weight-regular);
+  fill: var(--el-text-color-regular);
+}
+
+.pt-progress__ring-bg {
+  stroke: var(--pt-progress-track-bg);
+}
+
+.pt-progress__ring-fill {
+  stroke: var(--pt-progress-fill, var(--el-color-primary));
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.25s ease;
+}

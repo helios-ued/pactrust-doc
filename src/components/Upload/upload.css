@@ -1,0 +1,399 @@
+/* Figma Upload 3128:73263 */
+.pt-upload {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--pt-space-8, 8px);
+  width: 360px;
+  max-width: 100%;
+}
+
+.pt-upload--picture-wall {
+  width: 460px;
+}
+
+.pt-upload__hint {
+  margin: 0;
+  font-family: var(--el-font-family);
+  font-size: var(--el-font-size-extra-small);
+  line-height: 20px;
+  color: var(--el-text-color-regular);
+  white-space: nowrap;
+}
+
+.pt-upload__actions-row {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  gap: var(--pt-space-8, 8px);
+}
+
+.pt-upload__server-btn {
+  display: inline-flex;
+  height: 32px;
+  max-height: 40px;
+  min-height: 24px;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: var(--el-border-radius-small);
+  background: var(--el-color-success);
+  padding: var(--pt-space-4, 4px) var(--pt-spacing-xl);
+  font-family: var(--el-font-family);
+  font-size: var(--el-font-size-base);
+  line-height: var(--el-font-line-height-base);
+  color: var(--el-text-color-write);
+  cursor: pointer;
+}
+
+.pt-upload__server-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.pt-upload__list-file {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.pt-upload__file-row {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--pt-space-8, 8px) var(--pt-space-16, 16px);
+}
+
+.pt-upload__file-row--progress {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 2px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.pt-upload__file-row-top {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--pt-space-4, 4px);
+}
+
+.pt-upload__file-name {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: var(--pt-space-4, 4px);
+  font-family: var(--el-font-family);
+  font-size: var(--el-font-size-small);
+  line-height: var(--el-font-line-height-small);
+  color: var(--el-text-color-regular);
+}
+
+.pt-upload__file-name span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.pt-upload__file-progress-label {
+  flex-shrink: 0;
+  font-family: var(--el-font-family);
+  font-size: var(--el-font-size-extra-small);
+  line-height: var(--el-font-line-height-extra-small);
+  color: var(--el-text-color-regular);
+}
+
+.pt-upload__file-remove {
+  display: inline-flex;
+  flex-shrink: 0;
+  border: none;
+  background: transparent;
+  padding: 0;
+  color: var(--el-text-color-secondary);
+  cursor: pointer;
+}
+
+.pt-upload__file-remove:hover {
+  color: var(--el-color-primary);
+}
+
+.pt-upload__file-bar {
+  display: flex;
+  width: 100%;
+  height: 2px;
+  align-items: center;
+}
+
+.pt-upload__file-bar-track {
+  position: relative;
+  height: 2px;
+  flex: 1;
+  border-radius: 0 50px 50px 0;
+  background: var(--el-fill-color-dark);
+  overflow: hidden;
+}
+
+.pt-upload__file-bar-fill {
+  position: absolute;
+  inset: 0 auto 0 0;
+  background: var(--el-color-primary);
+  border-radius: 0 50px 50px 0;
+}
+
+.pt-upload__list-image {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: var(--pt-space-8, 8px);
+}
+
+.pt-upload__image-row {
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: var(--pt-spacing-lg, 12px);
+  overflow: hidden;
+  border: 1px solid var(--el-border-color-light);
+  border-radius: 6px;
+  background: var(--el-fill-color-blank);
+  padding: var(--pt-spacing-lg, 12px);
+}
+
+.pt-upload__image-row-badge {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  display: flex;
+  width: 32px;
+  height: 32px;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 2px 3px 0 0;
+  color: var(--el-text-color-write);
+  pointer-events: none;
+}
+
+.pt-upload__image-row-badge::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    225deg,
+    var(--el-color-success) 50%,
+    transparent 50%
+  );
+}
+
+.pt-upload__image-row-badge svg {
+  position: relative;
+  z-index: 1;
+}
+
+.pt-upload__image-thumb {
+  display: flex;
+  width: 70px;
+  height: 70px;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: var(--el-border-radius-base);
+  background: var(--el-color-primary-light-9);
+  color: var(--el-color-primary);
+}
+
+.pt-upload__image-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pt-upload__wall {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--pt-space-8, 8px);
+}
+
+.pt-upload__wall-card {
+  position: relative;
+  box-sizing: border-box;
+  width: 148px;
+  height: 148px;
+  flex-shrink: 0;
+  overflow: hidden;
+  border: 1px solid var(--el-border-color-light);
+  border-radius: var(--el-border-radius-base);
+  background: var(--el-fill-color-blank);
+}
+
+.pt-upload__wall-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pt-upload__wall-card-badge {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  width: 32px;
+  height: 32px;
+  color: var(--el-text-color-write);
+  pointer-events: none;
+}
+
+.pt-upload__wall-card-badge::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    225deg,
+    var(--el-color-success) 50%,
+    transparent 50%
+  );
+}
+
+.pt-upload__wall-card-badge svg {
+  position: absolute;
+  top: 2px;
+  right: 3px;
+  z-index: 1;
+}
+
+.pt-upload__wall-card--add {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed var(--el-border-color);
+  background: var(--el-fill-color-blank);
+  cursor: pointer;
+  color: var(--el-text-color-secondary);
+}
+
+.pt-upload__wall-card--add:hover:not(:disabled) {
+  border-color: var(--el-color-primary);
+  color: var(--el-color-primary);
+}
+
+.pt-upload__wall-card--add:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.pt-upload__wall-card--uploading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed var(--el-border-color);
+}
+
+.pt-upload__wall-progress {
+  position: relative;
+  width: 126px;
+  height: 126px;
+}
+
+.pt-upload__wall-progress-ring {
+  width: 126px;
+  height: 126px;
+  transform: rotate(-90deg);
+}
+
+.pt-upload__wall-progress-ring circle {
+  fill: none;
+  stroke-width: 4;
+}
+
+.pt-upload__wall-progress-ring .track {
+  stroke: var(--el-fill-color-dark);
+}
+
+.pt-upload__wall-progress-ring .value {
+  stroke: var(--el-color-primary);
+  stroke-linecap: round;
+}
+
+.pt-upload__wall-progress-text {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--el-font-family);
+  font-size: var(--el-font-size-medium);
+  line-height: var(--el-font-line-height-medium);
+  color: var(--el-text-color-regular);
+}
+
+.pt-upload__drag {
+  display: flex;
+  width: 356px;
+  max-width: 100%;
+  height: 210px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--pt-space-8, 8px);
+  border: 1px dashed var(--el-border-color-light);
+  border-radius: var(--el-border-radius-base);
+  background: var(--el-fill-color-blank);
+  text-align: center;
+  transition:
+    border-color 0.15s ease,
+    background-color 0.15s ease;
+}
+
+.pt-upload__drag--compact {
+  width: 300px;
+  height: 200px;
+}
+
+.pt-upload__drag.is-hover,
+.pt-upload__drag.is-drag {
+  border-color: var(--el-color-primary);
+  background: var(--el-color-primary-light-9);
+}
+
+.pt-upload__drag.is-disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.pt-upload__drag:not(.is-disabled) {
+  cursor: pointer;
+}
+
+.pt-upload__drag-icon {
+  color: var(--el-text-color-placeholder);
+}
+
+.pt-upload__drag-text {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--pt-space-4, 4px);
+  font-family: var(--el-font-family);
+  font-size: var(--el-font-size-extra-small);
+  line-height: var(--el-font-line-height-extra-small);
+  color: var(--el-text-color-secondary);
+}
+
+.pt-upload__drag-link {
+  border: none;
+  background: transparent;
+  padding: 0;
+  font: inherit;
+  font-size: var(--el-font-size-base);
+  line-height: var(--el-font-line-height-base);
+  color: var(--el-color-primary);
+  cursor: pointer;
+}
+
+.pt-upload__drag-link:hover {
+  opacity: 0.85;
+}

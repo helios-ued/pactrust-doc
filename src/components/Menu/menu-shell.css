@@ -1,0 +1,30 @@
+/* Sidebar + Global-header 组合（Figma Menu 页应用框架） */
+
+.pt-menu-shell {
+  display: flex;
+  width: 100%;
+  max-width: 960px;
+  min-height: 460px;
+  align-items: stretch;
+  overflow: hidden;
+  border: 1px solid var(--el-border-color-lighter);
+  border-radius: var(--el-border-radius-base);
+  background: var(--el-bg-color-page);
+}
+
+.pt-menu-shell__main {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.pt-menu-shell__body {
+  flex: 1 1 auto;
+  min-height: 200px;
+  background: var(--el-bg-color-page);
+}
+
+.pt-menu-shell .pt-sidebar {
+  min-height: 100%;
+}

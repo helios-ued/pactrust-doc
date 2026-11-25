@@ -1,0 +1,623 @@
+/* Figma Menu 页 Sidebar · 仅 `data-sidebar-style` 展示用（与 Layout 帧无关） */
+
+/* Style 01 · `3313:56229` · 满宽 · 行高 Default 42 · 栈/二级块 gap 2 */
+.pt-sidebar[data-sidebar-style="01"] .pt-sidebar__body {
+  padding: var(--pt-space-8, 8px) 0 0;
+}
+
+.pt-sidebar[data-sidebar-style="01"] .pt-menu--embedded.pt-menu--sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pt-space-2, 2px);
+  width: 100%;
+}
+
+.pt-sidebar[data-sidebar-style="01"] .pt-menu-substack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pt-space-2, 2px);
+  width: 100%;
+}
+
+.pt-sidebar[data-sidebar-style="01"] .pt-menu__item-left {
+  gap: var(--pt-space-8, 8px);
+}
+
+.pt-sidebar[data-sidebar-style="01"] .pt-menu__item--vertical {
+  align-items: center;
+  border-radius: 0;
+}
+
+.pt-sidebar[data-sidebar-style="01"] .pt-menu__item--vertical.pt-menu__item--level-2 {
+  padding-left: 46px;
+}
+
+.pt-sidebar[data-sidebar-style="01"]
+  .pt-menu__item--vertical:hover:not(:disabled):not(.pt-menu__item--disabled),
+.pt-sidebar[data-sidebar-style="01"] .pt-menu__item--vertical.pt-menu__item--hover:not(:disabled) {
+  border-radius: 0;
+}
+
+.pt-sidebar[data-sidebar-style="01"]
+  .pt-menu__item--vertical.pt-menu__item--level-2.pt-menu__item--selected {
+  border-radius: 0;
+  border-right: none;
+  background: var(--el-color-primary-light-9);
+}
+
+/* 覆盖 menu.css 全局 L2 圆角胶囊 */
+.pt-sidebar[data-sidebar-style="01"]
+  .pt-menu--embedded
+  .pt-menu__item--vertical.pt-menu__item--level-2.pt-menu__item--selected {
+  border-radius: 0;
+  background: var(--el-color-primary-light-9);
+}
+
+/* Style 01 · 收起轨 · 无右侧竖条 · 直角浅底 */
+.pt-sidebar[data-sidebar-style="01"].pt-sidebar--collapsed
+  .pt-menu__item.pt-menu__item--rail.pt-menu__item--selected {
+  border-right: none;
+  border-radius: 0;
+  background: var(--el-color-primary-light-9);
+}
+
+/* Style 01 · Unfold off · 满宽轨 58×42（Figma `3313:56228`） */
+.pt-sidebar[data-sidebar-style="01"].pt-sidebar--collapsed .pt-sidebar__body {
+  padding: var(--pt-space-8, 8px) 0 0;
+}
+
+.pt-sidebar[data-sidebar-style="01"].pt-sidebar--collapsed
+  .pt-menu__item.pt-menu__item--rail.pt-menu__item--vertical {
+  width: 100%;
+  height: var(--pt-menu-vertical-row-height, 42px);
+  min-height: var(--pt-menu-vertical-row-height, 42px);
+  padding: 0;
+  border-radius: 0;
+}
+
+/* Style 01 · 收起悬浮窗 · 面板 p-8 · 宽 200 */
+.pt-sidebar[data-sidebar-style="01"] .pt-menu-flyout__panel {
+  box-sizing: border-box;
+  width: 200px;
+  min-width: 200px;
+  padding: var(--pt-space-8, 8px);
+  border-radius: var(--el-border-radius-base, 4px);
+  box-shadow: var(--el-box-shadow-light);
+}
+
+.pt-sidebar[data-sidebar-style="01"] .pt-menu-flyout__title {
+  padding: var(--pt-space-2, 2px) var(--pt-space-12, 12px);
+}
+
+.pt-sidebar[data-sidebar-style="01"] .pt-menu-flyout__panel .pt-menu__item--vertical.pt-menu__item--level-2 {
+  min-height: var(--pt-menu-vertical-row-height, 42px);
+  padding: var(--pt-space-12, 12px);
+}
+
+/* Style 01 · 收起轨悬浮窗 · 直角选项 · 文案与分组标题左对齐 */
+.pt-sidebar[data-sidebar-style="01"] .pt-menu-flyout__panel .pt-menu__item--vertical {
+  margin: 0;
+  width: 100%;
+  border-radius: 0;
+}
+
+.pt-sidebar[data-sidebar-style="01"]
+  .pt-menu-flyout__panel
+  .pt-menu__item--vertical.pt-menu__item--level-2.pt-menu__item--selected {
+  border-radius: 0;
+  background: var(--el-color-primary-light-9);
+}
+
+/* Style 02 · `8739:830` · 槽 8px · 栈/二级块 gap 2 · 行高 Default 42 */
+.pt-sidebar[data-sidebar-style="02"] {
+  /* L1 文案起点：pl-20 + 图标 18 + gap-8 */
+  --pt-menu-l2-text-inset: calc(
+    var(--pt-space-20, 20px) + 18px + var(--pt-space-8, 8px)
+  );
+}
+
+.pt-sidebar[data-sidebar-style="02"] .pt-sidebar__body {
+  padding: var(--pt-space-8, 8px) var(--pt-space-8, 8px) 0;
+}
+
+.pt-sidebar[data-sidebar-style="02"] .pt-menu--embedded.pt-menu--sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pt-space-2, 2px);
+  width: 100%;
+}
+
+.pt-sidebar[data-sidebar-style="02"] .pt-menu-substack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pt-space-2, 2px);
+  width: 100%;
+}
+
+.pt-sidebar[data-sidebar-style="02"] .pt-menu__item-left {
+  gap: var(--pt-space-8, 8px);
+}
+
+.pt-sidebar[data-sidebar-style="02"] .pt-menu__item--vertical {
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: var(--el-border-radius-large, 8px);
+}
+
+.pt-sidebar[data-sidebar-style="02"] .pt-menu__item--vertical.pt-menu__item--level-2 {
+  justify-content: flex-start;
+  padding-left: var(--pt-menu-l2-text-inset);
+  padding-right: var(--pt-space-20, 20px);
+}
+
+.pt-sidebar[data-sidebar-style="02"]
+  .pt-menu__item--vertical.pt-menu__item--level-2.pt-menu__item--selected {
+  border-radius: var(--el-border-radius-large, 8px);
+  border-right: none;
+  background: var(--el-color-primary-light-9);
+}
+
+.pt-sidebar[data-sidebar-style="02"]
+  .pt-menu__item--vertical:hover:not(:disabled):not(.pt-menu__item--disabled),
+.pt-sidebar[data-sidebar-style="02"] .pt-menu__item--vertical.pt-menu__item--hover:not(:disabled) {
+  border-radius: var(--el-border-radius-large, 8px);
+}
+
+/* Style 03 · `8837:507` · 槽 8px · 多级胶囊 · L2 选中 circle + primary-9 */
+.pt-sidebar[data-sidebar-style="03"] {
+  /* Unfold on 一级行高 · 收起轨正圆 = menu-vertical/1st Size=Default 42px */
+  --pt-menu-l1-row-height: var(--pt-menu-vertical-row-height, 42px);
+  --pt-menu-l2-text-inset: calc(
+    var(--pt-space-20, 20px) + 18px + var(--pt-space-8, 8px)
+  );
+}
+
+.pt-sidebar[data-sidebar-style="03"] .pt-menu--size-default {
+  --pt-menu-l1-row-height: var(--pt-menu-vertical-row-height);
+}
+
+.pt-sidebar[data-sidebar-style="03"] .pt-sidebar__body {
+  padding: var(--pt-space-8, 8px) var(--pt-space-8, 8px) 0;
+}
+
+.pt-sidebar[data-sidebar-style="03"] .pt-menu--embedded.pt-menu--sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pt-space-2, 2px);
+  width: 100%;
+}
+
+.pt-sidebar[data-sidebar-style="03"] .pt-menu-substack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pt-space-2, 2px);
+  width: 100%;
+}
+
+.pt-sidebar[data-sidebar-style="03"] .pt-menu__item-left {
+  gap: var(--pt-space-8, 8px);
+}
+
+.pt-sidebar[data-sidebar-style="03"] .pt-menu__item--vertical {
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: var(--el-border-radius-circle);
+}
+
+.pt-sidebar[data-sidebar-style="03"] .pt-menu__item--vertical.pt-menu__item--level-2 {
+  justify-content: flex-start;
+  padding-left: var(--pt-menu-l2-text-inset);
+  padding-right: var(--pt-space-20, 20px);
+}
+
+.pt-sidebar[data-sidebar-style="03"]
+  .pt-menu__item--vertical.pt-menu__item--level-2.pt-menu__item--selected {
+  border-right: none;
+  border-radius: var(--el-border-radius-circle);
+  background: var(--el-color-primary-light-9);
+}
+
+.pt-sidebar[data-sidebar-style="03"]
+  .pt-menu__item--vertical.pt-menu__item--level-1.pt-menu__item--selected
+  .pt-menu__item-label,
+.pt-sidebar[data-sidebar-style="03"]
+  .pt-menu__item--vertical.pt-menu__item--level-1.pt-menu__item--selected
+  .pt-menu__item-icon {
+  color: var(--el-color-primary);
+}
+
+.pt-sidebar[data-sidebar-style="03"]
+  .pt-menu__item--vertical:hover:not(:disabled):not(.pt-menu__item--disabled),
+.pt-sidebar[data-sidebar-style="03"] .pt-menu__item--vertical.pt-menu__item--hover:not(:disabled) {
+  border-radius: var(--el-border-radius-circle);
+}
+
+/* Style 04 · `8739:1936` · 分组 · 项高 38 · 圆角 8 */
+.pt-sidebar[data-sidebar-style="04"] .pt-sidebar__body {
+  padding: var(--pt-space-8, 8px) var(--pt-space-8, 8px) 0;
+}
+
+.pt-sidebar[data-sidebar-style="04"] .pt-menu__item-left {
+  gap: var(--pt-space-8, 8px);
+}
+
+/* 槽：组间 default-12 · 组内 gap 2（Figma menu-item*10 / Menu Group） */
+.pt-sidebar[data-sidebar-style="04"] .pt-menu--embedded.pt-menu--sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pt-space-12, 12px);
+  width: 100%;
+}
+
+.pt-sidebar[data-sidebar-style="04"] .pt-menu-group {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: var(--pt-space-2, 2px);
+  width: 100%;
+}
+
+.pt-sidebar[data-sidebar-style="04"] .pt-menu-group__title {
+  margin: 0;
+  padding: var(--pt-space-2, 2px) var(--pt-space-12, 12px);
+  box-sizing: border-box;
+  font-size: var(--el-font-size-extra-small);
+  line-height: var(--el-font-line-height-extra-small);
+  font-weight: var(--el-font-weight-regular);
+  color: var(--el-text-color-secondary);
+}
+
+.pt-sidebar[data-sidebar-style="04"] .pt-menu--size-default .pt-menu__item,
+.pt-sidebar[data-sidebar-style="04"] .pt-menu--size-small .pt-menu__item,
+.pt-sidebar[data-sidebar-style="04"] .pt-menu--size-large .pt-menu__item {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.pt-sidebar[data-sidebar-style="04"] .pt-menu__item--vertical {
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 38px;
+  padding-right: 12px;
+  align-items: center;
+}
+
+/* 组内仅 menu-vertical/1st · 高 38 · py-8 px-12 · 无 childIcon */
+.pt-sidebar[data-sidebar-style="04"] .pt-menu__item--vertical.pt-menu__item--level-1 {
+  padding: 8px 12px;
+  border-radius: var(--el-border-radius-large, 8px);
+}
+
+.pt-sidebar[data-sidebar-style="04"]
+  .pt-menu__item--vertical.pt-menu__item--level-1.pt-menu__item--selected,
+.pt-sidebar[data-sidebar-style="04"]
+  .pt-menu__item--vertical.pt-menu__item--level-1.pt-menu__item--hover:not(:disabled),
+.pt-sidebar[data-sidebar-style="04"]
+  .pt-menu__item--vertical.pt-menu__item--level-1:hover:not(:disabled):not(.pt-menu__item--disabled) {
+  background: var(--el-fill-color-dark);
+}
+
+/* Figma `8739:1947` · medium/body1-Medium */
+.pt-sidebar[data-sidebar-style="04"]
+  .pt-menu__item--vertical.pt-menu__item--level-1.pt-menu__item--selected {
+  font-weight: var(--el-font-weight-primary);
+}
+
+.pt-sidebar[data-sidebar-style="04"]
+  .pt-menu__item--vertical.pt-menu__item--level-1.pt-menu__item--selected
+  .pt-menu__item-label {
+  font-weight: inherit;
+  color: var(--el-text-color-primary);
+}
+
+.pt-sidebar[data-sidebar-style="04"]
+  .pt-menu__item--vertical.pt-menu__item--level-1.pt-menu__item--selected
+  .pt-menu__item-icon {
+  color: var(--el-text-color-primary);
+}
+
+/* Style 02–04 · Unfold off · 槽 px-8 · 轨格 42（58−16） */
+.pt-sidebar[data-sidebar-style="02"].pt-sidebar--collapsed .pt-sidebar__body,
+.pt-sidebar[data-sidebar-style="03"].pt-sidebar--collapsed .pt-sidebar__body,
+.pt-sidebar[data-sidebar-style="04"].pt-sidebar--collapsed .pt-sidebar__body {
+  padding: var(--pt-space-8, 8px) var(--pt-space-8, 8px) 0;
+}
+
+/* Style 02–03 · 收起悬浮窗 · Figma `8850:3823` 等 · 面板 p-8 · 宽 200 · Label px-12 */
+.pt-sidebar[data-sidebar-style="02"] .pt-menu-flyout__panel,
+.pt-sidebar[data-sidebar-style="03"] .pt-menu-flyout__panel {
+  box-sizing: border-box;
+  width: 200px;
+  min-width: 200px;
+  padding: var(--pt-space-8, 8px);
+  border-radius: var(--el-border-radius-base, 4px);
+  box-shadow: var(--el-box-shadow-light);
+}
+
+.pt-sidebar[data-sidebar-style="02"] .pt-menu-flyout__title,
+.pt-sidebar[data-sidebar-style="03"] .pt-menu-flyout__title {
+  padding: var(--pt-space-2, 2px) var(--pt-space-12, 12px);
+}
+
+/* Style 04 · Unfold off · `8852:4432` Tooltip · 非 200px 菜单面板 */
+.pt-sidebar[data-sidebar-style="04"] .pt-menu-flyout__panel--tooltip {
+  box-sizing: border-box;
+  width: auto;
+  min-width: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  overflow: visible;
+}
+
+/* 与 Tooltip 默认一致：整体 drop-shadow + 箭头/面板同色，避免面板压住箭头填充 */
+.pt-sidebar[data-sidebar-style="04"] .pt-menu-flyout__tooltip .pt-tooltip__panel {
+  padding: 6px var(--pt-space-12, 12px);
+  font-size: var(--el-font-size-base);
+  line-height: var(--el-font-line-height-base);
+  font-weight: var(--el-font-weight-regular);
+  background: var(--el-bg-color-overlay, var(--el-fill-color-blank));
+}
+
+.pt-sidebar[data-sidebar-style="04"] .pt-menu-flyout__tooltip .pt-floating__arrow-fill {
+  fill: var(--el-bg-color-overlay, var(--el-fill-color-blank));
+}
+
+/* 默认叠放：面板在上，遮住箭头内侧描边，避免斜线伸进内容区 */
+.pt-sidebar[data-sidebar-style="04"] .pt-menu-flyout__tooltip .pt-floating__arrow-rail:has(+ .pt-tooltip__panel) + .pt-tooltip__panel {
+  margin-left: -1px;
+  border-left: 0;
+  background-clip: padding-box;
+}
+
+.pt-sidebar[data-sidebar-style="04"] .pt-menu-flyout__tooltip .pt-floating__arrow-shape--left {
+  margin-right: -2px;
+}
+
+.pt-sidebar[data-sidebar-style="02"] .pt-menu-flyout__panel .pt-menu__item--vertical.pt-menu__item--level-2,
+.pt-sidebar[data-sidebar-style="03"] .pt-menu-flyout__panel .pt-menu__item--vertical.pt-menu__item--level-2 {
+  min-height: var(--pt-menu-vertical-row-height, 42px);
+  padding: var(--pt-space-12, 12px);
+}
+
+.pt-sidebar[data-sidebar-style="04"] .pt-menu-flyout__panel .pt-menu__item--vertical.pt-menu__item--level-2 {
+  min-height: 38px;
+  padding: var(--pt-space-12, 12px);
+}
+
+/* Style 02 · 收起轨 · 42×42 · 8px 圆角（Figma `8850:3823`） */
+.pt-sidebar[data-sidebar-style="02"].pt-sidebar--collapsed
+  .pt-menu__item.pt-menu__item--rail.pt-menu__item--vertical {
+  box-sizing: border-box;
+  width: var(--pt-menu-vertical-row-height, 42px);
+  height: var(--pt-menu-vertical-row-height, 42px);
+  min-height: var(--pt-menu-vertical-row-height, 42px);
+  max-width: 100%;
+  margin-inline: auto;
+  padding: 0;
+  border-radius: var(--el-border-radius-large, 8px);
+}
+
+.pt-sidebar[data-sidebar-style="02"].pt-sidebar--collapsed
+  .pt-menu__item.pt-menu__item--rail.pt-menu__item--selected {
+  border-right: none;
+  background: var(--el-color-primary-light-9);
+}
+
+.pt-sidebar[data-sidebar-style="02"] .pt-menu-flyout__panel .pt-menu__item--vertical {
+  margin: 0;
+  width: 100%;
+  border-radius: var(--el-border-radius-large, 8px);
+}
+
+.pt-sidebar[data-sidebar-style="02"]
+  .pt-menu-flyout__panel
+  .pt-menu__item--vertical.pt-menu__item--level-2.pt-menu__item--selected {
+  background: var(--el-color-primary-light-9);
+}
+
+/* Style 03 · 收起轨 · 42×42 正圆选中（与 02 槽位一致） */
+.pt-sidebar[data-sidebar-style="03"].pt-sidebar--collapsed
+  .pt-menu__item.pt-menu__item--rail.pt-menu__item--vertical {
+  box-sizing: border-box;
+  width: var(--pt-menu-l1-row-height);
+  height: var(--pt-menu-l1-row-height);
+  min-height: var(--pt-menu-l1-row-height);
+  max-width: 100%;
+  margin-inline: auto;
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+.pt-sidebar[data-sidebar-style="03"].pt-sidebar--collapsed
+  .pt-menu__item.pt-menu__item--rail.pt-menu__item--selected {
+  border-right: none;
+  border-radius: var(--el-border-radius-circle);
+  background: var(--el-color-primary-light-9);
+}
+
+.pt-sidebar[data-sidebar-style="03"] .pt-menu-flyout__panel .pt-menu__item--vertical {
+  margin: 0;
+  width: 100%;
+  border-radius: 0;
+}
+
+.pt-sidebar[data-sidebar-style="03"]
+  .pt-menu-flyout__panel
+  .pt-menu__item--vertical.pt-menu__item--level-2.pt-menu__item--selected {
+  border-radius: var(--el-border-radius-circle);
+  background: var(--el-color-primary-light-9);
+}
+
+/* Style 04 · 收起轨 · 42×38（Figma `8832:3994`） */
+.pt-sidebar[data-sidebar-style="04"] {
+  --pt-menu-l1-row-height: 38px;
+}
+
+.pt-sidebar[data-sidebar-style="04"].pt-sidebar--collapsed
+  .pt-menu__item.pt-menu__item--rail.pt-menu__item--vertical {
+  box-sizing: border-box;
+  width: var(--pt-menu-vertical-row-height, 42px);
+  height: var(--pt-menu-l1-row-height);
+  min-height: var(--pt-menu-l1-row-height);
+  max-width: 100%;
+  margin-inline: auto;
+  padding: 0;
+  border-radius: var(--el-border-radius-large, 8px);
+}
+
+.pt-sidebar[data-sidebar-style="04"].pt-sidebar--collapsed
+  .pt-menu__item.pt-menu__item--rail.pt-menu__item--selected {
+  border-right: none;
+  background: var(--el-fill-color-dark);
+}
+
+.pt-sidebar[data-sidebar-style="04"].pt-sidebar--collapsed
+  .pt-menu__item.pt-menu__item--rail.pt-menu__item--selected
+  .pt-menu__item-icon,
+.pt-sidebar[data-sidebar-style="04"].pt-sidebar--collapsed
+  .pt-menu__item.pt-menu__item--rail.pt-menu__item--selected
+  .pt-menu__item-label {
+  color: var(--el-text-color-primary);
+}
+
+.pt-sidebar[data-sidebar-style="04"] .pt-menu-flyout__panel .pt-menu__item--vertical {
+  margin: 0;
+  width: 100%;
+  min-height: 38px;
+  border-radius: var(--el-border-radius-large, 8px);
+}
+
+.pt-sidebar[data-sidebar-style="04"]
+  .pt-menu-flyout__panel
+  .pt-menu__item--vertical.pt-menu__item--level-2.pt-menu__item--selected,
+.pt-sidebar[data-sidebar-style="04"]
+  .pt-menu-flyout__panel
+  .pt-menu__item--vertical.pt-menu__item--level-2.pt-menu__item--hover:not(:disabled) {
+  background: var(--el-fill-color-dark);
+}
+
+/* 收起轨 Unfold=off · 项间 gap 2 */
+.pt-sidebar--collapsed .pt-menu--embedded.pt-menu--sidebar,
+.pt-sidebar--collapsed.pt-sidebar .pt-menu--sidebar-collapsed {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pt-space-2, 2px);
+  width: 100%;
+}
+
+.pt-sidebar--collapsed[data-sidebar-style="04"] .pt-menu--embedded.pt-menu--sidebar {
+  gap: var(--pt-space-2, 2px);
+}
+
+.pt-sidebar--collapsed .pt-menu-group {
+  gap: var(--pt-space-2, 2px);
+}
+
+.pt-sidebar--collapsed .pt-menu-group__title {
+  display: none;
+}
+
+/* Style 04 · 展开宽 220（Figma `8739:1936`） */
+.pt-sidebar[data-sidebar-style="04"].pt-sidebar--unfolded {
+  width: 220px;
+}
+
+.pt-sidebar[data-sidebar-style="04"] .pt-sidebar__slot {
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+.pt-sidebar[data-sidebar-style="04"] .pt-sidebar__slot--setting {
+  padding: var(--pt-space-8, 8px);
+}
+
+.pt-sidebar[data-sidebar-style="04"] .pt-sidebar__setting-menu.pt-menu--embedded.pt-menu--sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pt-space-2, 2px);
+  width: 100%;
+}
+
+.pt-sidebar[data-sidebar-style="04"]
+  .pt-sidebar__setting-menu
+  .pt-menu__item--vertical.pt-menu__item--level-1 {
+  min-height: var(--pt-menu-vertical-row-height, 42px);
+  padding: 8px 12px;
+  border-radius: var(--el-border-radius-large, 8px);
+}
+
+.pt-sidebar[data-sidebar-style="04"].pt-sidebar--collapsed .pt-sidebar__slot--setting {
+  padding: var(--pt-space-8, 8px) 0 0;
+}
+
+.pt-sidebar[data-sidebar-style="04"].pt-sidebar--collapsed
+  .pt-sidebar__setting-menu
+  .pt-menu__item.pt-menu__item--rail.pt-menu__item--vertical {
+  width: 100%;
+  height: var(--pt-menu-vertical-row-height, 42px);
+  min-height: var(--pt-menu-vertical-row-height, 42px);
+  margin-inline: 0;
+  border-radius: 0;
+}
+
+.pt-sidebar[data-sidebar-style="04"] .pt-sidebar__slot--user {
+  padding: var(--pt-space-8, 8px);
+}
+
+.pt-sidebar[data-sidebar-style="04"] .pt-sidebar__user--unfolded {
+  display: flex;
+  align-items: center;
+  gap: var(--pt-space-8, 8px);
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 54px;
+  padding: 6px 12px;
+  border-radius: var(--el-border-radius-large, 8px);
+}
+
+.pt-sidebar[data-sidebar-style="04"] .pt-sidebar__user-info {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.pt-sidebar[data-sidebar-style="04"] .pt-sidebar__user-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: var(--el-font-size-base);
+  line-height: var(--el-font-line-height-base);
+  font-weight: var(--el-font-weight-regular);
+  color: var(--el-text-color-primary);
+  white-space: nowrap;
+}
+
+.pt-sidebar[data-sidebar-style="04"] .pt-sidebar__user-email {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: var(--el-font-size-extra-small);
+  line-height: var(--el-font-line-height-extra-small);
+  font-weight: var(--el-font-weight-regular);
+  color: var(--el-text-color-secondary);
+  white-space: nowrap;
+}
+
+.pt-sidebar[data-sidebar-style="04"] .pt-sidebar__user-chevron {
+  flex-shrink: 0;
+  color: var(--el-text-color-secondary);
+}
+
+.pt-sidebar[data-sidebar-style="04"] .pt-sidebar__user--collapsed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  min-height: 54px;
+  margin-inline: auto;
+}

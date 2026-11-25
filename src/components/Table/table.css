@@ -1,0 +1,195 @@
+/* Figma Table `75:21467` · Copy me `6480:5919` */
+
+.pt-table-wrap {
+  --pt-table-frame-border: var(--el-border-color-lighter);
+  --pt-table-col-border: var(--el-border-color-light);
+  --pt-table-row-divider: var(--el-border-color-lighter);
+
+  width: 100%;
+  overflow: auto;
+  border: 1px solid var(--pt-table-frame-border);
+  border-radius: var(--el-border-radius-xl);
+  background: var(--el-fill-color-blank);
+}
+
+.pt-table {
+  width: 100%;
+  min-width: 640px;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-family: var(--el-font-family);
+}
+
+.pt-table__th {
+  height: 40px;
+  max-height: 56px;
+  min-height: 36px;
+  padding: var(--pt-space-8, 8px) var(--pt-space-12, 12px);
+  border-bottom: 1px solid var(--pt-table-row-divider);
+  font-size: var(--el-font-size-base);
+  font-weight: var(--el-font-weight-primary);
+  line-height: var(--el-font-line-height-base);
+  color: var(--el-text-color-secondary);
+  text-align: left;
+  vertical-align: middle;
+  background: var(--el-fill-color-blank);
+}
+
+.pt-table__th--selection,
+.pt-table__td--selection {
+  width: 40px;
+  box-sizing: border-box;
+}
+
+.pt-table__td {
+  box-sizing: border-box;
+  border-bottom: 1px solid var(--pt-table-row-divider);
+  vertical-align: middle;
+  background: var(--el-fill-color-blank);
+  color: var(--el-text-color-primary);
+  font-size: var(--el-font-size-base);
+  line-height: var(--el-font-line-height-base);
+}
+
+.pt-table--size-default .pt-table__td {
+  height: 40px;
+  padding: var(--pt-space-4, 4px) var(--pt-space-12, 12px);
+}
+
+.pt-table--size-large .pt-table__td {
+  height: 64px;
+  padding: var(--pt-space-8, 8px) var(--pt-space-12, 12px);
+}
+
+.pt-table--size-default .pt-table__cell-stack--large-only {
+  display: none;
+}
+
+.pt-table--border .pt-table__th:not(:last-child),
+.pt-table--border .pt-table__td:not(:last-child) {
+  border-right: 1px solid var(--pt-table-col-border);
+}
+
+.pt-table--stripe .pt-table__body tr:nth-child(even) .pt-table__td {
+  background: var(--el-fill-color-light);
+}
+
+.pt-table__body tr:last-child .pt-table__td {
+  border-bottom: none;
+}
+
+.pt-table__cell-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--pt-space-4, 4px);
+  min-width: 0;
+}
+
+.pt-table__cell-row {
+  display: flex;
+  align-items: center;
+  gap: var(--pt-space-4, 4px);
+  min-width: 0;
+  max-width: 100%;
+}
+
+.pt-table__cell-row--secondary {
+  color: var(--el-text-color-secondary);
+  font-size: var(--el-font-size-base);
+  line-height: var(--el-font-line-height-base);
+}
+
+.pt-table__cell-icon {
+  display: inline-flex;
+  flex-shrink: 0;
+  color: var(--el-text-color-secondary);
+}
+
+.pt-table__tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--pt-space-4, 4px);
+}
+
+.pt-table__progress {
+  display: flex;
+  align-items: center;
+  gap: var(--pt-space-4, 4px);
+  width: 100%;
+  max-width: 200px;
+}
+
+.pt-table__progress-track {
+  flex: 1 1 auto;
+  min-width: 0;
+  height: 6px;
+  overflow: hidden;
+  border-radius: var(--el-border-radius-circle);
+  background: var(--el-fill-color-dark);
+}
+
+.pt-table__progress-bar {
+  height: 100%;
+  border-radius: var(--el-border-radius-base);
+  background: var(--el-color-primary);
+}
+
+.pt-table__progress-bar--success {
+  background: var(--el-color-success);
+}
+
+.pt-table__progress-label {
+  flex: 0 0 auto;
+  width: 40px;
+  font-size: var(--el-font-size-extra-small);
+  line-height: var(--el-font-line-height-extra-small);
+  color: var(--el-text-color-regular);
+  text-align: left;
+}
+
+.pt-table__th--actions,
+.pt-table__td--actions {
+  width: auto;
+  min-width: 136px;
+  box-sizing: border-box;
+  padding-right: var(--pt-space-12, 12px);
+  padding-left: var(--pt-space-12, 12px);
+}
+
+.pt-table--size-default .pt-table__td--actions {
+  padding-top: var(--pt-space-4, 4px);
+  padding-bottom: var(--pt-space-4, 4px);
+}
+
+.pt-table--size-large .pt-table__td--actions {
+  padding-top: var(--pt-space-8, 8px);
+  padding-bottom: var(--pt-space-8, 8px);
+}
+
+.pt-table__actions {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: var(--pt-space-12, 12px);
+}
+
+.pt-table__action-link {
+  font-weight: var(--el-font-weight-primary);
+  font-size: var(--el-font-size-base);
+  line-height: var(--el-font-line-height-base);
+}
+
+.pt-table__field {
+  display: block;
+  color: var(--el-text-color-primary);
+  font-size: var(--el-font-size-base);
+  line-height: var(--el-font-line-height-base);
+}
+
+.pt-table .pt-checkbox {
+  display: inline-flex;
+  align-items: center;
+}

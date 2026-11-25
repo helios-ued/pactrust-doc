@@ -1,0 +1,33 @@
+/* EDS Desktop Showcase shell — only used under /design-tokens */
+.eds-shell {
+  --eds-shell-bg: #0d4a3a;
+  --eds-shell-bg-deep: #083328;
+  --eds-shell-fg: rgba(255, 255, 255, 0.92);
+  --eds-shell-fg-muted: rgba(255, 255, 255, 0.55);
+  --eds-shell-hover: rgba(255, 255, 255, 0.08);
+  --eds-shell-active: rgba(255, 255, 255, 0.14);
+  --eds-panel-bg: #ffffff;
+  --eds-panel-fg: #303133;
+  --eds-panel-muted: #909399;
+  --eds-panel-border: #ebeef5;
+  --eds-toc-active: var(--pt-brand-color);
+  min-height: 100vh;
+  background: var(--eds-shell-bg);
+  color: var(--eds-shell-fg);
+}
+
+.eds-shell[data-theme="dark"] {
+  --eds-panel-bg: #1e2123;
+  --eds-panel-fg: #e5eaf3;
+  --eds-panel-muted: #a3a6ad;
+  --eds-panel-border: #414243;
+}
+
+/** 嵌在主 Showcase 内容区：不整页跳转，只复用 EDS 令牌排版变量 */
+.eds-tokens-inset {
+  --eds-panel-bg: var(--ds-bg-page);
+  --eds-panel-fg: var(--ds-text-primary);
+  --eds-panel-muted: var(--ds-text-secondary);
+  --eds-panel-border: var(--ds-stroke-divider);
+  --eds-toc-active: var(--el-color-primary);
+}

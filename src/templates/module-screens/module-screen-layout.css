@@ -1,0 +1,74 @@
+/* 模块界面 · Page Body / Content 共用（Figma px 40 · py 120 · Content 560→400 线性） */
+
+.pt-module-screen__subnav {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: var(--pt-space-12, 12px);
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom: 1px solid var(--el-border-color-light);
+  padding: var(--pt-space-16, 16px);
+  background: var(--el-fill-color-blank);
+}
+
+.pt-module-screen__back {
+  display: inline-flex;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: var(--el-border-radius-circle);
+  background: var(--el-bg-color);
+  color: var(--el-text-color-primary);
+  cursor: pointer;
+}
+
+.pt-module-screen__back:hover {
+  background: var(--el-fill-color-light);
+}
+
+.pt-module-screen__subnav-title {
+  font-family: var(--el-font-family);
+  font-size: var(--el-font-size-medium);
+  font-weight: var(--el-font-weight-bold);
+  line-height: var(--el-font-line-height-medium);
+  color: var(--el-text-color-primary);
+}
+
+.pt-module-screen__body {
+  display: flex;
+  width: 100%;
+  min-width: 0;
+  flex: 1 1 auto;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 120px var(--pt-space-40, 40px);
+  overflow: auto;
+}
+
+.pt-module-screen__content {
+  display: flex;
+  width: 100%;
+  max-width: clamp(
+    400px,
+    calc(560px - (1200px - 100vw) * 0.4),
+    560px
+  );
+  flex-direction: column;
+  gap: var(--pt-spacing-3xl, 40px);
+  align-items: stretch;
+  container-type: inline-size;
+  container-name: pt-module-content;
+}
+
+.pt-template-viewport--module-screen .pt-page-layout-card__content--page-frame {
+  overflow: auto;
+}
+
+.pt-template-viewport--module-screen .pt-page-layout-card__canvas {
+  min-height: min(100%, 720px);
+}

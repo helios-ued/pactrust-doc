@@ -3,52 +3,127 @@
  * Components must reference these variables only (no ad-hoc hex in UI code).
  */
 :root {
-  /* Primary */
-  --el-color-primary: #409eff;
-  --el-color-primary-light-9: #ecf5ff;
-  --el-color-primary-light-8: #d9ecff;
-  --el-color-primary-light-7: #c6e2ff;
-  --el-color-primary-light-5: #a0cfff;
+  /* Brand — Figma Brand/*（组件仍通过 --el-color-primary 引用） */
+  --pt-brand-color: #1677ff;
+  --pt-brand-color-dark-2: #125fcc;
+  --pt-brand-color-3: #5ca0ff;
+  --pt-brand-color-5: #8bbbff;
+  --pt-brand-color-7: #b9d6ff;
+  --pt-brand-color-8: #d0e4ff;
+  --pt-brand-color-9: #e8f1ff;
 
-  /* Semantic */
+  --el-color-primary: var(--pt-brand-color);
+  --el-color-primary-light-9: var(--pt-brand-color-9);
+  --el-color-primary-light-8: var(--pt-brand-color-8);
+  --el-color-primary-light-7: var(--pt-brand-color-7);
+  --el-color-primary-light-5: var(--pt-brand-color-5);
+
+  /*
+   * Feedback 组件 Primary 语义 — Figma Alert `10:5` / Message `1514:47072`
+   * 变量集 Primary/*（非 Brand/*）；与全站 Brand 主色并行，禁止在组件内写死 hex。
+   */
+  --pt-feedback-primary: #409eff;
+  --pt-feedback-primary-7: #c6e2ff;
+  --pt-feedback-primary-9: #ecf5ff;
+
+  /* Semantic — Figma Success/color · Warning/color · Error/color（Alert 10:5 变量） */
   --el-color-success: #00b42a;
+  --el-color-success-light-9: #e6f8ea;
+  --el-color-success-light-7: #b3e9bf;
   --el-color-warning: #ff7d00;
-  --el-color-danger: #f56c6c;
+  --el-color-warning-light-9: #fff2e6;
+  --el-color-warning-light-7: #ffd8b3;
+  --el-color-danger: #f53f3f;
+  --el-color-danger-light-9: #feecec;
+  --el-color-danger-light-7: #fcc5c5;
+  --el-color-error: var(--el-color-danger);
   --el-color-info: #909399;
+  --el-color-info-light-7: #dedfe0;
 
   /* Text */
   --el-text-color-primary: #303133;
   --el-text-color-regular: #606266;
+  --el-text-color-secondary: #909399;
   --el-text-color-placeholder: #909399;
   --el-text-color-disabled: #c0c4cc;
   --el-text-color-write: #ffffff;
 
   /* Background / fill */
   --el-bg-color: #ffffff;
+  --el-bg-color-page: #f2f3f5;
+  /* Figma Drawer `1495:51511` 遮罩 */
+  --pt-overlay-scrim: rgba(9, 9, 9, 0.5);
   --el-fill-color-blank: #ffffff;
+  --el-fill-color-light: #f5f7fa;
+  --el-fill-color-lighter: #fafafa;
+  --el-fill-color: #f0f2f5;
+  --el-fill-color-darker: #e6e8eb;
+  --el-fill-color-dark: #ebedf0;
   --el-color-info-light-3: #b1b3b8;
+  --el-color-info-light-9: #f4f4f5;
 
   /* Border */
   --el-border-color: #dcdfe6;
   --el-border-color-light: #e4e7ed;
+  --el-border-color-lighter: #ebeef5;
+  --el-border-color-extra-light: #f2f5fc;
   --el-border-width: 1px;
 
-  /* Typography */
+  /* Typography — Figma 本地变量 · 字体（sync: scripts/sync-figma-font-variables.mjs） */
   --el-font-family: "Inter", system-ui, sans-serif;
-  --el-font-size-base: 14px;
-  --el-font-line-height-base: 22px;
-  --el-font-size-extra-large: 32px;
-  --el-font-line-height-extra-large: 40px;
-  --el-font-size-medium: 20px;
-  --el-font-line-height-medium: 28px;
+
+  --pt-font-size-extra-small: 12px;
+  --pt-line-height-extra-small: 20px;
+  --pt-font-size-small: 13px;
+  --pt-line-height-small: 22px;
+  --pt-font-size-base: 14px;
+  --pt-line-height-base: 22px;
+  --pt-font-size-medium: 16px;
+  --pt-line-height-medium: 24px;
+  --pt-font-size-large: 18px;
+  --pt-line-height-large: 26px;
+  --pt-font-size-extra-large: 20px;
+  --pt-line-height-extra-large: 28px;
+  --pt-font-size-2xl-large: 24px;
+  --pt-line-height-2xl-large: 32px;
+  --pt-font-size-3xl-large: 28px;
+  --pt-line-height-3xl-large: 38px;
+  --pt-font-size-4xl-large: 32px;
+  --pt-line-height-4xl-large: 40px;
+  --pt-font-size-5xl-large: 40px;
+  --pt-line-height-5xl-large: 48px;
+  --pt-font-size-6xl-large: 48px;
+  --pt-line-height-6xl-large: 56px;
+  --pt-line-height-footnote: 16px;
+
+  /* Element / Text 2.3.0 别名（--el-font-size-extra-large = Figma 4XL-large） */
+  --el-font-size-extra-small: var(--pt-font-size-extra-small);
+  --el-font-size-small: var(--pt-font-size-small);
+  --el-font-size-base: var(--pt-font-size-base);
+  --el-font-size-medium: var(--pt-font-size-medium);
+  --el-font-size-large: var(--pt-font-size-large);
+  --el-font-size-title-large: var(--pt-font-size-extra-large);
+  --el-font-line-height-title-large: var(--pt-line-height-extra-large);
+  --el-font-size-title-small: var(--pt-font-size-medium);
+  --el-font-line-height-title-small: var(--pt-line-height-medium);
+  --el-font-size-extra-large: var(--pt-font-size-4xl-large);
+  --el-font-line-height-extra-large: var(--pt-line-height-4xl-large);
+  --el-font-line-height-base: var(--pt-line-height-base);
+  --el-font-line-height-large: var(--pt-line-height-large);
+  --el-font-line-height-small: var(--pt-line-height-small);
+  --el-font-line-height-extra-small: var(--pt-line-height-extra-small);
+  --el-font-line-height-medium: var(--pt-line-height-medium);
+
   --el-font-weight-regular: 400;
   --el-font-weight-primary: 500;
+  --el-font-weight-semibold: 600;
   --el-font-weight-bold: 700;
 
   /* Radius — FOUNDATIONS Radius/* */
   --el-border-radius-none: 0px;
   --el-border-radius-small: 2px;
   --el-border-radius-base: 4px;
+  --el-border-radius-round: 20px;
   --el-border-radius-xl: 12px;
   --el-border-radius-circle: 9999px;
 
@@ -87,6 +162,13 @@
   --pt-checkbox-check-size: 10px;
   --pt-checkbox-indeterminate-width: 8px;
   --pt-checkbox-indeterminate-height: 2px;
+  --pt-radio-size-default: 14px;
+  --pt-radio-size-large: 16px;
+  --pt-radio-size-small: 12px;
+  /* Selected: primary ring + white inner (inner ≈ 50% of outer diameter) */
+  --pt-radio-inner-default: 7px;
+  --pt-radio-inner-large: 8px;
+  --pt-radio-inner-small: 6px;
   --pt-login-hero-copy-max-width: 28rem;
   --pt-login-hero-bg: var(--el-color-info-light-3);
   --pt-login-hero-gradient: linear-gradient(
@@ -106,4 +188,58 @@
   --pt-login-hero-mascot-max-width: min(72vw, 28rem);
   --pt-login-hero-mascot-max-height: 72vh;
   --pt-login-hero-clay-zoom: 1.3;
+
+  /* Docs shell (EDS-like showcase) */
+  --ds-bg-page: var(--el-bg-color);
+  --ds-bg-menu: #fafafa;
+  --ds-bg-muted: #f5f7fa;
+  --ds-bg-customize: #f5f7fa;
+  --ds-customize-control-bg: #ffffff;
+  --ds-customize-control-border: var(--el-border-color);
+  --ds-bg-preview: #f7f9fc;
+  --ds-bg-demo-stage: #ffffff;
+  --ds-bg-canvas: #ffffff;
+  --ds-bg-popup: var(--el-fill-color-blank);
+  --ds-text-primary: var(--el-text-color-primary);
+  --ds-text-regular: var(--el-text-color-regular);
+  --ds-text-secondary: var(--el-text-color-placeholder);
+  --ds-stroke-divider: var(--el-border-color-light);
+  /* Sidebar nav — EDS 选中：浅蓝底 + 品牌字色 */
+  --ds-sidebar-item-active-bg: var(--pt-brand-color-9);
+  --ds-sidebar-item-active-text: var(--pt-brand-color);
+  --ds-content-gutter: var(--pt-spacing-xl);
+  --ds-content-panel-radius: var(--el-border-radius-xl);
+  --ds-content-panel-bg: var(--ds-bg-canvas);
+
+  /** Avatar Group overlap 挖空描边 = 容器背景色 + 3px 宽 */
+  --pt-avatar-overlap-border: var(--el-bg-color);
+  --pt-avatar-overlap-border-width: 3px;
+}
+
+html[data-theme="dark"] {
+  --el-bg-color: #1e2123;
+  --el-bg-color-page: #141414;
+  --el-fill-color-blank: #232527;
+  --el-fill-color: #2b2d30;
+  --el-text-color-primary: #e5eaf3;
+  --el-text-color-regular: #cfd3dc;
+  --el-text-color-secondary: #a3a6ad;
+  --el-text-color-placeholder: #a3a6ad;
+  --el-border-color: #4c4d4f;
+  --el-border-color-light: #363637;
+  --el-border-color-lighter: #2e2e2f;
+  --ds-bg-menu: #25282a;
+  --ds-bg-muted: #18191a;
+  --ds-bg-customize: #18191a;
+  --ds-customize-control-bg: #232527;
+  --ds-customize-control-border: var(--el-border-color);
+  --ds-bg-preview: #1a2332;
+  --ds-bg-demo-stage: #141414;
+  --ds-bg-canvas: #141414;
+  --ds-bg-page: #1e2123;
+  --ds-bg-popup: #232527;
+  --ds-sidebar-item-active-bg: color-mix(in srgb, var(--pt-brand-color) 22%, var(--ds-bg-menu));
+  --ds-sidebar-item-active-text: var(--pt-brand-color-3);
+  --ds-content-panel-bg: var(--ds-bg-page);
+  --pt-avatar-overlap-border: var(--el-bg-color);
 }

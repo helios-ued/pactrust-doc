@@ -1,0 +1,188 @@
+/* 登录页 · 一屏 flex 适配（无 transform 缩放）· Figma 表单宽 480 */
+
+html:has(.pt-login-viewport),
+html:has(.pt-login-viewport) body,
+html:has(.pt-login-viewport) #root {
+  height: 100%;
+  overflow: hidden;
+}
+
+.pt-login-viewport {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  overflow: hidden;
+  background: var(--el-bg-color);
+}
+
+.pt-login-page {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  align-items: stretch;
+  overflow: hidden;
+  box-sizing: border-box;
+  background: var(--el-bg-color);
+}
+
+.pt-login-page__panel {
+  display: flex;
+  min-width: 0;
+  min-height: 0;
+  flex: 1 1 50%;
+  flex-direction: column;
+  max-width: var(--pt-login-panel-width);
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.pt-login-page__header {
+  box-sizing: border-box;
+  width: 100%;
+  padding-inline: var(--pt-space-24, 24px);
+  overflow: hidden;
+}
+
+.pt-login-page__logo-slot {
+  min-width: 0;
+  flex: 1 1 auto;
+  max-width: calc(100% - 6.5rem);
+  overflow: hidden;
+}
+
+.pt-login-page__logo-slot img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  max-height: var(--pt-logo-height);
+  object-fit: contain;
+  object-position: left center;
+}
+
+.pt-login-page__form-wrap {
+  display: flex;
+  width: 100%;
+  max-width: var(--pt-login-form-width);
+  flex-direction: column;
+  gap: calc(var(--pt-spacing-3xl) + var(--pt-spacing-xl));
+}
+
+.pt-login-page__main {
+  display: flex;
+  min-height: 0;
+  flex: 1 1 auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: var(--pt-spacing-2xl) var(--pt-space-24, 24px);
+  overflow: hidden;
+}
+
+/* 半栏内表单与视口留白：居中，最大仍 480 */
+@media (min-width: 720px) {
+  .pt-login-page__main {
+    padding-inline: clamp(var(--pt-space-24, 24px), 8%, 3rem);
+  }
+}
+
+.pt-login-page .pt-form-item {
+  width: 100%;
+  max-width: none;
+}
+
+.pt-login-page .pt-form-item__control > * {
+  width: 100%;
+}
+
+.pt-login-page .pt-input-field {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.pt-login-page__form-wrap form {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: stretch;
+  gap: var(--pt-spacing-3xl);
+}
+
+.pt-login-page__actions {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: stretch;
+  gap: var(--pt-spacing-3xl);
+  padding-top: var(--pt-spacing-xl);
+}
+
+.pt-login-page__actions .pt-button {
+  width: 100%;
+  max-width: none;
+}
+
+/* 矮视口（含模板 iframe ~560px 高）：压缩间距，左右分栏不变 */
+@media (max-height: 700px) {
+  .pt-login-page__header {
+    height: 3.25rem;
+    padding-inline: var(--pt-space-24, 24px);
+  }
+
+  .pt-login-page__logo-slot img {
+    max-height: 26px;
+  }
+
+  .pt-login-page__main {
+    padding: var(--pt-spacing-lg) var(--pt-space-24, 24px);
+  }
+
+  .pt-login-page__form-wrap {
+    gap: var(--pt-spacing-xl);
+  }
+
+  .pt-login-page__form-wrap form {
+    gap: var(--pt-spacing-lg);
+  }
+
+  .pt-login-page__actions {
+    gap: var(--pt-spacing-lg);
+    padding-top: var(--pt-spacing-md);
+  }
+
+  .pt-login-page__form-wrap > header {
+    gap: var(--pt-spacing-sm);
+  }
+
+  .pt-login-page__form-wrap > header h1 {
+    font-size: var(--el-font-size-large);
+    line-height: var(--el-font-line-height-large);
+  }
+}
+
+/* H5 / 超小屏：仅表单栏，不展示右侧营销图 */
+@media (max-width: 719px) {
+  .pt-login-page {
+    flex-direction: column;
+  }
+
+  .pt-login-page__panel {
+    flex: 1 1 auto;
+    width: 100%;
+    max-width: 100%;
+    min-height: 0;
+  }
+
+  .pt-login-hero {
+    display: none;
+  }
+
+  .pt-login-page__panel {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}

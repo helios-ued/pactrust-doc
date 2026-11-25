@@ -4,6 +4,7 @@
 
 | 日期 | 摘要 |
 | --- | --- |
+| 2026-11-11 | 模块界面 **D2-API管理**：代码与 `docs/module-screens/D2-api-management.md` 锁定；Figma 待建帧 |
 | 2026-05-07 | 变体 `off/on` 改为 `false/true`；部分组件增加 **Slot** |
 | 2025-10-28 | 新增 ColorPickerPanel；DatePicker Panel 三个变体；Input Number Prefix/Suffix 插槽；Message 重设计（去 Center、自适应宽度、Plain） |
 | 2025-10-27 | 新增 Splitter；Primary-5 调整为 `#A0CFFF` |

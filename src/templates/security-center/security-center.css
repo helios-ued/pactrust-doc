@@ -1,0 +1,114 @@
+/* Figma A1-安全中心 8349:5393 · Page Body Setting Rows */
+
+.pt-security-center {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 0;
+  gap: 0;
+}
+
+/* Figma Setting Row · 内层 104px + Divider 槽 2px */
+.pt-security-center__row {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 0;
+  flex-shrink: 0;
+}
+
+.pt-security-center__row-inner {
+  display: flex;
+  align-items: center;
+  gap: var(--pt-space-16, 16px);
+  height: 104px;
+  box-sizing: border-box;
+}
+
+/* Figma ICON 8349:5403 · radius-full + bg page + unlock 28 */
+.pt-security-center__icon {
+  display: flex;
+  width: 56px;
+  height: 56px;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--el-border-radius-circle);
+  background: var(--el-bg-color-page);
+  color: var(--el-text-color-primary);
+}
+
+.pt-security-center__icon-graphic {
+  display: block;
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+}
+
+.pt-security-center__text {
+  display: flex;
+  min-width: 0;
+  flex: 1 1 auto;
+  flex-direction: column;
+  gap: var(--pt-space-4, 4px);
+}
+
+/* Figma 8349:5406 · 24px 行高；8349:5407 · 22px 行高；标题与描述间距 4px */
+.pt-security-center__title {
+  margin: 0;
+  font-family: var(--el-font-family);
+  font-size: var(--el-font-size-medium);
+  font-weight: var(--el-font-weight-bold);
+  line-height: 24px;
+  color: var(--el-text-color-primary);
+}
+
+.pt-security-center__desc {
+  margin: 0;
+  font-family: var(--el-font-family);
+  font-size: var(--el-font-size-base);
+  font-weight: var(--el-font-weight-regular);
+  line-height: 22px;
+  color: var(--el-text-color-secondary);
+}
+
+.pt-security-center__action {
+  flex-shrink: 0;
+}
+
+/* Figma Button 8349:5408 · px 12 py 6 · radius-xs · Fill `--el-fill-color-dark` */
+.pt-security-center__action button.pt-security-center__btn--fill-dark {
+  width: auto;
+  min-width: 73px;
+  min-height: unset;
+  height: auto;
+  padding: var(--pt-space-6, 6px) var(--pt-space-12, 12px);
+  border: none;
+  border-radius: var(--el-border-radius-base);
+  background: var(--el-fill-color-dark);
+  font-size: var(--el-font-size-base);
+  font-weight: 500;
+  line-height: var(--el-font-line-height-base);
+  color: var(--el-text-color-primary);
+}
+
+.pt-security-center__action button.pt-security-center__btn--fill-dark:hover {
+  background: var(--el-fill-color-darker);
+  color: var(--el-text-color-primary);
+  border: none;
+}
+
+/* Figma Divider 8609:4163 · 槽高 2px · 线 1px `--el-border-color-light` */
+.pt-security-center__divider.pt-divider--horizontal {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 2px;
+  min-height: 2px;
+  flex-shrink: 0;
+  margin: 0;
+}
+
+.pt-security-center__divider .pt-divider__line--full {
+  border-top-color: var(--el-border-color-light);
+}

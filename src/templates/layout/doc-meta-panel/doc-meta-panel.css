@@ -1,0 +1,36 @@
+/* 【文档元数据面板布局】Doc Meta Panel — docs/layouts/DOC-META-PANEL-LAYOUT.md */
+
+.pt-doc-meta-panel-outer {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  padding: var(--pt-space-16, 16px) var(--pt-space-20, 20px);
+}
+
+.pt-doc-meta-panel {
+  display: grid;
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  align-items: start;
+  grid-template-columns: var(--pt-doc-meta-panel-label-width, 120px) minmax(0, 1fr);
+  row-gap: var(--pt-space-12, 12px);
+  column-gap: var(--pt-space-16, 16px);
+  padding: var(--pt-space-20, 20px);
+  border-radius: var(--el-border-radius-base);
+  background: var(--el-fill-color-light);
+  font-family: var(--el-font-family);
+  font-size: var(--el-font-size-base);
+  line-height: var(--el-font-line-height-base);
+  color: var(--el-text-color-primary);
+}
+
+.pt-doc-meta-panel__label {
+  font-weight: var(--el-font-weight-regular);
+}
+
+.pt-doc-meta-panel__value {
+  min-width: 0;
+  font-weight: var(--el-font-weight-regular);
+  word-break: break-word;
+}

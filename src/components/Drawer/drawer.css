@@ -1,0 +1,135 @@
+/* Figma Drawer `1495:51511` · 面板 33.33%；Showcase 视口平铺填满预览区 */
+
+.pt-drawer-preview-host {
+  display: flex;
+  width: 100%;
+  aspect-ratio: 1440 / 900;
+  min-height: 320px;
+  max-height: min(560px, 72vh);
+}
+
+.pt-drawer-preview-host .pt-drawer-preview {
+  flex: 1 1 auto;
+  min-height: 0;
+  height: auto;
+}
+
+.pt-drawer-preview {
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  background: var(--pt-overlay-scrim);
+  font-family: var(--el-font-family);
+}
+
+.pt-drawer-preview__mask {
+  position: absolute;
+  inset: 0;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  cursor: default;
+  pointer-events: none;
+}
+
+.pt-drawer-preview__panel {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: var(--el-fill-color-blank);
+}
+
+/* 侧栏 · 宽 33.33%（Figma inset 66.67%） */
+.pt-drawer-preview--left .pt-drawer-preview__panel {
+  top: 0;
+  left: 0;
+  width: 33.333%;
+  height: 100%;
+}
+
+.pt-drawer-preview--right .pt-drawer-preview__panel {
+  top: 0;
+  right: 0;
+  width: 33.333%;
+  height: 100%;
+}
+
+/* 顶/底 · 高 33.33% */
+.pt-drawer-preview--top .pt-drawer-preview__panel {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 33.333%;
+}
+
+.pt-drawer-preview--bottom .pt-drawer-preview__panel {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 33.333%;
+}
+
+.pt-drawer-preview__header {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--pt-space-20, 20px) var(--pt-space-20, 20px) 0;
+  background: var(--el-fill-color-blank);
+}
+
+.pt-drawer-preview__title {
+  margin: 0;
+  font-size: var(--el-font-size-large);
+  line-height: var(--el-font-line-height-large);
+  font-weight: var(--el-font-weight-bold);
+  color: var(--el-text-color-primary);
+}
+
+.pt-drawer-preview__close {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--el-text-color-placeholder);
+  cursor: default;
+}
+
+.pt-drawer-preview__body {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: auto;
+  padding: var(--pt-space-20, 20px);
+  background: var(--el-fill-color-blank);
+  font-size: var(--el-font-size-base);
+  line-height: var(--el-font-line-height-base);
+  font-weight: var(--el-font-weight-regular);
+  color: var(--el-text-color-secondary);
+}
+
+.pt-drawer-preview__body-text {
+  margin: 0;
+}
+
+.pt-drawer-preview__body-text + .pt-drawer-preview__body-text {
+  margin-top: 0;
+}
+
+.pt-drawer-preview__footer {
+  position: relative;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: flex-end;
+  gap: var(--pt-space-8, 8px);
+  padding: var(--pt-space-20, 20px);
+  background: var(--el-fill-color-blank);
+  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
+}

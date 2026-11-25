@@ -1,0 +1,124 @@
+/* Figma TimeSelect — trigger 280，下拉与 Date/Time Picker 共用 popper 定位 */
+.pt-time-select {
+  position: relative;
+  width: 100%;
+  max-width: 280px;
+}
+
+.pt-time-select__trigger {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: var(--pt-space-8, 8px);
+  border: 1px solid var(--el-border-color);
+  border-radius: var(--el-border-radius-base);
+  background: var(--el-fill-color-blank);
+  padding: var(--pt-space-4, 4px) var(--pt-space-8, 8px);
+  text-align: left;
+  cursor: pointer;
+}
+
+.pt-time-select__trigger--default {
+  height: 32px;
+  font-size: var(--el-font-size-base);
+  line-height: var(--el-font-line-height-base);
+}
+
+.pt-time-select__trigger--large {
+  height: 40px;
+  padding: var(--pt-space-8, 8px) var(--pt-spacing-lg, 12px);
+  font-size: var(--el-font-size-base);
+  line-height: var(--el-font-line-height-base);
+}
+
+.pt-time-select__trigger--small {
+  height: 24px;
+  font-size: var(--el-font-size-extra-small);
+  line-height: var(--el-font-line-height-extra-small);
+}
+
+.pt-time-select__trigger--hover {
+  border-color: var(--el-text-color-placeholder);
+}
+
+.pt-time-select__trigger--focus,
+.pt-time-select__trigger--open {
+  border-color: var(--el-color-primary);
+  box-shadow: var(--el-box-shadow-lighter);
+}
+
+.pt-time-select__trigger--error {
+  border-color: var(--el-color-danger);
+}
+
+.pt-time-select__trigger--disabled {
+  cursor: not-allowed;
+  border-color: var(--el-border-color-light);
+  background: color-mix(in srgb, var(--el-border-color-light) 30%, transparent);
+  color: var(--el-text-color-disabled);
+}
+
+.pt-time-select__trigger-label {
+  min-width: 0;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.pt-time-select__trigger-label.is-placeholder {
+  color: var(--el-text-color-placeholder);
+}
+
+.pt-time-select__trigger-label.is-value {
+  color: var(--el-text-color-primary);
+}
+
+.pt-time-select__trigger-chevron {
+  flex-shrink: 0;
+  color: var(--el-text-color-placeholder);
+}
+
+.pt-time-select__panel {
+  position: relative;
+  box-sizing: border-box;
+  max-height: 274px;
+  overflow-y: auto;
+  border: 1px solid var(--el-border-color-light);
+  border-radius: var(--el-border-radius-base);
+  background: var(--el-fill-color-blank);
+  box-shadow: var(--el-box-shadow-lighter);
+  padding-bottom: var(--pt-space-8, 8px);
+}
+
+.pt-time-select__option {
+  display: flex;
+  min-height: 32px;
+  width: 100%;
+  align-items: flex-start;
+  gap: var(--pt-space-8, 8px);
+  padding: var(--pt-space-4, 4px) var(--pt-spacing-xl);
+  border: none;
+  background: transparent;
+  font-family: var(--el-font-family);
+  font-size: var(--el-font-size-base);
+  line-height: var(--el-font-line-height-base);
+  font-weight: var(--el-font-weight-regular);
+  color: var(--el-text-color-primary);
+  text-align: left;
+  cursor: pointer;
+}
+
+.pt-time-select__option:hover:not(:disabled):not(.is-selected) {
+  background: var(--el-color-primary-light-9);
+}
+
+.pt-time-select__option.is-selected {
+  font-weight: var(--el-font-weight-bold);
+  color: var(--el-color-primary);
+}
+
+.pt-time-select__option:disabled {
+  cursor: not-allowed;
+  color: var(--el-text-color-disabled);
+}

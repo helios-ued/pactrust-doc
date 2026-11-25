@@ -1,0 +1,180 @@
+/* Figma Timeline `93:24446` · Timeline-Cell `94:22746` */
+
+.pt-timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: var(--el-font-family);
+}
+
+.pt-timeline--horizontal {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: var(--pt-space-16, 16px);
+}
+
+.pt-timeline__item {
+  display: flex;
+  gap: var(--pt-space-16, 16px);
+  align-items: flex-start;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.pt-timeline--horizontal .pt-timeline__item {
+  width: auto;
+  min-width: 200px;
+  max-width: 280px;
+  flex: 1 1 200px;
+}
+
+.pt-timeline__track {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  width: 14px;
+  align-self: stretch;
+}
+
+.pt-timeline__dot {
+  box-sizing: border-box;
+  flex-shrink: 0;
+  border-radius: var(--el-border-radius-circle);
+  border: 2px solid transparent;
+}
+
+.pt-timeline__dot--size-default {
+  width: 12px;
+  height: 12px;
+}
+
+.pt-timeline__dot--size-large {
+  width: 14px;
+  height: 14px;
+}
+
+.pt-timeline__dot--default:not(.pt-timeline__dot--hollow) {
+  background: var(--el-border-color-light);
+}
+
+.pt-timeline__dot--primary:not(.pt-timeline__dot--hollow) {
+  background: var(--el-color-primary);
+}
+
+.pt-timeline__dot--success:not(.pt-timeline__dot--hollow) {
+  background: var(--el-color-success);
+}
+
+.pt-timeline__dot--warning:not(.pt-timeline__dot--hollow) {
+  background: var(--el-color-warning);
+}
+
+.pt-timeline__dot--error:not(.pt-timeline__dot--hollow) {
+  background: var(--el-color-danger);
+}
+
+.pt-timeline__dot--info:not(.pt-timeline__dot--hollow) {
+  background: var(--el-color-info);
+}
+
+.pt-timeline__dot--hollow.pt-timeline__dot--default {
+  background: var(--el-fill-color-blank);
+  border-color: var(--el-border-color-light);
+}
+
+.pt-timeline__dot--hollow.pt-timeline__dot--primary {
+  background: var(--el-fill-color-blank);
+  border-color: var(--el-color-primary);
+}
+
+.pt-timeline__dot--hollow.pt-timeline__dot--success {
+  background: var(--el-fill-color-blank);
+  border-color: var(--el-color-success);
+}
+
+.pt-timeline__dot--hollow.pt-timeline__dot--warning {
+  background: var(--el-fill-color-blank);
+  border-color: var(--el-color-warning);
+}
+
+.pt-timeline__dot--hollow.pt-timeline__dot--error {
+  background: var(--el-fill-color-blank);
+  border-color: var(--el-color-danger);
+}
+
+.pt-timeline__dot--hollow.pt-timeline__dot--info {
+  background: var(--el-fill-color-blank);
+  border-color: var(--el-color-info);
+}
+
+.pt-timeline__line {
+  flex: 1 1 auto;
+  width: 2px;
+  min-height: 8px;
+  margin-top: 2px;
+  background: var(--el-border-color-lighter);
+}
+
+.pt-timeline__body {
+  flex: 1 1 auto;
+  min-width: 0;
+  padding-bottom: var(--pt-space-20, 20px);
+}
+
+.pt-timeline__item:last-child .pt-timeline__body {
+  padding-bottom: 0;
+}
+
+.pt-timeline__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--pt-space-8, 8px);
+  font-size: var(--el-font-size-base);
+  line-height: var(--el-font-line-height-base);
+  font-weight: var(--el-font-weight-regular);
+}
+
+.pt-timeline__text--horizontal {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--pt-space-8, 8px);
+  width: 100%;
+}
+
+.pt-timeline__title {
+  color: var(--el-text-color-primary);
+}
+
+.pt-timeline__timestamp {
+  color: var(--el-text-color-placeholder);
+  white-space: nowrap;
+}
+
+.pt-timeline__card-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pt-space-8, 8px);
+  width: 100%;
+  max-width: 299px;
+}
+
+.pt-timeline__card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pt-space-16, 16px);
+  padding: var(--pt-space-20, 20px);
+  border: 1px solid var(--el-border-color-lighter);
+  border-radius: var(--el-border-radius-base);
+  background: var(--el-fill-color-blank);
+  box-shadow: var(--el-box-shadow-lighter);
+}
+
+.pt-timeline__card-desc {
+  color: var(--el-text-color-placeholder);
+  font-size: var(--el-font-size-base);
+  line-height: var(--el-font-line-height-base);
+}

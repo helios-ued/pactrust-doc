@@ -1,0 +1,117 @@
+.pt-input-tag {
+  display: flex;
+  width: 100%;
+  max-width: 280px;
+  align-items: center;
+  gap: var(--pt-space-8, 8px);
+  overflow: hidden;
+}
+
+.pt-input-tag__body {
+  display: flex;
+  min-width: 0;
+  flex: 1 1 0;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--pt-space-4, 4px);
+}
+
+/* Figma Tag — Style=Info, Topic=Light, Size=Default (InputTag 内嵌) */
+.pt-input-tag__chip {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  gap: var(--pt-space-4, 4px);
+  box-sizing: border-box;
+  min-height: 22px;
+  border-radius: var(--el-border-radius-base);
+  border: var(--el-border-width) solid var(--el-border-color-extra-light);
+  background: var(--el-color-info-light-9);
+  padding: 1px 8px 1px 10px;
+  font-family: var(--el-font-family);
+  font-size: var(--el-font-size-extra-small);
+  line-height: var(--el-font-line-height-extra-small);
+  font-weight: var(--el-font-weight-regular);
+  color: var(--el-color-info);
+  white-space: nowrap;
+  text-align: center;
+}
+
+.pt-input-tag__chip--large {
+  min-height: 28px;
+  padding: 3px 10px 3px 12px;
+  font-size: var(--el-font-size-extra-small);
+  line-height: var(--el-font-line-height-extra-small);
+}
+
+.pt-input-tag__chip--small {
+  min-height: 20px;
+  padding: 0 6px 0 8px;
+  font-size: var(--el-font-size-extra-small);
+  line-height: var(--el-font-line-height-extra-small);
+}
+
+.pt-input-tag__chip-label {
+  flex-shrink: 0;
+}
+
+.pt-input-tag__chip-remove {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 14px;
+  height: 14px;
+  border: 0;
+  border-radius: 9999px;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  color: var(--el-color-info);
+}
+
+.pt-input-tag__chip-remove:hover {
+  color: var(--el-text-color-regular);
+}
+
+.pt-input-tag__field {
+  min-width: 4rem;
+  flex: 1 1 0;
+  border: 0;
+  background: transparent;
+  outline: none;
+  font-family: var(--el-font-family);
+  font-size: var(--el-font-size-small);
+  line-height: var(--el-font-line-height-small);
+  color: var(--el-text-color-primary);
+}
+
+.pt-input-tag__field::placeholder {
+  color: var(--el-text-color-placeholder);
+}
+
+.pt-input-tag__field:disabled {
+  cursor: not-allowed;
+}
+
+.pt-input-tag__affix {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  color: var(--el-text-color-placeholder);
+}
+
+.pt-input-tag__affix-btn {
+  display: flex;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  color: inherit;
+}
+
+.pt-input-tag__affix-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}

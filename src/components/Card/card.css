@@ -1,0 +1,191 @@
+.pt-card {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 383px;
+  border: var(--el-border-width) solid var(--el-border-color-lighter);
+  border-radius: var(--el-border-radius-base);
+  background: var(--el-fill-color-blank);
+  overflow: hidden;
+  font-family: var(--el-font-family);
+  color: var(--el-text-color-regular);
+}
+
+.pt-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--pt-spacing-xl);
+  min-height: 60px;
+  padding: 0 var(--pt-spacing-3xl);
+  border-bottom: var(--el-border-width) solid var(--el-border-color-lighter);
+  box-sizing: border-box;
+}
+
+.pt-card__header--back {
+  justify-content: flex-start;
+  gap: var(--pt-spacing-lg);
+}
+
+.pt-card__header-back {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: transparent;
+  color: var(--el-text-color-secondary);
+  cursor: pointer;
+}
+
+.pt-card__header-back:focus-visible {
+  outline: 2px solid var(--el-color-primary);
+  outline-offset: 2px;
+  border-radius: var(--el-border-radius-small);
+}
+
+.pt-card__title {
+  margin: 0;
+  font-size: var(--el-font-size-large);
+  font-weight: var(--el-font-weight-semibold);
+  line-height: var(--el-font-line-height-large);
+  color: var(--el-text-color-primary);
+}
+
+.pt-card__header-more {
+  flex-shrink: 0;
+  font-size: var(--el-font-size-base);
+  line-height: var(--el-font-line-height-base);
+}
+
+.pt-card__header-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--el-text-color-secondary);
+}
+
+.pt-card__body {
+  box-sizing: border-box;
+}
+
+.pt-card__body--text {
+  padding: var(--pt-spacing-3xl);
+  font-size: var(--el-font-size-base);
+  line-height: var(--el-font-line-height-base);
+  color: var(--el-text-color-regular);
+}
+
+.pt-card__body--image {
+  padding: 0;
+}
+
+.pt-card__cover {
+  display: block;
+  width: 100%;
+  aspect-ratio: 380 / 200;
+  object-fit: cover;
+  vertical-align: middle;
+}
+
+.pt-card__image-caption {
+  padding: var(--pt-spacing-3xl);
+}
+
+.pt-card__image-title {
+  margin: 0 0 var(--pt-spacing-lg);
+  font-size: var(--el-font-size-large);
+  font-weight: var(--el-font-weight-semibold);
+  line-height: var(--el-font-line-height-large);
+  color: var(--el-text-color-primary);
+}
+
+.pt-card__image-desc {
+  margin: 0;
+  font-size: var(--el-font-size-base);
+  line-height: var(--el-font-line-height-base);
+  color: var(--el-text-color-regular);
+}
+
+.pt-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--pt-spacing-xl);
+  min-height: 60px;
+  padding: 0 var(--pt-spacing-3xl);
+  border-top: var(--el-border-width) solid var(--el-border-color-lighter);
+  box-sizing: border-box;
+}
+
+.pt-card__footer-user {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--pt-spacing-lg);
+  min-width: 0;
+}
+
+.pt-card__footer-username {
+  font-size: var(--el-font-size-base);
+  line-height: var(--el-font-line-height-base);
+  color: var(--el-text-color-primary);
+}
+
+.pt-card__footer-tools {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--pt-spacing-xl);
+  flex-shrink: 0;
+}
+
+.pt-card__footer-tool {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: transparent;
+  color: var(--el-text-color-secondary);
+  cursor: pointer;
+}
+
+.pt-card__footer-tool:focus-visible {
+  outline: 2px solid var(--el-color-primary);
+  outline-offset: 2px;
+  border-radius: var(--el-border-radius-small);
+}
+
+.pt-card__footer--more {
+  padding: 0;
+}
+
+.pt-card__footer-actions {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+}
+
+.pt-card__footer-action {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: transparent;
+  color: var(--el-text-color-secondary);
+  cursor: pointer;
+}
+
+.pt-card__footer-action:not(:first-child) {
+  border-left: var(--el-border-width) solid var(--el-border-color-lighter);
+}
+
+.pt-card__footer-action:focus-visible {
+  outline: 2px solid var(--el-color-primary);
+  outline-offset: -2px;
+}

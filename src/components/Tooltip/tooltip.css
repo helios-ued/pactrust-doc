@@ -1,0 +1,103 @@
+@import "../feedback/feedbackArrow.css";
+
+/* Figma Tooltip `69:18869` · Arrow 12 × Effect Light/Dark */
+
+.pt-tooltip {
+  --pt-floating-arrow-w: 14px;
+  --pt-floating-arrow-h: 8px;
+  /* 内容区约 32px 高 · 箭头 14px · 上下各 9px 与 Figma 横版 Tooltip 对齐 */
+  --pt-floating-arrow-rail-pad: 9px;
+
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+  max-width: 100%;
+  font-family: var(--el-font-family);
+  filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.12));
+}
+
+.pt-tooltip--axis-h {
+  flex-direction: row;
+  width: auto;
+}
+
+.pt-tooltip--cross-center {
+  align-items: center;
+}
+
+.pt-tooltip--cross-end {
+  align-items: flex-end;
+}
+
+.pt-tooltip__panel {
+  position: relative;
+  z-index: 2;
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 6px var(--pt-space-default-12, 12px);
+  border: 1px solid var(--el-border-color-light);
+  border-radius: var(--el-border-radius-base);
+  background: var(--el-bg-color-overlay, var(--el-fill-color-blank));
+  font-size: var(--el-font-size-extra-small);
+  line-height: var(--el-font-line-height-extra-small);
+  font-weight: var(--el-font-weight-regular);
+  color: var(--el-text-color-primary);
+  white-space: nowrap;
+}
+
+.pt-tooltip__panel:has(+ .pt-floating__arrow-row) {
+  border-bottom: 0;
+}
+
+.pt-tooltip__panel + .pt-floating__arrow-row {
+  margin-top: -1px;
+  z-index: 1;
+}
+
+.pt-floating__arrow-row:has(+ .pt-tooltip__panel) {
+  margin-bottom: -1px;
+  z-index: 1;
+}
+
+.pt-floating__arrow-row:has(+ .pt-tooltip__panel) + .pt-tooltip__panel {
+  margin-top: -1px;
+  border-top: 0;
+}
+
+.pt-tooltip__panel:has(+ .pt-floating__arrow-rail) {
+  border-right: 0;
+}
+
+.pt-tooltip__panel + .pt-floating__arrow-rail {
+  margin-left: -1px;
+  z-index: 1;
+}
+
+.pt-floating__arrow-rail:has(+ .pt-tooltip__panel) {
+  margin-right: -1px;
+  z-index: 1;
+}
+
+.pt-floating__arrow-rail:has(+ .pt-tooltip__panel) + .pt-tooltip__panel {
+  margin-left: -1px;
+  border-left: 0;
+}
+
+/* Dark · 无边框 · 箭头与面板同色 */
+.pt-tooltip--dark .pt-tooltip__panel {
+  border-color: transparent;
+  background: var(--el-text-color-primary);
+  color: var(--el-color-white, #fff);
+}
+
+.pt-tooltip--dark .pt-floating__arrow-fill {
+  fill: var(--el-text-color-primary);
+}
+
+.pt-tooltip--dark .pt-floating__arrow-stroke {
+  stroke: transparent;
+}

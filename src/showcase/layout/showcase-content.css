@@ -1,0 +1,65 @@
+/* EDS-like shell: sidebar + content share one canvas; main doc is a rounded panel */
+
+.showcase-app-shell {
+  display: flex;
+  height: 100vh;
+  max-height: 100dvh;
+  overflow: hidden;
+  background: var(--ds-bg-muted);
+}
+
+.showcase-sidebar {
+  --showcase-sidebar-inset-x: var(--pt-spacing-xl);
+
+  display: flex;
+  height: 100%;
+  width: 260px;
+  shrink: 0;
+  flex-direction: column;
+  min-height: 0;
+  overflow: hidden;
+  background: transparent;
+}
+
+.showcase-sidebar-brand {
+  padding: var(--pt-spacing-xl) var(--showcase-sidebar-inset-x) var(--pt-spacing-lg);
+}
+
+.showcase-sidebar-footer {
+  padding: 0 var(--showcase-sidebar-inset-x) var(--pt-spacing-xl);
+}
+
+.showcase-content-shell {
+  display: flex;
+  min-width: 0;
+  min-height: 0;
+  flex: 1;
+  flex-direction: column;
+  height: 100%;
+  padding: var(--ds-content-gutter);
+  padding-left: 0;
+  overflow: hidden;
+  background: transparent;
+}
+
+.showcase-content-panel {
+  display: block;
+  min-height: 0;
+  flex: 1;
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  border-radius: var(--ds-content-panel-radius);
+  background: var(--ds-content-panel-bg);
+  color: var(--ds-text-primary);
+  padding: var(--pt-spacing-4xl) var(--pt-spacing-4xl);
+  box-shadow: 0 1px 3px color-mix(in srgb, var(--ds-text-primary) 6%, transparent);
+  -webkit-overflow-scrolling: touch;
+}
+
+@media (min-width: 1024px) {
+  .showcase-content-panel {
+    padding: var(--pt-spacing-4xl) calc(var(--pt-spacing-4xl) + var(--pt-spacing-lg));
+  }
+}
+

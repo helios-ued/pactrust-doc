@@ -1,0 +1,161 @@
+/* Figma Pagination `94:22961` · Items `94:23212` */
+
+.pt-pagination {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--pt-space-16, 16px);
+  font-family: var(--el-font-family);
+}
+
+.pt-pagination__total {
+  font-size: var(--el-font-size-base);
+  line-height: var(--el-font-line-height-base);
+  color: var(--el-text-color-regular);
+  white-space: nowrap;
+}
+
+.pt-pagination__sizes {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--pt-space-12, 12px);
+  padding: var(--pt-space-4, 4px) var(--pt-space-12, 12px) var(--pt-space-4, 4px)
+    var(--pt-space-16, 16px);
+  border: 1px solid var(--el-border-color);
+  border-radius: var(--el-border-radius-small);
+  font-size: var(--el-font-size-base);
+  line-height: var(--el-font-line-height-base);
+  color: var(--el-text-color-regular);
+  white-space: nowrap;
+}
+
+.pt-pagination__sizes-text {
+  display: inline-flex;
+  gap: 3px;
+}
+
+.pt-pagination__list {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0;
+}
+
+.pt-pagination__item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  margin: 0;
+  padding: var(--pt-space-4, 4px) var(--pt-space-12, 12px);
+  border: 1px solid transparent;
+  border-radius: var(--el-border-radius-small);
+  background: transparent;
+  font-family: var(--el-font-family);
+  font-size: var(--el-font-size-base);
+  line-height: var(--el-font-line-height-base);
+  font-weight: var(--el-font-weight-regular);
+  color: var(--el-text-color-regular);
+  cursor: pointer;
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease,
+    color 0.15s ease;
+}
+
+.pt-pagination--size-default .pt-pagination__item {
+  min-width: 32px;
+  height: 32px;
+}
+
+.pt-pagination--size-default .pt-pagination__item--icon {
+  padding: var(--pt-space-8, 8px);
+}
+
+.pt-pagination--size-small .pt-pagination__item {
+  min-width: 24px;
+  height: 24px;
+  font-size: var(--el-font-size-extra-small);
+  line-height: var(--el-font-line-height-extra-small);
+  padding: var(--pt-space-4, 4px) var(--pt-space-8, 8px);
+}
+
+.pt-pagination--size-small .pt-pagination__item--icon {
+  padding: var(--pt-space-4, 4px);
+}
+
+.pt-pagination__item:hover:not(:disabled):not(.pt-pagination__item--selected) {
+  color: var(--el-color-primary);
+}
+
+.pt-pagination--style-background
+  .pt-pagination__item:hover:not(:disabled):not(.pt-pagination__item--selected) {
+  background: var(--el-fill-color);
+}
+
+.pt-pagination--style-border
+  .pt-pagination__item:hover:not(:disabled):not(.pt-pagination__item--selected) {
+  border-color: var(--el-border-color);
+}
+
+.pt-pagination__item--selected {
+  font-weight: var(--el-font-weight-bold);
+  color: var(--el-color-primary);
+  cursor: default;
+}
+
+.pt-pagination--style-background .pt-pagination__item--selected {
+  background: var(--el-color-primary);
+  color: var(--el-text-color-write);
+}
+
+.pt-pagination--style-border .pt-pagination__item--selected {
+  border-color: var(--el-color-primary);
+  color: var(--el-color-primary);
+}
+
+.pt-pagination--style-border .pt-pagination__item:not(.pt-pagination__item--icon) {
+  border-color: var(--el-border-color-lighter);
+}
+
+.pt-pagination__item:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+.pt-pagination__item--more {
+  cursor: default;
+}
+
+.pt-pagination__item--more:hover {
+  color: var(--el-text-color-regular);
+}
+
+.pt-pagination__goto {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--pt-space-8, 8px);
+  font-size: var(--el-font-size-base);
+  line-height: var(--el-font-line-height-base);
+  color: var(--el-text-color-regular);
+  white-space: nowrap;
+}
+
+.pt-pagination__goto-input {
+  box-sizing: border-box;
+  width: 40px;
+  padding: var(--pt-space-4, 4px) var(--pt-space-8, 8px);
+  border: 1px solid var(--el-border-color);
+  border-radius: var(--el-border-radius-small);
+  background: var(--el-fill-color-blank);
+  font-family: var(--el-font-family);
+  font-size: var(--el-font-size-base);
+  line-height: var(--el-font-line-height-base);
+  color: var(--el-text-color-regular);
+  text-align: center;
+}
+
+.pt-pagination__goto-input:focus-visible {
+  outline: 2px solid var(--el-color-primary);
+  outline-offset: 1px;
+}

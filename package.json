@@ -1,26 +1,33 @@
 {
-  "name": "element-pacstrust-login-demo",
+  "name": "element-pacstrust-design-showcase",
   "private": true,
   "version": "0.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "icons:manifest": "node scripts/generate-ep-icon-manifest.mjs",
+    "icons:figma": "node scripts/generate-figma-icon-catalog.mjs",
+    "fonts:sync": "node scripts/sync-figma-font-variables.mjs"
   },
   "dependencies": {
     "clsx": "^2.1.1",
+    "highlight.js": "^11.12.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-router-dom": "^7.18.5",
     "tailwind-merge": "^3.0.2"
   },
   "devDependencies": {
+    "@element-plus/icons-vue": "^2.3.2",
     "@tailwindcss/vite": "^4.0.0",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
     "@vitejs/plugin-react": "^4.3.4",
     "tailwindcss": "^4.0.0",
     "typescript": "~5.7.2",
-    "vite": "^6.0.0"
+    "vite": "^6.0.0",
+    "vue": "^3.5.44"
   }
 }

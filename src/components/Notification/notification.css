@@ -1,0 +1,83 @@
+/* Figma Notification `6596:40586` · 480 × 96 */
+
+.pt-notification {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 480px;
+  max-width: 100%;
+  padding: var(--pt-space-16, 16px) 0;
+  border: 1px solid var(--el-border-color-light);
+  /* Figma radius 8 — between base (4) and xl (12) in token scale */
+  border-radius: calc(var(--el-border-radius-base) * 2);
+  background: var(--el-fill-color-blank, #fff);
+  box-shadow: var(--el-box-shadow-light);
+  font-family: var(--el-font-family);
+}
+
+.pt-notification__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--pt-space-16, 16px);
+  padding: 0 var(--pt-space-16, 16px) var(--pt-space-16, 16px) var(--pt-space-24, 24px);
+}
+
+.pt-notification__header-left {
+  display: flex;
+  align-items: center;
+  gap: var(--pt-space-16, 16px);
+  min-width: 0;
+}
+
+.pt-notification__type-icon {
+  flex-shrink: 0;
+}
+
+.pt-notification--primary .pt-notification__type-icon {
+  color: var(--pt-feedback-primary);
+}
+
+.pt-notification--success .pt-notification__type-icon {
+  color: var(--el-color-success);
+}
+
+.pt-notification--warning .pt-notification__type-icon {
+  color: var(--el-color-warning);
+}
+
+.pt-notification--danger .pt-notification__type-icon {
+  color: var(--el-color-danger);
+}
+
+.pt-notification--info .pt-notification__type-icon {
+  color: var(--el-color-info);
+}
+
+.pt-notification__title {
+  margin: 0;
+  font-size: var(--el-font-size-large);
+  line-height: var(--el-font-line-height-large);
+  font-weight: var(--el-font-weight-bold);
+  color: var(--el-text-color-primary);
+  white-space: nowrap;
+}
+
+.pt-notification__close {
+  display: inline-flex;
+  flex-shrink: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--el-text-color-placeholder);
+  cursor: default;
+}
+
+.pt-notification__message {
+  margin: 0;
+  padding: 0 var(--pt-space-24, 24px);
+  font-size: var(--el-font-size-base);
+  line-height: var(--el-font-line-height-base);
+  font-weight: var(--el-font-weight-regular);
+  color: var(--el-text-color-regular);
+}

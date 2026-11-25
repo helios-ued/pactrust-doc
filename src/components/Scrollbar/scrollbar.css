@@ -1,0 +1,29 @@
+/**
+ * Figma Scrollbar `5809:55690` / `5809:55689` — 6px · pill · Fill/Darker
+ */
+.pt-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: var(--el-fill-color-darker) transparent;
+}
+
+.pt-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.pt-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.pt-scrollbar::-webkit-scrollbar-thumb {
+  background-color: var(--el-fill-color-darker);
+  border-radius: var(--el-border-radius-circle);
+}
+
+.pt-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: var(--el-border-color);
+}
+
+.pt-scrollbar::-webkit-scrollbar-corner {
+  background: transparent;
+}

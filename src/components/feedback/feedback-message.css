@@ -1,0 +1,42 @@
+/* Figma Message `1514:47072` · width content-fit · min 48 */
+
+.pt-feedback-msg {
+  display: inline-flex;
+  box-sizing: border-box;
+  align-items: center;
+  gap: var(--pt-space-default-12, 12px);
+  width: fit-content;
+  max-width: 100%;
+  min-height: 48px;
+  padding: var(--pt-space-default-12, 12px) var(--pt-space-20, 20px);
+  border: 1px solid transparent;
+  border-radius: var(--el-border-radius-base);
+  font-family: var(--el-font-family);
+}
+
+.pt-feedback-msg--plain {
+  border: 0;
+}
+
+.pt-feedback-msg__main {
+  display: flex;
+  align-items: center;
+  gap: var(--pt-space-default-12, 12px);
+}
+
+.pt-feedback-msg__text {
+  font-size: var(--el-font-size-base);
+  line-height: var(--el-font-line-height-base);
+  white-space: nowrap;
+}
+
+.pt-feedback-msg__close {
+  display: inline-flex;
+  margin-left: auto;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: currentColor;
+  cursor: default;
+  opacity: 0.8;
+}

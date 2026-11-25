@@ -1,0 +1,45 @@
+{
+  "fileKey": "wEUoBPgPgqLRZ2qBlO7W1C",
+  "sourceNodes": ["5803:2777", "6:1102", "3177:54297", "137:25883"],
+  "note": "Font Size / Line Height 来自 Figma MCP get_variable_defs；11 档字号与 Variables 面板一致。",
+  "fontSizeScale": [
+    { "figmaName": "extra-small", "sizePx": 12, "lineHeightPx": 20, "mcp": "Font Size/extra-small + Line Height/extra-small" },
+    { "figmaName": "small", "sizePx": 13, "lineHeightPx": 22, "mcp": "Font Size/small + Line Height/small" },
+    { "figmaName": "base", "sizePx": 14, "lineHeightPx": 22, "mcp": "Font Size/base + Line Height/base" },
+    { "figmaName": "medium", "sizePx": 16, "lineHeightPx": 24, "mcp": "Font Size/medium + Line Height/medium" },
+    { "figmaName": "large", "sizePx": 18, "lineHeightPx": 26, "mcp": "Font Size/large + Line Height/large" },
+    { "figmaName": "extra-large", "sizePx": 20, "lineHeightPx": 28, "mcp": "Font Size/extra-large + Line Height/extra-large" },
+    { "figmaName": "2XL-large", "sizePx": 24, "lineHeightPx": 32, "mcp": "Display xs/Semibold (24/32) · Font Size/2XL-large" },
+    { "figmaName": "3XL-large", "sizePx": 28, "lineHeightPx": 38, "mcp": "Font Size/3XL-large · Line Height/3XL-large (Variables 面板)" },
+    { "figmaName": "4XL-large", "sizePx": 32, "lineHeightPx": 40, "mcp": "Font Size/4XL-large + Line Height/4XL-large" },
+    { "figmaName": "5XL-large", "sizePx": 40, "lineHeightPx": 48, "mcp": "Font Size/5XL-large · Line Height/5XL-large (Variables 面板)" },
+    { "figmaName": "6XL-large", "sizePx": 48, "lineHeightPx": 56, "mcp": "Font Size/6XL-large · Line Height/6XL-large (Variables 面板)" }
+  ],
+  "fontWeights": [
+    { "figmaName": "Regular(400)", "value": 400, "cssVar": "--el-font-weight-regular" },
+    { "figmaName": "Meadium(500)", "value": 500, "cssVar": "--el-font-weight-primary" },
+    { "figmaName": "Semibold(600)", "value": 600, "cssVar": "--el-font-weight-semibold" },
+    { "figmaName": "Bold(700)", "value": 700, "cssVar": "--el-font-weight-bold" }
+  ],
+  "fixedWords": {
+    "footnote": { "sizePx": 12, "lineHeightPx": 16, "note": "集合 Fixed words · 辅助说明" },
+    "display-sm": { "sizePx": 30, "lineHeightPx": 38, "weight": 600, "note": "Display sm/Semibold · 封面" }
+  },
+  "textComponentMatrix": {
+    "title": {
+      "Default": { "fontSizeRef": "large", "lineHeightRef": "large" },
+      "Large": { "fontSizeRef": "extra-large", "lineHeightRef": "extra-large" },
+      "Small": { "fontSizeRef": "medium", "lineHeightRef": "medium" }
+    },
+    "body": {
+      "Default": { "fontSizeRef": "small", "lineHeightRef": "small" },
+      "Large": { "fontSizeRef": "base", "lineHeightRef": "base" },
+      "Small": { "fontSizeRef": "extra-small", "lineHeightRef": "extra-small" }
+    }
+  },
+  "elementAliases": {
+    "--el-font-size-extra-large": "4XL-large",
+    "--el-font-size-title-large": "extra-large",
+    "--el-font-size-title-small": "medium"
+  }
+}

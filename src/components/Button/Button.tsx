@@ -1,5 +1,7 @@
-import { type ButtonHTMLAttributes, forwardRef } from "react";
+import { type ButtonHTMLAttributes, forwardRef, type ReactNode } from "react";
 import { cn } from "@/lib/cn";
+import { useButtonGroupItem } from "./buttonGroupContext";
+import { buttonGroupItemClasses } from "./buttonGroupStyles";
 
 /** Figma Button — docs/COMPONENTS.md */
 export type ButtonType =
@@ -16,6 +18,8 @@ export type ButtonProps = Omit<ButtonHTMLAttributes<HTMLButtonElement>, "type"> 
   buttonType?: ButtonType;
   size?: ButtonSize;
   plain?: boolean;
+  leftIcon?: ReactNode;
+  rightIcon?: ReactNode;
   type?: "button" | "submit" | "reset";
 };
 
@@ -66,6 +70,8 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       buttonType = "Default",
       size = "Default",
       plain = false,
+      leftIcon,
+      rightIcon,
       className,
       disabled,
       type = "button",
@@ -73,24 +79,37 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       ...rest
     },
     ref,
-  ) => (
-    <button
-      ref={ref}
-      type={type}
-      disabled={disabled}
-      className={cn(
-        "inline-flex w-full items-center justify-center overflow-hidden rounded-el-base font-[family-name:var(--el-font-family)] font-[var(--el-font-weight-primary)] transition-opacity",
-        "focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[color:var(--el-color-primary)]",
-        "disabled:cursor-not-allowed disabled:opacity-50",
-        sizeClasses[size],
-        variantClasses(buttonType, plain),
-        className,
-      )}
-      {...rest}
-    >
-      {children}
-    </button>
-  ),
+  ) => {
+    const group = useButtonGroupItem();
+    const inGroup = Boolean(group);
+
+    return (
+      <button
+        ref={ref}
+        type={type}
+        disabled={disabled}
+        data-button-type={buttonType}
+        className={cn(
+          "inline-flex items-center justify-center gap-[var(--pt-space-8)] overflow-hidden rounded-el-base font-[family-name:var(--el-font-family)] font-[var(--el-font-weight-primary)] transition-opacity",
+          inGroup ? "w-auto" : "w-full",
+          !inGroup &&
+            "focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[color:var(--el-color-primary)]",
+          "disabled:cursor-not-allowed disabled:opacity-50",
+          !inGroup && sizeClasses[size],
+          !inGroup || group?.layout !== "attached"
+            ? variantClasses(buttonType, plain)
+            : null,
+          buttonGroupItemClasses(group, buttonType, plain),
+          className,
+        )}
+        {...rest}
+      >
+        {leftIcon ? <span className="flex shrink-0">{leftIcon}</span> : null}
+        {children}
+        {rightIcon ? <span className="flex shrink-0">{rightIcon}</span> : null}
+      </button>
+    );
+  },
 );
 
 Button.displayName = "Button";

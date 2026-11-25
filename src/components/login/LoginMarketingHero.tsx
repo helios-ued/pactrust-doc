@@ -1,17 +1,13 @@
-const HERO_IMAGE = "/login-hero-gray-clouds.jpg";
+import { BlueFlutedGlass } from "@/components/blue-fluted-glass";
+import "./login-marketing-hero.css";
 
-/** Right panel — full gray + cloud scene (cover), character scale via zoom token */
+/** 登录右侧 · Blue Fluted Glass 蓝白棱纹流动背景 */
 export function LoginMarketingHero() {
   return (
-    <aside className="relative hidden min-h-[var(--pt-login-hero-min-height)] min-w-0 flex-1 overflow-hidden bg-[color:var(--pt-login-hero-bg)] lg:block">
-      <div
-        className="absolute inset-0 origin-center bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: `url(${HERO_IMAGE})`,
-          backgroundPosition: "center center",
-          transform: "scale(var(--pt-login-hero-clay-zoom))",
-        }}
-        aria-hidden
+    <aside className="pt-login-hero">
+      <BlueFlutedGlass
+        className="pt-login-hero__bfg"
+        brandLogo="pacstrust"
       />
     </aside>
   );

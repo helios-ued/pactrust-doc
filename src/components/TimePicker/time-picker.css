@@ -1,0 +1,195 @@
+@import "../picker-selection.css";
+@import "../picker-popper.css";
+
+.pt-time-picker-panel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--el-border-color-light);
+  border-radius: var(--el-border-radius-base);
+  background: var(--el-fill-color-blank);
+  box-shadow: var(--el-box-shadow-lighter);
+}
+
+.pt-time-picker-panel--single {
+  width: 180px;
+  min-height: 236px;
+}
+
+.pt-time-picker-panel--range {
+  width: 404px;
+  min-height: 300px;
+}
+
+.pt-time-picker-panel__range-head {
+  display: flex;
+  padding: var(--pt-spacing-xl) var(--pt-spacing-xl) 0;
+}
+
+.pt-time-picker-panel__range-head span {
+  flex: 1;
+  text-align: center;
+  font-family: var(--el-font-family);
+  font-size: var(--el-font-size-extra-small);
+  font-weight: var(--el-font-weight-bold);
+  line-height: var(--el-font-line-height-extra-small);
+  color: var(--el-text-color-primary);
+}
+
+.pt-time-picker-panel__body {
+  display: flex;
+  width: 100%;
+  height: 192px;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.pt-time-picker-panel__body--range {
+  height: auto;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 12px;
+  padding: 12px 16px 16px;
+}
+
+.pt-time-picker-panel__range-box {
+  display: flex;
+  height: 192px;
+  flex: 1;
+  min-width: 0;
+  align-items: stretch;
+  justify-content: center;
+  overflow: hidden;
+  border: 1px solid var(--el-border-color-light);
+  border-radius: 2px;
+}
+
+.pt-time-picker-panel__spinner-wrap {
+  position: relative;
+  width: 180px;
+  height: 192px;
+  flex-shrink: 0;
+}
+
+.pt-time-picker-panel__spinner-wrap--two-cols {
+  width: 120px;
+}
+
+.pt-time-picker-panel__spinner-wrap--range-box {
+  width: 100%;
+}
+
+.pt-time-picker-panel__spinner-wrap--arrow {
+  width: 180px;
+}
+
+.pt-time-picker-panel__spinner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  height: 192px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.pt-time-picker-panel__spinner--columns {
+  align-items: center;
+  justify-content: center;
+}
+
+.pt-time-picker-panel__band {
+  pointer-events: none;
+  position: absolute;
+  z-index: 0;
+  left: 16px;
+  right: 16px;
+  top: 81px;
+  height: 33px;
+  border-top: 1px solid var(--el-border-color-light);
+  border-bottom: 1px solid var(--el-border-color-light);
+}
+
+.pt-time-picker-panel__band--range-box {
+  left: 15px;
+  right: 15px;
+  top: 80px;
+}
+
+.pt-time-picker-panel__band--arrow {
+  left: 16px;
+  right: 16px;
+  top: 80px;
+}
+
+.pt-time-picker-panel__col {
+  display: flex;
+  width: 60px;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.pt-time-picker-panel__col--arrow {
+  box-sizing: border-box;
+  height: 192px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.pt-time-picker-panel__cell {
+  display: flex;
+  height: 32px;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: transparent;
+  font-family: var(--el-font-family);
+  font-size: var(--el-font-size-extra-small);
+  line-height: var(--el-font-line-height-extra-small);
+  color: var(--el-text-color-regular);
+  cursor: pointer;
+}
+
+.pt-time-picker-panel__cell--selected-row {
+  height: 30px;
+}
+
+.pt-time-picker-panel__cell--selected {
+  color: var(--el-text-color-primary);
+  position: relative;
+  z-index: 1;
+}
+
+.pt-time-picker-panel__cell:hover:not(:disabled) {
+  color: var(--el-color-primary);
+}
+
+.pt-time-picker-panel__cell:disabled {
+  cursor: default;
+  color: var(--el-text-color-disabled);
+}
+
+.pt-time-picker-panel__cell-icon {
+  color: var(--el-text-color-placeholder);
+}
+
+.pt-time-picker-panel__footer {
+  display: flex;
+  width: 100%;
+  flex-shrink: 0;
+  justify-content: flex-end;
+  gap: 12px;
+  border-top: 1px solid var(--el-border-color-light);
+  padding: var(--pt-space-8, 8px) var(--pt-spacing-lg, 12px);
+}
+
+.pt-time-picker-panel__footer button {
+  font-size: var(--el-font-size-base);
+  line-height: var(--el-font-line-height-base);
+}
+
+.pt-time-picker-panel__footer-ok {
+  font-weight: var(--el-font-weight-bold);
+}

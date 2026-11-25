@@ -1,0 +1,59 @@
+/* Figma Watermark `6154:12363` · rotate -30° · opacity 20% */
+
+.pt-watermark {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 640px;
+  height: 320px;
+  border: 1px solid var(--el-border-color-light);
+  border-radius: var(--el-border-radius-base);
+  background: var(--el-fill-color-blank, #fff);
+}
+
+.pt-watermark__layer {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 10px 50px;
+  padding: 12px;
+  pointer-events: none;
+  user-select: none;
+}
+
+.pt-watermark__cell {
+  display: flex;
+  width: 86px;
+  height: 62px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.pt-watermark__label {
+  transform: rotate(-30deg);
+  font-size: var(--el-font-size-base);
+  line-height: var(--el-font-line-height-base);
+  font-weight: var(--el-font-weight-primary);
+  color: var(--el-text-color-primary);
+  opacity: 0.2;
+  white-space: nowrap;
+}
+
+.pt-watermark__cell--icon {
+  color: var(--el-text-color-primary);
+}
+
+.pt-watermark__content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: var(--pt-space-24, 24px);
+  font-size: var(--el-font-size-base);
+  color: var(--el-text-color-secondary);
+}

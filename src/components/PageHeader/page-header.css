@@ -1,0 +1,97 @@
+/* Figma `PageHeader` · `3128:92806` */
+
+.pt-page-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pt-space-8, 8px);
+  box-sizing: border-box;
+  padding: var(--pt-spacing-xl, 16px) var(--pt-space-24, 24px);
+  background: var(--el-fill-color-blank);
+  font-family: var(--el-font-family);
+}
+
+.pt-page-header__crumbs {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+}
+
+.pt-page-header__main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--pt-spacing-xl, 16px);
+  width: 100%;
+  min-height: 32px;
+}
+
+.pt-page-header__left {
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+  gap: var(--pt-space-12, 12px);
+  min-width: 0;
+}
+
+.pt-page-header__back {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+  color: var(--el-text-color-primary);
+}
+
+.pt-page-header__back:hover {
+  color: var(--el-color-primary);
+}
+
+.pt-page-header__title {
+  flex-shrink: 0;
+  margin: 0;
+  font-size: var(--el-font-size-extra-large);
+  line-height: var(--el-font-line-height-extra-large);
+  font-weight: var(--el-font-weight-bold);
+  color: var(--el-text-color-primary);
+  white-space: nowrap;
+}
+
+.pt-page-header__divider {
+  flex-shrink: 0;
+  align-self: center;
+  width: 0;
+  height: 12px;
+  border-left: 1px solid var(--el-border-color);
+}
+
+.pt-page-header__subtitle {
+  flex-shrink: 0;
+  font-size: var(--el-font-size-base);
+  line-height: var(--el-font-line-height-base);
+  font-weight: var(--el-font-weight-regular);
+  color: var(--el-text-color-secondary);
+  white-space: nowrap;
+}
+
+.pt-page-header__actions {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: var(--pt-space-8, 8px);
+}
+
+.pt-page-header__radio-group.pt-radio-group--button {
+  flex-shrink: 0;
+  width: 200px;
+}
+
+.pt-page-header__more {
+  width: 32px;
+  min-width: 32px;
+  height: 32px;
+  min-height: 32px;
+  padding: 0;
+}

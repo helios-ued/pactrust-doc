@@ -1,0 +1,121 @@
+/* 02-验证码 · Figma `8372:23055` · 左栏与 01 登录共用壳 · OTP `8372:23473` */
+
+/* Card Body · 与登录同源：main 纵向水平居中 · gap 40；Field 内 gap 24 */
+.pt-verification-code-page__body {
+  display: flex;
+  width: 100%;
+  max-width: var(--pt-login-form-width);
+  flex-direction: column;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.pt-verification-code-page__intro {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: var(--pt-space-8, 8px);
+  align-items: flex-start;
+}
+
+.pt-verification-code-page__title {
+  margin: 0;
+  font-family: var(--el-font-family);
+  font-size: var(--el-font-size-extra-large);
+  line-height: var(--el-font-line-height-extra-large);
+  font-weight: var(--el-font-weight-bold);
+  color: var(--el-text-color-primary);
+}
+
+.pt-verification-code-page__resend {
+  display: flex;
+  align-items: center;
+  gap: var(--pt-space-8, 8px);
+  font-family: var(--el-font-family);
+  font-size: var(--el-font-size-base);
+  line-height: 20px;
+  font-weight: var(--el-font-weight-regular);
+}
+
+.pt-verification-code-page__resend-label {
+  color: var(--el-text-color-placeholder);
+}
+
+.pt-verification-code-page__resend-timer {
+  color: var(--el-color-primary);
+}
+
+.pt-verification-code-page__resend-link {
+  line-height: 20px;
+}
+
+.pt-verification-code-page__field {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: var(--pt-spacing-3xl);
+  align-items: flex-start;
+}
+
+/* Figma：6 × 64px，gap 8，总宽 424 · 480 容器内左对齐 */
+.pt-verification-code-page__otp.pt-input-otp {
+  width: 100%;
+  max-width: var(--pt-login-form-width);
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  gap: var(--pt-space-8, 8px);
+}
+
+.pt-verification-code-page__otp .pt-input-otp__cell.pt-input-otp__cell--large {
+  flex: 0 0 64px;
+  width: 64px;
+  height: 64px;
+  box-sizing: border-box;
+  font-size: var(--el-font-size-large);
+  line-height: var(--el-font-line-height-large);
+  font-weight: var(--el-font-weight-primary);
+  color: var(--el-text-color-primary);
+}
+
+.pt-verification-code-page__switch {
+  display: flex;
+  align-items: center;
+  gap: var(--pt-space-8, 8px);
+  font-family: var(--el-font-family);
+  font-size: var(--el-font-size-base);
+  line-height: 20px;
+}
+
+.pt-verification-code-page__switch-prefix {
+  color: var(--el-text-color-secondary);
+  font-weight: var(--el-font-weight-regular);
+}
+
+@media (max-height: 700px) {
+  .pt-verification-code-page__body {
+    gap: var(--pt-spacing-3xl);
+  }
+
+  .pt-verification-code-page__title {
+    font-size: var(--el-font-size-large);
+    line-height: var(--el-font-line-height-large);
+  }
+
+  .pt-verification-code-page__otp .pt-input-otp__cell {
+    flex: 1 1 0;
+    width: auto;
+    min-width: 40px;
+    max-width: 64px;
+    height: 48px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pt-verification-code-page__otp .pt-input-otp__cell {
+    flex: 1 1 0;
+    width: auto;
+    min-width: 36px;
+    max-width: 64px;
+    height: clamp(40px, 12vw, 64px);
+  }
+}

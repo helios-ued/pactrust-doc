@@ -1,0 +1,1450 @@
+const imgActionClick = "http://localhost:3845/assets/e2c319a7ec8b3c4825b059e682c7af672449200f.svg";
+const imgActionBulb = "http://localhost:3845/assets/89ecd7f2ace9e0fe735bfce1add980225b2ec3ea.svg";
+const imgActionLinkExternal = "http://localhost:3845/assets/fb0d2aabfe9bb84d8776b11ab9d930305042bf05.svg";
+const imgActionPlanet = "http://localhost:3845/assets/02abe20b32f699e21203cc08be9aac1b9498bbd2.svg";
+const imgActionDroplet = "http://localhost:3845/assets/a09cb177d492b7b36cf805df2a0f1d58efa9c7de.svg";
+const imgActionAtom = "http://localhost:3845/assets/c4c8a317a5d4b25f2afa70de5b65a883bfb86cad.svg";
+const imgActionOffer = "http://localhost:3845/assets/173865e7d39340f825da3ac458dfaba786c013d9.svg";
+const imgActionGlobe = "http://localhost:3845/assets/c30a39c98776a6e7fe80838f21b207768fe415e0.svg";
+const imgActionColumnsThree = "http://localhost:3845/assets/e0e82ebe5f18565126c9de1eb653fd19ad19d59b.svg";
+const imgActionLayout = "http://localhost:3845/assets/fa50055aad6b1a8c9388ea4d59e7a61937e3ff34.svg";
+const imgActionToolbox = "http://localhost:3845/assets/34f91c22201edb3b9d74d228af872f04616c804f.svg";
+const imgActionCloseCircle1 = "http://localhost:3845/assets/0e793161f3d96835b934a5bec7680f7256cb9d96.svg";
+const imgActionCloseCircle = "http://localhost:3845/assets/259884513edf26a7ef84b898d68a6824e99148b1.svg";
+const imgActionRocketLaunch = "http://localhost:3845/assets/85199e41f56ea81cdb6eb49a7b095bea56eddea0.svg";
+const imgActionBolt2 = "http://localhost:3845/assets/c6a1605d6eb09592ed214035970d0dd4f604ded0.svg";
+const imgActionBolt1Off = "http://localhost:3845/assets/e271ec7a17de33b3709ec8c141cc4eb9431c901c.svg";
+const imgActionBolt1 = "http://localhost:3845/assets/ecba30ceed995159dfc69d62ea376f7cea7d90e6.svg";
+const imgActionCompass = "http://localhost:3845/assets/47b6eeb3f01d69fb36332d8efa9629bdd1c50710.svg";
+const imgActionBookOpen = "http://localhost:3845/assets/17534d0b579508f013606f989b13adaa49338739.svg";
+const imgActionCommand = "http://localhost:3845/assets/40385767186ed4fe3c0fdefe47a367324c4fb42c.svg";
+const imgActionGem = "http://localhost:3845/assets/23bdda78d0deb13d2d59e6cbaabd67649bbb772c.svg";
+const imgActionBox = "http://localhost:3845/assets/f03bca32ef3abc853661e41637405b2184d6194e.svg";
+const imgActionUmbrella = "http://localhost:3845/assets/ae981d2a5d34c769e496c8042c2c548c69743ce8.svg";
+const imgActionToken = "http://localhost:3845/assets/6678566c9d8d417efc5d4d3bd77d69a1fa35ffb1.svg";
+const imgActionSchool = "http://localhost:3845/assets/b0abe9b16d7301364e6096e3e0d001f31947995b.svg";
+const imgActionAward = "http://localhost:3845/assets/ddea6ceafc987276c8f4a366900e0f7b852f8813.svg";
+const imgActionGift = "http://localhost:3845/assets/308a80878f84e1985bc499aae516f5fab23584f4.svg";
+const imgActionTicket = "http://localhost:3845/assets/d02aa442cdaffbb11aab2ef99c617e56d1ea92cc.svg";
+const imgActionCopyright = "http://localhost:3845/assets/35c32f6cf747f1eaaab6258e258195cb131d29bc.svg";
+const imgActionPinDrop = "http://localhost:3845/assets/08fca6945235bf65a2ec33f56d9edfce084ec48a.svg";
+const imgActionLocation = "http://localhost:3845/assets/34dbd345728db72de61863d128a9fb90fd28126d.svg";
+const imgActionCompany = "http://localhost:3845/assets/e40577bc232c0e5c35005e8892356c41a8496de8.svg";
+const imgActionVillage = "http://localhost:3845/assets/cce1274a0354f647fb1f6c790c33265583553d54.svg";
+const imgActionStore = "http://localhost:3845/assets/eb68332e2a05fa8e89b4c9a16cfa30f5895dcaf0.svg";
+const imgActionMap = "http://localhost:3845/assets/e234293af89565b46f4ca14ee46de25b1647a314.svg";
+const imgActionBarChart = "http://localhost:3845/assets/1fd25c1c75ec0565ae41ed2612633edc83817a6c.svg";
+const imgActionGpsOn = "http://localhost:3845/assets/ad6f05aa0553143454f193f762a16abc9378462a.svg";
+const imgActionFormatIndentDecrease = "http://localhost:3845/assets/82092a0bd4f1ef2b448200a16559548e562d28d5.svg";
+const imgActionFormatIndentIncrease = "http://localhost:3845/assets/997e9da02eda2dd5b16b0e05ff9433108a711bd5.svg";
+const imgActionFormatAlignJustify = "http://localhost:3845/assets/1ddbd3168a80428185fbbb70a519235a2a27e368.svg";
+const imgActionFormatAlignCenter = "http://localhost:3845/assets/c3761aeb192c8dae12994d904bad0209aef4efcb.svg";
+const imgActionFormatAlignRight = "http://localhost:3845/assets/b58434feba5c42fd2923f05092676036bbb66964.svg";
+const imgActionFormatAlignLeft = "http://localhost:3845/assets/4a6ddadf34ca663402539b86ec420c84e3c3b55b.svg";
+const imgActionLayersThree = "http://localhost:3845/assets/8372cdfc703f06dc5e6a366c3b07349ab9d1a79d.svg";
+const imgActionFormatListBulleted = "http://localhost:3845/assets/ac117c881f4249a175cf13190bb51f293cfb24e4.svg";
+const imgActionInfinite = "http://localhost:3845/assets/4aef40c8fc1a2609309580198ad4749b8dbd2162.svg";
+const imgActionLink3 = "http://localhost:3845/assets/a9bd235402de4c1ffe2db0d72e4a13e55e3fa548.svg";
+const imgActionLink2 = "http://localhost:3845/assets/86494c409d7e161685aa161ef4ba702638f03bfb.svg";
+const imgActionLink1 = "http://localhost:3845/assets/a17ac7db9ddac6f2dcd42e774894eeffbf07d0e7.svg";
+const imgActionEdit03 = "http://localhost:3845/assets/534c8259e779049e00589c0c34d91deacdfa9407.svg";
+const imgActionEdit02 = "http://localhost:3845/assets/3047c4a436a7a2d2288069e81dd3e73014a7995d.svg";
+const imgActionEdit01 = "http://localhost:3845/assets/dd272bf53347fe82e64bc836a327dc852b6273a0.svg";
+const imgActionSave = "http://localhost:3845/assets/cd52127768373b191c7857c79d70a7713accb2c3.svg";
+const imgActionDelete2 = "http://localhost:3845/assets/0c963d857bc91475851c6a9eaa3b54355c0198b7.svg";
+const imgActionDelete1 = "http://localhost:3845/assets/75df003eb8e7bcd4be2b49f88c2356f435620610.svg";
+const imgActionCopy2 = "http://localhost:3845/assets/b40f5f4a8bb7c9d5a9e5ab7ef73ae8295bb87de6.svg";
+const imgActionCopy1 = "http://localhost:3845/assets/aad8e44a7073c7f7e5f38eb57c89e7043bec4539.svg";
+const imgActionLogIn1 = "http://localhost:3845/assets/e8fd4abd2865a3cc32e942f43f1bf7884fafa309.svg";
+const imgActionHourglassEmpty = "http://localhost:3845/assets/51fa0402a92d59344f6d40979f16887427710972.svg";
+const imgActionBookmark = "http://localhost:3845/assets/4a9168a657059455aacc99ab68b5275f831fcac8.svg";
+const imgActionWorkAlt = "http://localhost:3845/assets/7e46b1e97fe7bca0f71bbf9f166734f93f4021eb.svg";
+const imgActionWork = "http://localhost:3845/assets/162c3b68f89c6aa06f075a7632aee53f5bf1aa20.svg";
+const imgActionRemoveCircle = "http://localhost:3845/assets/462391e8f11f54315eeec48e1f8246fb4dd8621d.svg";
+const imgActionHand = "http://localhost:3845/assets/b91139baaf61cc72cf8ddbe4d4bfe9d814cef374.svg";
+const imgActionCalendarEvent = "http://localhost:3845/assets/4126bf94d6c5701a3cc1c53c638014f6f00cb12e.svg";
+const imgActionCalendar = "http://localhost:3845/assets/eddda24c258916906e46e281a6bb780652781bf2.svg";
+const imgActionVerified = "http://localhost:3845/assets/4f62905741bfa08b8c0c70fc366abb254b833fc9.svg";
+const imgActionHelp = "http://localhost:3845/assets/4a51734ae5da8eeb06febdea7a00a2cf606e3761.svg";
+const imgActionZoomOut = "http://localhost:3845/assets/03ede1c9837e68ed79d7e547db297dee701b0203.svg";
+const imgActionZoomIn = "http://localhost:3845/assets/2cd3ab1ff24482cd0adde8ad0e8357a852f75e80.svg";
+const imgActionSearch01 = "http://localhost:3845/assets/0e318dea6c33a24fb4634bc784d079f5f3a8882a.svg";
+const imgActionSearch = "http://localhost:3845/assets/d798036ae838a77078a1c432f0ca2342b032c7de.svg";
+const imgActionBlock = "http://localhost:3845/assets/3115f35924b2fbf0acad1e716204e77002ad7f19.svg";
+const imgActionBuild = "http://localhost:3845/assets/c0ba61968945fd8b1cbc5ab1e2c31a33998ab130.svg";
+const imgActionWarning = "http://localhost:3845/assets/21c0219f2b118378dd8bcdc2999359c5c9143966.svg";
+const imgActionSettings = "http://localhost:3845/assets/986b4920621fc0e01b82c3e79a425113693dccbd.svg";
+const imgActionLockOpen = "http://localhost:3845/assets/e9b63b5acb00be8ee921eba73a9e41e128e2634a.svg";
+const imgActionLock = "http://localhost:3845/assets/8952a3f2a95982724c4e3e0610ab1e52e7ecec7b.svg";
+const imgActionInfo = "http://localhost:3845/assets/8d55044f462d8a7e7cefcfb1e765db1d8a095caa.svg";
+const imgActionError = "http://localhost:3845/assets/77bad1a54273d4e379be2239dd4a692a5ce97996.svg";
+const imgActionHeart = "http://localhost:3845/assets/517bb7d17038dcec9677a360494c5e6ebe95242f.svg";
+const imgActionHeartAdd = "http://localhost:3845/assets/cea9ea10a5f11797fe98d8a486856d3f409a0ca1.svg";
+const imgActionEyeHidden = "http://localhost:3845/assets/be6a032a858766ef89ef288ffb24c29153c4ab92.svg";
+const imgActionEyeOpen = "http://localhost:3845/assets/b97d0222851868bf3292751d55a23f28ea21e5b4.svg";
+const imgActionEyeClosed = "http://localhost:3845/assets/5067ec414ea790714b223e44afbb02e3ce460b25.svg";
+const imgActionLogOut1 = "http://localhost:3845/assets/18792a4a3eeb800379f2fe1e062d03b4ccafaed2.svg";
+const imgActionCheckSquare = "http://localhost:3845/assets/ff6a550c670bdc49921c228adc2c99d4880e615a.svg";
+const imgActionCheckCircle2 = "http://localhost:3845/assets/5860d4270c633f9b1c7c45b3b98c6b55f46a2295.svg";
+const imgActionCheckCircle1 = "http://localhost:3845/assets/2b0d4b887d55dd447e68c2e6492d367a69e45b8c.svg";
+const imgActionCheckDouble = "http://localhost:3845/assets/d6ee82b87ec568bc33f5b43b18b5b2bff34462de.svg";
+const imgActionCheck = "http://localhost:3845/assets/1d94b781fa937a6a499b2a7b8b70f6ab4dd9203e.svg";
+const imgActionAddToList = "http://localhost:3845/assets/f4e9e751587c1177bf93c722ef980e70464e476f.svg";
+const imgActionAddCircle = "http://localhost:3845/assets/31ddab85d20bd7b09826319f343d5bed14b9b4c7.svg";
+const imgActionAddSquare = "http://localhost:3845/assets/c78248b147bdd7c5223345e14b627c66a2a2713f.svg";
+const imgActionRemove = "http://localhost:3845/assets/c47d1289c9f5a0f8bf08f141bcc29d9952eb9d92.svg";
+const imgActionAdd = "http://localhost:3845/assets/ee3fc7a1f8f78de1227dbe0f1401985cf2e2b276.svg";
+
+function ActionClick({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2651" data-name="Action/click">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionClick} />
+    </div>
+  );
+}
+
+function ActionBulb({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2677" data-name="Action/bulb">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionBulb} />
+    </div>
+  );
+}
+
+function ActionLinkExternal({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2678" data-name="Action/link-external">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionLinkExternal} />
+    </div>
+  );
+}
+
+function ActionPlanet({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2608" data-name="Action/planet">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionPlanet} />
+    </div>
+  );
+}
+
+function ActionDroplet({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2609" data-name="Action/droplet">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionDroplet} />
+    </div>
+  );
+}
+
+function ActionAtom({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2671" data-name="Action/atom">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionAtom} />
+    </div>
+  );
+}
+
+function ActionOffer({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2676" data-name="Action/offer">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionOffer} />
+    </div>
+  );
+}
+
+function ActionGlobe({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2615" data-name="Action/globe">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionGlobe} />
+    </div>
+  );
+}
+
+function ActionColumnsThree({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2619" data-name="Action/columns-three">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionColumnsThree} />
+    </div>
+  );
+}
+
+function ActionLayout({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:5286" data-name="Action/layout">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionLayout} />
+    </div>
+  );
+}
+
+function ActionToolbox({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2610" data-name="Action/toolbox">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionToolbox} />
+    </div>
+  );
+}
+
+function ActionCloseCircle1({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2653" data-name="Action/close-circle-1">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionCloseCircle1} />
+    </div>
+  );
+}
+
+function ActionCloseCircle({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2605" data-name="Action/close-circle">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionCloseCircle} />
+    </div>
+  );
+}
+
+function ActionRocketLaunch({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2637" data-name="Action/rocket-launch">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionRocketLaunch} />
+    </div>
+  );
+}
+
+function ActionBolt1({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2606" data-name="Action/bolt-2">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionBolt2} />
+    </div>
+  );
+}
+
+function ActionBolt1Off({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2607" data-name="Action/bolt-1-off">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionBolt1Off} />
+    </div>
+  );
+}
+
+function ActionBolt({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2687" data-name="Action/bolt-1">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionBolt1} />
+    </div>
+  );
+}
+
+function ActionCompass({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2611" data-name="Action/compass">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionCompass} />
+    </div>
+  );
+}
+
+function ActionBookOpen({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2673" data-name="Action/book-open">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionBookOpen} />
+    </div>
+  );
+}
+
+function ActionCommand({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2620" data-name="Action/command">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionCommand} />
+    </div>
+  );
+}
+
+function ActionGem({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2626" data-name="Action/gem">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionGem} />
+    </div>
+  );
+}
+
+function ActionBox({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2612" data-name="Action/box">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionBox} />
+    </div>
+  );
+}
+
+function ActionUmbrella({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2690" data-name="Action/umbrella">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionUmbrella} />
+    </div>
+  );
+}
+
+function ActionToken({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2685" data-name="Action/token">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionToken} />
+    </div>
+  );
+}
+
+function ActionSchool({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2698" data-name="Action/school">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionSchool} />
+    </div>
+  );
+}
+
+function ActionAward({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2638" data-name="Action/award">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionAward} />
+    </div>
+  );
+}
+
+function ActionGift({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2695" data-name="Action/gift">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionGift} />
+    </div>
+  );
+}
+
+function ActionTicket({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2613" data-name="Action/ticket">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionTicket} />
+    </div>
+  );
+}
+
+function ActionCopyright({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2668" data-name="Action/copyright">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionCopyright} />
+    </div>
+  );
+}
+
+function ActionPinDrop({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2614" data-name="Action/pin-drop">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionPinDrop} />
+    </div>
+  );
+}
+
+function ActionLocation({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2632" data-name="Action/location">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionLocation} />
+    </div>
+  );
+}
+
+function ActionCompany({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2641" data-name="Action/company">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionCompany} />
+    </div>
+  );
+}
+
+function ActionVillage({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2623" data-name="Action/village">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionVillage} />
+    </div>
+  );
+}
+
+function ActionStore({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2658" data-name="Action/store">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionStore} />
+    </div>
+  );
+}
+
+function ActionMap({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2617" data-name="Action/map">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionMap} />
+    </div>
+  );
+}
+
+function ActionBarChart({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2665" data-name="Action/bar-chart">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionBarChart} />
+    </div>
+  );
+}
+
+function ActionGpsOn({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2616" data-name="Action/gps-on">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionGpsOn} />
+    </div>
+  );
+}
+
+function ActionFormatIndentDecrease({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2618" data-name="Action/format-indent-decrease">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionFormatIndentDecrease} />
+    </div>
+  );
+}
+
+function ActionFormatIndentIncrease({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2642" data-name="Action/format-indent-increase">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionFormatIndentIncrease} />
+    </div>
+  );
+}
+
+function ActionFormatAlignJustify({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2621" data-name="Action/format-align-justify">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionFormatAlignJustify} />
+    </div>
+  );
+}
+
+function ActionFormatAlignCenter({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2622" data-name="Action/format-align-center">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionFormatAlignCenter} />
+    </div>
+  );
+}
+
+function ActionFormatAlignRight({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2693" data-name="Action/format-align-right">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionFormatAlignRight} />
+    </div>
+  );
+}
+
+function ActionFormatAlignLeft({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2624" data-name="Action/format-align-left">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionFormatAlignLeft} />
+    </div>
+  );
+}
+
+function ActionLayersThree({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2625" data-name="Action/layers-three">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionLayersThree} />
+    </div>
+  );
+}
+
+function ActionFormatListBulleted({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2627" data-name="Action/format-list-bulleted">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionFormatListBulleted} />
+    </div>
+  );
+}
+
+function ActionInfinite({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2628" data-name="Action/infinite">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionInfinite} />
+    </div>
+  );
+}
+
+function ActionLink2({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2633" data-name="Action/link-3">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionLink3} />
+    </div>
+  );
+}
+
+function ActionLink1({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2643" data-name="Action/link-2">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionLink2} />
+    </div>
+  );
+}
+
+function ActionLink({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2629" data-name="Action/link-1">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionLink1} />
+    </div>
+  );
+}
+
+function ActionEdit2({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2630" data-name="Action/edit-03">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionEdit03} />
+    </div>
+  );
+}
+
+function ActionEdit1({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2631" data-name="Action/edit-02">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionEdit02} />
+    </div>
+  );
+}
+
+function ActionEdit({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2634" data-name="Action/edit-01">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionEdit01} />
+    </div>
+  );
+}
+
+function ActionSave({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2657" data-name="Action/save">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionSave} />
+    </div>
+  );
+}
+
+function ActionDelete1({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2635" data-name="Action/delete-2">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionDelete2} />
+    </div>
+  );
+}
+
+function ActionDelete({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2636" data-name="Action/delete-1">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionDelete1} />
+    </div>
+  );
+}
+
+function ActionCopy1({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2639" data-name="Action/copy-2">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionCopy2} />
+    </div>
+  );
+}
+
+function ActionCopy({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2645" data-name="Action/copy-1">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionCopy1} />
+    </div>
+  );
+}
+
+function ActionLogIn({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2652" data-name="Action/log-in-1">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionLogIn1} />
+    </div>
+  );
+}
+
+function ActionHourglassEmpty({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2650" data-name="Action/hourglass-empty">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionHourglassEmpty} />
+    </div>
+  );
+}
+
+function ActionBookmark({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2640" data-name="Action/bookmark">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionBookmark} />
+    </div>
+  );
+}
+
+function ActionWorkAlt({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2679" data-name="Action/work-alt">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionWorkAlt} />
+    </div>
+  );
+}
+
+function ActionWork({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2672" data-name="Action/work">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionWork} />
+    </div>
+  );
+}
+
+function ActionRemoveCircle({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2682" data-name="Action/remove-circle">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionRemoveCircle} />
+    </div>
+  );
+}
+
+function ActionHand({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2696" data-name="Action/hand">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionHand} />
+    </div>
+  );
+}
+
+function ActionCalendarEvent({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2648" data-name="Action/calendar-event">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionCalendarEvent} />
+    </div>
+  );
+}
+
+function ActionCalendar({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2680" data-name="Action/calendar">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionCalendar} />
+    </div>
+  );
+}
+
+function ActionVerified({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2649" data-name="Action/verified">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionVerified} />
+    </div>
+  );
+}
+
+function ActionHelp({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2655" data-name="Action/help">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionHelp} />
+    </div>
+  );
+}
+
+function ActionZoomOut({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2647" data-name="Action/zoom-out">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionZoomOut} />
+    </div>
+  );
+}
+
+function ActionZoomIn({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2663" data-name="Action/zoom-in">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionZoomIn} />
+    </div>
+  );
+}
+
+function ActionSearch1({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2659" data-name="Action/search-01">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionSearch01} />
+    </div>
+  );
+}
+
+function ActionSearch({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2661" data-name="Action/search">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionSearch} />
+    </div>
+  );
+}
+
+function ActionBlock({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2662" data-name="Action/block">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionBlock} />
+    </div>
+  );
+}
+
+function ActionBuild({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2686" data-name="Action/build">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionBuild} />
+    </div>
+  );
+}
+
+function ActionWarning({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2692" data-name="Action/warning">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionWarning} />
+    </div>
+  );
+}
+
+function ActionSettings({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2694" data-name="Action/settings">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionSettings} />
+    </div>
+  );
+}
+
+function ActionLockOpen({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2664" data-name="Action/lock-open">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionLockOpen} />
+    </div>
+  );
+}
+
+function ActionLock({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2674" data-name="Action/lock">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionLock} />
+    </div>
+  );
+}
+
+function ActionInfo({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2667" data-name="Action/info">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionInfo} />
+    </div>
+  );
+}
+
+function ActionError({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2669" data-name="Action/error">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionError} />
+    </div>
+  );
+}
+
+function ActionHeart({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2670" data-name="Action/heart">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionHeart} />
+    </div>
+  );
+}
+
+function ActionHeartAdd({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2654" data-name="Action/heart-add">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionHeartAdd} />
+    </div>
+  );
+}
+
+function ActionEyeHidden({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2675" data-name="Action/eye-hidden">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionEyeHidden} />
+    </div>
+  );
+}
+
+function ActionEyeOpen({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2681" data-name="Action/eye-open">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionEyeOpen} />
+    </div>
+  );
+}
+
+function ActionEyeClosed({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2683" data-name="Action/eye-closed">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionEyeClosed} />
+    </div>
+  );
+}
+
+function ActionLogOut({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2688" data-name="Action/log-out-1">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionLogOut1} />
+    </div>
+  );
+}
+
+function ActionCheckSquare({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2689" data-name="Action/check-square">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionCheckSquare} />
+    </div>
+  );
+}
+
+function ActionCheckCircle1({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2691" data-name="Action/check-circle-2">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionCheckCircle2} />
+    </div>
+  );
+}
+
+function ActionCheckCircle({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2656" data-name="Action/check-circle-1">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionCheckCircle1} />
+    </div>
+  );
+}
+
+function ActionCheckDouble({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2660" data-name="Action/check-double">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionCheckDouble} />
+    </div>
+  );
+}
+
+function ActionCheck({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2666" data-name="Action/check">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionCheck} />
+    </div>
+  );
+}
+
+function ActionAddToList({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2684" data-name="Action/add-to-list">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionAddToList} />
+    </div>
+  );
+}
+
+function ActionAddCircle({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2700" data-name="Action/add-circle">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionAddCircle} />
+    </div>
+  );
+}
+
+function ActionAddSquare({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2699" data-name="Action/add-square">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionAddSquare} />
+    </div>
+  );
+}
+
+function ActionRemove({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2697" data-name="Action/remove">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionRemove} />
+    </div>
+  );
+}
+
+function ActionAdd({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2644" data-name="Action/add">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionAdd} />
+    </div>
+  );
+}
+
+export default function Action() {
+  return (
+    <div className="bg-[#fbfbff] gap-x-[42px] gap-y-[42px] grid grid-cols-[repeat(10,minmax(0,1fr))] grid-rows-[repeat(10,fit-content(100%))] px-[32px] py-[40px] relative rounded-[24px] size-full" data-node-id="8411:1788" data-name="action">
+      <ActionAdd className="col-1 relative row-1 shrink-0 size-[32px]" />
+      <ActionRemove className="col-2 relative row-1 shrink-0 size-[32px]" />
+      <ActionAddSquare className="col-3 relative row-1 shrink-0 size-[32px]" />
+      <ActionAddCircle className="col-4 relative row-1 shrink-0 size-[32px]" />
+      <ActionAddToList className="col-5 relative row-1 shrink-0 size-[32px]" />
+      <ActionCheck className="col-6 relative row-1 shrink-0 size-[32px]" />
+      <ActionCheckDouble className="col-7 relative row-1 shrink-0 size-[32px]" />
+      <ActionCheckCircle className="col-8 relative row-1 shrink-0 size-[32px]" />
+      <ActionCheckCircle1 className="col-9 relative row-1 shrink-0 size-[32px]" />
+      <ActionCheckSquare className="col-10 relative row-1 shrink-0 size-[32px]" />
+      <ActionLogOut className="col-1 relative row-2 shrink-0 size-[32px]" />
+      <ActionEyeClosed className="col-2 relative row-2 shrink-0 size-[32px]" />
+      <ActionEyeOpen className="col-3 relative row-2 shrink-0 size-[32px]" />
+      <ActionEyeHidden className="col-4 relative row-2 shrink-0 size-[32px]" />
+      <ActionHeartAdd className="col-5 relative row-2 shrink-0 size-[32px]" />
+      <ActionHeart className="col-6 relative row-2 shrink-0 size-[32px]" />
+      <ActionError className="col-7 relative row-2 shrink-0 size-[32px]" />
+      <ActionInfo className="col-8 relative row-2 shrink-0 size-[32px]" />
+      <ActionLock className="col-9 relative row-2 shrink-0 size-[32px]" />
+      <ActionLockOpen className="col-10 relative row-2 shrink-0 size-[32px]" />
+      <ActionSettings className="col-1 relative row-3 shrink-0 size-[32px]" />
+      <ActionWarning className="col-2 relative row-3 shrink-0 size-[32px]" />
+      <ActionBuild className="col-3 relative row-3 shrink-0 size-[32px]" />
+      <ActionBlock className="col-4 relative row-3 shrink-0 size-[32px]" />
+      <ActionSearch className="col-5 relative row-3 shrink-0 size-[32px]" />
+      <ActionSearch1 className="col-6 relative row-3 shrink-0 size-[32px]" />
+      <ActionZoomIn className="col-7 relative row-3 shrink-0 size-[32px]" />
+      <ActionZoomOut className="col-8 relative row-3 shrink-0 size-[32px]" />
+      <ActionHelp className="col-9 relative row-3 shrink-0 size-[32px]" />
+      <ActionVerified className="col-10 relative row-3 shrink-0 size-[32px]" />
+      <ActionCalendar className="col-1 relative row-4 shrink-0 size-[32px]" />
+      <ActionCalendarEvent className="col-2 relative row-4 shrink-0 size-[32px]" />
+      <ActionHand className="col-3 relative row-4 shrink-0 size-[32px]" />
+      <ActionRemoveCircle className="col-4 relative row-4 shrink-0 size-[32px]" />
+      <ActionWork className="col-5 relative row-4 shrink-0 size-[32px]" />
+      <ActionWorkAlt className="col-6 relative row-4 shrink-0 size-[32px]" />
+      <ActionBookmark className="col-10 relative row-4 shrink-0 size-[32px]" />
+      <ActionHourglassEmpty className="col-1 relative row-5 shrink-0 size-[32px]" />
+      <ActionLogIn className="col-2 relative row-5 shrink-0 size-[32px]" />
+      <ActionCopy className="col-3 relative row-5 shrink-0 size-[32px]" />
+      <ActionCopy1 className="col-4 relative row-5 shrink-0 size-[32px]" />
+      <ActionDelete className="col-5 relative row-5 shrink-0 size-[32px]" />
+      <ActionDelete1 className="col-6 relative row-5 shrink-0 size-[32px]" />
+      <ActionSave className="col-7 relative row-5 shrink-0 size-[32px]" />
+      <ActionEdit className="col-8 relative row-5 shrink-0 size-[32px]" />
+      <ActionEdit1 className="col-9 relative row-5 shrink-0 size-[32px]" />
+      <ActionEdit2 className="col-10 relative row-5 shrink-0 size-[32px]" />
+      <ActionLink className="col-1 relative row-6 shrink-0 size-[32px]" />
+      <ActionLink1 className="col-2 relative row-6 shrink-0 size-[32px]" />
+      <ActionLink2 className="col-3 relative row-6 shrink-0 size-[32px]" />
+      <ActionInfinite className="col-4 relative row-6 shrink-0 size-[32px]" />
+      <ActionFormatListBulleted className="col-5 relative row-6 shrink-0 size-[32px]" />
+      <ActionLayersThree className="col-6 relative row-6 shrink-0 size-[32px]" />
+      <ActionFormatAlignLeft className="col-7 relative row-6 shrink-0 size-[32px]" />
+      <ActionFormatAlignRight className="col-8 relative row-6 shrink-0 size-[32px]" />
+      <ActionFormatAlignCenter className="col-9 relative row-6 shrink-0 size-[32px]" />
+      <ActionFormatAlignJustify className="col-10 relative row-6 shrink-0 size-[32px]" />
+      <ActionFormatIndentIncrease className="col-2 relative row-7 shrink-0 size-[32px]" />
+      <ActionFormatIndentDecrease className="col-3 relative row-7 shrink-0 size-[32px]" />
+      <ActionGpsOn className="col-4 relative row-7 shrink-0 size-[32px]" />
+      <ActionBarChart className="col-5 relative row-7 shrink-0 size-[32px]" />
+      <ActionMap className="col-6 relative row-7 shrink-0 size-[32px]" />
+      <ActionStore className="col-7 relative row-7 shrink-0 size-[32px]" />
+      <ActionVillage className="col-8 relative row-7 shrink-0 size-[32px]" />
+      <ActionCompany className="col-9 relative row-7 shrink-0 size-[32px]" />
+      <ActionLocation className="col-1 relative row-8 shrink-0 size-[32px]" />
+      <ActionPinDrop className="col-2 relative row-8 shrink-0 size-[32px]" />
+      <ActionCopyright className="col-3 relative row-8 shrink-0 size-[32px]" />
+      <ActionTicket className="col-4 relative row-8 shrink-0 size-[32px]" />
+      <ActionGift className="col-5 relative row-8 shrink-0 size-[32px]" />
+      <ActionAward className="col-6 relative row-8 shrink-0 size-[32px]" />
+      <ActionSchool className="col-7 relative row-8 shrink-0 size-[32px]" />
+      <ActionToken className="col-8 relative row-8 shrink-0 size-[32px]" />
+      <ActionUmbrella className="col-9 relative row-8 shrink-0 size-[32px]" />
+      <ActionBox className="col-10 relative row-8 shrink-0 size-[32px]" />
+      <ActionGem className="col-1 relative row-9 shrink-0 size-[32px]" />
+      <ActionCommand className="col-2 relative row-9 shrink-0 size-[32px]" />
+      <ActionBookOpen className="col-3 relative row-9 shrink-0 size-[32px]" />
+      <ActionCompass className="col-4 relative row-9 shrink-0 size-[32px]" />
+      <ActionBolt className="col-1 relative row-10 shrink-0 size-[32px]" />
+      <ActionBolt1Off className="col-2 relative row-10 shrink-0 size-[32px]" />
+      <ActionBolt1 className="col-3 relative row-10 shrink-0 size-[32px]" />
+      <ActionRocketLaunch className="col-4 relative row-10 shrink-0 size-[32px]" />
+      <ActionCloseCircle className="col-5 relative row-10 shrink-0 size-[32px]" />
+      <ActionCloseCircle1 className="col-6 relative row-10 shrink-0 size-[32px]" />
+      <ActionToolbox className="col-7 relative row-4 shrink-0 size-[32px]" />
+      <ActionLayout className="col-8 relative row-4 shrink-0 size-[32px]" />
+      <ActionColumnsThree className="col-9 relative row-4 shrink-0 size-[32px]" />
+      <ActionGlobe className="col-1 relative row-7 shrink-0 size-[32px]" />
+      <ActionOffer className="col-10 relative row-7 shrink-0 size-[32px]" />
+      <ActionAtom className="col-5 relative row-9 shrink-0 size-[32px]" />
+      <ActionDroplet className="col-6 relative row-9 shrink-0 size-[32px]" />
+      <ActionPlanet className="col-7 relative row-9 shrink-0 size-[32px]" />
+      <ActionLinkExternal className="col-8 relative row-9 shrink-0 size-[32px]" />
+      <ActionBulb className="col-9 relative row-9 shrink-0 size-[32px]" />
+      <ActionClick className="col-10 relative row-9 shrink-0 size-[32px]" />
+    </div>
+  );
+}
+
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+
+These styles are contained in the design: Light/Text/Primary: #303133, Light/Overlay/Lighter: #000000.
+
+Component descriptions: The following components have usage descriptions or documentation links defined in Figma. These descriptions provide important context about the intended usage, best practices, and any constraints for each component. Follow these guidelines when implementing or using these components.
+
+## Action/add
+**Node ID:** 8411:2644
+
+add, more, plus, new
+
+## Action/remove
+**Node ID:** 8411:2697
+
+minus, delete
+
+## Action/add-square
+**Node ID:** 8411:2699
+
+add, more, plus, new
+
+## Action/add-circle
+**Node ID:** 8411:2700
+
+add, more, plus, new
+
+## Action/add-to-list
+**Node ID:** 8411:2684
+
+add, more, plus, library
+
+## Action/check
+**Node ID:** 8411:2666
+
+ok, validation, success
+
+## Action/check-double
+**Node ID:** 8411:2660
+
+ok, validation, success
+
+## Action/check-circle-1
+**Node ID:** 8411:2656
+
+ok, validation, success
+
+## Action/check-circle-2
+**Node ID:** 8411:2691
+
+ok, validation, success
+
+## Action/check-square
+**Node ID:** 8411:2689
+
+ok, validation, success
+
+## Action/log-out-1
+**Node ID:** 8411:2688
+
+go, close, logout, exit
+
+## Action/eye-closed
+**Node ID:** 8411:2683
+
+password, hidden, hide, vision, view, eyesight, privacy
+
+## Action/eye-open
+**Node ID:** 8411:2681
+
+password, show, shown, vision, view, eyesight, privacy
+
+## Action/eye-hidden
+**Node ID:** 8411:2675
+
+password, hidden, hide, vision, view, eyesight, privacy
+
+## Action/heart-add
+**Node ID:** 8411:2654
+
+love, favourite, favorite, plus
+
+## Action/heart
+**Node ID:** 8411:2670
+
+love, favourite, favorite
+
+## Action/error
+**Node ID:** 8411:2669
+
+alert, warning, attention
+
+## Action/info
+**Node ID:** 8411:2667
+
+information, helper, assistant, support
+
+## Action/lock
+**Node ID:** 8411:2674
+
+block, blocked, security, closed, padlock, no entry, privacy
+
+## Action/lock-open
+**Node ID:** 8411:2664
+
+block, security, open, padlock, unlock, unblock, privacy
+
+## Action/settings
+**Node ID:** 8411:2694
+
+configuration, custom, configure
+
+## Action/warning
+**Node ID:** 8411:2692
+
+alert, attention, error
+
+## Action/build
+**Node ID:** 8411:2686
+
+setting, settings, custom, configure, configuration
+
+## Action/block
+**Node ID:** 8411:2662
+
+safety, security, prohibition, ban, no entry, stop, block
+
+## Action/search
+**Node ID:** 8411:2661
+
+zoom, magnify
+
+## Action/zoom-in
+**Node ID:** 8411:2663
+
+zoom, magnify
+
+## Action/zoom-out
+**Node ID:** 8411:2647
+
+zoom, magnify
+
+## Action/help
+**Node ID:** 8411:2655
+
+info, ask, support, doubt, question
+
+## Action/verified
+**Node ID:** 8411:2649
+
+security, safe, validate, shield, protection, assurance, guarantee
+
+## Action/calendar
+**Node ID:** 8411:2680
+
+date, event, appointment, schedule
+
+## Action/calendar-event
+**Node ID:** 8411:2648
+
+date, event, appointment, schedule
+
+## Action/hand
+**Node ID:** 8411:2696
+
+move, alt, stop
+
+## Action/remove-circle
+**Node ID:** 8411:2682
+
+minus, delete
+
+## Action/work
+**Node ID:** 8411:2672
+
+case, suitcase, overnight bag, business
+
+## Action/work-alt
+**Node ID:** 8411:2679
+
+case, suitcase, overnight bag, business
+
+## Action/bookmark
+**Node ID:** 8411:2640
+
+save, favourite, favorite
+
+## Action/hourglass-empty
+**Node ID:** 8411:2650
+
+time, countdown, time-out, timeout, time out
+
+## Action/log-in-1
+**Node ID:** 8411:2652
+
+enter, access, login
+
+## Action/copy-1
+**Node ID:** 8411:2645
+
+file, clip, clipboard, document, stack
+
+## Action/copy-2
+**Node ID:** 8411:2639
+
+clip, clipboard, stack, overlay
+
+## Action/delete-1
+**Node ID:** 8411:2636
+
+remove, bin, trash, waste, basket
+
+## Action/delete-2
+**Node ID:** 8411:2635
+
+remove, bin, trash, waste, basket
+
+## Action/save
+**Node ID:** 8411:2657
+
+floppy, disc
+
+## Action/edit-01
+**Node ID:** 8411:2634
+
+pencil, editor, write, note
+
+## Action/edit-02
+**Node ID:** 8411:2631
+
+pencil, editor, write, note
+
+## Action/edit-03
+**Node ID:** 8411:2630
+
+pencil, editor, write, note
+
+## Action/link-1
+**Node ID:** 8411:2629
+
+url, navigation, web, website
+
+## Action/link-2
+**Node ID:** 8411:2643
+
+url, navigation, web, website
+
+## Action/link-3
+**Node ID:** 8411:2633
+
+url, navigation, web, website
+
+## Action/infinite
+**Node ID:** 8411:2628
+
+loop, cycle
+
+## Action/format-list-bulleted
+**Node ID:** 8411:2627
+
+editor, paragraph, bullet point
+
+## Action/layers-three
+**Node ID:** 8411:2625
+
+overlay
+
+## Action/format-align-left
+**Node ID:** 8411:2624
+
+editor, text, paragraph
+
+## Action/format-align-right
+**Node ID:** 8411:2693
+
+editor, text, paragraph
+
+## Action/format-align-center
+**Node ID:** 8411:2622
+
+editor, text, paragraph
+
+## Action/format-align-justify
+**Node ID:** 8411:2621
+
+editor, text, paragraph
+
+## Action/format-indent-increase
+**Node ID:** 8411:2642
+
+editor, right, text
+
+## Action/format-indent-decrease
+**Node ID:** 8411:2618
+
+editor, left, text
+
+## Action/gps-on
+**Node ID:** 8411:2616
+
+location
+
+## Action/bar-chart
+**Node ID:** 8411:2665
+
+bars, graph, data, editor
+
+## Action/map
+**Node ID:** 8411:2617
+
+gps, position, pin, map, travel
+
+## Action/store
+**Node ID:** 8411:2658
+
+shopping
+
+## Action/village
+**Node ID:** 8411:2623
+
+home, house, neighbourhood
+
+## Action/company
+**Node ID:** 8411:2641
+
+business, agency, building, office, headquarters
+
+## Action/location
+**Node ID:** 8411:2632
+
+gps, position, pin, map, destination
+
+## Action/pin-drop
+**Node ID:** 8411:2614
+
+gps, position, pin, map, destination, location
+
+## Action/copyright
+**Node ID:** 8411:2668
+
+reserved
+
+## Action/ticket
+**Node ID:** 8411:2613
+
+book, event
+
+## Action/gift
+**Node ID:** 8411:2695
+
+present
+
+## Action/award
+**Node ID:** 8411:2638
+
+prize, reward, cockade
+
+## Action/school
+**Node ID:** 8411:2698
+
+hat, academic cap, academy
+
+## Action/token
+**Node ID:** 8411:2685
+
+piece, block
+
+## Action/umbrella
+**Node ID:** 8411:2690
+
+weather, rain
+
+## Action/box
+**Node ID:** 8411:2612
+
+inventory, package, container, archive
+
+## Action/gem
+**Node ID:** 8411:2626
+
+shape, diamond
+
+## Action/command
+**Node ID:** 8411:2620
+
+key, mac, keyboard
+
+## Action/book-open
+**Node ID:** 8411:2673
+
+read, reading
+
+## Action/compass
+**Node ID:** 8411:2611
+
+navigation, position
+
+## Action/bolt-1
+**Node ID:** 8411:2687
+
+flash, speed, lightning, thunder
+
+## Action/bolt-1-off
+**Node ID:** 8411:2607
+
+flash, speed, lightning, thunder
+
+## Action/bolt-2
+**Node ID:** 8411:2606
+
+flash, speed, lightning, thunder
+
+## Action/rocket-launch
+**Node ID:** 8411:2637
+
+launch, space, mission
+
+## Action/close-circle
+**Node ID:** 8411:2605
+
+exit, delete, remove
+
+## Action/close-circle-1
+**Node ID:** 8411:2653
+
+exit, delete, remove
+
+## Action/toolbox
+**Node ID:** 8411:2610
+
+tools, work, repair
+
+## Action/layout
+**Node ID:** 8413:5286
+
+play, video
+
+## Action/columns-three
+**Node ID:** 8411:2619
+
+editor, layout, grid, triple
+
+## Action/globe
+**Node ID:** 8411:2615
+
+location, world, earth, website
+
+## Action/offer
+**Node ID:** 8411:2676
+
+label, bergain, discount, on sale
+
+## Action/atom
+**Node ID:** 8411:2671
+
+social network
+
+## Action/droplet
+**Node ID:** 8411:2609
+
+water, liquid
+
+## Action/bulb
+**Node ID:** 8411:2677
+
+light, lamp, idea
+
+## Action/click
+**Node ID:** 8411:2651
+
+mouse, cursor, pointer, action, press
+
+Image assets are stored on a localhost server. Clients can use these images directly in code as a way to view the image assets the same way they would other remote servers. Images and SVGs will be stored as constants, e.g. const image = 'http://localhost:3845/assets/10c13ac1a228a365cb98a0064b1d5afbc84887b2.png' These constants will be used in the code as the source for the image, e.g. <img src={image} /> This is true for both images and SVGs, so you can use the same approach for both types of assets.
+
+Figma recommends using the remote MCP server for workflows between design and code: https://developers.figma.com/docs/figma-mcp-server/remote-server-installation/

@@ -1,0 +1,4474 @@
+const img = "http://localhost:3845/assets/b64791bc350f9184b539d698abe2612088eb0752.svg";
+const img1 = "http://localhost:3845/assets/4c7dacb23d4d27531fc4ffd65203666d70e78024.svg";
+const img2 = "http://localhost:3845/assets/5ac4f61831a9bf7eb8244e1ae51e778b9943cba9.svg";
+const img3 = "http://localhost:3845/assets/8d135fa2d18ff3ea39b7eae099fee7813f61f02c.svg";
+const img13 = "http://localhost:3845/assets/fff961afa52e1c561666370eecda81c430ec27d6.svg";
+const img7 = "http://localhost:3845/assets/4cd247e29ea1aefc89a6abdbc2cf88f5bd4539b6.svg";
+const imgGroup21275 = "http://localhost:3845/assets/f23686c64177f5fe43d356fd0f09cd71d4fdb30e.svg";
+const img8 = "http://localhost:3845/assets/6e2d3f7dc587a9d4e6f0d32523287e90788ca2a2.svg";
+const img4 = "http://localhost:3845/assets/a2cf81c4d10d08a40a5425e2d8ae9253ef1268d3.svg";
+const img5 = "http://localhost:3845/assets/f6a425db807910eb60dfa7e104792d091305e87d.svg";
+const img6 = "http://localhost:3845/assets/4c5213722abcda145acd812a86bd9fe2bc4c4e01.svg";
+const imgDocumentPpt = "http://localhost:3845/assets/4ea2347449bae6b9c2ac64ee2f6c019492de65e7.svg";
+const img9 = "http://localhost:3845/assets/00231ce8f5cf4f4399e60ca408ce4eef5b4413ab.svg";
+const img10 = "http://localhost:3845/assets/178cc7fa37c22495ebafb72d9906c13d26ce8b75.svg";
+const img127 = "http://localhost:3845/assets/4567f09217e93884fbb2633d5f3c2e0ceb0a1886.svg";
+const img11 = "http://localhost:3845/assets/7ab24cf7366239a1875e3dba2603f8d9f9d50af7.svg";
+const img12 = "http://localhost:3845/assets/4e6451f29eebaac948af7d8919e25e5af942268c.svg";
+const img14 = "http://localhost:3845/assets/ce08008efd6cd66746e30611d8e399e51b8f1b36.svg";
+const imgDocumentExcel = "http://localhost:3845/assets/c7ee00457d56d8f48b04cc5c60831908ee8f8aa3.svg";
+const img15 = "http://localhost:3845/assets/799988bd55a022611a273d1f051c364046234878.svg";
+const img16 = "http://localhost:3845/assets/a242609f58bbc8ccaaa2cf1f65652ececc68719d.svg";
+const imgDocumentTxt = "http://localhost:3845/assets/e623ebed7c4716caa2aae0f6679bc416c07e955a.svg";
+const imgPaymentShoppingBag = "http://localhost:3845/assets/c8cbd371b7d4968ae5dc1f12a121d0eb7aea34b8.svg";
+const imgPaymentShoppingCart = "http://localhost:3845/assets/ac48bd569252073795206c4312e003479cf15d48.svg";
+const imgPaymentContactless1 = "http://localhost:3845/assets/ee53e762cfdf2057038e11297a6b898f66e85109.svg";
+const imgPaymentContactless2 = "http://localhost:3845/assets/97f87a33a29d54b4c22900c7396a9ccf39525694.svg";
+const imgPaymentDollar1 = "http://localhost:3845/assets/894553bc260eab439333e774936800cf0ac45cfd.svg";
+const imgPaymentRmb = "http://localhost:3845/assets/07595e4670b1d19a60ceb38d2e32462a321f6a35.svg";
+const imgPaymentBitcoin1 = "http://localhost:3845/assets/4204c1e95146bbb4a4912ff03ab9d63a633353e2.svg";
+const imgIcon = "http://localhost:3845/assets/671062354b32ffefd3b23e2cec5ae3f9e1ea39ac.svg";
+const imgPaymentBitcoin2 = "http://localhost:3845/assets/588eeb5ea1e33e326f44b10b44706df2ed641d80.svg";
+const imgPaymentCoins = "http://localhost:3845/assets/95e358ed1ad0f9bea785b65b1f9b7c5f324a5ac1.svg";
+const imgPaymentBank = "http://localhost:3845/assets/dd2fc4316da1bf7e40a6feb724ff9d071801fa83.svg";
+const imgPaymentCreditCardSecure = "http://localhost:3845/assets/f0d20a96bffadc1c8c57a8098a5120d8fbe6b377.svg";
+const imgPaymentCreditCard = "http://localhost:3845/assets/f807d507ace4971b90bb51e1b5096f6089233d61.svg";
+const imgPaymentWallet1 = "http://localhost:3845/assets/0cadd3dfb93ae1cb1510ddfe3b8e85bdf7142bf4.svg";
+const imgPaymentWallet2 = "http://localhost:3845/assets/7108e8e65b16046b3896bd755d683b0852138e0c.svg";
+const imgPaymentCreditCardCheck = "http://localhost:3845/assets/d6cc72c1fa80809f2bb828b9137d328aad476156.svg";
+const imgPaymentCreditCardPercent = "http://localhost:3845/assets/b10ff74723ade1db8c3fc73d79769ef882f51a4f.svg";
+const imgPaymentPercent = "http://localhost:3845/assets/f85365ad6e877a129193d3fa379e4eb6a9475a57.svg";
+const imgPaymentEuro = "http://localhost:3845/assets/5e1d98e28f41d7a761de7f0b30ba324df34d8816.svg";
+const imgPaymentCalculate1 = "http://localhost:3845/assets/21362773868926792e2a666a57467e540e7fd23d.svg";
+const imgPaymentCalculate2 = "http://localhost:3845/assets/c89495ee5a9ac665e1d3b19ba2733a91e7ec6ce7.svg";
+const imgSocialShare1 = "http://localhost:3845/assets/ea684d27689dba157e41c497e4746b74959c29e3.svg";
+const imgSocialRssFeed = "http://localhost:3845/assets/e89ff32c7af8aec434e0201169420f69cf64573c.svg";
+const imgSocialPinterest = "http://localhost:3845/assets/30c94d7a8583bb265b1f49e293442235de4e4f9e.svg";
+const imgSocialTwitter = "http://localhost:3845/assets/87fdda39f42f43e3fa7518c953188d626307729c.svg";
+const imgSocialLinkedin = "http://localhost:3845/assets/a350e1ac769a7f9d78da5cc09097a73a3bcbbd5c.svg";
+const imgSocialFacebook = "http://localhost:3845/assets/b4d06e1bf45aefa11bd9bf77ca030b81f80109ae.svg";
+const imgSocialAddComment = "http://localhost:3845/assets/8d32d22335aed3149da0ad6c6a7804a9ddaa302d.svg";
+const imgSocialChatEmpty = "http://localhost:3845/assets/22cc854c238cd15e400b50a8aa714809d0e44662.svg";
+const imgSocialChat = "http://localhost:3845/assets/b5f02f132bc82df8033b0a1ab8c0846260c2ed67.svg";
+const imgSocialSend = "http://localhost:3845/assets/f233890940e82be75a9b903855d6657c95fc6cda.svg";
+const imgSocialMegaphone = "http://localhost:3845/assets/db331faf2a7a2e2c8f41fbbccd28c81db87f62eb.svg";
+const imgSocialNotificationsPaused = "http://localhost:3845/assets/a7c75bfb02f0fab893f112a39e3d6a33a99e16be.svg";
+const imgSocialNotificationsOff = "http://localhost:3845/assets/85f4e074acc3d4ec430b0f1c4c360a1cc2d2df86.svg";
+const imgSocialNotificationsActive = "http://localhost:3845/assets/bf0f6b5c7e5ae382c30d37c0a3a10a29d1d70b88.svg";
+const imgSocialNotifications = "http://localhost:3845/assets/904bea184a6d0d69b1630cab632b381487efd8c2.svg";
+const imgSocialThumbDown = "http://localhost:3845/assets/6c9ebcb0a16962c7785a09a52187f2ca49125b56.svg";
+const imgSocialThumbUp = "http://localhost:3845/assets/e8009aca894829f3eb40500b98852b1f34ca4dc5.svg";
+const imgSocialStarCircle = "http://localhost:3845/assets/bf47a99ae39dfdd081f42fdd5a918dcbafb0a59e.svg";
+const imgSocialStar = "http://localhost:3845/assets/46808e2e44f0ac737645c11e235db556893d6499.svg";
+const imgSocial = "http://localhost:3845/assets/9eb8594fdbb0326c2f1e2262a33c5530f83d564a.svg";
+const imgSocialForwardToInbox = "http://localhost:3845/assets/72773e5f785c5bbc975a11dcfaf291d11a54885e.svg";
+const imgSocialMailOpen = "http://localhost:3845/assets/5505bf8ba7f6a8a7d3947719e10f422a80690f22.svg";
+const imgSocialMail = "http://localhost:3845/assets/3240f7ce667081e2ade0ffb4096fd291f39193ee.svg";
+const imgSocialUserGroup = "http://localhost:3845/assets/d0c76d7682cc06d8bae6803a2f27df4e06116bb3.svg";
+const imgSocialUserCircle = "http://localhost:3845/assets/3d85214310cc60afae2781cf65b5e6e30f1e090c.svg";
+const imgSocialUserRemove = "http://localhost:3845/assets/2aab02f5844dae28acc36e263ebad7da6ceba830.svg";
+const imgSocialUsers = "http://localhost:3845/assets/624c6071c8e0c74a86cbaa6277f7e3b01ba46daf.svg";
+const imgOval = "http://localhost:3845/assets/dcbca36c0e440599dd8f06175635c54c41e56770.svg";
+const imgPath = "http://localhost:3845/assets/e788fc7d0ba82358e7aea4388592b961e862f1b1.svg";
+const imgPath1 = "http://localhost:3845/assets/8254ed3f7999142af01258890781dc00182d509e.svg";
+const imgPath2 = "http://localhost:3845/assets/7592a6b921e835f6940ee8ad6a3e218dca8ea5a3.svg";
+const imgSocialUserAdd = "http://localhost:3845/assets/1efee812669af804c067451d7ec1e8c8aeec8d73.svg";
+const imgSocialUser = "http://localhost:3845/assets/30a568242fc0d5a0c58b70b14aa1346c82e7f3c4.svg";
+const imgSocialYoutube = "http://localhost:3845/assets/9e2eaa53b1b76ccee897839595bc19f907c8312a.svg";
+const imgOtherList = "http://localhost:3845/assets/41927b7ec8a942c1b9498601d605b230bcbd1afd.svg";
+const imgOtherInbox = "http://localhost:3845/assets/20cd96f14b6de6fc0815d130d90418559e8a5151.svg";
+const imgOtherCloudDownload = "http://localhost:3845/assets/11766b6334ab9c3b7f521db501664a0dde72c0e2.svg";
+const imgOtherCloudUpload = "http://localhost:3845/assets/e45db7a442b130ae2e96c4cd86901fa1b85e23d7.svg";
+const imgOtherAddFolder = "http://localhost:3845/assets/f15547791d02f8a5f868d2cc7a50376c1fac8d7f.svg";
+const imgOtherFolder = "http://localhost:3845/assets/031fab41c64722364df221cc38d530396fbfcbd4.svg";
+const imgOtherClipboard = "http://localhost:3845/assets/be212d018ab7dd93bc4d6d30704d5d2e49d94687.svg";
+const imgOtherFileCopy = "http://localhost:3845/assets/333d421db3ebf7e814db3e7a20553bbb8642feb5.svg";
+const imgOtherNote01 = "http://localhost:3845/assets/8aecf0c53cbea397818aa7a0b52f8d6178c37c20.svg";
+const imgOtherAddPage = "http://localhost:3845/assets/0d8165905de37f131ca6285827375f16012e4ef5.svg";
+const imgOtherFile = "http://localhost:3845/assets/615a507160f8f4d2b285e23c7ae407040efe7fe8.svg";
+const imgOtherFile2 = "http://localhost:3845/assets/d5b62a14c319e2ecab0ebad90adfbab2d150903f.svg";
+const imgIcon1 = "http://localhost:3845/assets/cd3ffb3c56fdbdbe7c638004221dfde1374007a4.svg";
+const imgOtherAddBlock = "http://localhost:3845/assets/4ffd4c5a8c71565d348e5c3b43fcf749eef04a5b.svg";
+const imgOtherSignalCellular3Bar = "http://localhost:3845/assets/7e8c0044ab3895992209eef9567ddb1f7a795c91.svg";
+const imgOtherPhoneCallEnd = "http://localhost:3845/assets/94b157466986a464fa95580eaac79f7bbfd0a525.svg";
+const imgOtherPhone = "http://localhost:3845/assets/9c04d2964728d0438fc8084f65d177c42f29bf7c.svg";
+const imgOtherPhoneAdd = "http://localhost:3845/assets/4bf31e5c233cac6ad736cac740b7ad050a840ad5.svg";
+const imgOtherPhoneMissed = "http://localhost:3845/assets/41a3bd3acebaac7050da7ac5bfb62dfa5a0d9f75.svg";
+const imgOtherPhoneCall2 = "http://localhost:3845/assets/693396a11029f93497a810909a2804c5bc642235.svg";
+const imgOtherPhoneCall1 = "http://localhost:3845/assets/9db649e1ae3f7177ee7d1e3338e434eb3e2d22d8.svg";
+const imgOtherPower = "http://localhost:3845/assets/0e106de69934df761644da8913eeb2f75badfa84.svg";
+const imgOtherAirplay = "http://localhost:3845/assets/d6af0ed6e77ea9fc11f8a585f9571eb2cee55862.svg";
+const imgOtherBreadcrumbSlash = "http://localhost:3845/assets/727b6d70ea26e0b9b5cc1f23b558bc77c8562a3a.svg";
+const imgOtherLoading4 = "http://localhost:3845/assets/c86fabfbc9b7f2415f73ca429e87138fc487c0b2.svg";
+const img17 = "http://localhost:3845/assets/23a1db9d0aaacd0f6176779bd39265d148ba60f4.svg";
+const imgOtherLoading1 = "http://localhost:3845/assets/e90d469b2793e5e6660b45a50baf1c7b0fbd64fc.svg";
+const imgOtherLoading2 = "http://localhost:3845/assets/2260a40a5c0a7ecfc8e11d35b94e033750f1c359.svg";
+const imgOtherAr = "http://localhost:3845/assets/bfb41dc4f5afe0b59a1e3a34e5ec4bb061ca4df9.svg";
+const imgOtherSliders = "http://localhost:3845/assets/a6efea7308a634dc125e5f81d75167dcde270fbf.svg";
+const imgOtherPodcast = "http://localhost:3845/assets/52221f63e9a07fbda485921ca15aaae64c70b06a.svg";
+const imgOtherStorage = "http://localhost:3845/assets/566fa0c5dfe451d8074dceb48ee002bece7789e5.svg";
+const imgOtherLibrary = "http://localhost:3845/assets/2870b319c8d71796f0021d88aabc6320e2795cb8.svg";
+const imgOtherPrint = "http://localhost:3845/assets/307c12fb25053011f20ca6b9fe636a7e245185be.svg";
+const imgOtherFaceId = "http://localhost:3845/assets/e228cf197ea91599f52b7c86ffd045fda5bdd783.svg";
+const imgOtherFilterListAdd = "http://localhost:3845/assets/dcabe2bb875ae633e267b496d3757a3deeb0570c.svg";
+const imgOtherFilterList = "http://localhost:3845/assets/b9d123db20657701504361f38b16c4bdbbe03580.svg";
+const imgOtherMoreHorizontal = "http://localhost:3845/assets/e9997a895ad782ee5a10830650946d47eddf5d64.svg";
+const imgOtherRefresh = "http://localhost:3845/assets/3220503180f479f89dcf779df2fb7c370b6ba644.svg";
+const imgOtherAppMenu = "http://localhost:3845/assets/71f4454c3cc36c79d90855d3df9c4053df073606.svg";
+const imgOtherFullScreen = "http://localhost:3845/assets/a9f953541f641a2b5b8cfda2ce56ca2dd04b1701.svg";
+const imgOtherCrop = "http://localhost:3845/assets/b8ee4f8427fb4fa6dafa87d7b4835ae80dc5c034.svg";
+const imgOtherLoop = "http://localhost:3845/assets/047fd951b2ac8b83b092fa7ce674e5f180097ccb.svg";
+const imgOtherMenu = "http://localhost:3845/assets/d6dc5568de95d8acbf45c10cdb463e58105a9884.svg";
+const imgOtherGridAlt = "http://localhost:3845/assets/87aa337bd5804428ac09455b5acd3f7bcca661fd.svg";
+const imgOtherCast = "http://localhost:3845/assets/2aad186e241051c66180449c9bac0efcf6f8241a.svg";
+const imgOtherCameraTimer = "http://localhost:3845/assets/e13b5c9b9abf94698d75906d9aaf88d01b4a7039.svg";
+const imgOtherPlaySquare = "http://localhost:3845/assets/4c44c9ae1b4d1acba0034ce96714886247bb5bcf.svg";
+const imgOtherVideocam = "http://localhost:3845/assets/fbe3649d3c602c63cf8d84b9168fb886adc9f85d.svg";
+const imgOtherCameraAddPhoto = "http://localhost:3845/assets/c78d461b5d060db7f32b587997f8cf766b21e37e.svg";
+const imgOtherCamera = "http://localhost:3845/assets/192a29ca86e16c329d8d410be25b5a9c1d87ee8d.svg";
+const imgOtherHistory = "http://localhost:3845/assets/4d6207989867d74feca5a8c083cb5b626c809304.svg";
+const imgOtherImage = "http://localhost:3845/assets/fcfef7d7b57446f8f814e1fbba5a71cab06c6047.svg";
+const imgOtherHeadsetMic = "http://localhost:3845/assets/8d898eff3c397d68bef9b67cdde9b370f23e7ee1.svg";
+const imgOtherHeadset = "http://localhost:3845/assets/c41eb443b4da660a0ec49bc1d95627c9629ae357.svg";
+const imgOtherUpdate = "http://localhost:3845/assets/64cd471edad1f84e7cb6b842bd75f160a2aa04fd.svg";
+const imgOtherForward = "http://localhost:3845/assets/3fb0496846550f862da0fe4b9eac4ebab1da5cdf.svg";
+const imgOtherFastRewind = "http://localhost:3845/assets/6f168ab6045b3e3aaae4c41733b96f2d7742a767.svg";
+const imgOtherFastForward = "http://localhost:3845/assets/37d8032b1b458d24d67a932aebec472b5fd721e0.svg";
+const imgOtherAlarm = "http://localhost:3845/assets/56c5636164fb8e674c94345a7500dac25b842321.svg";
+const imgOtherClock = "http://localhost:3845/assets/fa5243c3bd6f2015233b72c65f9f118b98dfeddd.svg";
+const imgOtherCropAlt = "http://localhost:3845/assets/d6ea4dcb0886a8486de656a368ad02d87e6da7b1.svg";
+const imgOtherHome3 = "http://localhost:3845/assets/a6a8e5bcc1f69285744bff92e47fbbf9061cb291.svg";
+const imgOtherHome2 = "http://localhost:3845/assets/917e91fb89baa1aee8e4fd17b59a047cd44f1aa4.svg";
+const imgOtherHome1 = "http://localhost:3845/assets/20a1f8f7de9be810047582399bc4717df63275fa.svg";
+const imgOtherScan = "http://localhost:3845/assets/89ea05cfae99a97173e59bc48c8d1617d46b4f3d.svg";
+const imgOtherDisk = "http://localhost:3845/assets/a1dd6e1857c39dec2c797df085ef36ab4964f5b3.svg";
+const imgOtherFlip = "http://localhost:3845/assets/648837aab7b8474a0005d546d4fddbcb4e75d9a0.svg";
+const imgOtherGaugeHigh = "http://localhost:3845/assets/224f140bf7a0fad1ce371f88a9eeb41ef6d58515.svg";
+const imgOtherOrientationLocked = "http://localhost:3845/assets/1a290d18ae70e9d904b11408fd2afcd5dcbe8da8.svg";
+const imgOtherWifiTethering = "http://localhost:3845/assets/ae5b25b23271e93ae820de8dbfc4c117f43782c2.svg";
+const imgOtherCake = "http://localhost:3845/assets/68d9f14a8eeac55919dfaf464e73c7bd1e08029d.svg";
+const imgOtherCoffee = "http://localhost:3845/assets/bf6e95ba5049f89d89bdc34b2ba0e936a96db7e1.svg";
+const imgOtherFullScreenExit = "http://localhost:3845/assets/73f421218dcaca6b60b348c05b77503cf68aa25c.svg";
+const imgOtherMoreVertical = "http://localhost:3845/assets/2148ec006add9eb9bcc8d9b07d4022791ab82a0d.svg";
+const imgOtherCloseCircle = "http://localhost:3845/assets/cda43df1dd68ef41cd7ca224293ebbc8043b70cf.svg";
+const imgOtherClose = "http://localhost:3845/assets/cd8ddd0e3a2bb0ad979d4d7e7d78cac77756ef4c.svg";
+const imgOtherScale1 = "http://localhost:3845/assets/ca6a9763f144214ed91cd857370cd019df4ec0b7.svg";
+const imgFillCheckbox = "http://localhost:3845/assets/e2d41210b574740062e0883d8ca7c43edf37d313.svg";
+const imgFillCheckedIndeterminate = "http://localhost:3845/assets/dfaa127ded6d4c68ae172b1be7c4d400f26b79c1.svg";
+const imgFillCircleCheckmark = "http://localhost:3845/assets/8891aa2c3866edc41593a6106d64e88ffbedb654.svg";
+const img18 = "http://localhost:3845/assets/6f833bd21408e972c9cbf0ab26fb8c28c4c882ca.svg";
+const imgFillSuccess = "http://localhost:3845/assets/54681ddc82c786a313517b0e5d29da7c8cb638c6.svg";
+const imgIcon2 = "http://localhost:3845/assets/34e36ac41728d39e3184d08434d4922a4837c70b.svg";
+const imgFillInfo = "http://localhost:3845/assets/1439887eacbee18062e78612ff9100ba22c9653b.svg";
+const imgFillWarning = "http://localhost:3845/assets/7068a7628e95840fc2f3cdfd7be09b2f8939f733.svg";
+const imgFillQuestion = "http://localhost:3845/assets/17fff98b58407a90c9a3ee69915bb3fd3ff8e9f0.svg";
+const imgFillCloseCircle1 = "http://localhost:3845/assets/46e49242d5aec152e163d88ce6568d6828cf98eb.svg";
+const imgFillArrowSolidDown = "http://localhost:3845/assets/b67bd279b4f378104c6ce407d353148280172c8c.svg";
+const imgVector = "http://localhost:3845/assets/717f8e748ad512959c8ef86e2a8409baa4afd080.svg";
+const imgFillArrowSolidUp = "http://localhost:3845/assets/243959ab4093c3e6fa5226ca6aad94d817cbc956.svg";
+const imgFillArrowSolidRight = "http://localhost:3845/assets/e700424b18d365210210f2aec16f259e8dd3ab57.svg";
+const imgFillArrowSolidLeft = "http://localhost:3845/assets/8f7a85356818f4e0591dbb1311a61b61409a76a1.svg";
+const imgFillHeart = "http://localhost:3845/assets/2208a51283e7dfe62630c06f8e982d23750f39ef.svg";
+const imgFillLock1 = "http://localhost:3845/assets/58205d66debde2f412102cbb7245438f0f39a33a.svg";
+const imgArrowShare3 = "http://localhost:3845/assets/bf8f6939ec01ce3e07f4d47159e7efb25ac31a22.svg";
+const imgArrowFlow = "http://localhost:3845/assets/82fe68497c5cd72e35e2e073208b3af04cf2ad12.svg";
+const imgArrowFlows1 = "http://localhost:3845/assets/d935a246a168bb70f813fe0a39b1064337c321d2.svg";
+const imgArrowSync = "http://localhost:3845/assets/83ac52284a6f29abdb1a0d14f1d3e6df94aba886.svg";
+const imgArrowSwapAlt = "http://localhost:3845/assets/5a7a06c269cc528c64b449d2b14c129767dec36d.svg";
+const imgArrowOutgoing = "http://localhost:3845/assets/0978597cb1bb9751a958acc5f0e0d9f65dcd4bd4.svg";
+const imgArrowUpload = "http://localhost:3845/assets/3fe6bef6aaa3ea4515ae70de4b02b57038b93ecf.svg";
+const imgArrowShare2 = "http://localhost:3845/assets/0945817b6ccc53cb820e8c9126da3bcbe539615f.svg";
+const imgArrowShare1 = "http://localhost:3845/assets/c1ff3a1423d0b1e6cbc743fd8ba47056a767c0ff.svg";
+const imgArrowArrowUpCircle = "http://localhost:3845/assets/e28fa2ddec67bafb2cb58c4247eb8a1f73b0f331.svg";
+const imgArrowArrowDownCircle = "http://localhost:3845/assets/e9db18005a71e0b3bd57f982ac20908b7c69001a.svg";
+const imgArrowArrowBackDouble = "http://localhost:3845/assets/a6dfc90adf81cd689ad7891ddae6e15faa04e7fa.svg";
+const imgArrowArrowForwardDouble = "http://localhost:3845/assets/2b3b54b93f71035d8b4e564cbc3c4a8408128bfe.svg";
+const imgArrowUndo = "http://localhost:3845/assets/813706e8491a16b8fade158cc061e3b62627388a.svg";
+const imgArrowRedo = "http://localhost:3845/assets/91e03408bc9c67697137a1f18e21c8f958404142.svg";
+const imgArrowArrowUpLong = "http://localhost:3845/assets/13a4c5c62d4987b514e111e7b7cd51d4c3cf4b92.svg";
+const imgArrowArrowDownLong = "http://localhost:3845/assets/dd3cdc638bd91acc8fea79502e166dc6746b475a.svg";
+const imgArrowDownload1 = "http://localhost:3845/assets/fe278ba018db2a99e1374b3ba2e6003c8f6f6237.svg";
+const imgArrowDownload4 = "http://localhost:3845/assets/6511aea034c1ac05e5a1286d3b431d24cb586093.svg";
+const imgArrowDownload3 = "http://localhost:3845/assets/d901186e78b4605ffcd6c2017fcea4543ca6a7e8.svg";
+const imgArrowDownload2 = "http://localhost:3845/assets/35abbcf4173c07a22c40332be989257585f96279.svg";
+const imgArrowArrowSubdirectoryBack = "http://localhost:3845/assets/3cc542f0a71e6b3bea1c177c2e20c01519a3f9b7.svg";
+const imgArrowArrowSubdirectoryForward = "http://localhost:3845/assets/7fc9860dffab01323046e79fec5b60cb444d17bb.svg";
+const imgArrowArrowTurnLeft = "http://localhost:3845/assets/5012384cfca8b7c075e6e19ce3e1687052dac221.svg";
+const imgArrowArrowTurnRight = "http://localhost:3845/assets/7c7278746057f76396a38c76ba155f6c9a63d932.svg";
+const imgArrowChevronRight = "http://localhost:3845/assets/900d99f9611e746e7f3da5a550d91a55515b15ee.svg";
+const imgArrowChevronLeft = "http://localhost:3845/assets/9f63806222a6afa57528b1ea25952b8fe0b45820.svg";
+const imgArrowChevronUp = "http://localhost:3845/assets/969025fea94289fa5dc31bcb18288820608e570c.svg";
+const imgArrowChevronDown = "http://localhost:3845/assets/ac83fd47aecbf8987f7746709f8013d3ea85e5ee.svg";
+const imgArrowArrowBackSimple = "http://localhost:3845/assets/7ba98b7e295a50d11fbb0290f709403fd5f80af6.svg";
+const imgArrowArrowForwardSimple = "http://localhost:3845/assets/5a358b28124f16930b43973da37a9c99dd5d8f44.svg";
+const imgArrowArrowUpSimple = "http://localhost:3845/assets/f25e0c033ec5918208888c5d9a2fdfc716ca3a55.svg";
+const imgArrowArrowDownSimple = "http://localhost:3845/assets/5502f5dc74da60c8e5ab016e2485a1e7f7ccdd91.svg";
+const imgArrowArrowBack = "http://localhost:3845/assets/faf2df4c64577ec75f8af16401e9e1a8f098973a.svg";
+const imgArrowArrowForward = "http://localhost:3845/assets/e5a092a0e06a9692a7aa6ef3d81dc58b765fc944.svg";
+const imgArrowArrowUp = "http://localhost:3845/assets/14167b9de504c6ee840cfc3ca096b8bd42d41110.svg";
+const imgArrowArrowDown = "http://localhost:3845/assets/a1178949334022873ccd5da2311d127381ac48cb.svg";
+const imgArrowArrowBackLong = "http://localhost:3845/assets/2df9a9841b2f377a9cb70e37e22d2b6d03c4a909.svg";
+const imgArrowArrowForwardLong = "http://localhost:3845/assets/f7b3d002d8626ae61ff0cd7fbe0052c0baafb1b0.svg";
+const imgActionClick = "http://localhost:3845/assets/e2c319a7ec8b3c4825b059e682c7af672449200f.svg";
+const imgActionBulb = "http://localhost:3845/assets/89ecd7f2ace9e0fe735bfce1add980225b2ec3ea.svg";
+const imgActionLinkExternal = "http://localhost:3845/assets/fb0d2aabfe9bb84d8776b11ab9d930305042bf05.svg";
+const imgActionPlanet = "http://localhost:3845/assets/02abe20b32f699e21203cc08be9aac1b9498bbd2.svg";
+const imgActionDroplet = "http://localhost:3845/assets/a09cb177d492b7b36cf805df2a0f1d58efa9c7de.svg";
+const imgActionAtom = "http://localhost:3845/assets/c4c8a317a5d4b25f2afa70de5b65a883bfb86cad.svg";
+const imgActionOffer = "http://localhost:3845/assets/173865e7d39340f825da3ac458dfaba786c013d9.svg";
+const imgActionGlobe = "http://localhost:3845/assets/c30a39c98776a6e7fe80838f21b207768fe415e0.svg";
+const imgActionColumnsThree = "http://localhost:3845/assets/e0e82ebe5f18565126c9de1eb653fd19ad19d59b.svg";
+const imgActionLayout = "http://localhost:3845/assets/fa50055aad6b1a8c9388ea4d59e7a61937e3ff34.svg";
+const imgActionToolbox = "http://localhost:3845/assets/34f91c22201edb3b9d74d228af872f04616c804f.svg";
+const imgActionCloseCircle1 = "http://localhost:3845/assets/0e793161f3d96835b934a5bec7680f7256cb9d96.svg";
+const imgActionCloseCircle = "http://localhost:3845/assets/259884513edf26a7ef84b898d68a6824e99148b1.svg";
+const imgActionRocketLaunch = "http://localhost:3845/assets/85199e41f56ea81cdb6eb49a7b095bea56eddea0.svg";
+const imgActionBolt2 = "http://localhost:3845/assets/c6a1605d6eb09592ed214035970d0dd4f604ded0.svg";
+const imgActionBolt1Off = "http://localhost:3845/assets/e271ec7a17de33b3709ec8c141cc4eb9431c901c.svg";
+const imgActionBolt1 = "http://localhost:3845/assets/ecba30ceed995159dfc69d62ea376f7cea7d90e6.svg";
+const imgActionCompass = "http://localhost:3845/assets/47b6eeb3f01d69fb36332d8efa9629bdd1c50710.svg";
+const imgActionBookOpen = "http://localhost:3845/assets/17534d0b579508f013606f989b13adaa49338739.svg";
+const imgActionCommand = "http://localhost:3845/assets/40385767186ed4fe3c0fdefe47a367324c4fb42c.svg";
+const imgActionGem = "http://localhost:3845/assets/23bdda78d0deb13d2d59e6cbaabd67649bbb772c.svg";
+const imgActionBox = "http://localhost:3845/assets/f03bca32ef3abc853661e41637405b2184d6194e.svg";
+const imgActionUmbrella = "http://localhost:3845/assets/ae981d2a5d34c769e496c8042c2c548c69743ce8.svg";
+const imgActionToken = "http://localhost:3845/assets/6678566c9d8d417efc5d4d3bd77d69a1fa35ffb1.svg";
+const imgActionSchool = "http://localhost:3845/assets/b0abe9b16d7301364e6096e3e0d001f31947995b.svg";
+const imgActionAward = "http://localhost:3845/assets/ddea6ceafc987276c8f4a366900e0f7b852f8813.svg";
+const imgActionGift = "http://localhost:3845/assets/308a80878f84e1985bc499aae516f5fab23584f4.svg";
+const imgActionTicket = "http://localhost:3845/assets/d02aa442cdaffbb11aab2ef99c617e56d1ea92cc.svg";
+const imgActionCopyright = "http://localhost:3845/assets/35c32f6cf747f1eaaab6258e258195cb131d29bc.svg";
+const imgActionPinDrop = "http://localhost:3845/assets/08fca6945235bf65a2ec33f56d9edfce084ec48a.svg";
+const imgActionLocation = "http://localhost:3845/assets/34dbd345728db72de61863d128a9fb90fd28126d.svg";
+const imgActionCompany = "http://localhost:3845/assets/e40577bc232c0e5c35005e8892356c41a8496de8.svg";
+const imgActionVillage = "http://localhost:3845/assets/cce1274a0354f647fb1f6c790c33265583553d54.svg";
+const imgActionStore = "http://localhost:3845/assets/eb68332e2a05fa8e89b4c9a16cfa30f5895dcaf0.svg";
+const imgActionMap = "http://localhost:3845/assets/e234293af89565b46f4ca14ee46de25b1647a314.svg";
+const imgActionBarChart = "http://localhost:3845/assets/1fd25c1c75ec0565ae41ed2612633edc83817a6c.svg";
+const imgActionGpsOn = "http://localhost:3845/assets/ad6f05aa0553143454f193f762a16abc9378462a.svg";
+const imgActionFormatIndentDecrease = "http://localhost:3845/assets/82092a0bd4f1ef2b448200a16559548e562d28d5.svg";
+const imgActionFormatIndentIncrease = "http://localhost:3845/assets/997e9da02eda2dd5b16b0e05ff9433108a711bd5.svg";
+const imgActionFormatAlignJustify = "http://localhost:3845/assets/1ddbd3168a80428185fbbb70a519235a2a27e368.svg";
+const imgActionFormatAlignCenter = "http://localhost:3845/assets/c3761aeb192c8dae12994d904bad0209aef4efcb.svg";
+const imgActionFormatAlignRight = "http://localhost:3845/assets/b58434feba5c42fd2923f05092676036bbb66964.svg";
+const imgActionFormatAlignLeft = "http://localhost:3845/assets/4a6ddadf34ca663402539b86ec420c84e3c3b55b.svg";
+const imgActionLayersThree = "http://localhost:3845/assets/8372cdfc703f06dc5e6a366c3b07349ab9d1a79d.svg";
+const imgActionFormatListBulleted = "http://localhost:3845/assets/ac117c881f4249a175cf13190bb51f293cfb24e4.svg";
+const imgActionInfinite = "http://localhost:3845/assets/4aef40c8fc1a2609309580198ad4749b8dbd2162.svg";
+const imgActionLink3 = "http://localhost:3845/assets/a9bd235402de4c1ffe2db0d72e4a13e55e3fa548.svg";
+const imgActionLink2 = "http://localhost:3845/assets/86494c409d7e161685aa161ef4ba702638f03bfb.svg";
+const imgActionLink1 = "http://localhost:3845/assets/a17ac7db9ddac6f2dcd42e774894eeffbf07d0e7.svg";
+const imgActionEdit03 = "http://localhost:3845/assets/534c8259e779049e00589c0c34d91deacdfa9407.svg";
+const imgActionEdit02 = "http://localhost:3845/assets/3047c4a436a7a2d2288069e81dd3e73014a7995d.svg";
+const imgActionEdit01 = "http://localhost:3845/assets/dd272bf53347fe82e64bc836a327dc852b6273a0.svg";
+const imgActionSave = "http://localhost:3845/assets/cd52127768373b191c7857c79d70a7713accb2c3.svg";
+const imgActionDelete2 = "http://localhost:3845/assets/0c963d857bc91475851c6a9eaa3b54355c0198b7.svg";
+const imgActionDelete1 = "http://localhost:3845/assets/75df003eb8e7bcd4be2b49f88c2356f435620610.svg";
+const imgActionCopy2 = "http://localhost:3845/assets/b40f5f4a8bb7c9d5a9e5ab7ef73ae8295bb87de6.svg";
+const imgActionCopy1 = "http://localhost:3845/assets/aad8e44a7073c7f7e5f38eb57c89e7043bec4539.svg";
+const imgActionLogIn1 = "http://localhost:3845/assets/e8fd4abd2865a3cc32e942f43f1bf7884fafa309.svg";
+const imgActionHourglassEmpty = "http://localhost:3845/assets/51fa0402a92d59344f6d40979f16887427710972.svg";
+const imgActionBookmark = "http://localhost:3845/assets/4a9168a657059455aacc99ab68b5275f831fcac8.svg";
+const imgActionWorkAlt = "http://localhost:3845/assets/7e46b1e97fe7bca0f71bbf9f166734f93f4021eb.svg";
+const imgActionWork = "http://localhost:3845/assets/162c3b68f89c6aa06f075a7632aee53f5bf1aa20.svg";
+const imgActionRemoveCircle = "http://localhost:3845/assets/462391e8f11f54315eeec48e1f8246fb4dd8621d.svg";
+const imgActionHand = "http://localhost:3845/assets/b91139baaf61cc72cf8ddbe4d4bfe9d814cef374.svg";
+const imgActionCalendarEvent = "http://localhost:3845/assets/4126bf94d6c5701a3cc1c53c638014f6f00cb12e.svg";
+const imgActionCalendar = "http://localhost:3845/assets/eddda24c258916906e46e281a6bb780652781bf2.svg";
+const imgActionVerified = "http://localhost:3845/assets/4f62905741bfa08b8c0c70fc366abb254b833fc9.svg";
+const imgActionHelp = "http://localhost:3845/assets/4a51734ae5da8eeb06febdea7a00a2cf606e3761.svg";
+const imgActionZoomOut = "http://localhost:3845/assets/03ede1c9837e68ed79d7e547db297dee701b0203.svg";
+const imgActionZoomIn = "http://localhost:3845/assets/2cd3ab1ff24482cd0adde8ad0e8357a852f75e80.svg";
+const imgActionSearch01 = "http://localhost:3845/assets/0e318dea6c33a24fb4634bc784d079f5f3a8882a.svg";
+const imgActionSearch = "http://localhost:3845/assets/d798036ae838a77078a1c432f0ca2342b032c7de.svg";
+const imgActionBlock = "http://localhost:3845/assets/3115f35924b2fbf0acad1e716204e77002ad7f19.svg";
+const imgActionBuild = "http://localhost:3845/assets/c0ba61968945fd8b1cbc5ab1e2c31a33998ab130.svg";
+const imgActionWarning = "http://localhost:3845/assets/21c0219f2b118378dd8bcdc2999359c5c9143966.svg";
+const imgActionSettings = "http://localhost:3845/assets/986b4920621fc0e01b82c3e79a425113693dccbd.svg";
+const imgActionLockOpen = "http://localhost:3845/assets/e9b63b5acb00be8ee921eba73a9e41e128e2634a.svg";
+const imgActionLock = "http://localhost:3845/assets/8952a3f2a95982724c4e3e0610ab1e52e7ecec7b.svg";
+const imgActionInfo = "http://localhost:3845/assets/8d55044f462d8a7e7cefcfb1e765db1d8a095caa.svg";
+const imgActionError = "http://localhost:3845/assets/77bad1a54273d4e379be2239dd4a692a5ce97996.svg";
+const imgActionHeart = "http://localhost:3845/assets/517bb7d17038dcec9677a360494c5e6ebe95242f.svg";
+const imgActionHeartAdd = "http://localhost:3845/assets/cea9ea10a5f11797fe98d8a486856d3f409a0ca1.svg";
+const imgActionEyeHidden = "http://localhost:3845/assets/be6a032a858766ef89ef288ffb24c29153c4ab92.svg";
+const imgActionEyeOpen = "http://localhost:3845/assets/b97d0222851868bf3292751d55a23f28ea21e5b4.svg";
+const imgActionEyeClosed = "http://localhost:3845/assets/5067ec414ea790714b223e44afbb02e3ce460b25.svg";
+const imgActionLogOut1 = "http://localhost:3845/assets/18792a4a3eeb800379f2fe1e062d03b4ccafaed2.svg";
+const imgActionCheckSquare = "http://localhost:3845/assets/ff6a550c670bdc49921c228adc2c99d4880e615a.svg";
+const imgActionCheckCircle2 = "http://localhost:3845/assets/5860d4270c633f9b1c7c45b3b98c6b55f46a2295.svg";
+const imgActionCheckCircle1 = "http://localhost:3845/assets/2b0d4b887d55dd447e68c2e6492d367a69e45b8c.svg";
+const imgActionCheckDouble = "http://localhost:3845/assets/d6ee82b87ec568bc33f5b43b18b5b2bff34462de.svg";
+const imgActionCheck = "http://localhost:3845/assets/1d94b781fa937a6a499b2a7b8b70f6ab4dd9203e.svg";
+const imgActionAddToList = "http://localhost:3845/assets/f4e9e751587c1177bf93c722ef980e70464e476f.svg";
+const imgActionAddCircle = "http://localhost:3845/assets/31ddab85d20bd7b09826319f343d5bed14b9b4c7.svg";
+const imgActionAddSquare = "http://localhost:3845/assets/c78248b147bdd7c5223345e14b627c66a2a2713f.svg";
+const imgActionRemove = "http://localhost:3845/assets/c47d1289c9f5a0f8bf08f141bcc29d9952eb9d92.svg";
+const imgActionAdd = "http://localhost:3845/assets/ee3fc7a1f8f78de1227dbe0f1401985cf2e2b276.svg";
+
+function DocumentGif({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[40px]"} data-node-id="8413:5274" data-name="Document/GIF">
+      <div className="absolute inset-0 overflow-clip" data-node-id="8413:5099" data-name="Icon/Document/GIF">
+        <div className="absolute inset-[5%_12.5%]" data-node-id="8413:5100" data-name="编组">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={img} />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function DocumentGeneral({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[40px]"} data-node-id="8413:5260" data-name="Document/General">
+      <div className="absolute inset-0 overflow-clip" data-node-id="8413:5250" data-name="Icon/Document/General">
+        <div className="absolute inset-[5%_12.5%]" data-node-id="8413:5251" data-name="编组备份">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={img1} />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function DocumentVideo({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[40px]"} data-node-id="8413:5269" data-name="Document/video">
+      <div className="absolute inset-0 overflow-clip" data-node-id="8413:5144" data-name="Icon/Document/video">
+        <div className="absolute inset-[5%_12.5%]" data-node-id="8413:5145" data-name="编组">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={img2} />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function DocumentAudio({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[40px]"} data-node-id="8413:5261" data-name="Document/audio">
+      <div className="absolute inset-0 overflow-clip" data-node-id="8413:5089" data-name="Icon/Document/audio">
+        <div className="absolute inset-[5%_12.5%]" data-node-id="8413:5090" data-name="编组">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={img3} />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function DocumentFolder({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[40px]"} data-node-id="8413:5262" data-name="Document/Folder">
+      <div className="absolute inset-0 overflow-clip" data-node-id="8413:5243" data-name="Icon/Document/Folder">
+        <div className="absolute inset-[8.75%_5%_11.25%_5%]" data-node-id="8413:5244" data-name="编组 13">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={img13} />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function DocumentChart({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[40px]"} data-node-id="8413:5266" data-name="Document/chart">
+      <div className="absolute inset-0 overflow-clip" data-node-id="8413:5170" data-name="Icon/Document/chart">
+        <div className="absolute contents inset-[5%_12.5%]" data-node-id="8413:5171" data-name="编组备份">
+          <div className="absolute inset-[5%_12.5%]" data-node-id="8413:5172" data-name="矩形备份 7">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={img7} />
+          </div>
+          <div className="absolute inset-[32.5%_27.5%_22.5%_27.5%] overflow-clip" data-node-id="8413:5173" data-name="Frame">
+            <div className="absolute inset-[12.38%_4.04%_8.21%_4.05%]" data-node-id="8413:5174">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgGroup21275} />
+            </div>
+          </div>
+          <div className="absolute bottom-3/4 left-[67.5%] right-[12.5%] top-[5%]" data-node-id="8413:5176" data-name="矩形备份 8">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={img8} />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function DocumentXls({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[40px]"} data-node-id="8413:5276" data-name="Document/XLS">
+      <div className="absolute inset-0 overflow-clip" data-node-id="8413:5223" data-name="Icon/Document/XLS">
+        <div className="absolute inset-[5%_12.5%]" data-node-id="8413:5224" data-name="编组备份 2">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={img4} />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function DocumentCompressedFile({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[40px]"} data-node-id="8413:5272" data-name="Document/compressed file">
+      <div className="absolute inset-0 overflow-clip" data-node-id="8413:5121" data-name="Icon/Document/compressed file">
+        <div className="absolute inset-[5%_12.5%]" data-node-id="8413:5122" data-name="编组备份">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={img5} />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function DocumentPdf({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[40px]"} data-node-id="8413:5277" data-name="Document/PDF">
+      <div className="absolute inset-0 overflow-clip" data-node-id="8413:5231" data-name="Icon/Document/PDF">
+        <div className="absolute inset-[5%_12.5%]" data-node-id="8413:5232" data-name="编组备份 2">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={img6} />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function DocumentPpt({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[40px]"} data-node-id="8413:5267" data-name="Document/PPT">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDocumentPpt} />
+    </div>
+  );
+}
+
+function DocumentWord({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[40px]"} data-node-id="8413:5264" data-name="Document/Word">
+      <div className="absolute inset-0 overflow-clip" data-node-id="8413:5157" data-name="Icon/Document/Word">
+        <div className="absolute inset-[5%_12.5%]" data-node-id="8413:5158" data-name="编组备份">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={img9} />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function DocumentImg({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[40px]"} data-node-id="8413:5265" data-name="Document/img">
+      <div className="absolute inset-0 overflow-clip" data-node-id="8413:5177" data-name="Icon/Document/img">
+        <div className="absolute inset-[5%_12.5%]" data-node-id="8413:5178" data-name="编组">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={img10} />
+        </div>
+        <div className="absolute inset-[37.5%_29.91%_31.62%_30%]" data-node-id="8413:5181" data-name="编组 127">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={img127} />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function DocumentSql({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[40px]"} data-node-id="8413:5263" data-name="Document/SQL">
+      <div className="absolute inset-0 overflow-clip" data-node-id="8413:5210" data-name="Icon/Document/SQL">
+        <div className="absolute inset-[5%_12.5%]" data-node-id="8413:5211" data-name="编组备份 2">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={img11} />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function DocumentApi({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[40px]"} data-node-id="8413:5273" data-name="Document/API">
+      <div className="absolute inset-0 overflow-clip" data-node-id="8413:5162" data-name="Icon/Document/API">
+        <div className="absolute inset-[5%_12.5%]" data-node-id="8413:5163" data-name="编组备份 2">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={img12} />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function DocumentCad({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[40px]"} data-node-id="8413:5270" data-name="Document/CAD">
+      <div className="absolute inset-0 overflow-clip" data-node-id="8413:5199" data-name="Icon/Document/CAD">
+        <div className="absolute inset-[5%_12.5%]" data-node-id="8413:5200" data-name="编组备份 2">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={img14} />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function DocumentExcel({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[40px]"} data-node-id="8413:5271" data-name="Document/Excel">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDocumentExcel} />
+    </div>
+  );
+}
+
+function DocumentLink({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[40px]"} data-node-id="8413:5275" data-name="Document/link">
+      <div className="absolute inset-0 overflow-clip" data-node-id="8413:5188" data-name="Icon/Document/link">
+        <div className="absolute inset-[5%_12.5%]" data-node-id="8413:5189" data-name="编组">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={img15} />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function DocumentWeb({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[40px]"} data-node-id="8413:5278" data-name="Document/Web">
+      <div className="absolute inset-0 overflow-clip" data-node-id="8413:5134" data-name="Icon/Document/Web">
+        <div className="absolute inset-[5%_12.5%]" data-node-id="8413:5135" data-name="编组">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={img16} />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function DocumentTxt({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[40px]"} data-node-id="8413:5268" data-name="Document/TXT">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDocumentTxt} />
+    </div>
+  );
+}
+
+function PaymentShoppingBag({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:4183" data-name="Payment/shopping-bag">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgPaymentShoppingBag} />
+    </div>
+  );
+}
+
+function PaymentShoppingCart({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:4219" data-name="Payment/shopping-cart">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgPaymentShoppingCart} />
+    </div>
+  );
+}
+
+function PaymentContactless({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:4216" data-name="Payment/contactless-1">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgPaymentContactless1} />
+    </div>
+  );
+}
+
+function PaymentContactless1({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:4180" data-name="Payment/contactless-2">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgPaymentContactless2} />
+    </div>
+  );
+}
+
+function PaymentDollar({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:4186" data-name="Payment/dollar-1">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgPaymentDollar1} />
+    </div>
+  );
+}
+
+function PaymentRmb({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:4174" data-name="Payment/Rmb">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgPaymentRmb} />
+    </div>
+  );
+}
+
+function PaymentBitcoin({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:4171" data-name="Payment/bitcoin-1">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgPaymentBitcoin1} />
+    </div>
+  );
+}
+
+function PaymentDollar1({ className }: { className?: string }) {
+  return (
+    <div className={className || "aspect-[24/24] relative w-[32px]"} data-node-id="8413:4168" data-name="Payment/dollar-2">
+      <div className="absolute bottom-[12.5%] left-1/4 right-1/4 top-[12.5%]" data-node-id="8413:4169" data-name="Icon">
+        <div className="absolute inset-[-2.92%_-4.38%_-2.92%_-4.37%]">
+          <img alt="" className="block max-w-none size-full" src={imgIcon} />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function PaymentBitcoin1({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:4207" data-name="Payment/bitcoin-2">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgPaymentBitcoin2} />
+    </div>
+  );
+}
+
+function PaymentCoins({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:4177" data-name="Payment/coins">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgPaymentCoins} />
+    </div>
+  );
+}
+
+function PaymentBank({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:4225" data-name="Payment/bank">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgPaymentBank} />
+    </div>
+  );
+}
+
+function PaymentCreditCardSecure({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:4213" data-name="Payment/credit-card-secure">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgPaymentCreditCardSecure} />
+    </div>
+  );
+}
+
+function PaymentCreditCard({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:4222" data-name="Payment/credit-card">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgPaymentCreditCard} />
+    </div>
+  );
+}
+
+function PaymentWallet({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:4210" data-name="Payment/wallet-1">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgPaymentWallet1} />
+    </div>
+  );
+}
+
+function PaymentWallet1({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:4165" data-name="Payment/wallet-2">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgPaymentWallet2} />
+    </div>
+  );
+}
+
+function PaymentCreditCardCheck({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:4204" data-name="Payment/credit-card-check">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgPaymentCreditCardCheck} />
+    </div>
+  );
+}
+
+function PaymentCreditCardPercent({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:4201" data-name="Payment/credit-card-percent">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgPaymentCreditCardPercent} />
+    </div>
+  );
+}
+
+function PaymentPercent({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:4198" data-name="Payment/percent">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgPaymentPercent} />
+    </div>
+  );
+}
+
+function PaymentEuro({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:4195" data-name="Payment/euro">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgPaymentEuro} />
+    </div>
+  );
+}
+
+function PaymentCalculate({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:4192" data-name="Payment/calculate-1">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgPaymentCalculate1} />
+    </div>
+  );
+}
+
+function PaymentCalculate1({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:4189" data-name="Payment/calculate-2">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgPaymentCalculate2} />
+    </div>
+  );
+}
+
+function SocialShare({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:4066" data-name="Social/share-1">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSocialShare1} />
+    </div>
+  );
+}
+
+function SocialRssFeed({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:4089" data-name="Social/rss-feed">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSocialRssFeed} />
+    </div>
+  );
+}
+
+function SocialPinterest({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:4067" data-name="Social/pinterest">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSocialPinterest} />
+    </div>
+  );
+}
+
+function SocialTwitter({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:4068" data-name="Social/twitter">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSocialTwitter} />
+    </div>
+  );
+}
+
+function SocialLinkedin({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:4069" data-name="Social/linkedin">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSocialLinkedin} />
+    </div>
+  );
+}
+
+function SocialFacebook({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:4070" data-name="Social/facebook">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSocialFacebook} />
+    </div>
+  );
+}
+
+function SocialAddComment({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:4071" data-name="Social/add-comment">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSocialAddComment} />
+    </div>
+  );
+}
+
+function SocialChatEmpty({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:4074" data-name="Social/chat-empty">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSocialChatEmpty} />
+    </div>
+  );
+}
+
+function SocialChat({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:4075" data-name="Social/chat">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSocialChat} />
+    </div>
+  );
+}
+
+function SocialSend({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:4081" data-name="Social/send">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSocialSend} />
+    </div>
+  );
+}
+
+function SocialMegaphone({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:4076" data-name="Social/megaphone">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSocialMegaphone} />
+    </div>
+  );
+}
+
+function SocialNotificationsPaused({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:4088" data-name="Social/notifications-paused">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSocialNotificationsPaused} />
+    </div>
+  );
+}
+
+function SocialNotificationsOff({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:4079" data-name="Social/notifications-off">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSocialNotificationsOff} />
+    </div>
+  );
+}
+
+function SocialNotificationsActive({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:4077" data-name="Social/notifications-active">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSocialNotificationsActive} />
+    </div>
+  );
+}
+
+function SocialNotifications({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:4080" data-name="Social/notifications">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSocialNotifications} />
+    </div>
+  );
+}
+
+function SocialThumbDown({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:4091" data-name="Social/thumb-down">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSocialThumbDown} />
+    </div>
+  );
+}
+
+function SocialThumbUp({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:4082" data-name="Social/thumb-up">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSocialThumbUp} />
+    </div>
+  );
+}
+
+function SocialStarCircle({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:4083" data-name="Social/star-circle">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSocialStarCircle} />
+    </div>
+  );
+}
+
+function SocialStar({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:4085" data-name="Social/star">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSocialStar} />
+    </div>
+  );
+}
+
+function Social({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:4073" data-name="Social/@">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSocial} />
+    </div>
+  );
+}
+
+function SocialForwardToInbox({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:4087" data-name="Social/forward-to-inbox">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSocialForwardToInbox} />
+    </div>
+  );
+}
+
+function SocialMailOpen({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:4078" data-name="Social/mail-open">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSocialMailOpen} />
+    </div>
+  );
+}
+
+function SocialMail({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:4090" data-name="Social/mail">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSocialMail} />
+    </div>
+  );
+}
+
+function SocialUserGroup({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:4092" data-name="Social/user-group">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSocialUserGroup} />
+    </div>
+  );
+}
+
+function SocialUserCircle({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:4093" data-name="Social/user-circle">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSocialUserCircle} />
+    </div>
+  );
+}
+
+function SocialUserRemove({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:4094" data-name="Social/user-remove">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSocialUserRemove} />
+    </div>
+  );
+}
+
+function SocialUsers({ className }: { className?: string }) {
+  return (
+    <div className={className || "aspect-[20/20] relative w-[32px]"} data-node-id="8413:4084" data-name="Social/users">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSocialUsers} />
+      <div className="absolute inset-[12.5%_45.85%_54.17%_20.82%]" data-node-id="8413:4045" data-name="Oval">
+        <div className="absolute inset-[-6.56%]">
+          <img alt="" className="block max-w-none size-full" src={imgOval} />
+        </div>
+      </div>
+      <div className="absolute inset-[62.5%_37.5%_12.5%_12.5%]" data-node-id="8413:4046" data-name="Path">
+        <div className="absolute inset-[-8.75%_-4.38%_-8.75%_-4.37%]">
+          <img alt="" className="block max-w-none size-full" src={imgPath} />
+        </div>
+      </div>
+      <div className="absolute inset-[13.04%_20.79%_54.67%_66.68%]" data-node-id="8413:4047" data-name="Path">
+        <div className="absolute inset-[-6.78%_-17.45%_-6.78%_-17.46%]">
+          <img alt="" className="block max-w-none size-full" src={imgPath1} />
+        </div>
+      </div>
+      <div className="absolute bottom-[12.5%] left-3/4 right-[12.5%] top-[63.13%]" data-node-id="8413:4048" data-name="Path">
+        <div className="absolute inset-[-8.98%_-17.5%_-8.97%_-17.5%]">
+          <img alt="" className="block max-w-none size-full" src={imgPath2} />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function SocialUserAdd({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:4072" data-name="Social/user-add">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSocialUserAdd} />
+    </div>
+  );
+}
+
+function SocialUser({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:4086" data-name="Social/user">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSocialUser} />
+    </div>
+  );
+}
+
+function SocialYoutube({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:4095" data-name="Social/youtube">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSocialYoutube} />
+    </div>
+  );
+}
+
+function OtherList({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:4337" data-name="Other/list">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherList} />
+    </div>
+  );
+}
+
+function OtherInbox({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:4347" data-name="Other/inbox">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherInbox} />
+    </div>
+  );
+}
+
+function OtherCloudDownload({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:4338" data-name="Other/cloud-download">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherCloudDownload} />
+    </div>
+  );
+}
+
+function OtherCloudUpload({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:4339" data-name="Other/cloud-upload">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherCloudUpload} />
+    </div>
+  );
+}
+
+function OtherAddFolder({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:4341" data-name="Other/add-folder">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherAddFolder} />
+    </div>
+  );
+}
+
+function OtherFolder({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:4342" data-name="Other/folder">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherFolder} />
+    </div>
+  );
+}
+
+function OtherClipboard({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:4348" data-name="Other/clipboard">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherClipboard} />
+    </div>
+  );
+}
+
+function OtherFileCopy({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:4349" data-name="Other/file-copy">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherFileCopy} />
+    </div>
+  );
+}
+
+function OtherNote({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:4345" data-name="Other/note-01">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherNote01} />
+    </div>
+  );
+}
+
+function OtherAddPage({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:4344" data-name="Other/add-page">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherAddPage} />
+    </div>
+  );
+}
+
+function OtherFile({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:4346" data-name="Other/file">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherFile} />
+    </div>
+  );
+}
+
+function OtherFile1({ className }: { className?: string }) {
+  return (
+    <div className={className || "h-[32px] relative w-[28px]"} data-node-id="8413:4340" data-name="Other/file-2">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherFile2} />
+    </div>
+  );
+}
+
+function OtherNote1({ className }: { className?: string }) {
+  return (
+    <div className={className || "aspect-[24/24] relative w-[32px]"} data-node-id="8413:4343" data-name="Other/note-02">
+      <div className="absolute flex inset-[16.67%] items-center justify-center" data-node-id="8413:4336" style={{ containerType: "size" }}>
+        <div className="-rotate-180 -scale-x-100 flex-none h-[100cqh] w-[100cqw]">
+          <div className="relative size-full" data-name="Icon">
+            <div className="absolute inset-[-3.28%]">
+              <img alt="" className="block max-w-none size-full" src={imgIcon1} />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function OtherAddBlock({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:4350" data-name="Other/add-block">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherAddBlock} />
+    </div>
+  );
+}
+
+function OtherSignalCellular3Bar({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3628" data-name="Other/signal-cellular-3-bar">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherSignalCellular3Bar} />
+    </div>
+  );
+}
+
+function OtherPhoneCallEnd({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3627" data-name="Other/phone-call-end">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherPhoneCallEnd} />
+    </div>
+  );
+}
+
+function OtherPhone({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3642" data-name="Other/phone">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherPhone} />
+    </div>
+  );
+}
+
+function OtherPhoneAdd({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3675" data-name="Other/phone-add">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherPhoneAdd} />
+    </div>
+  );
+}
+
+function OtherPhoneMissed({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3629" data-name="Other/phone-missed">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherPhoneMissed} />
+    </div>
+  );
+}
+
+function OtherPhoneCall1({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3630" data-name="Other/phone-call-2">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherPhoneCall2} />
+    </div>
+  );
+}
+
+function OtherPhoneCall({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3639" data-name="Other/phone-call-1">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherPhoneCall1} />
+    </div>
+  );
+}
+
+function OtherPower({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3686" data-name="Other/power">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherPower} />
+    </div>
+  );
+}
+
+function OtherAirplay({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3625" data-name="Other/airplay">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherAirplay} />
+    </div>
+  );
+}
+
+function OtherBreadcrumbSlash({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3623" data-name="Other/BreadcrumbSlash">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherBreadcrumbSlash} />
+    </div>
+  );
+}
+
+function OtherLoading3({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3624" data-name="Other/loading-4">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherLoading4} />
+    </div>
+  );
+}
+
+function OtherLoading2({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3633" data-name="Other/loading-3">
+      <div className="absolute content-stretch flex inset-0 items-baseline p-[2px]" data-node-id="8411:3613" data-name="loading-3">
+        <div className="flex-[1_0_0] h-full min-w-px relative" data-node-id="8411:3614" data-name="编组 4">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={img17} />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function OtherLoading({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3672" data-name="Other/loading-1">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherLoading1} />
+    </div>
+  );
+}
+
+function OtherLoading1({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3646" data-name="Other/loading-2">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherLoading2} />
+    </div>
+  );
+}
+
+function OtherAr({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3673" data-name="Other/AR">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherAr} />
+    </div>
+  );
+}
+
+function OtherSliders({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3688" data-name="Other/sliders">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherSliders} />
+    </div>
+  );
+}
+
+function OtherPodcast({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3662" data-name="Other/podcast">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherPodcast} />
+    </div>
+  );
+}
+
+function OtherStorage({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3641" data-name="Other/storage">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherStorage} />
+    </div>
+  );
+}
+
+function OtherLibrary({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3681" data-name="Other/library">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherLibrary} />
+    </div>
+  );
+}
+
+function OtherPrint({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3626" data-name="Other/print">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherPrint} />
+    </div>
+  );
+}
+
+function OtherFaceId({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3643" data-name="Other/face-id">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherFaceId} />
+    </div>
+  );
+}
+
+function OtherFilterListAdd({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3656" data-name="Other/filter-list-add">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherFilterListAdd} />
+    </div>
+  );
+}
+
+function OtherFilterList({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3654" data-name="Other/filter-list">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherFilterList} />
+    </div>
+  );
+}
+
+function OtherMoreHorizontal({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3653" data-name="Other/more-horizontal">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherMoreHorizontal} />
+    </div>
+  );
+}
+
+function OtherRefresh({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3647" data-name="Other/refresh">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherRefresh} />
+    </div>
+  );
+}
+
+function OtherAppMenu({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3655" data-name="Other/app-menu">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherAppMenu} />
+    </div>
+  );
+}
+
+function OtherFullScreen({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3648" data-name="Other/full-screen">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherFullScreen} />
+    </div>
+  );
+}
+
+function OtherCrop({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3685" data-name="Other/crop">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherCrop} />
+    </div>
+  );
+}
+
+function OtherLoop({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3680" data-name="Other/loop">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherLoop} />
+    </div>
+  );
+}
+
+function OtherMenu({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3661" data-name="Other/menu">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherMenu} />
+    </div>
+  );
+}
+
+function OtherGridAlt({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3674" data-name="Other/grid-alt">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherGridAlt} />
+    </div>
+  );
+}
+
+function OtherCast({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3687" data-name="Other/cast">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherCast} />
+    </div>
+  );
+}
+
+function OtherCameraTimer({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3678" data-name="Other/camera-timer">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherCameraTimer} />
+    </div>
+  );
+}
+
+function OtherPlaySquare({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3658" data-name="Other/play-square">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherPlaySquare} />
+    </div>
+  );
+}
+
+function OtherVideocam({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3682" data-name="Other/videocam">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherVideocam} />
+    </div>
+  );
+}
+
+function OtherCameraAddPhoto({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3636" data-name="Other/camera-add-photo">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherCameraAddPhoto} />
+    </div>
+  );
+}
+
+function OtherCamera({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3683" data-name="Other/camera">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherCamera} />
+    </div>
+  );
+}
+
+function OtherHistory({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3634" data-name="Other/history">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherHistory} />
+    </div>
+  );
+}
+
+function OtherImage({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3677" data-name="Other/image">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherImage} />
+    </div>
+  );
+}
+
+function OtherHeadsetMic({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3651" data-name="Other/headset-mic">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherHeadsetMic} />
+    </div>
+  );
+}
+
+function OtherHeadset({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3638" data-name="Other/headset">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherHeadset} />
+    </div>
+  );
+}
+
+function OtherUpdate({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3644" data-name="Other/update">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherUpdate} />
+    </div>
+  );
+}
+
+function OtherForward({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3657" data-name="Other/forward">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherForward} />
+    </div>
+  );
+}
+
+function OtherFastRewind({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3640" data-name="Other/fast-rewind">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherFastRewind} />
+    </div>
+  );
+}
+
+function OtherFastForward({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3671" data-name="Other/fast-forward">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherFastForward} />
+    </div>
+  );
+}
+
+function OtherAlarm({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3670" data-name="Other/alarm">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherAlarm} />
+    </div>
+  );
+}
+
+function OtherClock({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3652" data-name="Other/clock">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherClock} />
+    </div>
+  );
+}
+
+function OtherCropAlt({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3690" data-name="Other/crop-alt">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherCropAlt} />
+    </div>
+  );
+}
+
+function OtherHome2({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3667" data-name="Other/home-3">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherHome3} />
+    </div>
+  );
+}
+
+function OtherHome1({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3668" data-name="Other/home-2">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherHome2} />
+    </div>
+  );
+}
+
+function OtherHome({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3669" data-name="Other/home-1">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherHome1} />
+    </div>
+  );
+}
+
+function OtherScan({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3632" data-name="Other/scan">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherScan} />
+    </div>
+  );
+}
+
+function OtherDisk({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3676" data-name="Other/disk">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherDisk} />
+    </div>
+  );
+}
+
+function OtherFlip({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3660" data-name="Other/flip">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherFlip} />
+    </div>
+  );
+}
+
+function OtherGaugeHigh({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3635" data-name="Other/gauge-high">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherGaugeHigh} />
+    </div>
+  );
+}
+
+function OtherOrientationLocked({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3637" data-name="Other/orientation-locked">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherOrientationLocked} />
+    </div>
+  );
+}
+
+function OtherWifiTethering({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3664" data-name="Other/wifi-tethering">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherWifiTethering} />
+    </div>
+  );
+}
+
+function OtherCake({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3666" data-name="Other/cake">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherCake} />
+    </div>
+  );
+}
+
+function OtherCoffee({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3689" data-name="Other/coffee">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherCoffee} />
+    </div>
+  );
+}
+
+function OtherFullScreenExit({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3645" data-name="Other/full-screen-exit">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherFullScreenExit} />
+    </div>
+  );
+}
+
+function OtherMoreVertical({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3659" data-name="Other/more-vertical">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherMoreVertical} />
+    </div>
+  );
+}
+
+function OtherCloseCircle({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3663" data-name="Other/close-circle">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherCloseCircle} />
+    </div>
+  );
+}
+
+function OtherClose({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3649" data-name="Other/close">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherClose} />
+    </div>
+  );
+}
+
+function OtherScale({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3679" data-name="Other/scale-1">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgOtherScale1} />
+    </div>
+  );
+}
+
+function FillCheckbox({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[24px]"} data-node-id="8413:5544" data-name="Fill/Checkbox">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFillCheckbox} />
+    </div>
+  );
+}
+
+function FillCheckedIndeterminate({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[24px]"} data-node-id="8413:5545" data-name="Fill/Checked Indeterminate">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFillCheckedIndeterminate} />
+    </div>
+  );
+}
+
+function FillCircleCheckmark({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[24px]"} data-node-id="8413:5555" data-name="Fill/Circle Checkmark">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFillCircleCheckmark} />
+    </div>
+  );
+}
+
+function FillClose({ className }: { className?: string }) {
+  return (
+    <div className={className || "aspect-[16/16] relative w-[32px]"} data-node-id="8413:5558" data-name="Fill/close">
+      <div className="absolute inset-[6.25%]" data-node-id="8413:5522" data-name="形状">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={img18} />
+      </div>
+    </div>
+  );
+}
+
+function FillSuccess({ className }: { className?: string }) {
+  return (
+    <div className={className || "aspect-[16/16] relative w-[32px]"} data-node-id="8413:5548" data-name="Fill/success">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFillSuccess} />
+    </div>
+  );
+}
+
+function FillStar({ className }: { className?: string }) {
+  return (
+    <div className={className || "aspect-[24/24] relative w-[32px]"} data-node-id="8413:5546" data-name="Fill/star">
+      <div className="absolute inset-[8.33%_8.33%_12.41%_8.33%]" data-node-id="8413:5514" data-name="Icon">
+        <div className="absolute inset-[3.56%_2.9%_1.58%_2.9%]">
+          <img alt="" className="block max-w-none size-full" src={imgIcon2} />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function FillInfo({ className }: { className?: string }) {
+  return (
+    <div className={className || "aspect-[16/16] relative w-[32px]"} data-node-id="8413:5547" data-name="Fill/Info">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFillInfo} />
+    </div>
+  );
+}
+
+function FillWarning({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:5549" data-name="Fill/Warning">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFillWarning} />
+    </div>
+  );
+}
+
+function FillQuestion({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:5553" data-name="Fill/Question">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFillQuestion} />
+    </div>
+  );
+}
+
+function FillCloseCircle({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:5550" data-name="Fill/close-circle-1">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFillCloseCircle1} />
+    </div>
+  );
+}
+
+function FillArrowSolidDown({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:5551" data-name="Fill/arrow solid - Down">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFillArrowSolidDown} />
+    </div>
+  );
+}
+
+function FillArrowSolid({ className }: { className?: string }) {
+  return (
+    <div className={className || "aspect-[24/24] overflow-clip relative w-[32px]"} data-node-id="8413:5554" data-name="Fill/arrow solid">
+      <div className="-translate-y-1/2 absolute aspect-[16/24] left-1/4 right-1/4 top-1/2" data-node-id="8413:5531" data-name="Vector">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector} />
+      </div>
+    </div>
+  );
+}
+
+function FillArrowSolidUp({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:5556" data-name="Fill/arrow solid - Up">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFillArrowSolidUp} />
+    </div>
+  );
+}
+
+function FillArrowSolidRight({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:5552" data-name="Fill/arrow solid - Right">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFillArrowSolidRight} />
+    </div>
+  );
+}
+
+function FillArrowSolidLeft({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:5557" data-name="Fill/arrow solid - left">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFillArrowSolidLeft} />
+    </div>
+  );
+}
+
+function FillHeart({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:5559" data-name="Fill/heart">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFillHeart} />
+    </div>
+  );
+}
+
+function FillLock({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:5560" data-name="Fill/lock-1">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFillLock1} />
+    </div>
+  );
+}
+
+function ArrowShare2({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:4065" data-name="Arrow/share-3">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgArrowShare3} />
+    </div>
+  );
+}
+
+function ArrowFlow({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3046" data-name="Arrow/flow">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgArrowFlow} />
+    </div>
+  );
+}
+
+function ArrowFlows({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3083" data-name="Arrow/flows-1">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgArrowFlows1} />
+    </div>
+  );
+}
+
+function ArrowSync({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3084" data-name="Arrow/sync">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgArrowSync} />
+    </div>
+  );
+}
+
+function ArrowSwapAlt({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3047" data-name="Arrow/swap-alt">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgArrowSwapAlt} />
+    </div>
+  );
+}
+
+function ArrowOutgoing({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3073" data-name="Arrow/outgoing">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgArrowOutgoing} />
+    </div>
+  );
+}
+
+function ArrowUpload({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3048" data-name="Arrow/upload">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgArrowUpload} />
+    </div>
+  );
+}
+
+function ArrowShare1({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:4061" data-name="Arrow/share-2">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgArrowShare2} />
+    </div>
+  );
+}
+
+function ArrowShare({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3065" data-name="Arrow/share-1">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgArrowShare1} />
+    </div>
+  );
+}
+
+function ArrowArrowUpCircle({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3054" data-name="Arrow/arrow-up-circle">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgArrowArrowUpCircle} />
+    </div>
+  );
+}
+
+function ArrowArrowDownCircle({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3052" data-name="Arrow/arrow-down-circle">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgArrowArrowDownCircle} />
+    </div>
+  );
+}
+
+function ArrowArrowBackDouble({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3049" data-name="Arrow/arrow-back-double">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgArrowArrowBackDouble} />
+    </div>
+  );
+}
+
+function ArrowArrowForwardDouble({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3050" data-name="Arrow/arrow-forward-double">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgArrowArrowForwardDouble} />
+    </div>
+  );
+}
+
+function ArrowUndo({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3053" data-name="Arrow/undo">
+      <div className="absolute inset-[0_0_0_-2.19%]">
+        <img alt="" className="block max-w-none size-full" src={imgArrowUndo} />
+      </div>
+    </div>
+  );
+}
+
+function ArrowRedo({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3055" data-name="Arrow/redo">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgArrowRedo} />
+    </div>
+  );
+}
+
+function ArrowArrowUpLong({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3077" data-name="Arrow/arrow-up-long">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgArrowArrowUpLong} />
+    </div>
+  );
+}
+
+function ArrowArrowDownLong({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3056" data-name="Arrow/arrow-down-long">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgArrowArrowDownLong} />
+    </div>
+  );
+}
+
+function ArrowDownload({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3082" data-name="Arrow/download-1">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgArrowDownload1} />
+    </div>
+  );
+}
+
+function ArrowDownload3({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3057" data-name="Arrow/download-4">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgArrowDownload4} />
+    </div>
+  );
+}
+
+function ArrowDownload2({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3059" data-name="Arrow/download-3">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgArrowDownload3} />
+    </div>
+  );
+}
+
+function ArrowDownload1({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3061" data-name="Arrow/download-2">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgArrowDownload2} />
+    </div>
+  );
+}
+
+function ArrowArrowSubdirectoryBack({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3063" data-name="Arrow/arrow-subdirectory-back">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgArrowArrowSubdirectoryBack} />
+    </div>
+  );
+}
+
+function ArrowArrowSubdirectoryForward({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3058" data-name="Arrow/arrow-subdirectory-forward">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgArrowArrowSubdirectoryForward} />
+    </div>
+  );
+}
+
+function ArrowArrowTurnLeft({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3064" data-name="Arrow/arrow-turn-left">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgArrowArrowTurnLeft} />
+    </div>
+  );
+}
+
+function ArrowArrowTurnRight({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3066" data-name="Arrow/arrow-turn-right">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgArrowArrowTurnRight} />
+    </div>
+  );
+}
+
+function ArrowChevronRight({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3067" data-name="Arrow/chevron-right">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgArrowChevronRight} />
+    </div>
+  );
+}
+
+function ArrowChevronLeft({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3068" data-name="Arrow/chevron-Left">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgArrowChevronLeft} />
+    </div>
+  );
+}
+
+function ArrowChevronUp({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3070" data-name="Arrow/chevron-up">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgArrowChevronUp} />
+    </div>
+  );
+}
+
+function ArrowChevronDown({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3074" data-name="Arrow/chevron-down">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgArrowChevronDown} />
+    </div>
+  );
+}
+
+function ArrowArrowBackSimple({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3071" data-name="Arrow/arrow-back-simple">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgArrowArrowBackSimple} />
+    </div>
+  );
+}
+
+function ArrowArrowForwardSimple({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3072" data-name="Arrow/arrow-forward-simple">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgArrowArrowForwardSimple} />
+    </div>
+  );
+}
+
+function ArrowArrowUpSimple({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3069" data-name="Arrow/arrow-up-simple">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgArrowArrowUpSimple} />
+    </div>
+  );
+}
+
+function ArrowArrowDownSimple({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3078" data-name="Arrow/arrow-down-simple">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgArrowArrowDownSimple} />
+    </div>
+  );
+}
+
+function ArrowArrowBack({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3075" data-name="Arrow/arrow-back">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgArrowArrowBack} />
+    </div>
+  );
+}
+
+function ArrowArrowForward({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3080" data-name="Arrow/arrow-forward">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgArrowArrowForward} />
+    </div>
+  );
+}
+
+function ArrowArrowUp({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3062" data-name="Arrow/arrow-up">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgArrowArrowUp} />
+    </div>
+  );
+}
+
+function ArrowArrowDown({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3081" data-name="Arrow/arrow-down">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgArrowArrowDown} />
+    </div>
+  );
+}
+
+function ArrowArrowBackLong({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3086" data-name="Arrow/arrow-back-long">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgArrowArrowBackLong} />
+    </div>
+  );
+}
+
+function ArrowArrowForwardLong({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:3087" data-name="Arrow/arrow-forward-long">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgArrowArrowForwardLong} />
+    </div>
+  );
+}
+
+function ActionClick({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2651" data-name="Action/click">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionClick} />
+    </div>
+  );
+}
+
+function ActionBulb({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2677" data-name="Action/bulb">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionBulb} />
+    </div>
+  );
+}
+
+function ActionLinkExternal({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2678" data-name="Action/link-external">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionLinkExternal} />
+    </div>
+  );
+}
+
+function ActionPlanet({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2608" data-name="Action/planet">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionPlanet} />
+    </div>
+  );
+}
+
+function ActionDroplet({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2609" data-name="Action/droplet">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionDroplet} />
+    </div>
+  );
+}
+
+function ActionAtom({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2671" data-name="Action/atom">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionAtom} />
+    </div>
+  );
+}
+
+function ActionOffer({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2676" data-name="Action/offer">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionOffer} />
+    </div>
+  );
+}
+
+function ActionGlobe({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2615" data-name="Action/globe">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionGlobe} />
+    </div>
+  );
+}
+
+function ActionColumnsThree({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2619" data-name="Action/columns-three">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionColumnsThree} />
+    </div>
+  );
+}
+
+function ActionLayout({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8413:5286" data-name="Action/layout">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionLayout} />
+    </div>
+  );
+}
+
+function ActionToolbox({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2610" data-name="Action/toolbox">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionToolbox} />
+    </div>
+  );
+}
+
+function ActionCloseCircle1({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2653" data-name="Action/close-circle-1">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionCloseCircle1} />
+    </div>
+  );
+}
+
+function ActionCloseCircle({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2605" data-name="Action/close-circle">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionCloseCircle} />
+    </div>
+  );
+}
+
+function ActionRocketLaunch({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2637" data-name="Action/rocket-launch">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionRocketLaunch} />
+    </div>
+  );
+}
+
+function ActionBolt1({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2606" data-name="Action/bolt-2">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionBolt2} />
+    </div>
+  );
+}
+
+function ActionBolt1Off({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2607" data-name="Action/bolt-1-off">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionBolt1Off} />
+    </div>
+  );
+}
+
+function ActionBolt({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2687" data-name="Action/bolt-1">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionBolt1} />
+    </div>
+  );
+}
+
+function ActionCompass({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2611" data-name="Action/compass">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionCompass} />
+    </div>
+  );
+}
+
+function ActionBookOpen({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2673" data-name="Action/book-open">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionBookOpen} />
+    </div>
+  );
+}
+
+function ActionCommand({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2620" data-name="Action/command">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionCommand} />
+    </div>
+  );
+}
+
+function ActionGem({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2626" data-name="Action/gem">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionGem} />
+    </div>
+  );
+}
+
+function ActionBox({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2612" data-name="Action/box">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionBox} />
+    </div>
+  );
+}
+
+function ActionUmbrella({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2690" data-name="Action/umbrella">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionUmbrella} />
+    </div>
+  );
+}
+
+function ActionToken({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2685" data-name="Action/token">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionToken} />
+    </div>
+  );
+}
+
+function ActionSchool({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2698" data-name="Action/school">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionSchool} />
+    </div>
+  );
+}
+
+function ActionAward({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2638" data-name="Action/award">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionAward} />
+    </div>
+  );
+}
+
+function ActionGift({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2695" data-name="Action/gift">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionGift} />
+    </div>
+  );
+}
+
+function ActionTicket({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2613" data-name="Action/ticket">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionTicket} />
+    </div>
+  );
+}
+
+function ActionCopyright({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2668" data-name="Action/copyright">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionCopyright} />
+    </div>
+  );
+}
+
+function ActionPinDrop({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2614" data-name="Action/pin-drop">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionPinDrop} />
+    </div>
+  );
+}
+
+function ActionLocation({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2632" data-name="Action/location">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionLocation} />
+    </div>
+  );
+}
+
+function ActionCompany({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2641" data-name="Action/company">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionCompany} />
+    </div>
+  );
+}
+
+function ActionVillage({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2623" data-name="Action/village">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionVillage} />
+    </div>
+  );
+}
+
+function ActionStore({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2658" data-name="Action/store">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionStore} />
+    </div>
+  );
+}
+
+function ActionMap({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2617" data-name="Action/map">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionMap} />
+    </div>
+  );
+}
+
+function ActionBarChart({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2665" data-name="Action/bar-chart">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionBarChart} />
+    </div>
+  );
+}
+
+function ActionGpsOn({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2616" data-name="Action/gps-on">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionGpsOn} />
+    </div>
+  );
+}
+
+function ActionFormatIndentDecrease({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2618" data-name="Action/format-indent-decrease">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionFormatIndentDecrease} />
+    </div>
+  );
+}
+
+function ActionFormatIndentIncrease({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2642" data-name="Action/format-indent-increase">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionFormatIndentIncrease} />
+    </div>
+  );
+}
+
+function ActionFormatAlignJustify({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2621" data-name="Action/format-align-justify">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionFormatAlignJustify} />
+    </div>
+  );
+}
+
+function ActionFormatAlignCenter({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2622" data-name="Action/format-align-center">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionFormatAlignCenter} />
+    </div>
+  );
+}
+
+function ActionFormatAlignRight({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2693" data-name="Action/format-align-right">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionFormatAlignRight} />
+    </div>
+  );
+}
+
+function ActionFormatAlignLeft({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2624" data-name="Action/format-align-left">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionFormatAlignLeft} />
+    </div>
+  );
+}
+
+function ActionLayersThree({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2625" data-name="Action/layers-three">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionLayersThree} />
+    </div>
+  );
+}
+
+function ActionFormatListBulleted({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2627" data-name="Action/format-list-bulleted">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionFormatListBulleted} />
+    </div>
+  );
+}
+
+function ActionInfinite({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2628" data-name="Action/infinite">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionInfinite} />
+    </div>
+  );
+}
+
+function ActionLink2({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2633" data-name="Action/link-3">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionLink3} />
+    </div>
+  );
+}
+
+function ActionLink1({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2643" data-name="Action/link-2">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionLink2} />
+    </div>
+  );
+}
+
+function ActionLink({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2629" data-name="Action/link-1">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionLink1} />
+    </div>
+  );
+}
+
+function ActionEdit2({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2630" data-name="Action/edit-03">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionEdit03} />
+    </div>
+  );
+}
+
+function ActionEdit1({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2631" data-name="Action/edit-02">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionEdit02} />
+    </div>
+  );
+}
+
+function ActionEdit({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2634" data-name="Action/edit-01">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionEdit01} />
+    </div>
+  );
+}
+
+function ActionSave({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2657" data-name="Action/save">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionSave} />
+    </div>
+  );
+}
+
+function ActionDelete1({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2635" data-name="Action/delete-2">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionDelete2} />
+    </div>
+  );
+}
+
+function ActionDelete({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2636" data-name="Action/delete-1">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionDelete1} />
+    </div>
+  );
+}
+
+function ActionCopy1({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2639" data-name="Action/copy-2">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionCopy2} />
+    </div>
+  );
+}
+
+function ActionCopy({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2645" data-name="Action/copy-1">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionCopy1} />
+    </div>
+  );
+}
+
+function ActionLogIn({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2652" data-name="Action/log-in-1">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionLogIn1} />
+    </div>
+  );
+}
+
+function ActionHourglassEmpty({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2650" data-name="Action/hourglass-empty">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionHourglassEmpty} />
+    </div>
+  );
+}
+
+function ActionBookmark({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2640" data-name="Action/bookmark">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionBookmark} />
+    </div>
+  );
+}
+
+function ActionWorkAlt({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2679" data-name="Action/work-alt">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionWorkAlt} />
+    </div>
+  );
+}
+
+function ActionWork({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2672" data-name="Action/work">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionWork} />
+    </div>
+  );
+}
+
+function ActionRemoveCircle({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2682" data-name="Action/remove-circle">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionRemoveCircle} />
+    </div>
+  );
+}
+
+function ActionHand({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2696" data-name="Action/hand">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionHand} />
+    </div>
+  );
+}
+
+function ActionCalendarEvent({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2648" data-name="Action/calendar-event">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionCalendarEvent} />
+    </div>
+  );
+}
+
+function ActionCalendar({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2680" data-name="Action/calendar">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionCalendar} />
+    </div>
+  );
+}
+
+function ActionVerified({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2649" data-name="Action/verified">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionVerified} />
+    </div>
+  );
+}
+
+function ActionHelp({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2655" data-name="Action/help">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionHelp} />
+    </div>
+  );
+}
+
+function ActionZoomOut({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2647" data-name="Action/zoom-out">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionZoomOut} />
+    </div>
+  );
+}
+
+function ActionZoomIn({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2663" data-name="Action/zoom-in">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionZoomIn} />
+    </div>
+  );
+}
+
+function ActionSearch1({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2659" data-name="Action/search-01">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionSearch01} />
+    </div>
+  );
+}
+
+function ActionSearch({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2661" data-name="Action/search">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionSearch} />
+    </div>
+  );
+}
+
+function ActionBlock({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2662" data-name="Action/block">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionBlock} />
+    </div>
+  );
+}
+
+function ActionBuild({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2686" data-name="Action/build">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionBuild} />
+    </div>
+  );
+}
+
+function ActionWarning({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2692" data-name="Action/warning">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionWarning} />
+    </div>
+  );
+}
+
+function ActionSettings({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2694" data-name="Action/settings">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionSettings} />
+    </div>
+  );
+}
+
+function ActionLockOpen({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2664" data-name="Action/lock-open">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionLockOpen} />
+    </div>
+  );
+}
+
+function ActionLock({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2674" data-name="Action/lock">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionLock} />
+    </div>
+  );
+}
+
+function ActionInfo({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2667" data-name="Action/info">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionInfo} />
+    </div>
+  );
+}
+
+function ActionError({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2669" data-name="Action/error">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionError} />
+    </div>
+  );
+}
+
+function ActionHeart({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2670" data-name="Action/heart">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionHeart} />
+    </div>
+  );
+}
+
+function ActionHeartAdd({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2654" data-name="Action/heart-add">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionHeartAdd} />
+    </div>
+  );
+}
+
+function ActionEyeHidden({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2675" data-name="Action/eye-hidden">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionEyeHidden} />
+    </div>
+  );
+}
+
+function ActionEyeOpen({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2681" data-name="Action/eye-open">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionEyeOpen} />
+    </div>
+  );
+}
+
+function ActionEyeClosed({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2683" data-name="Action/eye-closed">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionEyeClosed} />
+    </div>
+  );
+}
+
+function ActionLogOut({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2688" data-name="Action/log-out-1">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionLogOut1} />
+    </div>
+  );
+}
+
+function ActionCheckSquare({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2689" data-name="Action/check-square">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionCheckSquare} />
+    </div>
+  );
+}
+
+function ActionCheckCircle1({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2691" data-name="Action/check-circle-2">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionCheckCircle2} />
+    </div>
+  );
+}
+
+function ActionCheckCircle({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2656" data-name="Action/check-circle-1">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionCheckCircle1} />
+    </div>
+  );
+}
+
+function ActionCheckDouble({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2660" data-name="Action/check-double">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionCheckDouble} />
+    </div>
+  );
+}
+
+function ActionCheck({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2666" data-name="Action/check">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionCheck} />
+    </div>
+  );
+}
+
+function ActionAddToList({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2684" data-name="Action/add-to-list">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionAddToList} />
+    </div>
+  );
+}
+
+function ActionAddCircle({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2700" data-name="Action/add-circle">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionAddCircle} />
+    </div>
+  );
+}
+
+function ActionAddSquare({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2699" data-name="Action/add-square">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionAddSquare} />
+    </div>
+  );
+}
+
+function ActionRemove({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2697" data-name="Action/remove">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionRemove} />
+    </div>
+  );
+}
+
+function ActionAdd({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="8411:2644" data-name="Action/add">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgActionAdd} />
+    </div>
+  );
+}
+
+export default function Frame() {
+  return (
+    <div className="bg-white content-stretch flex flex-col gap-[var(--space\/40,40px)] items-start p-[40px] relative size-full" data-node-id="8411:1780">
+      <div className="content-stretch flex flex-col gap-[var(--space\/default-12,12px)] items-start relative shrink-0 w-full" data-node-id="8411:2407" data-name="Action">
+        <p className="[word-break:break-word] font-[family-name:var(--el-font-family,'Inter:700')] font-[var(--el-font-weight-bold,normal)] h-[40px] leading-[var(--el-font-line-height-extra-large,40px)] relative shrink-0 text-[color:var(----el-color-black,black)] text-[length:var(--el-font-size-extra-large,32px)] w-full" data-node-id="8411:2403">
+          Action
+        </p>
+        <div className="bg-[#fbfbff] gap-x-[42px] gap-y-[42px] grid grid-cols-[repeat(10,minmax(0,1fr))] grid-rows-[repeat(10,fit-content(100%))] px-[32px] py-[40px] relative rounded-[24px] shrink-0 w-full" data-node-id="8411:1788" data-name="action">
+          <ActionAdd className="col-1 relative row-1 shrink-0 size-[32px]" />
+          <ActionRemove className="col-2 relative row-1 shrink-0 size-[32px]" />
+          <ActionAddSquare className="col-3 relative row-1 shrink-0 size-[32px]" />
+          <ActionAddCircle className="col-4 relative row-1 shrink-0 size-[32px]" />
+          <ActionAddToList className="col-5 relative row-1 shrink-0 size-[32px]" />
+          <ActionCheck className="col-6 relative row-1 shrink-0 size-[32px]" />
+          <ActionCheckDouble className="col-7 relative row-1 shrink-0 size-[32px]" />
+          <ActionCheckCircle className="col-8 relative row-1 shrink-0 size-[32px]" />
+          <ActionCheckCircle1 className="col-9 relative row-1 shrink-0 size-[32px]" />
+          <ActionCheckSquare className="col-10 relative row-1 shrink-0 size-[32px]" />
+          <ActionLogOut className="col-1 relative row-2 shrink-0 size-[32px]" />
+          <ActionEyeClosed className="col-2 relative row-2 shrink-0 size-[32px]" />
+          <ActionEyeOpen className="col-3 relative row-2 shrink-0 size-[32px]" />
+          <ActionEyeHidden className="col-4 relative row-2 shrink-0 size-[32px]" />
+          <ActionHeartAdd className="col-5 relative row-2 shrink-0 size-[32px]" />
+          <ActionHeart className="col-6 relative row-2 shrink-0 size-[32px]" />
+          <ActionError className="col-7 relative row-2 shrink-0 size-[32px]" />
+          <ActionInfo className="col-8 relative row-2 shrink-0 size-[32px]" />
+          <ActionLock className="col-9 relative row-2 shrink-0 size-[32px]" />
+          <ActionLockOpen className="col-10 relative row-2 shrink-0 size-[32px]" />
+          <ActionSettings className="col-1 relative row-3 shrink-0 size-[32px]" />
+          <ActionWarning className="col-2 relative row-3 shrink-0 size-[32px]" />
+          <ActionBuild className="col-3 relative row-3 shrink-0 size-[32px]" />
+          <ActionBlock className="col-4 relative row-3 shrink-0 size-[32px]" />
+          <ActionSearch className="col-5 relative row-3 shrink-0 size-[32px]" />
+          <ActionSearch1 className="col-6 relative row-3 shrink-0 size-[32px]" />
+          <ActionZoomIn className="col-7 relative row-3 shrink-0 size-[32px]" />
+          <ActionZoomOut className="col-8 relative row-3 shrink-0 size-[32px]" />
+          <ActionHelp className="col-9 relative row-3 shrink-0 size-[32px]" />
+          <ActionVerified className="col-10 relative row-3 shrink-0 size-[32px]" />
+          <ActionCalendar className="col-1 relative row-4 shrink-0 size-[32px]" />
+          <ActionCalendarEvent className="col-2 relative row-4 shrink-0 size-[32px]" />
+          <ActionHand className="col-3 relative row-4 shrink-0 size-[32px]" />
+          <ActionRemoveCircle className="col-4 relative row-4 shrink-0 size-[32px]" />
+          <ActionWork className="col-5 relative row-4 shrink-0 size-[32px]" />
+          <ActionWorkAlt className="col-6 relative row-4 shrink-0 size-[32px]" />
+          <ActionBookmark className="col-10 relative row-4 shrink-0 size-[32px]" />
+          <ActionHourglassEmpty className="col-1 relative row-5 shrink-0 size-[32px]" />
+          <ActionLogIn className="col-2 relative row-5 shrink-0 size-[32px]" />
+          <ActionCopy className="col-3 relative row-5 shrink-0 size-[32px]" />
+          <ActionCopy1 className="col-4 relative row-5 shrink-0 size-[32px]" />
+          <ActionDelete className="col-5 relative row-5 shrink-0 size-[32px]" />
+          <ActionDelete1 className="col-6 relative row-5 shrink-0 size-[32px]" />
+          <ActionSave className="col-7 relative row-5 shrink-0 size-[32px]" />
+          <ActionEdit className="col-8 relative row-5 shrink-0 size-[32px]" />
+          <ActionEdit1 className="col-9 relative row-5 shrink-0 size-[32px]" />
+          <ActionEdit2 className="col-10 relative row-5 shrink-0 size-[32px]" />
+          <ActionLink className="col-1 relative row-6 shrink-0 size-[32px]" />
+          <ActionLink1 className="col-2 relative row-6 shrink-0 size-[32px]" />
+          <ActionLink2 className="col-3 relative row-6 shrink-0 size-[32px]" />
+          <ActionInfinite className="col-4 relative row-6 shrink-0 size-[32px]" />
+          <ActionFormatListBulleted className="col-5 relative row-6 shrink-0 size-[32px]" />
+          <ActionLayersThree className="col-6 relative row-6 shrink-0 size-[32px]" />
+          <ActionFormatAlignLeft className="col-7 relative row-6 shrink-0 size-[32px]" />
+          <ActionFormatAlignRight className="col-8 relative row-6 shrink-0 size-[32px]" />
+          <ActionFormatAlignCenter className="col-9 relative row-6 shrink-0 size-[32px]" />
+          <ActionFormatAlignJustify className="col-10 relative row-6 shrink-0 size-[32px]" />
+          <ActionFormatIndentIncrease className="col-2 relative row-7 shrink-0 size-[32px]" />
+          <ActionFormatIndentDecrease className="col-3 relative row-7 shrink-0 size-[32px]" />
+          <ActionGpsOn className="col-4 relative row-7 shrink-0 size-[32px]" />
+          <ActionBarChart className="col-5 relative row-7 shrink-0 size-[32px]" />
+          <ActionMap className="col-6 relative row-7 shrink-0 size-[32px]" />
+          <ActionStore className="col-7 relative row-7 shrink-0 size-[32px]" />
+          <ActionVillage className="col-8 relative row-7 shrink-0 size-[32px]" />
+          <ActionCompany className="col-9 relative row-7 shrink-0 size-[32px]" />
+          <ActionLocation className="col-1 relative row-8 shrink-0 size-[32px]" />
+          <ActionPinDrop className="col-2 relative row-8 shrink-0 size-[32px]" />
+          <ActionCopyright className="col-3 relative row-8 shrink-0 size-[32px]" />
+          <ActionTicket className="col-4 relative row-8 shrink-0 size-[32px]" />
+          <ActionGift className="col-5 relative row-8 shrink-0 size-[32px]" />
+          <ActionAward className="col-6 relative row-8 shrink-0 size-[32px]" />
+          <ActionSchool className="col-7 relative row-8 shrink-0 size-[32px]" />
+          <ActionToken className="col-8 relative row-8 shrink-0 size-[32px]" />
+          <ActionUmbrella className="col-9 relative row-8 shrink-0 size-[32px]" />
+          <ActionBox className="col-10 relative row-8 shrink-0 size-[32px]" />
+          <ActionGem className="col-1 relative row-9 shrink-0 size-[32px]" />
+          <ActionCommand className="col-2 relative row-9 shrink-0 size-[32px]" />
+          <ActionBookOpen className="col-3 relative row-9 shrink-0 size-[32px]" />
+          <ActionCompass className="col-4 relative row-9 shrink-0 size-[32px]" />
+          <ActionBolt className="col-1 relative row-10 shrink-0 size-[32px]" />
+          <ActionBolt1Off className="col-2 relative row-10 shrink-0 size-[32px]" />
+          <ActionBolt1 className="col-3 relative row-10 shrink-0 size-[32px]" />
+          <ActionRocketLaunch className="col-4 relative row-10 shrink-0 size-[32px]" />
+          <ActionCloseCircle className="col-5 relative row-10 shrink-0 size-[32px]" />
+          <ActionCloseCircle1 className="col-6 relative row-10 shrink-0 size-[32px]" />
+          <ActionToolbox className="col-7 relative row-4 shrink-0 size-[32px]" />
+          <ActionLayout className="col-8 relative row-4 shrink-0 size-[32px]" />
+          <ActionColumnsThree className="col-9 relative row-4 shrink-0 size-[32px]" />
+          <ActionGlobe className="col-1 relative row-7 shrink-0 size-[32px]" />
+          <ActionOffer className="col-10 relative row-7 shrink-0 size-[32px]" />
+          <ActionAtom className="col-5 relative row-9 shrink-0 size-[32px]" />
+          <ActionDroplet className="col-6 relative row-9 shrink-0 size-[32px]" />
+          <ActionPlanet className="col-7 relative row-9 shrink-0 size-[32px]" />
+          <ActionLinkExternal className="col-8 relative row-9 shrink-0 size-[32px]" />
+          <ActionBulb className="col-9 relative row-9 shrink-0 size-[32px]" />
+          <ActionClick className="col-10 relative row-9 shrink-0 size-[32px]" />
+        </div>
+      </div>
+      <div className="content-stretch flex flex-col gap-[var(--space\/default-12,12px)] items-start relative shrink-0 w-full" data-node-id="8411:2408" data-name="Arrow">
+        <p className="[word-break:break-word] font-[family-name:var(--el-font-family,'Inter:700')] font-[var(--el-font-weight-bold,normal)] h-[40px] leading-[var(--el-font-line-height-extra-large,40px)] relative shrink-0 text-[color:var(----el-color-black,black)] text-[length:var(--el-font-size-extra-large,32px)] w-full" data-node-id="8411:2409">
+          Arrow
+        </p>
+        <div className="bg-[#fbfbff] gap-x-[42px] gap-y-[42px] grid grid-cols-[repeat(10,minmax(0,1fr))] grid-rows-[repeat(4,fit-content(100%))] px-[32px] py-[40px] relative rounded-[24px] shrink-0 w-full" data-node-id="8411:2410" data-name="Arrow">
+          <ArrowArrowForwardLong className="col-1 relative row-1 shrink-0 size-[32px]" />
+          <ArrowArrowBackLong className="col-2 relative row-1 shrink-0 size-[32px]" />
+          <ArrowArrowDown className="col-3 relative row-1 shrink-0 size-[32px]" />
+          <ArrowArrowUp className="col-4 relative row-1 shrink-0 size-[32px]" />
+          <ArrowArrowForward className="col-5 relative row-1 shrink-0 size-[32px]" />
+          <ArrowArrowBack className="col-6 relative row-1 shrink-0 size-[32px]" />
+          <ArrowArrowDownSimple className="col-7 relative row-1 shrink-0 size-[32px]" />
+          <ArrowArrowUpSimple className="col-8 relative row-1 shrink-0 size-[32px]" />
+          <ArrowArrowForwardSimple className="col-9 relative row-1 shrink-0 size-[32px]" />
+          <ArrowArrowBackSimple className="col-10 relative row-1 shrink-0 size-[32px]" />
+          <ArrowChevronDown className="col-1 relative row-2 shrink-0 size-[32px]" />
+          <ArrowChevronUp className="col-2 relative row-2 shrink-0 size-[32px]" />
+          <ArrowChevronLeft className="col-3 relative row-2 shrink-0 size-[32px]" />
+          <ArrowChevronRight className="col-4 relative row-2 shrink-0 size-[32px]" />
+          <ArrowArrowTurnRight className="col-5 relative row-2 shrink-0 size-[32px]" />
+          <ArrowArrowTurnLeft className="col-6 relative row-2 shrink-0 size-[32px]" />
+          <ArrowArrowSubdirectoryForward className="col-7 relative row-2 shrink-0 size-[32px]" />
+          <ArrowArrowSubdirectoryBack className="col-8 relative row-2 shrink-0 size-[32px]" />
+          <ArrowDownload1 className="col-1 relative row-3 shrink-0 size-[32px]" />
+          <ArrowDownload2 className="col-2 relative row-3 shrink-0 size-[32px]" />
+          <ArrowDownload3 className="col-3 relative row-3 shrink-0 size-[32px]" />
+          <ArrowDownload className="col-4 relative row-3 shrink-0 size-[32px]" />
+          <ArrowArrowDownLong className="col-5 relative row-3 shrink-0 size-[32px]" />
+          <ArrowArrowUpLong className="col-6 relative row-3 shrink-0 size-[32px]" />
+          <ArrowRedo className="col-9 relative row-2 shrink-0 size-[32px]" />
+          <ArrowUndo className="col-10 relative row-2 shrink-0 size-[32px]" />
+          <ArrowArrowForwardDouble className="col-7 relative row-3 shrink-0 size-[32px]" />
+          <ArrowArrowBackDouble className="col-8 relative row-3 shrink-0 size-[32px]" />
+          <ArrowArrowDownCircle className="col-9 relative row-3 shrink-0 size-[32px]" />
+          <ArrowArrowUpCircle className="col-10 relative row-3 shrink-0 size-[32px]" />
+          <ArrowShare className="col-1 relative row-4 shrink-0 size-[32px]" />
+          <ArrowShare1 className="col-2 relative row-4 shrink-0 size-[32px]" />
+          <ArrowUpload className="col-4 relative row-4 shrink-0 size-[32px]" />
+          <ArrowOutgoing className="col-5 flex items-center justify-center relative row-4 shrink-0" />
+          <ArrowSwapAlt className="col-6 relative row-4 shrink-0 size-[32px]" />
+          <ArrowSync className="col-7 relative row-4 shrink-0 size-[32px]" />
+          <ArrowFlows className="col-8 relative row-4 shrink-0 size-[32px]" />
+          <ArrowFlow className="col-9 relative row-4 shrink-0 size-[32px]" />
+          <ArrowShare2 className="col-3 relative row-4 shrink-0 size-[32px]" />
+        </div>
+      </div>
+      <div className="content-stretch flex flex-col gap-[var(--space\/default-12,12px)] items-start relative shrink-0 w-full" data-node-id="8413:5287" data-name="Fill">
+        <p className="[word-break:break-word] font-[family-name:var(--el-font-family,'Inter:700')] font-[var(--el-font-weight-bold,normal)] h-[40px] leading-[var(--el-font-line-height-extra-large,40px)] relative shrink-0 text-[color:var(----el-color-black,black)] text-[length:var(--el-font-size-extra-large,32px)] w-full" data-node-id="8413:5288">
+          Fill
+        </p>
+        <div className="bg-[#fbfbff] gap-x-[42px] gap-y-[42px] grid grid-cols-[repeat(10,minmax(0,1fr))] grid-rows-[repeat(2,fit-content(100%))] px-[32px] py-[40px] relative rounded-[24px] shrink-0 w-full" data-node-id="8413:5289" data-name="Fill">
+          <FillLock className="col-1 relative row-2 shrink-0 size-[32px]" />
+          <FillHeart className="col-2 relative row-2 shrink-0 size-[32px]" />
+          <FillArrowSolidLeft className="col-1 relative row-1 shrink-0 size-[32px]" />
+          <FillArrowSolidRight className="col-2 relative row-1 shrink-0 size-[32px]" />
+          <FillArrowSolidUp className="col-3 relative row-1 shrink-0 size-[32px]" />
+          <FillArrowSolid className="col-4 overflow-clip relative row-1 shrink-0 size-[32px]" />
+          <FillArrowSolidDown className="col-5 relative row-1 shrink-0 size-[32px]" />
+          <FillCloseCircle className="col-6 relative row-1 shrink-0 size-[32px]" />
+          <FillQuestion className="col-7 relative row-1 shrink-0 size-[32px]" />
+          <FillWarning className="col-8 relative row-1 shrink-0 size-[32px]" />
+          <FillInfo className="col-9 relative row-1 shrink-0 size-[32px]" />
+          <FillStar className="col-3 relative row-2 shrink-0 size-[32px]" />
+          <FillSuccess className="col-4 relative row-2 shrink-0 size-[32px]" />
+          <FillClose className="col-5 relative row-2 shrink-0 size-[32px]" />
+          <FillCircleCheckmark className="col-6 relative row-2 shrink-0 size-[24px]" />
+          <FillCheckedIndeterminate className="col-7 relative row-2 shrink-0 size-[24px]" />
+          <FillCheckbox className="col-8 relative row-2 shrink-0 size-[24px]" />
+        </div>
+      </div>
+      <div className="content-stretch flex flex-col gap-[var(--space\/default-12,12px)] items-start relative shrink-0 w-full" data-node-id="8411:2956" data-name="Other">
+        <p className="[word-break:break-word] font-[family-name:var(--el-font-family,'Inter:700')] font-[var(--el-font-weight-bold,normal)] h-[40px] leading-[var(--el-font-line-height-extra-large,40px)] relative shrink-0 text-[color:var(----el-color-black,black)] text-[length:var(--el-font-size-extra-large,32px)] w-full" data-node-id="8411:2957">
+          Other
+        </p>
+        <div className="bg-[#fbfbff] gap-x-[42px] gap-y-[42px] grid grid-cols-[repeat(10,minmax(0,1fr))] grid-rows-[repeat(9,fit-content(100%))] px-[var(--space\/32,32px)] py-[var(--space\/40,40px)] relative rounded-[24px] shrink-0 w-full" data-node-id="8411:2958" data-name="Other">
+          <OtherScale className="col-4 relative row-2 shrink-0 size-[32px]" />
+          <OtherClose className="col-1 relative row-3 shrink-0 size-[32px]" />
+          <OtherCloseCircle className="col-2 relative row-3 shrink-0 size-[32px]" />
+          <OtherMoreVertical className="col-6 relative row-3 shrink-0 size-[32px]" />
+          <OtherFullScreenExit className="col-4 relative row-4 shrink-0 size-[32px]" />
+          <OtherCoffee className="col-6 relative row-4 shrink-0 size-[32px]" />
+          <OtherCake className="col-7 relative row-4 shrink-0 size-[32px]" />
+          <OtherWifiTethering className="col-10 relative row-4 shrink-0 size-[32px]" />
+          <OtherOrientationLocked className="col-5 relative row-5 shrink-0 size-[32px]" />
+          <OtherGaugeHigh className="col-6 relative row-5 shrink-0 size-[32px]" />
+          <OtherFlip className="col-7 relative row-5 shrink-0 size-[32px]" />
+          <OtherDisk className="col-8 relative row-5 shrink-0 size-[32px]" />
+          <OtherScan className="col-9 relative row-5 shrink-0 size-[32px]" />
+          <OtherHome className="col-1 relative row-1 shrink-0 size-[32px]" />
+          <OtherHome1 className="col-2 relative row-1 shrink-0 size-[32px]" />
+          <OtherHome2 className="col-3 relative row-1 shrink-0 size-[32px]" />
+          <OtherCropAlt className="col-5 relative row-2 shrink-0 size-[32px]" />
+          <OtherClock className="col-4 relative row-1 shrink-0 size-[32px]" />
+          <OtherAlarm className="col-5 relative row-1 shrink-0 size-[32px]" />
+          <OtherFastForward className="col-1 relative row-5 shrink-0 size-[32px]" />
+          <OtherFastRewind className="col-2 relative row-5 shrink-0 size-[32px]" />
+          <OtherForward className="col-4 relative row-5 shrink-0 size-[32px]" />
+          <OtherUpdate className="col-6 relative row-1 shrink-0 size-[32px]" />
+          <OtherHeadset className="col-8 relative row-1 shrink-0 size-[32px]" />
+          <OtherHeadsetMic className="col-9 relative row-1 shrink-0 size-[32px]" />
+          <OtherImage className="col-10 relative row-1 shrink-0 size-[32px]" />
+          <OtherHistory className="col-7 relative row-1 shrink-0 size-[32px]" />
+          <OtherCamera className="col-1 relative row-2 shrink-0 size-[32px]" />
+          <OtherCameraAddPhoto className="col-2 relative row-2 shrink-0 size-[32px]" />
+          <OtherVideocam className="col-3 relative row-2 shrink-0 size-[32px]" />
+          <OtherPlaySquare className="col-6 relative row-2 shrink-0 size-[32px]" />
+          <OtherCameraTimer className="col-7 relative row-2 shrink-0 size-[32px]" />
+          <OtherCast className="col-8 relative row-2 shrink-0 size-[32px]" />
+          <OtherGridAlt className="col-9 relative row-2 shrink-0 size-[32px]" />
+          <OtherMenu className="col-10 relative row-2 shrink-0 size-[32px]" />
+          <OtherLoop className="col-3 relative row-5 shrink-0 size-[32px]" />
+          <OtherCrop className="col-3 relative row-3 shrink-0 size-[32px]" />
+          <OtherFullScreen className="col-4 relative row-3 shrink-0 size-[32px]" />
+          <OtherAppMenu className="col-5 relative row-3 shrink-0 size-[32px]" />
+          <OtherRefresh className="col-8 relative row-3 shrink-0 size-[32px]" />
+          <OtherMoreHorizontal className="col-7 relative row-3 shrink-0 size-[32px]" />
+          <OtherFilterList className="col-1 relative row-4 shrink-0 size-[32px]" />
+          <OtherFilterListAdd className="col-2 relative row-4 shrink-0 size-[32px]" />
+          <OtherFaceId className="col-9 relative row-3 shrink-0 size-[32px]" />
+          <OtherPrint className="col-10 relative row-3 shrink-0 size-[32px]" />
+          <OtherLibrary className="col-3 relative row-4 shrink-0 size-[32px]" />
+          <OtherStorage className="col-8 relative row-4 shrink-0 size-[32px]" />
+          <OtherPodcast className="col-9 relative row-4 shrink-0 size-[32px]" />
+          <OtherSliders className="col-5 relative row-4 shrink-0 size-[32px]" />
+          <OtherAr className="col-10 relative row-5 shrink-0 size-[32px]" />
+          <OtherLoading1 className="col-1 relative row-7 shrink-0 size-[32px]" />
+          <OtherLoading className="col-2 relative row-7 shrink-0 size-[32px]" />
+          <OtherLoading2 className="col-3 relative row-7 shrink-0 size-[32px]" />
+          <OtherLoading3 className="col-4 relative row-7 shrink-0 size-[32px]" />
+          <OtherBreadcrumbSlash className="col-5 relative row-7 shrink-0 size-[32px]" />
+          <OtherAirplay className="col-2 relative row-6 shrink-0 size-[32px]" />
+          <OtherPower className="col-3 relative row-6 shrink-0 size-[32px]" />
+          <OtherPhoneCall className="col-4 relative row-6 shrink-0 size-[32px]" />
+          <OtherPhoneCall1 className="col-5 relative row-6 shrink-0 size-[32px]" />
+          <OtherPhoneMissed className="col-6 relative row-6 shrink-0 size-[32px]" />
+          <OtherPhoneAdd className="col-7 relative row-6 shrink-0 size-[32px]" />
+          <OtherPhone className="col-8 relative row-6 shrink-0 size-[32px]" />
+          <OtherPhoneCallEnd className="col-9 relative row-6 shrink-0 size-[32px]" />
+          <OtherSignalCellular3Bar className="col-1 relative row-6 shrink-0 size-[32px]" />
+          <OtherAddBlock className="col-1 relative row-8 shrink-0 size-[32px]" />
+          <OtherNote1 className="col-2 relative row-8 shrink-0 size-[32px]" />
+          <OtherFile1 className="col-3 h-[32px] relative row-8 shrink-0 w-[28px]" />
+          <OtherFile className="col-4 relative row-8 shrink-0 size-[32px]" />
+          <OtherAddPage className="col-5 relative row-8 shrink-0 size-[32px]" />
+          <OtherNote className="col-6 relative row-8 shrink-0 size-[32px]" />
+          <OtherFileCopy className="col-7 relative row-8 shrink-0 size-[32px]" />
+          <OtherClipboard className="col-8 relative row-8 shrink-0 size-[32px]" />
+          <OtherFolder className="col-9 relative row-8 shrink-0 size-[32px]" />
+          <OtherAddFolder className="col-10 relative row-8 shrink-0 size-[32px]" />
+          <OtherCloudUpload className="col-1 relative row-9 shrink-0 size-[32px]" />
+          <OtherCloudDownload className="col-2 relative row-9 shrink-0 size-[32px]" />
+          <OtherInbox className="col-3 relative row-9 shrink-0 size-[32px]" />
+          <OtherList className="col-4 relative row-9 shrink-0 size-[32px]" />
+        </div>
+      </div>
+      <div className="content-stretch flex flex-col gap-[var(--space\/default-12,12px)] items-start relative shrink-0 w-full" data-node-id="8413:3691" data-name="Social + communication">
+        <p className="[word-break:break-word] font-[family-name:var(--el-font-family,'Inter:700')] font-[var(--el-font-weight-bold,normal)] h-[40px] leading-[var(--el-font-line-height-extra-large,40px)] relative shrink-0 text-[color:var(----el-color-black,black)] text-[length:var(--el-font-size-extra-large,32px)] w-full" data-node-id="8413:3692">
+          Social + communication
+        </p>
+        <div className="bg-[#fbfbff] gap-x-[42px] gap-y-[42px] grid grid-cols-[repeat(10,minmax(0,1fr))] grid-rows-[repeat(3,fit-content(100%))] px-[var(--space\/32,32px)] py-[var(--space\/40,40px)] relative rounded-[24px] shrink-0 w-full" data-node-id="8413:3693" data-name="Social + communication">
+          <SocialYoutube className="col-1 relative row-3 shrink-0 size-[32px]" />
+          <SocialUser className="col-1 relative row-1 shrink-0 size-[32px]" />
+          <SocialUserAdd className="col-2 relative row-1 shrink-0 size-[32px]" />
+          <SocialUsers className="col-6 relative row-1 shrink-0 size-[32px]" />
+          <SocialUserRemove className="col-3 relative row-1 shrink-0 size-[32px]" />
+          <SocialUserCircle className="col-4 relative row-1 shrink-0 size-[32px]" />
+          <SocialUserGroup className="col-5 relative row-1 shrink-0 size-[32px]" />
+          <SocialMail className="col-7 relative row-1 shrink-0 size-[32px]" />
+          <SocialMailOpen className="col-8 relative row-1 shrink-0 size-[32px]" />
+          <SocialForwardToInbox className="col-9 relative row-1 shrink-0 size-[32px]" />
+          <Social className="col-10 relative row-1 shrink-0 size-[32px]" />
+          <SocialStar className="col-1 relative row-2 shrink-0 size-[32px]" />
+          <SocialStarCircle className="col-2 relative row-2 shrink-0 size-[32px]" />
+          <SocialThumbUp className="col-3 relative row-2 shrink-0 size-[32px]" />
+          <SocialThumbDown className="col-4 relative row-2 shrink-0 size-[32px]" />
+          <SocialNotifications className="col-5 relative row-2 shrink-0 size-[32px]" />
+          <SocialNotificationsActive className="col-6 relative row-2 shrink-0 size-[32px]" />
+          <SocialNotificationsOff className="col-7 relative row-2 shrink-0 size-[32px]" />
+          <SocialNotificationsPaused className="col-8 relative row-2 shrink-0 size-[32px]" />
+          <SocialMegaphone className="col-9 relative row-2 shrink-0 size-[32px]" />
+          <SocialSend className="col-10 relative row-2 shrink-0 size-[32px]" />
+          <SocialChat className="col-2 relative row-3 shrink-0 size-[32px]" />
+          <SocialChatEmpty className="col-3 relative row-3 shrink-0 size-[32px]" />
+          <SocialAddComment className="col-4 relative row-3 shrink-0 size-[32px]" />
+          <SocialFacebook className="col-5 relative row-3 shrink-0 size-[32px]" />
+          <SocialLinkedin className="col-6 relative row-3 shrink-0 size-[32px]" />
+          <SocialTwitter className="col-7 relative row-3 shrink-0 size-[32px]" />
+          <SocialPinterest className="col-8 relative row-3 shrink-0 size-[32px]" />
+          <SocialRssFeed className="col-9 relative row-3 shrink-0 size-[32px]" />
+          <SocialShare className="col-10 relative row-3 shrink-0 size-[32px]" />
+        </div>
+      </div>
+      <div className="content-stretch flex flex-col gap-[var(--space\/default-12,12px)] items-start relative shrink-0 w-full" data-node-id="8413:4096" data-name="Payment">
+        <p className="[word-break:break-word] font-[family-name:var(--el-font-family,'Inter:700')] font-[var(--el-font-weight-bold,normal)] h-[40px] leading-[var(--el-font-line-height-extra-large,40px)] relative shrink-0 text-[color:var(----el-color-black,black)] text-[length:var(--el-font-size-extra-large,32px)] w-full" data-node-id="8413:4097">
+          Payment
+        </p>
+        <div className="bg-[#fbfbff] gap-x-[42px] gap-y-[42px] grid grid-cols-[repeat(10,minmax(0,1fr))] grid-rows-[repeat(3,fit-content(100%))] px-[var(--space\/32,32px)] py-[var(--space\/40,40px)] relative rounded-[24px] shrink-0 w-full" data-node-id="8413:4098" data-name="Payment">
+          <PaymentCalculate1 className="col-9 relative row-1 shrink-0 size-[32px]" />
+          <PaymentCalculate className="col-10 relative row-1 shrink-0 size-[32px]" />
+          <PaymentEuro className="col-1 relative row-2 shrink-0 size-[32px]" />
+          <PaymentPercent className="col-2 relative row-2 shrink-0 size-[32px]" />
+          <PaymentCreditCardPercent className="col-6 relative row-1 shrink-0 size-[32px]" />
+          <PaymentCreditCardCheck className="col-7 relative row-1 shrink-0 size-[32px]" />
+          <PaymentWallet1 className="col-2 relative row-1 shrink-0 size-[32px]" />
+          <PaymentWallet className="col-3 relative row-1 shrink-0 size-[32px]" />
+          <PaymentCreditCard className="col-4 relative row-1 shrink-0 size-[32px]" />
+          <PaymentCreditCardSecure className="col-5 relative row-1 shrink-0 size-[32px]" />
+          <PaymentBank className="col-1 relative row-1 shrink-0 size-[32px]" />
+          <PaymentCoins className="col-8 relative row-1 shrink-0 size-[32px]" />
+          <PaymentBitcoin1 className="col-3 relative row-2 shrink-0 size-[32px]" />
+          <PaymentDollar1 className="col-4 relative row-2 shrink-0 size-[32px]" />
+          <PaymentBitcoin className="col-5 relative row-2 shrink-0 size-[32px]" />
+          <PaymentRmb className="col-6 relative row-2 shrink-0 size-[32px]" />
+          <PaymentDollar className="col-7 relative row-2 shrink-0 size-[32px]" />
+          <PaymentContactless1 className="col-1 relative row-3 shrink-0 size-[32px]" />
+          <PaymentContactless className="col-2 relative row-3 shrink-0 size-[32px]" />
+          <PaymentShoppingCart className="col-3 relative row-3 shrink-0 size-[32px]" />
+          <PaymentShoppingBag className="col-4 relative row-3 shrink-0 size-[32px]" />
+        </div>
+      </div>
+      <div className="content-stretch flex flex-col gap-[var(--space\/default-12,12px)] items-start relative shrink-0 w-full" data-node-id="8413:4351" data-name="Payment">
+        <p className="[word-break:break-word] font-[family-name:var(--el-font-family,'Inter:700')] font-[var(--el-font-weight-bold,normal)] h-[40px] leading-[var(--el-font-line-height-extra-large,40px)] min-w-full relative shrink-0 text-[color:var(----el-color-black,black)] text-[length:var(--el-font-size-extra-large,32px)] w-[min-content]" data-node-id="8413:4352">
+          Payment
+        </p>
+        <div className="bg-[#fbfbff] gap-x-[42px] gap-y-[42px] grid-cols-[__________fit-content(100%)_fit-content(100%)_fit-content(100%)_fit-content(100%)_fit-content(100%)_fit-content(100%)_fit-content(100%)_fit-content(100%)_fit-content(100%)_40.00px] grid-rows-[repeat(3,fit-content(100%))] inline-grid px-[var(--space\/32,32px)] py-[var(--space\/40,40px)] relative rounded-[24px] shrink-0" data-node-id="8413:4353" data-name="Payment">
+          <DocumentTxt className="col-6 relative row-1 shrink-0 size-[40px]" />
+          <DocumentWeb className="col-8 relative row-1 shrink-0 size-[40px]" />
+          <DocumentLink className="col-9 relative row-1 shrink-0 size-[40px]" />
+          <DocumentExcel className="col-3 relative row-2 shrink-0 size-[40px]" />
+          <DocumentCad className="col-4 relative row-2 shrink-0 size-[40px]" />
+          <DocumentApi className="col-5 relative row-2 shrink-0 size-[40px]" />
+          <DocumentSql className="col-6 relative row-2 shrink-0 size-[40px]" />
+          <DocumentImg className="col-3 relative row-1 shrink-0 size-[40px]" />
+          <DocumentWord className="col-1 relative row-1 shrink-0 size-[40px]" />
+          <DocumentPpt className="col-2 relative row-1 shrink-0 size-[40px]" />
+          <DocumentPdf className="col-4 relative row-1 shrink-0 size-[40px]" />
+          <DocumentCompressedFile className="col-5 relative row-1 shrink-0 size-[40px]" />
+          <DocumentXls className="col-7 relative row-1 shrink-0 size-[40px]" />
+          <DocumentChart className="col-2 relative row-2 shrink-0 size-[40px]" />
+          <DocumentFolder className="col-1 relative row-2 shrink-0 size-[40px]" />
+          <DocumentAudio className="col-7 relative row-2 shrink-0 size-[40px]" />
+          <DocumentVideo className="col-8 relative row-2 shrink-0 size-[40px]" />
+          <DocumentGeneral className="col-1 relative row-3 shrink-0 size-[40px]" />
+          <DocumentGif className="col-2 relative row-3 shrink-0 size-[40px]" />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+
+These styles are contained in the design: Title/Title3-Medium: Font(family: "var(--el-font-family)", style: var(--el-font-weight-bold), size: var(--el-font-size-extra-large), weight: 700, lineHeight: var(--el-font-line-height-extra-large), letterSpacing: 0), Light/Text/Primary: #303133, Light/Overlay/Lighter: #000000, Color/Text/black: #000000, usage/icon/--color-icon-1: #C5C5C5, Light/Text/Placeholder: #A8ABB2, Light/Text/Regular: #606266, Light/Text/Secondary: #909399, Light/Text/Disabled: #C0C4CC, Color/Blue/--Blue-4: #6397FF, Color/Blue/--Blue-2: #A8C5FF, Color/LightGreen/--LightGreen-4: #93C55B, Color/LightGreen/--LightGreen-2: #C8E2A5, Color/LightBlue/--LightBlue-4: #30C4F6, Color/LightBlue/--LightBlue-1: #C8F1FF, Color/LightBlue/--LightBlue-2: #99E5FF, Color/Red/--Red-5: #FD6D6D, Color/Red/--Red-3: #FFA9A9, Color/Amber/--Amber-4: #FBC824, Color/Amber/--Amber-2: #FCE187, usage/success/--color-success: #1CC78D, usage/success/--color-success-disabled: #70EBC2, Color/Blue/--Blue-6: #266EFF, Color/Tangerine/--Tangerine-4: #FF9A57, Color/Tangerine/--Tangerine-2: #FFC39C, Color/Blue/--Blue-1: #CCDDFF.
+
+Component descriptions: The following components have usage descriptions or documentation links defined in Figma. These descriptions provide important context about the intended usage, best practices, and any constraints for each component. Follow these guidelines when implementing or using these components.
+
+## Action/add
+**Node ID:** 8411:2644
+
+add, more, plus, new
+
+## Action/remove
+**Node ID:** 8411:2697
+
+minus, delete
+
+## Action/add-square
+**Node ID:** 8411:2699
+
+add, more, plus, new
+
+## Action/add-circle
+**Node ID:** 8411:2700
+
+add, more, plus, new
+
+## Action/add-to-list
+**Node ID:** 8411:2684
+
+add, more, plus, library
+
+## Action/check
+**Node ID:** 8411:2666
+
+ok, validation, success
+
+## Action/check-double
+**Node ID:** 8411:2660
+
+ok, validation, success
+
+## Action/check-circle-1
+**Node ID:** 8411:2656
+
+ok, validation, success
+
+## Action/check-circle-2
+**Node ID:** 8411:2691
+
+ok, validation, success
+
+## Action/check-square
+**Node ID:** 8411:2689
+
+ok, validation, success
+
+## Action/log-out-1
+**Node ID:** 8411:2688
+
+go, close, logout, exit
+
+## Action/eye-closed
+**Node ID:** 8411:2683
+
+password, hidden, hide, vision, view, eyesight, privacy
+
+## Action/eye-open
+**Node ID:** 8411:2681
+
+password, show, shown, vision, view, eyesight, privacy
+
+## Action/eye-hidden
+**Node ID:** 8411:2675
+
+password, hidden, hide, vision, view, eyesight, privacy
+
+## Action/heart-add
+**Node ID:** 8411:2654
+
+love, favourite, favorite, plus
+
+## Action/heart
+**Node ID:** 8411:2670
+
+love, favourite, favorite
+
+## Action/error
+**Node ID:** 8411:2669
+
+alert, warning, attention
+
+## Action/info
+**Node ID:** 8411:2667
+
+information, helper, assistant, support
+
+## Action/lock
+**Node ID:** 8411:2674
+
+block, blocked, security, closed, padlock, no entry, privacy
+
+## Action/lock-open
+**Node ID:** 8411:2664
+
+block, security, open, padlock, unlock, unblock, privacy
+
+## Action/settings
+**Node ID:** 8411:2694
+
+configuration, custom, configure
+
+## Action/warning
+**Node ID:** 8411:2692
+
+alert, attention, error
+
+## Action/build
+**Node ID:** 8411:2686
+
+setting, settings, custom, configure, configuration
+
+## Action/block
+**Node ID:** 8411:2662
+
+safety, security, prohibition, ban, no entry, stop, block
+
+## Action/search
+**Node ID:** 8411:2661
+
+zoom, magnify
+
+## Action/zoom-in
+**Node ID:** 8411:2663
+
+zoom, magnify
+
+## Action/zoom-out
+**Node ID:** 8411:2647
+
+zoom, magnify
+
+## Action/help
+**Node ID:** 8411:2655
+
+info, ask, support, doubt, question
+
+## Action/verified
+**Node ID:** 8411:2649
+
+security, safe, validate, shield, protection, assurance, guarantee
+
+## Action/calendar
+**Node ID:** 8411:2680
+
+date, event, appointment, schedule
+
+## Action/calendar-event
+**Node ID:** 8411:2648
+
+date, event, appointment, schedule
+
+## Action/hand
+**Node ID:** 8411:2696
+
+move, alt, stop
+
+## Action/remove-circle
+**Node ID:** 8411:2682
+
+minus, delete
+
+## Action/work
+**Node ID:** 8411:2672
+
+case, suitcase, overnight bag, business
+
+## Action/work-alt
+**Node ID:** 8411:2679
+
+case, suitcase, overnight bag, business
+
+## Action/bookmark
+**Node ID:** 8411:2640
+
+save, favourite, favorite
+
+## Action/hourglass-empty
+**Node ID:** 8411:2650
+
+time, countdown, time-out, timeout, time out
+
+## Action/log-in-1
+**Node ID:** 8411:2652
+
+enter, access, login
+
+## Action/copy-1
+**Node ID:** 8411:2645
+
+file, clip, clipboard, document, stack
+
+## Action/copy-2
+**Node ID:** 8411:2639
+
+clip, clipboard, stack, overlay
+
+## Action/delete-1
+**Node ID:** 8411:2636
+
+remove, bin, trash, waste, basket
+
+## Action/delete-2
+**Node ID:** 8411:2635
+
+remove, bin, trash, waste, basket
+
+## Action/save
+**Node ID:** 8411:2657
+
+floppy, disc
+
+## Action/edit-01
+**Node ID:** 8411:2634
+
+pencil, editor, write, note
+
+## Action/edit-02
+**Node ID:** 8411:2631
+
+pencil, editor, write, note
+
+## Action/edit-03
+**Node ID:** 8411:2630
+
+pencil, editor, write, note
+
+## Action/link-1
+**Node ID:** 8411:2629
+
+url, navigation, web, website
+
+## Action/link-2
+**Node ID:** 8411:2643
+
+url, navigation, web, website
+
+## Action/link-3
+**Node ID:** 8411:2633
+
+url, navigation, web, website
+
+## Action/infinite
+**Node ID:** 8411:2628
+
+loop, cycle
+
+## Action/format-list-bulleted
+**Node ID:** 8411:2627
+
+editor, paragraph, bullet point
+
+## Action/layers-three
+**Node ID:** 8411:2625
+
+overlay
+
+## Action/format-align-left
+**Node ID:** 8411:2624
+
+editor, text, paragraph
+
+## Action/format-align-right
+**Node ID:** 8411:2693
+
+editor, text, paragraph
+
+## Action/format-align-center
+**Node ID:** 8411:2622
+
+editor, text, paragraph
+
+## Action/format-align-justify
+**Node ID:** 8411:2621
+
+editor, text, paragraph
+
+## Action/format-indent-increase
+**Node ID:** 8411:2642
+
+editor, right, text
+
+## Action/format-indent-decrease
+**Node ID:** 8411:2618
+
+editor, left, text
+
+## Action/gps-on
+**Node ID:** 8411:2616
+
+location
+
+## Action/bar-chart
+**Node ID:** 8411:2665
+
+bars, graph, data, editor
+
+## Action/map
+**Node ID:** 8411:2617
+
+gps, position, pin, map, travel
+
+## Action/store
+**Node ID:** 8411:2658
+
+shopping
+
+## Action/village
+**Node ID:** 8411:2623
+
+home, house, neighbourhood
+
+## Action/company
+**Node ID:** 8411:2641
+
+business, agency, building, office, headquarters
+
+## Action/location
+**Node ID:** 8411:2632
+
+gps, position, pin, map, destination
+
+## Action/pin-drop
+**Node ID:** 8411:2614
+
+gps, position, pin, map, destination, location
+
+## Action/copyright
+**Node ID:** 8411:2668
+
+reserved
+
+## Action/ticket
+**Node ID:** 8411:2613
+
+book, event
+
+## Action/gift
+**Node ID:** 8411:2695
+
+present
+
+## Action/award
+**Node ID:** 8411:2638
+
+prize, reward, cockade
+
+## Action/school
+**Node ID:** 8411:2698
+
+hat, academic cap, academy
+
+## Action/token
+**Node ID:** 8411:2685
+
+piece, block
+
+## Action/umbrella
+**Node ID:** 8411:2690
+
+weather, rain
+
+## Action/box
+**Node ID:** 8411:2612
+
+inventory, package, container, archive
+
+## Action/gem
+**Node ID:** 8411:2626
+
+shape, diamond
+
+## Action/command
+**Node ID:** 8411:2620
+
+key, mac, keyboard
+
+## Action/book-open
+**Node ID:** 8411:2673
+
+read, reading
+
+## Action/compass
+**Node ID:** 8411:2611
+
+navigation, position
+
+## Action/bolt-1
+**Node ID:** 8411:2687
+
+flash, speed, lightning, thunder
+
+## Action/bolt-1-off
+**Node ID:** 8411:2607
+
+flash, speed, lightning, thunder
+
+## Action/bolt-2
+**Node ID:** 8411:2606
+
+flash, speed, lightning, thunder
+
+## Action/rocket-launch
+**Node ID:** 8411:2637
+
+launch, space, mission
+
+## Action/close-circle
+**Node ID:** 8411:2605
+
+exit, delete, remove
+
+## Action/close-circle-1
+**Node ID:** 8411:2653
+
+exit, delete, remove
+
+## Action/toolbox
+**Node ID:** 8411:2610
+
+tools, work, repair
+
+## Action/layout
+**Node ID:** 8413:5286
+
+play, video
+
+## Action/columns-three
+**Node ID:** 8411:2619
+
+editor, layout, grid, triple
+
+## Action/globe
+**Node ID:** 8411:2615
+
+location, world, earth, website
+
+## Action/offer
+**Node ID:** 8411:2676
+
+label, bergain, discount, on sale
+
+## Action/atom
+**Node ID:** 8411:2671
+
+social network
+
+## Action/droplet
+**Node ID:** 8411:2609
+
+water, liquid
+
+## Action/bulb
+**Node ID:** 8411:2677
+
+light, lamp, idea
+
+## Action/click
+**Node ID:** 8411:2651
+
+mouse, cursor, pointer, action, press
+
+## Arrow/arrow-forward-long
+**Node ID:** 8411:3087
+
+right, navigation, next
+
+## Arrow/arrow-back-long
+**Node ID:** 8411:3086
+
+left, back, navigation, previous
+
+## Arrow/arrow-down
+**Node ID:** 8411:3081
+
+bottom, navigation
+
+## Arrow/arrow-up
+**Node ID:** 8411:3062
+
+top, navigation
+
+## Arrow/arrow-forward
+**Node ID:** 8411:3080
+
+right, navigation, next
+
+## Arrow/arrow-back
+**Node ID:** 8411:3075
+
+left, back, navigation, previous
+
+## Arrow/arrow-down-simple
+**Node ID:** 8411:3078
+
+bottom, navigation, drop-dowm
+
+## Arrow/arrow-up-simple
+**Node ID:** 8411:3069
+
+top, navigation
+
+## Arrow/arrow-forward-simple
+**Node ID:** 8411:3072
+
+right, navigation, next
+
+## Arrow/arrow-back-simple
+**Node ID:** 8411:3071
+
+left, back, navigation, previous
+
+## Arrow/chevron-down
+**Node ID:** 8411:3074
+
+open, menu, navigation
+
+## Arrow/chevron-up
+**Node ID:** 8411:3070
+
+close, menu, navigation
+
+## Arrow/chevron-right
+**Node ID:** 8411:3067
+
+open, menu, navigation
+
+## Arrow/arrow-turn-right
+**Node ID:** 8411:3066
+
+navigation
+
+## Arrow/arrow-turn-left
+**Node ID:** 8411:3064
+
+navigation
+
+## Arrow/arrow-subdirectory-forward
+**Node ID:** 8411:3058
+
+right, navigation
+
+## Arrow/arrow-subdirectory-back
+**Node ID:** 8411:3063
+
+left, navigation
+
+## Arrow/download-2
+**Node ID:** 8411:3061
+
+bottom, down, file
+
+## Arrow/download-3
+**Node ID:** 8411:3059
+
+bottom, down, file
+
+## Arrow/download-4
+**Node ID:** 8411:3057
+
+bottom, down, file
+
+## Arrow/download-1
+**Node ID:** 8411:3082
+
+bottom, down, file
+
+## Arrow/arrow-down-long
+**Node ID:** 8411:3056
+
+bottom, navigation
+
+## Arrow/arrow-up-long
+**Node ID:** 8411:3077
+
+top, navigation
+
+## Arrow/redo
+**Node ID:** 8411:3055
+
+right, arrow, forward
+
+## Arrow/undo
+**Node ID:** 8411:3053
+
+restore, cancel, left, arrow
+
+## Arrow/arrow-forward-double
+**Node ID:** 8411:3050
+
+right, navigation, fast
+
+## Arrow/arrow-back-double
+**Node ID:** 8411:3049
+
+left, back, fast, navigation
+
+## Arrow/arrow-down-circle
+**Node ID:** 8411:3052
+
+information, helper, assistant, support
+
+## Arrow/arrow-up-circle
+**Node ID:** 8411:3054
+
+information, helper, assistant, support
+
+## Arrow/share-1
+**Node ID:** 8411:3065
+
+url, navigation, web, website, out
+
+## Arrow/upload
+**Node ID:** 8411:3048
+
+enter, file, data
+
+## Arrow/outgoing
+**Node ID:** 8411:3073
+
+navigation, exit, go
+
+## Arrow/swap-alt
+**Node ID:** 8411:3047
+
+left, right, arrow, file, data, change
+
+## Arrow/sync
+**Node ID:** 8411:3084
+
+left, right, arrow, file, data, swap
+
+## Arrow/flows-1
+**Node ID:** 8411:3083
+
+forward
+
+## Arrow/flow
+**Node ID:** 8411:3046
+
+forward
+
+## Fill/lock-1
+**Node ID:** 8413:5560
+
+block, blocked, security, closed, padlock, no entry, privacy
+
+## Fill/heart
+**Node ID:** 8413:5559
+
+love, favourite, favorite
+
+## Fill/close-circle-1
+**Node ID:** 8413:5550
+
+exit, delete, remove
+
+## Fill/star
+**Node ID:** 8413:5546
+
+rate, rating, recommended, space
+
+## Other/scale-1
+**Node ID:** 8411:3679
+
+size, resize
+
+## Other/close
+**Node ID:** 8411:3649
+
+exit, delete, remove
+
+## Other/close-circle
+**Node ID:** 8411:3663
+
+exit, delete, remove
+
+## Other/more-vertical
+**Node ID:** 8411:3659
+
+menu, navigation
+
+## Other/full-screen-exit
+**Node ID:** 8411:3645
+
+navigation, view, collapse
+
+## Other/coffee
+**Node ID:** 8411:3689
+
+drink, cafè, coffee bar, beverage, food
+
+## Other/cake
+**Node ID:** 8411:3666
+
+birthday, food, eat, candle, party
+
+## Other/wifi-tethering
+**Node ID:** 8411:3664
+
+radio, signal, data
+
+## Other/orientation-locked
+**Node ID:** 8411:3637
+
+flip
+
+## Other/gauge-high
+**Node ID:** 8411:3635
+
+speed, energy, power, level
+
+## Other/flip
+**Node ID:** 8411:3660
+
+orientation
+
+## Other/disk
+**Node ID:** 8411:3676
+
+album, record, music
+
+## Other/scan
+**Node ID:** 8411:3632
+
+analysis
+
+## Other/home-1
+**Node ID:** 8411:3669
+
+navigation, homepage
+
+## Other/home-2
+**Node ID:** 8411:3668
+
+navigation, homepage
+
+## Other/home-3
+**Node ID:** 8411:3667
+
+navigation, homepage
+
+## Other/crop-alt
+**Node ID:** 8411:3690
+
+frame, cut
+
+## Other/clock
+**Node ID:** 8411:3652
+
+clock
+
+## Other/alarm
+**Node ID:** 8411:3670
+
+clock, time
+
+## Other/fast-forward
+**Node ID:** 8411:3671
+
+media, music, video, right
+
+## Other/fast-rewind
+**Node ID:** 8411:3640
+
+media, music, video, left
+
+## Other/forward
+**Node ID:** 8411:3657
+
+arrow, clockwise, turn, rotate
+
+## Other/update
+**Node ID:** 8411:3644
+
+time, clock, navigation, refresh
+
+## Other/headset
+**Node ID:** 8411:3638
+
+audio
+
+## Other/headset-mic
+**Node ID:** 8411:3651
+
+audio, microphone
+
+## Other/image
+**Node ID:** 8411:3677
+
+picture, media
+
+## Other/history
+**Node ID:** 8411:3634
+
+time, clock, navigation, restore, undo
+
+## Other/camera
+**Node ID:** 8411:3683
+
+photo
+
+## Other/camera-add-photo
+**Node ID:** 8411:3636
+
+plus, new
+
+## Other/videocam
+**Node ID:** 8411:3682
+
+camera, videocamera, recording
+
+## Other/play-square
+**Node ID:** 8411:3658
+
+media, music, video, start
+
+## Other/camera-timer
+**Node ID:** 8411:3678
+
+photo, time out, time-out, timeout
+
+## Other/cast
+**Node ID:** 8411:3687
+
+video, media, connection
+
+## Other/grid-alt
+**Node ID:** 8411:3674
+
+block, layout
+
+## Other/menu
+**Node ID:** 8411:3661
+
+list, navigation, hamburger
+
+## Other/loop
+**Node ID:** 8411:3680
+
+sync, media
+
+## Other/crop
+**Node ID:** 8411:3685
+
+frame, focus
+
+## Other/full-screen
+**Node ID:** 8411:3648
+
+navigation, view, expand
+
+## Other/app-menu
+**Node ID:** 8411:3655
+
+grid, matrix, navigation
+
+## Other/refresh
+**Node ID:** 8411:3647
+
+clockwise, update, turn, update
+
+## Other/more-horizontal
+**Node ID:** 8411:3653
+
+menu, navigation
+
+## Other/filter-list-add
+**Node ID:** 8411:3656
+
+new, plus
+
+## Other/face-id
+**Node ID:** 8411:3643
+
+identity, identification
+
+## Other/library
+**Node ID:** 8411:3681
+
+video, list, music, media, playlist
+
+## Other/storage
+**Node ID:** 8411:3641
+
+database
+
+## Other/podcast
+**Node ID:** 8411:3662
+
+radio, signal, mobile, data
+
+## Other/sliders
+**Node ID:** 8411:3688
+
+settings, tune
+
+## Other/AR
+**Node ID:** 8411:3673
+
+augmented reality, 3d, box, dimensional
+
+## Other/loading-2
+**Node ID:** 8411:3646
+
+menu, navigation
+
+## Other/loading-1
+**Node ID:** 8411:3672
+
+wait, spin, spinner
+
+## Other/loading-4
+**Node ID:** 8411:3624
+
+rotating circle, spinning round, circulating animation, looping load, cyclical wait, animated ring, cycling preloader, orbiting buffer
+
+## Other/power
+**Node ID:** 8411:3686
+
+energy
+
+## Other/phone-call-1
+**Node ID:** 8411:3639
+
+telephone, call
+
+## Other/phone-call-2
+**Node ID:** 8411:3630
+
+telephone, call, ring
+
+## Other/phone-missed
+**Node ID:** 8411:3629
+
+telephone, call
+
+## Other/phone-add
+**Node ID:** 8411:3675
+
+telephone, call
+
+## Other/phone
+**Node ID:** 8411:3642
+
+telephone, call
+
+## Other/phone-call-end
+**Node ID:** 8411:3627
+
+telephone, call
+
+## Other/signal-cellular-3-bar
+**Node ID:** 8411:3628
+
+radio, signal, data
+
+## Other/add-block
+**Node ID:** 8413:4350
+
+grid, plus, new
+
+## Other/note-02
+**Node ID:** 8413:4343
+
+paper, sticky note, annotation
+
+## Other/file-2
+**Node ID:** 8413:4340
+
+device, portrait
+
+## Other/file
+**Node ID:** 8413:4346
+
+data, document
+
+## Other/add-page
+**Node ID:** 8413:4344
+
+file, data, document, plus, new
+
+## Other/note-01
+**Node ID:** 8413:4345
+
+document, file, data
+
+## Other/file-copy
+**Node ID:** 8413:4349
+
+document, file, data, clipboard, stack, library
+
+## Other/clipboard
+**Node ID:** 8413:4348
+
+copy, file, data
+
+## Other/folder
+**Node ID:** 8413:4342
+
+file, data, document, archive
+
+## Other/add-folder
+**Node ID:** 8413:4341
+
+file, data, document, plus, new, archive
+
+## Other/cloud-upload
+**Node ID:** 8413:4339
+
+file, data
+
+## Other/cloud-download
+**Node ID:** 8413:4338
+
+file, data
+
+## Other/inbox
+**Node ID:** 8413:4347
+
+mail, correspondence, message, email
+
+## Other/list
+**Node ID:** 8413:4337
+
+bullet point
+
+## Social/youtube
+**Node ID:** 8413:4095
+
+play, video
+
+## Social/user
+**Node ID:** 8413:4086
+
+profile, person
+
+## Social/user-add
+**Node ID:** 8413:4072
+
+profile, person, new, share, collaboration, plus
+
+## Social/user-remove
+**Node ID:** 8413:4094
+
+profile, person, minus, share, collaboration, remove, delete
+
+## Social/user-circle
+**Node ID:** 8413:4093
+
+profile, person
+
+## Social/user-group
+**Node ID:** 8413:4092
+
+profile, person, team
+
+## Social/mail
+**Node ID:** 8413:4090
+
+envelope, message, inbox
+
+## Social/mail-open
+**Node ID:** 8413:4078
+
+envelope, message, inbox
+
+## Social/forward-to-inbox
+**Node ID:** 8413:4087
+
+envelope, message, mail
+
+## Social/@
+**Node ID:** 8413:4073
+
+at
+
+## Social/star
+**Node ID:** 8413:4085
+
+rate, rating, recommended, space
+
+## Social/star-circle
+**Node ID:** 8413:4083
+
+rate, rating, recommended, space
+
+## Social/thumb-up
+**Node ID:** 8413:4082
+
+like, recommended, rate, rating, hand
+
+## Social/thumb-down
+**Node ID:** 8413:4091
+
+dislike, against, rate, rating, hand
+
+## Social/notifications
+**Node ID:** 8413:4080
+
+bell, ringtone, alarm
+
+## Social/notifications-active
+**Node ID:** 8413:4077
+
+bell, ringtone, alarm
+
+## Social/notifications-off
+**Node ID:** 8413:4079
+
+bell, ringtone, alarm
+
+## Social/notifications-paused
+**Node ID:** 8413:4088
+
+bell, ringtone, alarm
+
+## Social/megaphone
+**Node ID:** 8413:4076
+
+campaign, ad, news, announcement, notice, communication
+
+## Social/send
+**Node ID:** 8413:4081
+
+airplane, message, inbox
+
+## Social/chat
+**Node ID:** 8413:4075
+
+conversation, comment, speech bubble
+
+## Social/chat-empty
+**Node ID:** 8413:4074
+
+conversation, comment, speech bubble
+
+## Social/add-comment
+**Node ID:** 8413:4071
+
+conversation, comment, plus, new, speech bubble
+
+## Social/facebook
+**Node ID:** 8413:4070
+
+social network
+
+## Social/linkedin
+**Node ID:** 8413:4069
+
+social network
+
+## Social/twitter
+**Node ID:** 8413:4068
+
+social network, bird
+
+## Social/pinterest
+**Node ID:** 8413:4067
+
+social network
+
+## Payment/calculate-2
+**Node ID:** 8413:4189
+
+balance, calculator, operation, math
+
+## Payment/calculate-1
+**Node ID:** 8413:4192
+
+balance, calculator, operation, math
+
+## Payment/euro
+**Node ID:** 8413:4195
+
+money, currency, EUR
+
+## Payment/percent
+**Node ID:** 8413:4198
+
+discount, percentage, sale, bargain
+
+## Payment/credit-card-percent
+**Node ID:** 8413:4201
+
+percentage, discount, payment, money, funds
+
+## Payment/credit-card-check
+**Node ID:** 8413:4204
+
+check, payment, success, money, funds
+
+## Payment/wallet-2
+**Node ID:** 8413:4165
+
+balance, payment, money, funds, cash
+
+## Payment/wallet-1
+**Node ID:** 8413:4210
+
+balance, payment, money, funds, cash
+
+## Payment/credit-card
+**Node ID:** 8413:4222
+
+payment, money, funds
+
+## Payment/credit-card-secure
+**Node ID:** 8413:4213
+
+lock, payment, safe, padlock, money, funds
+
+## Payment/bank
+**Node ID:** 8413:4225
+
+balance, payment, wire transfer, money, funds
+
+## Payment/coins
+**Node ID:** 8413:4177
+
+toll, price, cost, token
+
+## Payment/bitcoin-2
+**Node ID:** 8413:4207
+
+currency, cryptocurrency, crypto, money, blockchain
+
+## Payment/dollar-2
+**Node ID:** 8413:4168
+
+money, currency, USD
+
+## Payment/bitcoin-1
+**Node ID:** 8413:4171
+
+currency, cryptocurrency, crypto, money, blockchain
+
+## Payment/Rmb
+**Node ID:** 8413:4174
+
+money, currency
+
+## Payment/dollar-1
+**Node ID:** 8413:4186
+
+money, currency, USD
+
+## Payment/contactless-2
+**Node ID:** 8413:4180
+
+credit card, payment
+
+## Payment/contactless-1
+**Node ID:** 8413:4216
+
+credit card, payment
+
+## Payment/shopping-cart
+**Node ID:** 8413:4219
+
+market, e-commerce
+
+## Payment/shopping-bag
+**Node ID:** 8413:4183
+
+cart, e-commerce, market
+
+Image assets are stored on a localhost server. Clients can use these images directly in code as a way to view the image assets the same way they would other remote servers. Images and SVGs will be stored as constants, e.g. const image = 'http://localhost:3845/assets/10c13ac1a228a365cb98a0064b1d5afbc84887b2.png' These constants will be used in the code as the source for the image, e.g. <img src={image} /> This is true for both images and SVGs, so you can use the same approach for both types of assets.
+
+Figma recommends using the remote MCP server for workflows between design and code: https://developers.figma.com/docs/figma-mcp-server/remote-server-installation/

@@ -1,0 +1,99 @@
+/* Figma `Sidebar` · `3313:56233` */
+
+.pt-sidebar {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  min-height: 460px;
+  background: var(--el-fill-color-blank);
+  border-right: 1px solid var(--el-border-color-light);
+  box-shadow: var(--el-box-shadow-light);
+  font-family: var(--el-font-family);
+}
+
+.pt-sidebar--unfolded {
+  width: 200px;
+}
+
+.pt-sidebar--collapsed {
+  width: 58px;
+  z-index: 20;
+  overflow: visible;
+}
+
+.pt-sidebar--collapsed .pt-sidebar__body {
+  overflow: visible;
+}
+
+.pt-sidebar__logo {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  box-sizing: border-box;
+  height: 64px;
+}
+
+.pt-sidebar--unfolded .pt-sidebar__logo {
+  gap: var(--pt-space-4, 4px);
+  padding: var(--pt-space-12, 12px) var(--pt-space-20, 20px);
+}
+
+.pt-sidebar--collapsed .pt-sidebar__logo {
+  justify-content: center;
+  padding: var(--pt-space-12, 12px) 0;
+}
+
+.pt-sidebar__logo {
+  gap: var(--pt-space-4, 4px);
+}
+
+.pt-sidebar__logo-text {
+  margin-left: var(--pt-space-8, 8px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: var(--el-font-size-large);
+  line-height: var(--el-font-line-height-large);
+  font-weight: var(--el-font-weight-bold);
+  color: var(--el-text-color-primary);
+  white-space: nowrap;
+}
+
+.pt-sidebar__body {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  min-height: 0;
+  overflow: hidden auto;
+}
+
+.pt-sidebar__footer {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  box-sizing: border-box;
+  height: 40px;
+  border-top: 1px solid var(--el-border-color-lighter);
+}
+
+.pt-sidebar--unfolded .pt-sidebar__footer {
+  padding: 0 var(--pt-space-20, 20px);
+}
+
+.pt-sidebar--collapsed .pt-sidebar__footer {
+  justify-content: center;
+}
+
+.pt-sidebar__toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+  color: var(--el-text-color-secondary);
+}
+
+.pt-sidebar__toggle:hover {
+  color: var(--el-color-primary);
+}

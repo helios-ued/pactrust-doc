@@ -1,0 +1,69 @@
+/* 企业 API 壳层 · 侧栏灰底 + 顶栏操作 */
+
+.pt-enterprise-api-shell .pt-sidebar--layout {
+  background: var(--el-fill-color);
+  border-right: none;
+  box-shadow: none;
+}
+
+.pt-enterprise-api-shell .pt-menu--embedded.pt-menu--sidebar {
+  background: transparent;
+}
+
+.pt-enterprise-api-shell__page {
+  padding: 0;
+  overflow: hidden;
+}
+
+.pt-enterprise-api-header__heading {
+  display: flex;
+  align-items: baseline;
+  gap: var(--pt-space-8, 8px);
+  min-width: 0;
+}
+
+.pt-enterprise-api-header__title {
+  margin: 0;
+  font-weight: var(--el-font-weight-primary);
+}
+
+/* Figma body1-Regular · 14/22 */
+.pt-enterprise-api-header__guide {
+  flex-shrink: 0;
+  white-space: nowrap;
+  font-size: var(--el-font-size-base);
+  line-height: var(--el-font-line-height-base);
+  font-weight: var(--el-font-weight-regular);
+}
+
+.pt-enterprise-api-header__locale {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--pt-space-4, 4px);
+  padding: var(--pt-space-4, 4px) var(--pt-space-8, 8px);
+  border: none;
+  border-radius: var(--el-border-radius-base);
+  background: transparent;
+  font-family: var(--el-font-family);
+  font-size: var(--el-font-size-base);
+  line-height: var(--el-font-line-height-base);
+  color: var(--el-text-color-regular);
+  cursor: pointer;
+}
+
+.pt-enterprise-api-header__locale:hover {
+  background: var(--el-fill-color-light);
+}
+
+.pt-enterprise-api-header__user {
+  gap: 0;
+}
+
+.pt-enterprise-api-header__user > span:last-child {
+  display: none;
+}
+
+.pt-enterprise-api-header__avatar {
+  background: var(--el-fill-color);
+  border: 1px solid var(--el-border-color-lighter);
+}

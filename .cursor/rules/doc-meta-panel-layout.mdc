@@ -1,0 +1,35 @@
+---
+description: 中后台详情页【文档元数据面板布局】Doc Meta Panel — 复用 pt-doc-meta-panel
+globs: src/templates/**/*.tsx,src/pages/**/*.tsx,docs/layouts/**
+alwaysApply: false
+---
+
+# 文档元数据面板布局（Doc Meta Panel）
+
+规范全文：`docs/layouts/DOC-META-PANEL-LAYOUT.md`
+
+## 何时使用
+
+中后台 **详情页**、只读元数据、配置摘要等多行 Key-Value 时，使用命名 **【文档元数据面板布局】**，**不要**在业务里再写一套 grid / 浅底 panel。
+
+## 代码（强制）
+
+- 组件：`DocMetaPanel` from `@/templates/layout/doc-meta-panel/DocMetaPanel`
+- 类名前缀：`pt-doc-meta-panel`（禁止复制 `pt-personal-profile-b2` 等一次性类名）
+
+## 布局常量
+
+| 项 | 值 |
+| --- | --- |
+| outer padding | `16px 20px` |
+| panel padding | **`20px` 四边** |
+| grid | `120px` + `1fr` |
+| row-gap / column-gap | `12px` / `16px` |
+| panel 底 | `--el-fill-color-light` |
+| 文案 | Key/Value 均为 `--el-text-color-primary` regular |
+
+列宽变更须先更新 `DOC-META-PANEL-LAYOUT.md`，再用 CSS 变量 `--pt-doc-meta-panel-label-width`。
+
+## Figma
+
+Content 槽 outer `16,20`；内层 panel `20,24` padding + Fill/Light + radius base。绑定库变量，禁止随意写 hex。

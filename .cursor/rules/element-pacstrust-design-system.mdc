@@ -14,7 +14,7 @@ alwaysApply: true
 
 1. Do not introduce alternate UI libraries (shadcn, Ant Design, MUI, etc.) for components listed in `docs/COMPONENTS.md`.
 2. Map Figma component sets to **Element Plus** (`el-*`) with matching variant enums from the docs.
-3. Use design tokens (`--el-*`, spacing/radius/shadow from `docs/FOUNDATIONS.md`); no ad-hoc hex for brand, text, border, or state colors.
+3. **Figma + code:** components and screens bind **Figma Variables** first (`Brand/color`, `Text/*`, `Fill/*`, etc. — see `docs/FIGMA-VARIABLES.md`); code uses tokens from `docs/FOUNDATIONS.md` (`--el-*`, spacing/radius/shadow). **If no matching variable exists, ask the user — do not invent hex, spacing, or new token names.**
 4. Boolean Figma variants use `false` / `true` (not off/on in code).
 5. Figma `Danger` → Element `danger`; `Disable` / `Disabled` → `disabled`.
 6. Respect 2025-10-28 Message rules: no Center variant, content-width layout, Plain prop when specified.
@@ -29,3 +29,10 @@ alwaysApply: true
 ## If docs and Element Plus docs conflict
 
 Prefer **Figma variant sets documented in this repo** for PacsTrust work.
+
+## Showcase · 模板 & Layout 小屏（强制）
+
+- **模板**（`TemplateFrameDemo` iframe）与 **Layout**（`LayoutFrameDemo`）须在窄预览区内可用：`@container` / 断点堆叠或（除登录页外）预览区 `overflow: auto`。
+- **登录页**特例：整页 **禁止滚动**；用 **flex + 矮视口间距压缩** 适配 iframe，**禁止**对整页 `transform: scale(calc(100vw/…))`（`scale` 需无单位，易致布局错乱）。营销区 **弥散渐变 + 水波纹 CSS**。
+- 全屏路由（`/examples/*`）与 iframe 共用同一套组件样式；小屏规则写在页面/模板 CSS 中，不单依赖视口 `100vh` 撑满。
+- 新增模板或 Layout 帧时，同步验证 Showcase 预览宽度约 720–900px。

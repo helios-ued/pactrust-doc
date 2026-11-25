@@ -1,42 +1,76 @@
 import type { ReactNode } from "react";
 import { cn } from "@/lib/cn";
+import { FormLabel } from "./FormLabel";
+import { useFormContext } from "./formContext";
+import type { FormLabelAlign, FormLabelSize, FormLayout } from "./formContext";
+import "./form.css";
 
-/** Figma Form Item — label + control slot */
 export type FormItemProps = {
   label: ReactNode;
   required?: boolean;
+  info?: boolean;
+  prompt?: string;
   children: ReactNode;
   className?: string;
   error?: string;
+  layout?: FormLayout;
+  labelSize?: FormLabelSize;
+  labelAlign?: FormLabelAlign;
 };
 
 export function FormItem({
   label,
   required,
+  info,
+  prompt,
   children,
   className,
   error,
+  layout: layoutProp,
+  labelSize: labelSizeProp,
+  labelAlign: labelAlignProp,
 }: FormItemProps) {
-  return (
-    <div className={cn("flex w-full flex-col", className)}>
-      <div className="flex min-h-8 flex-col justify-center gap-pt-0">
-        <div className="flex items-center gap-pt-4">
-          <span className="font-[family-name:var(--el-font-family)] text-el-base leading-el-base font-[var(--el-font-weight-regular)] text-el-text-primary">
-            {label}
-          </span>
-          {required ? (
-            <span className="text-el-danger" aria-hidden>
-              *
-            </span>
-          ) : null}
+  const ctx = useFormContext();
+  const layout = layoutProp ?? ctx?.layout ?? "Vertical";
+  const labelSize = labelSizeProp ?? ctx?.labelSize ?? "Default";
+  const labelAlign = labelAlignProp ?? ctx?.labelAlign ?? "Left";
+  const horizontal = layout === "Horizontal";
+
+  const labelNode = (
+    <FormLabel
+      label={label}
+      required={required}
+      info={info}
+      size={labelSize}
+      align={horizontal ? labelAlign : "Left"}
+    />
+  );
+
+  const message = error ? (
+    <p className="pt-form-item__error" role="alert">
+      {error}
+    </p>
+  ) : prompt ? (
+    <p className="pt-form-item__prompt">{prompt}</p>
+  ) : null;
+
+  if (horizontal) {
+    return (
+      <div className={cn("pt-form-item pt-form-item--horizontal", className)}>
+        <div className="pt-form-item__label-col">{labelNode}</div>
+        <div className="pt-form-item__control">
+          {children}
+          {message}
         </div>
       </div>
-      <div className="mt-pt-4">{children}</div>
-      {error ? (
-        <p className="mt-pt-4 text-el-base leading-el-base text-el-danger" role="alert">
-          {error}
-        </p>
-      ) : null}
+    );
+  }
+
+  return (
+    <div className={cn("pt-form-item pt-form-item--vertical", className)}>
+      {labelNode}
+      <div className="pt-form-item__control">{children}</div>
+      {message}
     </div>
   );
 }

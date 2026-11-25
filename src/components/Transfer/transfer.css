@@ -1,0 +1,172 @@
+/* Figma Transfer 3104:72230 — panel 240, gap 32 */
+.pt-transfer {
+  display: flex;
+  align-items: center;
+  gap: var(--pt-spacing-xl);
+}
+
+.pt-transfer--vertical {
+  flex-direction: column;
+}
+
+.pt-transfer__panel {
+  display: flex;
+  width: 240px;
+  flex-shrink: 0;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid var(--el-border-color-light);
+  border-radius: var(--el-border-radius-base);
+  background: var(--el-fill-color-blank);
+}
+
+.pt-transfer__header {
+  display: flex;
+  height: 40px;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--el-fill-color-light);
+  padding: var(--pt-space-8, 8px) var(--pt-spacing-xl);
+}
+
+.pt-transfer__count {
+  font-family: var(--el-font-family);
+  font-size: var(--el-font-size-extra-small);
+  line-height: var(--el-font-line-height-extra-small);
+  color: var(--el-text-color-secondary);
+  white-space: nowrap;
+}
+
+.pt-transfer__body {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: var(--pt-spacing-xl);
+}
+
+.pt-transfer__filter {
+  padding: var(--pt-spacing-xl);
+}
+
+.pt-transfer__filter-input {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: var(--pt-space-8, 8px);
+  border: 1px solid var(--el-border-color);
+  border-radius: var(--el-border-radius-base);
+  background: var(--el-fill-color-blank);
+  padding: var(--pt-space-8, 8px) var(--pt-spacing-lg, 12px);
+}
+
+.pt-transfer__filter-input input {
+  min-width: 0;
+  flex: 1;
+  border: none;
+  background: transparent;
+  font-family: var(--el-font-family);
+  font-size: var(--el-font-size-base);
+  line-height: var(--el-font-line-height-base);
+  color: var(--el-text-color-primary);
+  outline: none;
+}
+
+.pt-transfer__filter-input input::placeholder {
+  color: var(--el-text-color-placeholder);
+}
+
+.pt-transfer__filter-clear {
+  display: inline-flex;
+  border: none;
+  background: transparent;
+  padding: 0;
+  color: var(--el-text-color-secondary);
+  cursor: pointer;
+}
+
+.pt-transfer__filter-clear:hover {
+  color: var(--el-color-primary);
+}
+
+.pt-transfer__list {
+  position: relative;
+  display: flex;
+  max-height: 320px;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.pt-transfer__item {
+  display: flex;
+  height: 32px;
+  flex-shrink: 0;
+  align-items: center;
+  padding: var(--pt-space-4, 4px) var(--pt-spacing-xl);
+  cursor: pointer;
+}
+
+.pt-transfer__item:hover:not(.is-disabled) {
+  background: var(--el-color-primary-light-9);
+}
+
+.pt-transfer__item.is-disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.pt-transfer__item .pt-checkbox {
+  pointer-events: none;
+}
+
+.pt-transfer__empty {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--el-fill-color-blank);
+  font-family: var(--el-font-family);
+  font-size: var(--el-font-size-base);
+  font-weight: var(--el-font-weight-primary);
+  color: var(--el-text-color-disabled);
+}
+
+.pt-transfer__footer {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: flex-end;
+  border-top: 1px solid var(--el-border-color-light);
+  padding: var(--pt-space-8, 8px) var(--pt-spacing-xl);
+}
+
+.pt-transfer__actions {
+  display: flex;
+  flex-shrink: 0;
+  gap: var(--pt-space-8, 8px);
+}
+
+.pt-transfer__actions--vertical {
+  flex-direction: column;
+}
+
+.pt-transfer__icon-btn {
+  display: inline-flex;
+  height: 32px;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: var(--el-border-radius-small);
+  background: var(--el-color-primary);
+  padding: var(--pt-space-8, 8px) var(--pt-spacing-xl);
+  color: var(--el-text-color-write);
+  cursor: pointer;
+}
+
+.pt-transfer__icon-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+.pt-transfer__icon-btn:not(:disabled):hover {
+  opacity: 0.92;
+}

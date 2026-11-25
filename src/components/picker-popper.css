@@ -1,0 +1,11 @@
+/** Date/Time Picker 下拉：fixed popper，与触发器间距 2px（无箭头） */
+.pt-picker-dropdown {
+  position: fixed;
+  z-index: 3000;
+}
+
+/** TimePicker / TimeSelect 面板内容顶内边距 */
+.pt-time-picker-panel,
+.pt-time-select__panel {
+  padding-top: var(--pt-space-4, 4px);
+}

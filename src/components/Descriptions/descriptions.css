@@ -1,0 +1,389 @@
+.pt-descriptions {
+  width: 100%;
+  max-width: 996px;
+  font-family: var(--el-font-family);
+  /* Figma Description Item Horizontal 无 Border：Label ↔ Content 固定 16px（space/large-16） */
+  --pt-desc-label-gap: var(--pt-spacing-xl);
+  /* 列与列 — 宽/窄屏同一 token */
+  --pt-desc-col-gap: var(--pt-spacing-xl);
+  --pt-desc-row-gap: 0;
+}
+
+/* Figma Description Item Border · Label 列宽（5910:8446 / 6420:51662） */
+.pt-descriptions--border {
+  --pt-desc-border-label-w-default: 144px;
+  --pt-desc-border-label-w-large: 144px;
+  --pt-desc-border-label-w-small: 136px;
+  /* Border 表格列/行叠线，不用 grid gap */
+  --pt-desc-col-gap: 0;
+  --pt-desc-row-gap: 0;
+}
+
+.pt-descriptions__header {
+  display: flex;
+  align-items: center;
+  gap: var(--pt-spacing-xl);
+  padding: var(--pt-space-4) 0;
+  margin-bottom: var(--pt-spacing-xl);
+}
+
+/* Icon 模式：对应 el-descriptions title + extra，不在表格 grid 内 */
+.pt-descriptions__header .pt-descriptions__extra,
+.pt-descriptions__header > :not(.pt-descriptions__title) {
+  flex-shrink: 0;
+  width: auto;
+}
+
+.pt-descriptions__title {
+  flex: 1;
+  margin: 0;
+  font-size: var(--el-font-size-large);
+  font-weight: var(--el-font-weight-bold);
+  line-height: var(--el-font-line-height-large);
+  color: var(--el-text-color-regular);
+}
+
+.pt-descriptions__body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.pt-descriptions--border .pt-descriptions__body {
+  gap: 0;
+}
+
+.pt-descriptions__row {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: var(--pt-desc-col-gap);
+  row-gap: var(--pt-desc-row-gap);
+  align-items: flex-start;
+  container-type: inline-size;
+  container-name: pt-desc-row;
+}
+
+.pt-desc-item {
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.pt-desc-item--span-2 {
+  grid-column: span 2;
+}
+
+.pt-desc-item__inner {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.pt-desc-item__inner--horizontal {
+  flex-direction: row;
+  gap: var(--pt-desc-label-gap);
+}
+
+/* 无 Border：Label / Content 共用垂直内边距，保证字段名与参数首行同一水平线；参数可向下换行 */
+.pt-desc-item__inner--horizontal:not(.pt-desc-item__inner--border) {
+  --pt-desc-row-py: 6px;
+  align-items: flex-start;
+}
+
+.pt-desc-item--size-large .pt-desc-item__inner--horizontal:not(.pt-desc-item__inner--border) {
+  --pt-desc-row-py: 8px;
+}
+
+.pt-desc-item--size-small .pt-desc-item__inner--horizontal:not(.pt-desc-item__inner--border) {
+  --pt-desc-row-py: 4px;
+}
+
+.pt-desc-item__inner--horizontal:not(.pt-desc-item__inner--border) .pt-desc-item__label,
+.pt-desc-item__inner--horizontal:not(.pt-desc-item__inner--border) .pt-desc-item__content {
+  padding-top: var(--pt-desc-row-py);
+  padding-bottom: var(--pt-desc-row-py);
+  box-sizing: border-box;
+}
+
+/* Border：Label / Content 等高，文案顶对齐 + 相同 padding */
+.pt-desc-item__inner--horizontal.pt-desc-item__inner--border {
+  align-items: stretch;
+}
+
+.pt-desc-item__inner--vertical {
+  flex-direction: column;
+  gap: 6px;
+  padding: var(--pt-space-8) 0;
+}
+
+.pt-desc-item--size-default .pt-desc-item__inner--horizontal {
+  min-height: 40px;
+}
+
+.pt-desc-item--size-large .pt-desc-item__inner--horizontal {
+  min-height: 48px;
+}
+
+.pt-desc-item--size-small .pt-desc-item__inner--horizontal {
+  min-height: 32px;
+}
+
+.pt-desc-item__label {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+.pt-desc-item__inner--horizontal.pt-desc-item__inner--border {
+  gap: 0;
+}
+
+.pt-desc-item__inner--horizontal:not(.pt-desc-item__inner--border) .pt-desc-item__content {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  min-width: 0;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  line-height: var(--el-font-line-height-base);
+}
+
+.pt-desc-item__inner--vertical .pt-desc-item__label {
+  padding: 0;
+}
+
+.pt-desc-item__inner--vertical .pt-desc-item__content {
+  display: flex;
+  align-items: flex-start;
+  min-width: 0;
+}
+
+.pt-desc-item__inner--vertical.pt-desc-item__inner--border {
+  padding: 0;
+  gap: 0;
+}
+
+/*
+ * Border 模式 — Figma Copy me `6420:51660` / Item `5910:8446`
+ * 每个 Description Item：Label、Content 各自完整描边；行间/列间 1px 叠合
+ */
+.pt-descriptions--border .pt-descriptions__row {
+  align-items: stretch;
+}
+
+.pt-descriptions--border .pt-descriptions__row:not(:first-child) {
+  margin-top: calc(-1 * var(--el-border-width));
+}
+
+.pt-descriptions--border .pt-desc-item {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+}
+
+.pt-descriptions--border .pt-desc-item:not(:first-child) {
+  margin-left: calc(-1 * var(--el-border-width));
+}
+
+.pt-descriptions--border .pt-desc-item__inner--horizontal.pt-desc-item__inner--border {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  flex: 1;
+  min-height: 100%;
+  gap: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.pt-descriptions--border .pt-desc-item__inner--horizontal.pt-desc-item__inner--border .pt-desc-item__label {
+  flex: 0 0 var(--pt-desc-border-label-w, var(--pt-desc-border-label-w-default));
+  width: var(--pt-desc-border-label-w, var(--pt-desc-border-label-w-default));
+  min-width: var(--pt-desc-border-label-w, var(--pt-desc-border-label-w-default));
+  max-width: var(--pt-desc-border-label-w, var(--pt-desc-border-label-w-default));
+  display: flex;
+  align-items: flex-start;
+  align-self: stretch;
+  padding: var(--pt-spacing-lg);
+  box-sizing: border-box;
+  background: var(--el-fill-color-light);
+  border: var(--el-border-width) solid var(--el-border-color-lighter);
+  font-weight: var(--el-font-weight-primary);
+  color: var(--el-text-color-regular);
+}
+
+.pt-descriptions--border .pt-desc-item--size-default .pt-desc-item__inner--horizontal.pt-desc-item__inner--border {
+  --pt-desc-border-label-w: var(--pt-desc-border-label-w-default);
+}
+
+.pt-descriptions--border .pt-desc-item--size-large .pt-desc-item__inner--horizontal.pt-desc-item__inner--border {
+  --pt-desc-border-label-w: var(--pt-desc-border-label-w-large);
+}
+
+.pt-descriptions--border .pt-desc-item--size-small .pt-desc-item__inner--horizontal.pt-desc-item__inner--border {
+  --pt-desc-border-label-w: var(--pt-desc-border-label-w-small);
+}
+
+.pt-descriptions--border .pt-desc-item--size-small .pt-desc-item__inner--horizontal.pt-desc-item__inner--border .pt-desc-item__label {
+  padding: var(--pt-space-8);
+}
+
+.pt-descriptions--border .pt-desc-item__inner--horizontal.pt-desc-item__inner--border .pt-desc-item__content {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  align-items: flex-start;
+  align-self: stretch;
+  padding: var(--pt-spacing-lg);
+  box-sizing: border-box;
+  background: var(--el-fill-color-blank);
+  border: var(--el-border-width) solid var(--el-border-color-light);
+  margin-left: calc(-1 * var(--el-border-width));
+}
+
+.pt-descriptions--border .pt-desc-item--size-default .pt-desc-item__inner--horizontal.pt-desc-item__inner--border {
+  min-height: 40px;
+}
+
+.pt-descriptions--border .pt-desc-item--size-large .pt-desc-item__inner--horizontal.pt-desc-item__inner--border {
+  min-height: 48px;
+}
+
+.pt-descriptions--border .pt-desc-item--size-small .pt-desc-item__inner--horizontal.pt-desc-item__inner--border {
+  min-height: 32px;
+}
+
+.pt-descriptions--border .pt-desc-item__inner--vertical.pt-desc-item__inner--border {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.pt-descriptions--border .pt-desc-item__inner--vertical.pt-desc-item__inner--border .pt-desc-item__label {
+  width: 100%;
+  padding: var(--pt-spacing-lg);
+  box-sizing: border-box;
+  background: var(--el-fill-color-light);
+  border: var(--el-border-width) solid var(--el-border-color-lighter);
+  font-weight: var(--el-font-weight-primary);
+  color: var(--el-text-color-regular);
+}
+
+.pt-descriptions--border .pt-desc-item__inner--vertical.pt-desc-item__inner--border .pt-desc-item__content {
+  width: 100%;
+  flex: 1;
+  padding: var(--pt-spacing-lg);
+  box-sizing: border-box;
+  background: var(--el-fill-color-blank);
+  border: var(--el-border-width) solid var(--el-border-color-light);
+  margin-top: calc(-1 * var(--el-border-width));
+}
+
+.pt-desc-item__label-text {
+  font-size: var(--el-font-size-base);
+  line-height: var(--el-font-line-height-base);
+  color: var(--el-text-color-primary);
+  word-break: break-word;
+}
+
+.pt-descriptions--border .pt-desc-item__inner--horizontal.pt-desc-item__inner--border .pt-desc-item__label-text,
+.pt-descriptions--border .pt-desc-item__inner--vertical.pt-desc-item__inner--border .pt-desc-item__label-text {
+  color: var(--el-text-color-regular);
+  font-weight: var(--el-font-weight-primary);
+}
+
+.pt-desc-item__content-text {
+  font-size: var(--el-font-size-base);
+  line-height: var(--el-font-line-height-base);
+  color: var(--el-text-color-regular);
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+.pt-desc-item__inner--horizontal:not(.pt-desc-item__inner--border) .pt-desc-item__content > a,
+.pt-desc-item__inner--horizontal:not(.pt-desc-item__inner--border) .pt-desc-item__content > .pt-desc-item__tags {
+  margin: 0;
+  max-width: 100%;
+}
+
+.pt-desc-item__inner--horizontal:not(.pt-desc-item__inner--border) .pt-desc-item__content > a {
+  word-break: break-all;
+  overflow-wrap: anywhere;
+}
+
+.pt-desc-item__icon {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-self: flex-start;
+  margin-top: calc((var(--el-font-line-height-base) - 14px) / 2);
+  color: var(--el-text-color-regular);
+}
+
+.pt-desc-item__tags {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--pt-space-8);
+}
+
+/*
+ * 小屏 / 窄预览区（≤960px）
+ * 按内容自适应列数：auto-fit + minmax，放不下则换行；换行/分行用 spacing 留白（不再叠线）
+ */
+@media (max-width: 960px) {
+  .pt-descriptions {
+    --pt-desc-col-min: 200px;
+    /* 列间距与宽屏一致；仅换行时增加行间距 */
+    --pt-desc-row-gap: var(--pt-spacing-md);
+  }
+
+  .pt-descriptions--border {
+    --pt-desc-col-min: 272px;
+    --pt-desc-row-gap: 0;
+    --pt-desc-border-label-w-default: clamp(108px, 28vw, 144px);
+    --pt-desc-border-label-w-large: clamp(108px, 28vw, 144px);
+    --pt-desc-border-label-w-small: clamp(100px, 26vw, 136px);
+  }
+
+  .pt-descriptions__row {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--pt-desc-col-min)), 1fr));
+    row-gap: var(--pt-desc-row-gap);
+    align-items: start;
+  }
+
+  .pt-desc-item--span-2 {
+    grid-column: span 2;
+  }
+
+  @container pt-desc-row (max-width: 599px) {
+    .pt-desc-item--span-2 {
+      grid-column: 1 / -1;
+    }
+  }
+
+  /* Border 窄屏换行：仅取消列叠线；行间仍靠 .pt-descriptions__row margin-top 叠合 */
+  .pt-descriptions--border .pt-desc-item:not(:first-child) {
+    margin-left: 0;
+  }
+
+  .pt-descriptions--border .pt-descriptions__row {
+    align-items: stretch;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .pt-descriptions--border {
+    --pt-desc-border-label-w-default: 112px;
+    --pt-desc-border-label-w-large: 112px;
+    --pt-desc-border-label-w-small: 104px;
+    --pt-desc-col-min: 256px;
+  }
+
+}

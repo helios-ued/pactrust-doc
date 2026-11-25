@@ -1,0 +1,317 @@
+/* Figma A3-绑定身份验证器 8370:5786 */
+
+.pt-auth-bind__intro {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pt-space-16, 16px);
+  width: 100%;
+}
+
+.pt-auth-bind__heading {
+  margin: 0;
+  font-family: var(--el-font-family);
+  font-size: var(--el-font-size-extra-large);
+  font-weight: var(--el-font-weight-bold);
+  line-height: var(--el-font-line-height-extra-large);
+  color: var(--el-text-color-primary);
+}
+
+/* Figma Message 8370:10260 · Brand color-9 / 7 · 多行时 icon 对齐首行 */
+.pt-auth-bind__message {
+  display: flex;
+  width: 100%;
+  min-height: 48px;
+  box-sizing: border-box;
+  align-items: flex-start;
+  gap: var(--pt-space-12, 12px);
+  border: 1px solid var(--el-color-primary-light-7);
+  border-radius: var(--el-border-radius-base);
+  padding: var(--pt-space-12, 12px) var(--pt-space-20, 20px);
+  background: var(--el-color-primary-light-9);
+}
+
+.pt-auth-bind__message-icon {
+  flex-shrink: 0;
+  margin-top: calc((var(--el-font-line-height-base) - 16px) / 2);
+  color: var(--pt-brand-color, var(--el-color-primary));
+}
+
+.pt-auth-bind__message-text {
+  margin: 0;
+  font-family: var(--el-font-family);
+  font-size: var(--el-font-size-base);
+  font-weight: var(--el-font-weight-regular);
+  line-height: var(--el-font-line-height-base);
+  color: var(--pt-brand-color, var(--el-color-primary));
+  white-space: normal;
+}
+
+/* Figma Steps Group 8370:5797 · 步间距 24（276→300、380→404） */
+.pt-auth-bind__steps {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: var(--pt-spacing-2xl, 24px);
+}
+
+/* Figma Step Item · items-start（圆点顶对齐标题首行，不随整块内容垂直居中） */
+.pt-auth-bind__steps.pt-steps--vertical .pt-steps__item {
+  width: 100%;
+  align-items: flex-start;
+  gap: var(--pt-space-16, 16px);
+}
+
+.pt-auth-bind__steps .pt-steps__track--vertical {
+  align-self: stretch;
+  align-items: flex-start;
+}
+
+.pt-auth-bind__steps .pt-steps__body {
+  flex: 0 0 auto;
+  align-self: flex-start;
+}
+
+/* Figma Step 1 · 黑点进行态 */
+.pt-auth-bind__steps .pt-steps__item:first-child .pt-steps__icon--process {
+  border: none;
+  background: var(--el-text-color-primary);
+  color: var(--el-text-color-write);
+}
+
+.pt-auth-bind__steps .pt-steps__title {
+  font-size: var(--el-font-size-large);
+  font-weight: 500;
+  line-height: var(--el-font-line-height-large);
+  color: var(--el-text-color-primary);
+  white-space: normal;
+}
+
+.pt-auth-bind__steps .pt-steps__description {
+  font-size: var(--el-font-size-extra-small);
+  line-height: var(--el-font-line-height-extra-small);
+  white-space: normal;
+}
+
+/* 标题区 → Slot · y74−50=24 */
+.pt-auth-bind__steps .pt-steps__body {
+  gap: var(--pt-spacing-2xl, 24px);
+}
+
+/* Figma Slot · pb 24（含在 Step1 帧高内，与 Group gap 24 叠加才是按钮→Step2 视觉） */
+.pt-auth-bind__step-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--pt-space-16, 16px);
+  width: 100%;
+  padding-bottom: var(--pt-spacing-2xl, 24px);
+}
+
+/* 仅收起步（01/02 灰态）去掉标题与空 Slot 的 gap；02/03 进行态保持 24 */
+.pt-auth-bind__steps .pt-auth-bind__step--compact .pt-steps__body {
+  gap: 0;
+}
+
+/* Figma Wait · info-9 / info-8 描边 */
+.pt-auth-bind__steps .pt-steps__icon--wait {
+  border-color: var(--el-border-color-lighter);
+  background: var(--el-color-info-light-9);
+  color: var(--el-color-info);
+}
+
+.pt-auth-bind__qr-row {
+  display: flex;
+  gap: var(--pt-spacing-2xl, 24px);
+  align-items: flex-start;
+}
+
+.pt-auth-bind__qr {
+  display: flex;
+  width: 100px;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--pt-space-8, 8px);
+}
+
+.pt-auth-bind__qr-placeholder {
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+  background: var(--el-fill-color-darker);
+}
+
+.pt-auth-bind__qr-label {
+  font-family: var(--el-font-family);
+  font-size: var(--el-font-size-base);
+  line-height: var(--el-font-line-height-base);
+  color: var(--el-text-color-primary);
+}
+
+/* Figma Button 8370:10009 · 74×32 · 非通栏 */
+.pt-auth-bind__next {
+  flex: 0 0 auto;
+  min-height: 32px;
+  padding: var(--pt-space-4, 4px) var(--pt-space-16, 16px);
+}
+
+.pt-auth-bind__steps .pt-steps__description:empty {
+  display: none;
+}
+
+/* Figma Step 2 · 行高 80 */
+.pt-auth-bind__step--compact {
+  min-height: 80px;
+}
+
+.pt-auth-bind__steps .pt-steps__item--interactive {
+  cursor: pointer;
+}
+
+.pt-auth-bind__steps .pt-steps__item--interactive:hover .pt-steps__title {
+  color: var(--el-color-primary);
+}
+
+/* A3-02 · 扫描 QR + 密钥 `8370:10281` */
+.pt-auth-bind__scan-block {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--pt-space-8, 8px);
+}
+
+.pt-auth-bind__qr-placeholder--scan {
+  width: 100px;
+}
+
+.pt-auth-bind__secret {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  align-items: flex-start;
+  gap: var(--pt-space-8, 8px);
+}
+
+.pt-auth-bind__secret-text {
+  flex: 1 1 auto;
+  min-width: 0;
+  font-family: var(--el-font-family);
+  font-size: var(--el-font-size-base);
+  font-weight: var(--el-font-weight-regular);
+  line-height: var(--el-font-line-height-large);
+  color: var(--el-text-color-primary);
+  word-break: break-all;
+}
+
+.pt-auth-bind__copy {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  margin-top: calc((var(--el-font-line-height-large) - 16px) / 2);
+  border: none;
+  padding: 0;
+  background: transparent;
+  color: var(--el-text-color-primary);
+  cursor: pointer;
+}
+
+.pt-auth-bind__copy:hover {
+  color: var(--el-color-primary);
+}
+
+/* A3-03 · Slot `8370:11377` · 表单项 16 · 确定钮 y176−160=16 */
+.pt-auth-bind__step-body--verify {
+  gap: var(--pt-space-16, 16px);
+}
+
+.pt-auth-bind__verify-form {
+  width: 100%;
+  max-width: none;
+}
+
+.pt-auth-bind__verify-fields {
+  gap: var(--pt-space-16, 16px);
+}
+
+.pt-auth-bind__verify-fields .pt-form-item {
+  max-width: none;
+}
+
+/* Figma Mixed-input · 整组描边，避免 focus 只高亮左半边 */
+.pt-auth-bind__mixed-input {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+  overflow: hidden;
+  border: 1px solid var(--el-border-color);
+  border-radius: var(--el-border-radius-base);
+  background: var(--el-fill-color-blank);
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.pt-auth-bind__mixed-input:hover {
+  border-color: var(--el-text-color-placeholder);
+}
+
+.pt-auth-bind__mixed-input:focus-within {
+  border-color: var(--el-color-primary);
+  box-shadow: var(--el-box-shadow-lighter);
+}
+
+.pt-auth-bind__mixed-input-main {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.pt-auth-bind__mixed-input-main .pt-input-field {
+  height: 40px;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  background: transparent;
+}
+
+.pt-auth-bind__mixed-input-main .pt-input-field:hover,
+.pt-auth-bind__mixed-input-main .pt-input-field:focus-within {
+  border: none;
+  box-shadow: none;
+}
+
+.pt-auth-bind__send-code {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  height: 40px;
+  border: none;
+  border-left: 1px solid var(--el-border-color);
+  border-radius: 0;
+  padding: 0 var(--pt-space-20, 20px);
+  background: var(--el-fill-color-blank);
+  font-family: var(--el-font-family);
+  font-size: var(--el-font-size-base);
+  font-weight: var(--el-font-weight-primary);
+  line-height: var(--el-font-line-height-base);
+  color: var(--el-color-primary);
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.pt-auth-bind__mixed-input:hover .pt-auth-bind__send-code {
+  border-left-color: var(--el-text-color-placeholder);
+}
+
+.pt-auth-bind__mixed-input:focus-within .pt-auth-bind__send-code {
+  border-left-color: var(--el-color-primary);
+}
+
+.pt-auth-bind__send-code:hover {
+  color: var(--el-color-primary);
+  background: var(--el-color-primary-light-9);
+}

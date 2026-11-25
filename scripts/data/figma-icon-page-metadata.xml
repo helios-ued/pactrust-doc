@@ -1,0 +1,1132 @@
+<canvas id="6:1102" name="1-Icon 图标" x="0" y="0" width="0" height="0">
+  <frame id="5803:10913" name="icon-wrapper" x="3182" y="5922" width="704" height="168">
+    <symbol id="5803:10914" name="Size=custom" x="20" y="20" width="16" height="16" />
+    <symbol id="5803:10923" name="Size=10px" x="46" y="20" width="10" height="10" />
+    <symbol id="5803:10925" name="Size=12px" x="66" y="20" width="12" height="12" />
+    <symbol id="5803:10927" name="Size=14px" x="88" y="20" width="14" height="14" />
+    <symbol id="5803:10929" name="Size=16px" x="112" y="20" width="16" height="16" />
+    <symbol id="5803:10931" name="Size=18px" x="138" y="20" width="18" height="18" />
+    <symbol id="5803:10933" name="Size=20px" x="166" y="20" width="20" height="20" />
+    <symbol id="5803:10937" name="Size=24px" x="196" y="20" width="24" height="24" />
+    <symbol id="5803:10935" name="Size=28px" x="230" y="20" width="28" height="28" />
+    <symbol id="5803:10939" name="Size=32px" x="268" y="20" width="32" height="32" />
+    <symbol id="5803:10941" name="Size=48px" x="310" y="20" width="48" height="48" />
+    <symbol id="5803:10943" name="Size=64px" x="368" y="20" width="64" height="64" />
+    <symbol id="5803:10945" name="Size=104px" x="442" y="20" width="104" height="104" />
+    <symbol id="5803:10947" name="Size=128px" x="556" y="20" width="128" height="128" />
+  </frame>
+  <symbol id="3897:53311" name="element-plus-logo" x="3182" y="5838" width="108" height="28" />
+  <frame id="5839:9248" name="Icon" x="3149" y="1327" width="1500" height="4428">
+    <instance id="5839:9249" name="Design system header" x="0" y="0" width="1500" height="462" />
+    <frame id="5839:9250" name="Section" x="0" y="462" width="1500" height="3580">
+      <frame id="5839:9251" name="Content" x="80" y="80" width="1340" height="3420">
+        <frame id="5839:10520" name="Auto Layout-垂直" x="0" y="0" width="1340" height="814">
+          <text id="5839:10521" name="System" x="0" y="0" width="1340" height="28" />
+          <frame id="5839:10522" name="Auto Layout-垂直" x="0" y="92" width="1340" height="722">
+            <frame id="5839:10523" name="Auto Layout-水平" x="40" y="0" width="1300" height="22">
+              <text id="5839:10524" name="Plus" x="0" y="0" width="120.5" height="22" />
+              <text id="5839:10525" name="Minus" x="168.5" y="0" width="120.5" height="22" />
+              <text id="5839:10526" name="CirclePlus" x="337" y="0" width="120.5" height="22" />
+              <text id="5839:10527" name="Remove" x="505.5" y="0" width="120.5" height="22" />
+              <text id="5839:10528" name="Search" x="674" y="0" width="120.5" height="22" />
+              <text id="5839:10529" name="Female" x="842.5" y="0" width="120.5" height="22" />
+              <text id="5839:10530" name="Male" x="1011" y="0" width="120.5" height="22" />
+              <text id="5839:10531" name="Aim" x="1179.5" y="0" width="120.5" height="22" />
+            </frame>
+            <frame id="5839:10532" name="Auto Layout-水平" x="40" y="70" width="1300" height="22">
+              <text id="5839:10533" name="House" x="0" y="0" width="120.5" height="22" />
+              <text id="5839:10534" name="FullScreen" x="168.5" y="0" width="120.5" height="22" />
+              <text id="5839:10535" name="Loading" x="337" y="0" width="120.5" height="22" />
+              <text id="5839:10536" name="Link" x="505.5" y="0" width="120.5" height="22" />
+              <text id="5839:10537" name="Service" x="674" y="0" width="120.5" height="22" />
+              <text id="5839:10538" name="Pointer" x="842.5" y="0" width="120.5" height="22" />
+              <text id="5839:10539" name="Star" x="1011" y="0" width="120.5" height="22" />
+              <text id="5839:10540" name="Notification" x="1179.5" y="0" width="120.5" height="22" />
+            </frame>
+            <frame id="5839:10541" name="Auto Layout-水平" x="40" y="140" width="1300" height="22">
+              <text id="5839:10542" name="ChatDotRound" x="0" y="0" width="120.5" height="22" />
+              <text id="5839:10543" name="ChatSquare" x="168.5" y="0" width="120.5" height="22" />
+              <text id="5839:10544" name="ChatRound" x="337" y="0" width="120.5" height="22" />
+              <text id="5839:10545" name="ChatLineRound" x="505.5" y="0" width="120.5" height="22" />
+              <text id="5839:10546" name="ChatLineSquare" x="674" y="0" width="120.5" height="22" />
+              <text id="5839:10547" name="ChatDotSquare" x="842.5" y="0" width="120.5" height="22" />
+              <text id="5839:10548" name="Odometer" x="1011" y="0" width="120.5" height="22" />
+              <text id="5839:10549" name="Aim" x="1179.5" y="0" width="120.5" height="22" />
+            </frame>
+            <frame id="5839:10550" name="Auto Layout-水平" x="40" y="210" width="1300" height="22">
+              <text id="5839:10551" name="Position" x="0" y="0" width="120.5" height="22" />
+              <text id="5839:10552" name="Clock" x="168.5" y="0" width="120.5" height="22" />
+              <text id="5839:10553" name="Setting" x="337" y="0" width="120.5" height="22" />
+              <text id="5839:10554" name="Connection" x="505.5" y="0" width="120.5" height="22" />
+              <text id="5839:10555" name="View" x="674" y="0" width="120.5" height="22" />
+              <text id="5839:10556" name="Hide" x="842.5" y="0" width="120.5" height="22" />
+              <text id="5839:10557" name="Unlock" x="1011" y="0" width="120.5" height="22" />
+              <text id="5839:10558" name="Notification" x="1179.5" y="0" width="120.5" height="22" />
+            </frame>
+            <frame id="5839:10559" name="Auto Layout-水平" x="40" y="280" width="1300" height="22">
+              <text id="5839:10560" name="RefreshRight" x="0" y="0" width="120.5" height="22" />
+              <text id="5839:10561" name="RefreshLeft" x="168.5" y="0" width="120.5" height="22" />
+              <text id="5839:10562" name="Refresh" x="337" y="0" width="120.5" height="22" />
+              <text id="5839:10563" name="Bell" x="505.5" y="0" width="120.5" height="22" />
+              <text id="5839:10564" name="MuteNotification" x="674" y="0" width="120.5" height="22" />
+              <text id="5839:10565" name="User" x="842.5" y="0" width="120.5" height="22" />
+              <text id="5839:10566" name="Check" x="1011" y="0" width="120.5" height="22" />
+              <text id="5839:10567" name="CircleCheck" x="1179.5" y="0" width="120.5" height="22" />
+            </frame>
+            <frame id="5839:10568" name="Auto Layout-水平" x="40" y="350" width="1300" height="22">
+              <text id="5839:10569" name="Warning" x="0" y="0" width="120.5" height="22" />
+              <text id="5839:10570" name="CircleClose" x="168.5" y="0" width="120.5" height="22" />
+              <text id="5839:10571" name="Close" x="337" y="0" width="120.5" height="22" />
+              <text id="5839:10572" name="PieChart" x="505.5" y="0" width="120.5" height="22" />
+              <text id="5839:10573" name="More" x="674" y="0" width="120.5" height="22" />
+              <text id="5839:10574" name="Compass" x="842.5" y="0" width="120.5" height="22" />
+              <text id="5839:10575" name="Filter" x="1011" y="0" width="120.5" height="22" />
+              <text id="5839:10576" name="Switch" x="1179.5" y="0" width="120.5" height="22" />
+            </frame>
+            <frame id="5839:10577" name="Auto Layout-水平" x="40" y="420" width="1300" height="22">
+              <text id="5839:10578" name="Select" x="0" y="0" width="120.5" height="22" />
+              <text id="5839:10579" name="SemiSelect" x="168.5" y="0" width="120.5" height="22" />
+              <text id="5839:10580" name="CloseBold" x="337" y="0" width="120.5" height="22" />
+              <text id="5839:10581" name="EditPen" x="505.5" y="0" width="120.5" height="22" />
+              <text id="5839:10582" name="Edit" x="674" y="0" width="120.5" height="22" />
+              <text id="5839:10583" name="Message" x="842.5" y="0" width="120.5" height="22" />
+              <text id="5839:10584" name="MessageBox" x="1011" y="0" width="120.5" height="22" />
+              <text id="5839:10585" name="Finished" x="1179.5" y="0" width="120.5" height="22" />
+            </frame>
+            <frame id="5839:10586" name="Auto Layout-水平" x="40" y="490" width="1300" height="22">
+              <text id="5839:10587" name="TurnOff" x="0" y="0" width="120.5" height="22" />
+              <text id="5839:10588" name="Open" x="168.5" y="0" width="120.5" height="22" />
+              <text id="5839:10589" name="Delete" x="337" y="0" width="120.5" height="22" />
+              <text id="5839:10590" name="Crop" x="505.5" y="0" width="120.5" height="22" />
+              <text id="5839:10591" name="Operation" x="674" y="0" width="120.5" height="22" />
+              <text id="5839:10592" name="ZoomOut" x="842.5" y="0" width="120.5" height="22" />
+              <text id="5839:10593" name="ZoomIn" x="1011" y="0" width="120.5" height="22" />
+              <text id="5839:10594" name="InfoFilled" x="1179.5" y="0" width="120.5" height="22" />
+            </frame>
+            <frame id="5839:10595" name="Auto Layout-水平" x="40" y="560" width="1300" height="22">
+              <text id="5839:10596" name="CircleCheckFilled" x="0" y="0" width="120.5" height="22" />
+              <text id="5839:10597" name="WarningFilled" x="168.5" y="0" width="120.5" height="22" />
+              <text id="5839:10598" name="CircleCloseFilled" x="337" y="0" width="120.5" height="22" />
+              <text id="5839:10599" name="QuestionFilled" x="505.5" y="0" width="120.5" height="22" />
+              <text id="5839:10600" name="WarnTriangleFilled" x="674" y="0" width="120.5" height="22" />
+              <text id="5839:10601" name="UserFilled" x="842.5" y="0" width="120.5" height="22" />
+              <text id="5839:10602" name="MoreFilled" x="1011" y="0" width="120.5" height="22" />
+              <text id="5839:10603" name="Tools" x="1179.5" y="0" width="120.5" height="22" />
+            </frame>
+            <frame id="5839:10604" name="Auto Layout-水平" x="40" y="630" width="1300" height="22">
+              <text id="5839:10605" name="House" x="0" y="0" width="120.5" height="22" />
+              <text id="5839:10606" name="FullScreen" x="168.5" y="0" width="120.5" height="22" />
+              <text id="5839:10607" name="Loading" x="337" y="0" width="120.5" height="22" />
+              <text id="5839:10608" name="Link" x="505.5" y="0" width="120.5" height="22" />
+              <text id="5839:10609" name="Service" x="674" y="0" width="120.5" height="22" />
+              <text id="5839:10610" name="Pointer" x="842.5" y="0" width="120.5" height="22" />
+              <text id="5839:10611" name="Star" x="1011" y="0" width="120.5" height="22" />
+              <text id="5839:10612" name="Notification" x="1179.5" y="0" width="120.5" height="22" />
+            </frame>
+            <frame id="5839:10613" name="Auto Layout-水平" x="40" y="700" width="1300" height="22">
+              <text id="5839:10614" name="Histogram" x="0" y="0" width="120.5" height="22" />
+              <text id="5839:10615" name="Grid" x="168.5" y="0" width="120.5" height="22" />
+              <text id="5839:10616" name="Promotion" x="337" y="0" width="120.5" height="22" />
+              <text id="5839:10617" name="DeleteFilled" x="505.5" y="0" width="120.5" height="22" />
+              <text id="5839:10618" name="RemoveFilled" x="674" y="0" width="120.5" height="22" />
+              <text id="5839:10619" name="CirclePlusFilled" x="842.5" y="0" width="120.5" height="22" />
+              <text id="5839:10620" name="SwitchButton" x="1011" y="0" width="120.5" height="22" />
+              <text id="5839:10621" name="Text" x="1179.5" y="0" width="120.5" height="22" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="5839:11082" name="Auto Layout-垂直" x="0" y="878" width="1340" height="288">
+          <text id="5839:11083" name="Arrow" x="0" y="0" width="1340" height="28" />
+          <frame id="5839:11084" name="Auto Layout-垂直" x="0" y="56" width="1340" height="232">
+            <frame id="5839:11085" name="Auto Layout-水平" x="40" y="0" width="1300" height="22">
+              <text id="5839:11086" name="ArrowLeft" x="0" y="0" width="127.5" height="22" />
+              <text id="5839:11087" name="ArrowUp" x="167.5" y="0" width="127.5" height="22" />
+              <text id="5839:11088" name="ArrowRight" x="335" y="0" width="127.5" height="22" />
+              <text id="5839:11089" name="ArrowDown" x="502.5" y="0" width="127.5" height="22" />
+              <text id="5839:11090" name="ArrowLeftBold" x="670" y="0" width="127.5" height="22" />
+              <text id="5839:11091" name="ArrowUpBold" x="837.5" y="0" width="127.5" height="22" />
+              <text id="5839:11092" name="ArrowRightBold" x="1005" y="0" width="127.5" height="22" />
+              <text id="5839:11093" name="ArrowDownBold" x="1172.5" y="0" width="127.5" height="22" />
+            </frame>
+            <frame id="5839:11094" name="Auto Layout-水平" x="40" y="70" width="1300" height="22">
+              <text id="5839:11095" name="DArrowRight" x="0" y="0" width="127.5" height="22" />
+              <text id="5839:11096" name="DArrowLeft" x="167.5" y="0" width="127.5" height="22" />
+              <text id="5839:11097" name="Download" x="335" y="0" width="127.5" height="22" />
+              <text id="5839:11098" name="Upload" x="502.5" y="0" width="127.5" height="22" />
+              <text id="5839:11099" name="Top" x="670" y="0" width="127.5" height="22" />
+              <text id="5839:11100" name="Bottom" x="837.5" y="0" width="127.5" height="22" />
+              <text id="5839:11101" name="Back" x="1005" y="0" width="127.5" height="22" />
+              <text id="5839:11102" name="Right" x="1172.5" y="0" width="127.5" height="22" />
+            </frame>
+            <frame id="5839:11103" name="Auto Layout-水平" x="40" y="140" width="1300" height="22">
+              <text id="5839:11104" name="TopRight" x="0" y="0" width="127.5" height="22" />
+              <text id="5839:11105" name="TopLeft" x="167.5" y="0" width="127.5" height="22" />
+              <text id="5839:11106" name="BottomRight" x="335" y="0" width="127.5" height="22" />
+              <text id="5839:11107" name="BottomLeft" x="502.5" y="0" width="127.5" height="22" />
+              <text id="5839:11108" name="Sort" x="670" y="0" width="127.5" height="22" />
+              <text id="5839:11109" name="SortUp" x="837.5" y="0" width="127.5" height="22" />
+              <text id="5839:11110" name="SortDown" x="1005" y="0" width="127.5" height="22" />
+              <text id="5839:11111" name="Rank" x="1172.5" y="0" width="127.5" height="22" />
+            </frame>
+            <frame id="5839:11112" name="Auto Layout-水平" x="40" y="210" width="1300" height="22">
+              <text id="5839:11113" name="CaretLeft" x="0" y="0" width="127.5" height="22" />
+              <text id="5839:11114" name="CaretTop" x="167.5" y="0" width="127.5" height="22" />
+              <text id="5839:11115" name="CaretRight" x="335" y="0" width="127.5" height="22" />
+              <text id="5839:11116" name="CaretBottom" x="502.5" y="0" width="127.5" height="22" />
+              <text id="5839:11117" name="DCaret" x="670" y="0" width="127.5" height="22" />
+              <text id="5839:11118" name="Expand" x="837.5" y="0" width="127.5" height="22" />
+              <text id="5839:11119" name="Fold" x="1005" y="0" width="127.5" height="22" />
+              <text id="5839:11120" name="Text" x="1172.5" y="0" width="127.5" height="22" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="5839:11184" name="Auto Layout-垂直" x="0" y="1230" width="1340" height="288">
+          <text id="5839:11185" name="Document" x="0" y="0" width="1340" height="28" />
+          <frame id="5839:11186" name="Auto Layout-垂直" x="0" y="56" width="1340" height="232">
+            <frame id="5839:11187" name="Auto Layout-水平" x="40" y="0" width="1300" height="22">
+              <text id="5839:11188" name="DocumentAdd" x="0" y="0" width="127.5" height="22" />
+              <text id="5839:11189" name="Document" x="167.5" y="0" width="127.5" height="22" />
+              <text id="5839:11190" name="Notebook" x="335" y="0" width="127.5" height="22" />
+              <text id="5839:11191" name="Tickets" x="502.5" y="0" width="127.5" height="22" />
+              <text id="5839:11192" name="Memo" x="670" y="0" width="127.5" height="22" />
+              <text id="5839:11193" name="Collection" x="837.5" y="0" width="127.5" height="22" />
+              <text id="5839:11194" name="Postcard" x="1005" y="0" width="127.5" height="22" />
+              <text id="5839:11195" name="ScaleToOriginal" x="1172.5" y="0" width="127.5" height="22" />
+            </frame>
+            <frame id="5839:11196" name="Auto Layout-水平" x="40" y="70" width="1300" height="22">
+              <text id="5839:11197" name="SetUp" x="0" y="0" width="127.5" height="22" />
+              <text id="5839:11198" name="DocumentDelete" x="167.5" y="0" width="127.5" height="22" />
+              <text id="5839:11199" name="DocumentChecked" x="335" y="0" width="127.5" height="22" />
+              <text id="5839:11200" name="DataBoard" x="502.5" y="0" width="127.5" height="22" />
+              <text id="5839:11201" name="DataAnalysis" x="670" y="0" width="127.5" height="22" />
+              <text id="5839:11202" name="CopyDocument" x="837.5" y="0" width="127.5" height="22" />
+              <text id="5839:11203" name="FolderChecked" x="1005" y="0" width="127.5" height="22" />
+              <text id="5839:11204" name="Files" x="1172.5" y="0" width="127.5" height="22" />
+            </frame>
+            <frame id="5839:11205" name="Auto Layout-水平" x="40" y="140" width="1300" height="22">
+              <text id="5839:11206" name="Folder" x="0" y="0" width="127.5" height="22" />
+              <text id="5839:11207" name="FolderOpened" x="167.5" y="0" width="127.5" height="22" />
+              <text id="5839:11208" name="FolderDelete" x="335" y="0" width="127.5" height="22" />
+              <text id="5839:11209" name="FolderRemove" x="502.5" y="0" width="127.5" height="22" />
+              <text id="5839:11210" name="DocumentCopy" x="670" y="0" width="127.5" height="22" />
+              <text id="5839:11211" name="DocumentRemove" x="837.5" y="0" width="127.5" height="22" />
+              <text id="5839:11212" name="FolderAdd" x="1005" y="0" width="127.5" height="22" />
+              <text id="5839:11213" name="FirstAidKit" x="1172.5" y="0" width="127.5" height="22" />
+            </frame>
+            <frame id="5839:11214" name="Auto Layout-水平" x="40" y="210" width="1300" height="22">
+              <text id="5839:11215" name="Reading" x="0" y="0" width="127.5" height="22" />
+              <text id="5839:11216" name="DataLine" x="167.5" y="0" width="127.5" height="22" />
+              <text id="5839:11217" name="Management" x="335" y="0" width="127.5" height="22" />
+              <text id="5839:11218" name="Checked" x="502.5" y="0" width="127.5" height="22" />
+              <text id="5839:11219" name="Failed" x="670" y="0" width="127.5" height="22" />
+              <text id="5839:11220" name="List" x="837.5" y="0" width="127.5" height="22" />
+              <text id="5839:11221" name="Ticket" x="1005" y="0" width="127.5" height="22" />
+              <text id="5839:11222" name="TrendCharts" x="1172.5" y="0" width="127.5" height="22" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="5839:11223" name="Auto Layout-垂直" x="0" y="1582" width="1340" height="218">
+          <text id="5839:11224" name="Media" x="0" y="0" width="1340" height="28" />
+          <frame id="5839:11225" name="Auto Layout-垂直" x="0" y="56" width="1340" height="162">
+            <frame id="5839:11226" name="Auto Layout-水平" x="40" y="0" width="1300" height="22">
+              <text id="5839:11227" name="Microphone" x="0" y="0" width="127.5" height="22" />
+              <text id="5839:11228" name="Mute" x="167.5" y="0" width="127.5" height="22" />
+              <text id="5839:11229" name="Mic" x="335" y="0" width="127.5" height="22" />
+              <text id="5839:11230" name="VideoPlay" x="502.5" y="0" width="127.5" height="22" />
+              <text id="5839:11231" name="VideoPause" x="670" y="0" width="127.5" height="22" />
+              <text id="5839:11232" name="VideoCamera" x="837.5" y="0" width="127.5" height="22" />
+              <text id="5839:11233" name="Headset" x="1005" y="0" width="127.5" height="22" />
+              <text id="5839:11234" name="Monitor" x="1172.5" y="0" width="127.5" height="22" />
+            </frame>
+            <frame id="5839:11235" name="Auto Layout-水平" x="40" y="70" width="1300" height="22">
+              <text id="5839:11236" name="Film" x="0" y="0" width="127.5" height="22" />
+              <text id="5839:11237" name="Camera" x="167.5" y="0" width="127.5" height="22" />
+              <text id="5839:11238" name="Picture" x="335" y="0" width="127.5" height="22" />
+              <text id="5839:11239" name="PictureRounded" x="502.5" y="0" width="127.5" height="22" />
+              <text id="5839:11240" name="Cellphone" x="670" y="0" width="127.5" height="22" />
+              <text id="5839:11241" name="Iphone" x="837.5" y="0" width="127.5" height="22" />
+              <text id="5839:11242" name="VideoCameraFilled" x="1005" y="0" width="127.5" height="22" />
+              <text id="5839:11243" name="PictureFilled" x="1172.5" y="0" width="127.5" height="22" />
+            </frame>
+            <frame id="5839:11244" name="Auto Layout-水平" x="40" y="140" width="1300" height="22">
+              <text id="5839:11245" name="Platform" x="0" y="0" width="127.5" height="22" />
+              <text id="5839:11246" name="CameraFilled" x="167.5" y="0" width="127.5" height="22" />
+              <text id="5839:11247" name="BellFilled" x="335" y="0" width="127.5" height="22" />
+              <text id="5839:11248" name="Text" x="502.5" y="0" width="127.5" height="22" />
+              <text id="5839:11249" name="Text" x="670" y="0" width="127.5" height="22" />
+              <text id="5839:11250" name="Text" x="837.5" y="0" width="127.5" height="22" />
+              <text id="5839:11251" name="Text" x="1005" y="0" width="127.5" height="22" />
+              <text id="5839:11252" name="Text" x="1172.5" y="0" width="127.5" height="22" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="5839:11253" name="Auto Layout-垂直" x="0" y="1864" width="1340" height="148">
+          <text id="5839:11254" name="Traffic" x="0" y="0" width="1340" height="28" />
+          <frame id="5839:11255" name="Auto Layout-垂直" x="0" y="56" width="1340" height="92">
+            <frame id="5839:11256" name="Auto Layout-水平" x="40" y="0" width="1300" height="22">
+              <text id="5839:11257" name="MapLocation" x="0" y="0" width="127.5" height="22" />
+              <text id="5839:11258" name="Location" x="167.5" y="0" width="127.5" height="22" />
+              <text id="5839:11259" name="LocationInformation" x="335" y="0" width="127.5" height="22" />
+              <text id="5839:11260" name="DeleteLocation" x="502.5" y="0" width="127.5" height="22" />
+              <text id="5839:11261" name="AddLocation" x="670" y="0" width="127.5" height="22" />
+              <text id="5839:11262" name="OfficeBuilding" x="837.5" y="0" width="127.5" height="22" />
+              <text id="5839:11263" name="School" x="1005" y="0" width="127.5" height="22" />
+              <text id="5839:11264" name="Guide" x="1172.5" y="0" width="127.5" height="22" />
+            </frame>
+            <frame id="5839:11265" name="Auto Layout-水平" x="40" y="70" width="1300" height="22">
+              <text id="5839:11266" name="Coordinate" x="0" y="0" width="127.5" height="22" />
+              <text id="5839:11267" name="Bicycle" x="167.5" y="0" width="127.5" height="22" />
+              <text id="5839:11268" name="Place" x="335" y="0" width="127.5" height="22" />
+              <text id="5839:11269" name="Van" x="502.5" y="0" width="127.5" height="22" />
+              <text id="5839:11270" name="LocationFilled" x="670" y="0" width="127.5" height="22" />
+              <text id="5839:11271" name="Text" x="837.5" y="0" width="127.5" height="22" />
+              <text id="5839:11272" name="Text" x="1005" y="0" width="127.5" height="22" />
+              <text id="5839:11273" name="Text" x="1172.5" y="0" width="127.5" height="22" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="5839:11274" name="Auto Layout-垂直" x="0" y="2076" width="1340" height="358">
+          <text id="5839:11275" name="Food" x="0" y="0" width="1340" height="28" />
+          <frame id="5839:11276" name="Auto Layout-垂直" x="0" y="56" width="1340" height="302">
+            <frame id="5839:11277" name="Auto Layout-水平" x="40" y="0" width="1300" height="22">
+              <text id="5839:11278" name="Watermelon" x="0" y="0" width="127.5" height="22" />
+              <text id="5839:11279" name="Pear" x="167.5" y="0" width="127.5" height="22" />
+              <text id="5839:11280" name="NoSmoking" x="335" y="0" width="127.5" height="22" />
+              <text id="5839:11281" name="Smoking" x="502.5" y="0" width="127.5" height="22" />
+              <text id="5839:11282" name="Mug" x="670" y="0" width="127.5" height="22" />
+              <text id="5839:11283" name="GobletSquareFull" x="837.5" y="0" width="127.5" height="22" />
+              <text id="5839:11284" name="GobletFull" x="1005" y="0" width="127.5" height="22" />
+              <text id="5839:11285" name="KnifeFork" x="1172.5" y="0" width="127.5" height="22" />
+            </frame>
+            <frame id="5839:11286" name="Auto Layout-水平" x="40" y="70" width="1300" height="22">
+              <text id="5839:11287" name="Sugar" x="0" y="0" width="127.5" height="22" />
+              <text id="5839:11288" name="Bowl" x="167.5" y="0" width="127.5" height="22" />
+              <text id="5839:11289" name="IceDrink" x="335" y="0" width="127.5" height="22" />
+              <text id="5839:11290" name="MilkTea" x="502.5" y="0" width="127.5" height="22" />
+              <text id="5839:11291" name="Lollipop" x="670" y="0" width="127.5" height="22" />
+              <text id="5839:11292" name="Coffee" x="837.5" y="0" width="127.5" height="22" />
+              <text id="5839:11293" name="Chicken" x="1005" y="0" width="127.5" height="22" />
+              <text id="5839:11294" name="Dish" x="1172.5" y="0" width="127.5" height="22" />
+            </frame>
+            <frame id="5839:11295" name="Auto Layout-水平" x="40" y="140" width="1300" height="22">
+              <text id="5839:11296" name="IceTea" x="0" y="0" width="127.5" height="22" />
+              <text id="5839:11297" name="ColdDrink" x="167.5" y="0" width="127.5" height="22" />
+              <text id="5839:11298" name="CoffeeCup" x="335" y="0" width="127.5" height="22" />
+              <text id="5839:11299" name="DishDot" x="502.5" y="0" width="127.5" height="22" />
+              <text id="5839:11300" name="IceCream" x="670" y="0" width="127.5" height="22" />
+              <text id="5839:11301" name="Dessert" x="837.5" y="0" width="127.5" height="22" />
+              <text id="5839:11302" name="IceCreamSquare" x="1005" y="0" width="127.5" height="22" />
+              <text id="5839:11303" name="ForkSpoon" x="1172.5" y="0" width="127.5" height="22" />
+            </frame>
+            <frame id="5839:11304" name="Auto Layout-水平" x="40" y="210" width="1300" height="22">
+              <text id="5839:11305" name="IceCreamRound" x="0" y="0" width="127.5" height="22" />
+              <text id="5839:11306" name="HotWater" x="167.5" y="0" width="127.5" height="22" />
+              <text id="5839:11307" name="Food" x="335" y="0" width="127.5" height="22" />
+              <text id="5839:11308" name="Grape" x="502.5" y="0" width="127.5" height="22" />
+              <text id="5839:11309" name="Fries" x="670" y="0" width="127.5" height="22" />
+              <text id="5839:11310" name="Apple" x="837.5" y="0" width="127.5" height="22" />
+              <text id="5839:11311" name="Burger" x="1005" y="0" width="127.5" height="22" />
+              <text id="5839:11312" name="Cherry" x="1172.5" y="0" width="127.5" height="22" />
+            </frame>
+            <frame id="5839:11313" name="Auto Layout-水平" x="40" y="280" width="1300" height="22">
+              <text id="5839:11314" name="Orange" x="0" y="0" width="127.5" height="22" />
+              <text id="5839:11315" name="Goblet" x="167.5" y="0" width="127.5" height="22" />
+              <text id="5839:11316" name="GobletSquare" x="335" y="0" width="127.5" height="22" />
+              <text id="5839:11317" name="Text" x="502.5" y="0" width="127.5" height="22" />
+              <text id="5839:11318" name="Text" x="670" y="0" width="127.5" height="22" />
+              <text id="5839:11319" name="Text" x="837.5" y="0" width="127.5" height="22" />
+              <text id="5839:11320" name="Text" x="1005" y="0" width="127.5" height="22" />
+              <text id="5839:11321" name="Text" x="1172.5" y="0" width="127.5" height="22" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="5839:11322" name="Auto Layout-垂直" x="0" y="2498" width="1340" height="498">
+          <text id="5839:11323" name="Items" x="0" y="0" width="1340" height="28" />
+          <frame id="5839:11324" name="Auto Layout-垂直" x="0" y="56" width="1340" height="442">
+            <frame id="5839:11325" name="Auto Layout-水平" x="40" y="0" width="1300" height="22">
+              <text id="5839:11326" name="Printer" x="0" y="0" width="127.5" height="22" />
+              <text id="5839:11327" name="Calendar" x="167.5" y="0" width="127.5" height="22" />
+              <text id="5839:11328" name="CreditCard" x="335" y="0" width="127.5" height="22" />
+              <text id="5839:11329" name="Box" x="502.5" y="0" width="127.5" height="22" />
+              <text id="5839:11330" name="Money" x="670" y="0" width="127.5" height="22" />
+              <text id="5839:11331" name="Refrigerator" x="837.5" y="0" width="127.5" height="22" />
+              <text id="5839:11332" name="Cpu" x="1005" y="0" width="127.5" height="22" />
+              <text id="5839:11333" name="Basketball" x="1172.5" y="0" width="127.5" height="22" />
+            </frame>
+            <frame id="5839:11334" name="Auto Layout-水平" x="40" y="70" width="1300" height="22">
+              <text id="5839:11335" name="Brush" x="0" y="0" width="127.5" height="22" />
+              <text id="5839:11336" name="Suitcase" x="167.5" y="0" width="127.5" height="22" />
+              <text id="5839:11337" name="SuitcaseLine" x="335" y="0" width="127.5" height="22" />
+              <text id="5839:11338" name="Umbrella" x="502.5" y="0" width="127.5" height="22" />
+              <text id="5839:11339" name="AlarmClock" x="670" y="0" width="127.5" height="22" />
+              <text id="5839:11340" name="Medal" x="837.5" y="0" width="127.5" height="22" />
+              <text id="5839:11341" name="GoldMedal" x="1005" y="0" width="127.5" height="22" />
+              <text id="5839:11342" name="Present" x="1172.5" y="0" width="127.5" height="22" />
+            </frame>
+            <frame id="5839:11343" name="Auto Layout-水平" x="40" y="140" width="1300" height="22">
+              <text id="5839:11344" name="Mouse" x="0" y="0" width="127.5" height="22" />
+              <text id="5839:11345" name="Watch" x="167.5" y="0" width="127.5" height="22" />
+              <text id="5839:11346" name="QuartzWatch" x="335" y="0" width="127.5" height="22" />
+              <text id="5839:11347" name="Magnet" x="502.5" y="0" width="127.5" height="22" />
+              <text id="5839:11348" name="Help" x="670" y="0" width="127.5" height="22" />
+              <text id="5839:11349" name="Soccer" x="837.5" y="0" width="127.5" height="22" />
+              <text id="5839:11350" name="ToiletPaper" x="1005" y="0" width="127.5" height="22" />
+              <text id="5839:11351" name="ReadingLamp" x="1172.5" y="0" width="127.5" height="22" />
+            </frame>
+            <frame id="5839:11352" name="Auto Layout-水平" x="40" y="210" width="1300" height="22">
+              <text id="5839:11353" name="Paperclip" x="0" y="0" width="127.5" height="22" />
+              <text id="5839:11354" name="MagicStick" x="167.5" y="0" width="127.5" height="22" />
+              <text id="5839:11355" name="Football" x="335" y="0" width="127.5" height="22" />
+              <text id="5839:11356" name="Baseball" x="502.5" y="0" width="127.5" height="22" />
+              <text id="5839:11357" name="Coin" x="670" y="0" width="127.5" height="22" />
+              <text id="5839:11358" name="Goods" x="837.5" y="0" width="127.5" height="22" />
+              <text id="5839:11359" name="SoldOut" x="1005" y="0" width="127.5" height="22" />
+              <text id="5839:11360" name="Sell" x="1172.5" y="0" width="127.5" height="22" />
+            </frame>
+            <frame id="5839:11361" name="Auto Layout-水平" x="40" y="280" width="1300" height="22">
+              <text id="5839:11362" name="Key" x="0" y="0" width="127.5" height="22" />
+              <text id="5839:11363" name="ShoppingCart" x="167.5" y="0" width="127.5" height="22" />
+              <text id="5839:11364" name="ShoppingCartFull" x="335" y="0" width="127.5" height="22" />
+              <text id="5839:11365" name="ShoppingTrolley" x="502.5" y="0" width="127.5" height="22" />
+              <text id="5839:11366" name="Phone" x="670" y="0" width="127.5" height="22" />
+              <text id="5839:11367" name="Scissor" x="837.5" y="0" width="127.5" height="22" />
+              <text id="5839:11368" name="Handbag" x="1005" y="0" width="127.5" height="22" />
+              <text id="5839:11369" name="ShoppingBag" x="1172.5" y="0" width="127.5" height="22" />
+            </frame>
+            <frame id="5839:11370" name="Auto Layout-水平" x="40" y="350" width="1300" height="22">
+              <text id="5839:11371" name="Trophy" x="0" y="0" width="127.5" height="22" />
+              <text id="5839:11372" name="TrophyBase" x="167.5" y="0" width="127.5" height="22" />
+              <text id="5839:11373" name="Stopwatch" x="335" y="0" width="127.5" height="22" />
+              <text id="5839:11374" name="Timer" x="502.5" y="0" width="127.5" height="22" />
+              <text id="5839:11375" name="CollectionTag" x="670" y="0" width="127.5" height="22" />
+              <text id="5839:11376" name="TakeawayBox" x="837.5" y="0" width="127.5" height="22" />
+              <text id="5839:11377" name="PriceTag" x="1005" y="0" width="127.5" height="22" />
+              <text id="5839:11378" name="Wallet" x="1172.5" y="0" width="127.5" height="22" />
+            </frame>
+            <frame id="5839:11379" name="Auto Layout-水平" x="40" y="420" width="1300" height="22">
+              <text id="5839:11380" name="Opportunity" x="0" y="0" width="127.5" height="22" />
+              <text id="5839:11381" name="PhoneFilled" x="167.5" y="0" width="127.5" height="22" />
+              <text id="5839:11382" name="WalletFilled" x="335" y="0" width="127.5" height="22" />
+              <text id="5839:11383" name="GoodsFilled" x="502.5" y="0" width="127.5" height="22" />
+              <text id="5839:11384" name="Flag" x="670" y="0" width="127.5" height="22" />
+              <text id="5839:11385" name="BrushFilled" x="837.5" y="0" width="127.5" height="22" />
+              <text id="5839:11386" name="Briefcase" x="1005" y="0" width="127.5" height="22" />
+              <text id="5839:11387" name="Stamp" x="1172.5" y="0" width="127.5" height="22" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="5839:11388" name="Auto Layout-垂直" x="0" y="3060" width="1340" height="148">
+          <text id="5839:11389" name="Weather" x="0" y="0" width="1340" height="28" />
+          <frame id="5839:11390" name="Auto Layout-垂直" x="0" y="56" width="1340" height="92">
+            <frame id="5839:11391" name="Auto Layout-水平" x="40" y="0" width="1300" height="22">
+              <text id="5839:11392" name="Sunrise-1" x="0" y="0" width="127.5" height="22" />
+              <text id="5839:11393" name="Sunny" x="167.5" y="0" width="127.5" height="22" />
+              <text id="5839:11394" name="Ship" x="335" y="0" width="127.5" height="22" />
+              <text id="5839:11395" name="Lightning" x="502.5" y="0" width="127.5" height="22" />
+              <text id="5839:11396" name="Cloudy" x="670" y="0" width="127.5" height="22" />
+              <text id="5839:11397" name="PartlyCloudy" x="837.5" y="0" width="127.5" height="22" />
+              <text id="5839:11398" name="Sunset" x="1005" y="0" width="127.5" height="22" />
+              <text id="5839:11399" name="Sunrise" x="1172.5" y="0" width="127.5" height="22" />
+            </frame>
+            <frame id="5839:11400" name="Auto Layout-水平" x="40" y="70" width="1300" height="22">
+              <text id="5839:11401" name="Drizzling" x="0" y="0" width="127.5" height="22" />
+              <text id="5839:11402" name="Pouring" x="167.5" y="0" width="127.5" height="22" />
+              <text id="5839:11403" name="MostlyCloudy" x="335" y="0" width="127.5" height="22" />
+              <text id="5839:11404" name="Moon" x="502.5" y="0" width="127.5" height="22" />
+              <text id="5839:11405" name="MoonNight" x="670" y="0" width="127.5" height="22" />
+              <text id="5839:11406" name="Text" x="837.5" y="0" width="127.5" height="22" />
+              <text id="5839:11407" name="Text" x="1005" y="0" width="127.5" height="22" />
+              <text id="5839:11408" name="Text" x="1172.5" y="0" width="127.5" height="22" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="5839:11409" name="Auto Layout-垂直" x="0" y="3272" width="1340" height="148">
+          <text id="5839:11410" name="Other" x="0" y="0" width="1340" height="28" />
+          <frame id="5839:11411" name="Auto Layout-垂直" x="0" y="56" width="1340" height="92">
+            <frame id="5839:11412" name="Auto Layout-水平" x="40" y="0" width="1300" height="22">
+              <text id="5839:11413" name="Kruck" x="0" y="0" width="127.5" height="22" />
+              <text id="5839:11414" name="WindPower" x="167.5" y="0" width="127.5" height="22" />
+              <text id="5839:11415" name="Shop" x="335" y="0" width="127.5" height="22" />
+              <text id="5839:11416" name="s-help" x="502.5" y="0" width="127.5" height="22" />
+              <text id="5839:11417" name="ElemeFilled" x="670" y="0" width="127.5" height="22" />
+              <text id="5839:11418" name="Eleme" x="837.5" y="0" width="127.5" height="22" />
+              <text id="5839:11419" name="Element" x="1005" y="0" width="127.5" height="22" />
+              <text id="5839:11420" name="Separator" x="1172.5" y="0" width="127.5" height="22" />
+            </frame>
+            <frame id="5839:11421" name="Auto Layout-水平" x="40" y="70" width="1300" height="22">
+              <text id="5839:11422" name="ElementPlus" x="0" y="0" width="127.5" height="22" />
+              <text id="5839:11423" name="ChromeFilled" x="167.5" y="0" width="127.5" height="22" />
+              <text id="5839:11424" name="SwitchFilled" x="335" y="0" width="127.5" height="22" />
+              <text id="5839:11425" name="Language" x="502.5" y="0" width="127.5" height="22" />
+              <text id="5839:11426" name="Github" x="670" y="0" width="127.5" height="22" />
+              <text id="5839:11427" name="Text" x="837.5" y="0" width="127.5" height="22" />
+              <text id="5839:11428" name="Text" x="1005" y="0" width="127.5" height="22" />
+              <text id="5839:11429" name="Text" x="1172.5" y="0" width="127.5" height="22" />
+            </frame>
+          </frame>
+        </frame>
+      </frame>
+    </frame>
+    <instance id="5839:9285" name="Design system footer" x="0" y="4042" width="1500" height="386" />
+  </frame>
+  <frame id="5233:51969" name="System" x="3243" y="1964" width="1192" height="716">
+    <symbol id="6:1196" name="🧬 circle-plus-filled" x="4083" y="2664" width="16" height="16" />
+    <symbol id="6:1182" name="🧬 delete-filled" x="3747" y="2664" width="16" height="16" />
+    <symbol id="6:1117" name="🧬 upload-filled" x="3579" y="2594" width="16" height="16" />
+    <symbol id="6:1164" name="🧬 menu" x="3411" y="2594" width="16" height="16" />
+    <symbol id="6:1138" name="🧬 home-filled" x="3243" y="2594" width="16" height="16" />
+    <symbol id="6:1134" name="🧬 s-tools" x="4419" y="2524" width="16" height="16" />
+    <symbol id="6:1156" name="🧬 more" x="4251" y="2524" width="16" height="16" />
+    <symbol id="6:1113" name="🧬 user-filled" x="4083" y="2524" width="16" height="16" />
+    <symbol id="6:1104" name="🧬 warning-filled" x="3411" y="2524" width="16" height="16" />
+    <symbol id="6:1124" name="🧬 circle-check-filled" x="3243" y="2524" width="16" height="16" />
+    <symbol id="6:1148" name="🧬 question-filled" x="3747" y="2524" width="16" height="16" />
+    <symbol id="6:1168" name="🧬 info-filled" x="4419" y="2454" width="16" height="16" />
+    <symbol id="6:1170" name="🧬 circle-close-filled" x="3579" y="2524" width="16" height="16" />
+    <symbol id="6:1180" name="🧬 delete" x="3579" y="2454" width="16" height="16" />
+    <symbol id="6:1160" name="🧬 message" x="4083" y="2384" width="16" height="16" />
+    <symbol id="6:1172" name="🧬 edit-pen" x="3747" y="2384" width="16" height="16" />
+    <symbol id="6:1158" name="🧬 more-filled" x="3915" y="2314" width="16" height="16" />
+    <symbol id="6:1152" name="🧬 pie-chart" x="3747" y="2314" width="16" height="16" />
+    <symbol id="6:1192" name="🧬 close" x="3579" y="2314" width="16" height="16" />
+    <symbol id="6:1106" name="🧬 warning-outline" x="3243" y="2314" width="16" height="16" />
+    <symbol id="6:1198" name="🧬 circle-close" x="3411" y="2314" width="16" height="16" />
+    <symbol id="6:1200" name="🧬 circle-check" x="4419" y="2244" width="16" height="16" />
+    <symbol id="6:1202" name="🧬 check" x="4251" y="2244" width="16" height="16" />
+    <symbol id="6:1111" name="🧬 user" x="4083" y="2244" width="16" height="16" />
+    <symbol id="6:1194" name="🧬 close-notification" x="3915" y="2244" width="16" height="16" />
+    <symbol id="6:1212" name="🧬 bell" x="3747" y="2244" width="16" height="16" />
+    <symbol id="6:1142" name="🧬 refresh" x="3579" y="2244" width="16" height="16" />
+    <symbol id="6:1144" name="🧬 refresh-right" x="3243" y="2244" width="16" height="16" />
+    <symbol id="6:1146" name="🧬 refresh-left" x="3411" y="2244" width="16" height="16" />
+    <symbol id="6:1119" name="🧬 unlock" x="4251" y="2174" width="16" height="16" />
+    <symbol id="6:1166" name="🧬 lock" x="4419" y="2174" width="16" height="16" />
+    <symbol id="6:1243" name="🧬 hide" x="4083" y="2174" width="16" height="16" />
+    <symbol id="6:1108" name="🧬 view" x="3915" y="2174" width="16" height="16" />
+    <symbol id="6:1122" name="🧬 clock" x="3411" y="2190" width="16" height="16" />
+    <symbol id="6:1130" name="🧬 setting" x="3579" y="2190" width="16" height="16" />
+    <symbol id="6:1150" name="🧬 plus" x="3243" y="1964" width="16" height="16" />
+    <symbol id="6:1436" name="🧬 minus" x="3411" y="1964" width="16" height="16" />
+    <symbol id="6:1378" name="🧬 remove" x="3747" y="1964" width="16" height="16" />
+    <symbol id="6:1546" name="🧬 circle-plus" x="3579" y="1964" width="16" height="16" />
+    <symbol id="6:1326" name="🧬 search" x="3915" y="1964" width="16" height="16" />
+    <symbol id="6:1506" name="🧬 female" x="4083" y="1964" width="16" height="16" />
+    <symbol id="6:1448" name="🧬 male" x="4251" y="1964" width="16" height="16" />
+    <symbol id="6:1584" name="🧬 aim" x="4419" y="1964" width="16" height="16" />
+    <symbol id="6:1466" name="🧬 house" x="3243" y="2034" width="16" height="16" />
+    <symbol id="6:1484" name="🧬 full-screen" x="3411" y="2034" width="16" height="16" />
+    <symbol id="6:1458" name="🧬 loading" x="3579" y="2034" width="16" height="16" />
+    <symbol id="6:1460" name="🧬 link" x="3747" y="2034" width="16" height="16" />
+    <symbol id="6:1322" name="🧬 service" x="3915" y="2034" width="16" height="16" />
+    <symbol id="6:1288" name="🧬 pointer" x="4083" y="2034" width="16" height="16" />
+    <symbol id="6:1302" name="🧬 star" x="4251" y="2034" width="16" height="16" />
+    <symbol id="6:1424" name="🧬 notification" x="4419" y="2034" width="16" height="16" />
+    <symbol id="6:1376" name="🧬 remove-filled" x="3915" y="2664" width="16" height="16" />
+    <symbol id="6:1338" name="🧬 promotion" x="3579" y="2664" width="16" height="16" />
+    <symbol id="6:1354" name="🧬 grid" x="3411" y="2664" width="16" height="16" />
+    <symbol id="6:1362" name="🧬 histogram" x="3243" y="2664" width="16" height="16" />
+    <symbol id="6:1368" name="🧬 comment" x="4419" y="2594" width="16" height="16" />
+    <symbol id="6:1300" name="🧬 star-filled" x="4251" y="2594" width="16" height="16" />
+    <symbol id="6:1318" name="🧬 share" x="4083" y="2594" width="16" height="16" />
+    <symbol id="6:1364" name="🧬 avatar" x="3747" y="2594" width="16" height="16" />
+    <symbol id="6:1244" name="🧬 zoom-out" x="4083" y="2454" width="16" height="16" />
+    <symbol id="6:1246" name="🧬 zoom-in" x="4251" y="2454" width="16" height="16" />
+    <symbol id="6:1344" name="🧬 operation" x="3915" y="2454" width="16" height="16" />
+    <symbol id="6:1532" name="🧬 crop" x="3747" y="2454" width="16" height="16" />
+    <symbol id="6:1500" name="🧬 finished" x="4419" y="2384" width="16" height="16" />
+    <symbol id="6:1414" name="🧬 open" x="3411" y="2454" width="16" height="16" />
+    <symbol id="6:1260" name="🧬 turn-off" x="3243" y="2454" width="16" height="16" />
+    <symbol id="6:1382" name="🧬 message-box" x="4251" y="2384" width="16" height="16" />
+    <symbol id="6:1510" name="🧬 edit" x="3915" y="2384" width="16" height="16" />
+    <symbol id="6:1520" name="🧬 discover" x="4083" y="2314" width="16" height="16" />
+    <symbol id="6:1550" name="🧬 chat-square" x="3411" y="2104" width="16" height="16" />
+    <symbol id="6:1552" name="🧬 chat-round" x="3579" y="2104" width="16" height="16" />
+    <symbol id="6:1554" name="🧬 chat-line-square" x="3915" y="2104" width="16" height="16" />
+    <symbol id="6:1556" name="🧬 chat-line-round" x="3747" y="2104" width="16" height="16" />
+    <symbol id="6:1558" name="🧬 chat-dot-square" x="4083" y="2104" width="16" height="16" />
+    <symbol id="6:1418" name="🧬 odometer" x="4251" y="2104" width="16" height="16" />
+    <symbol id="6:1522" name="🧬 discount" x="4419" y="2104" width="16" height="16" />
+    <symbol id="6:1396" name="🧬 position" x="3243" y="2190" width="16" height="16" />
+    <symbol id="6:1560" name="🧬 chat-dot-round" x="3243" y="2104" width="16" height="16" />
+    <symbol id="6:1540" name="🧬 connection" x="3747" y="2190" width="16" height="16" />
+    <symbol id="3268:48303" name="🧬 filter" x="4251" y="2314" width="16" height="16" />
+    <symbol id="3268:48308" name="🧬 switch" x="4419" y="2314" width="16" height="16" />
+    <symbol id="3268:48311" name="🧬 select" x="3243" y="2384" width="16" height="16" />
+    <symbol id="3268:48314" name="🧬 semiSelect" x="3411" y="2384" width="16" height="16" />
+    <symbol id="3268:48317" name="🧬 closeBold" x="3579" y="2384" width="16" height="16" />
+    <symbol id="3268:48320" name="🧬 warn-triangle-filled" x="3915" y="2524" width="16" height="16" />
+    <symbol id="3268:48323" name="🧬 help-filled" x="3915" y="2594" width="16" height="16" />
+    <symbol id="6:1292" name="🧬 switch-button" x="4251" y="2664" width="16" height="16" />
+  </frame>
+  <frame id="5233:52560" name="Arrow" x="3243" y="2807" width="1192" height="226">
+    <symbol id="6:1132" name="🧬 expand" x="4083" y="3017" width="16" height="16" />
+    <symbol id="6:1140" name="🧬 fold" x="4251" y="3017" width="16" height="16" />
+    <symbol id="6:1186" name="🧬 d-caret" x="3915" y="3017" width="16" height="16" />
+    <symbol id="6:1204" name="🧬 caret-top" x="3411" y="3017" width="16" height="16" />
+    <symbol id="6:1206" name="🧬 caret-right" x="3579" y="3017" width="16" height="16" />
+    <symbol id="6:1208" name="🧬 caret-left" x="3243" y="3017" width="16" height="16" />
+    <symbol id="6:1210" name="🧬 caret-bottom" x="3747" y="3017" width="16" height="16" />
+    <symbol id="6:1115" name="🧬 upload" x="3747" y="2877" width="16" height="16" />
+    <symbol id="6:1174" name="🧬 download" x="3579" y="2877" width="16" height="16" />
+    <symbol id="6:1188" name="🧬 d-arrow-right" x="3243" y="2877" width="16" height="16" />
+    <symbol id="6:1190" name="🧬 d-arrow-left" x="3411" y="2877" width="16" height="16" />
+    <symbol id="6:1214" name="🧬 arrow-up" x="3411" y="2807" width="16" height="16" />
+    <symbol id="6:1216" name="🧬 arrow-right" x="3579" y="2807" width="16" height="16" />
+    <symbol id="6:1218" name="🧬 arrow-left" x="3243" y="2807" width="16" height="16" />
+    <symbol id="6:1220" name="🧬 arrow-down" x="3747" y="2807" width="16" height="16" />
+    <symbol id="6:1304" name="🧬 sort" x="3915" y="2947" width="16" height="16" />
+    <symbol id="6:1306" name="🧬 sort-up" x="4083" y="2947" width="16" height="16" />
+    <symbol id="6:1308" name="🧬 sort-down" x="4251" y="2947" width="16" height="16" />
+    <symbol id="6:1386" name="🧬 rank" x="4419" y="2947" width="16" height="16" />
+    <symbol id="6:1277" name="🧬 top-right" x="3243" y="2947" width="16" height="16" />
+    <symbol id="6:1279" name="🧬 top-left" x="3411" y="2947" width="16" height="16" />
+    <symbol id="6:1572" name="🧬 bottom-right" x="3579" y="2947" width="16" height="16" />
+    <symbol id="6:1574" name="🧬 bottom-left" x="3747" y="2947" width="16" height="16" />
+    <symbol id="6:1275" name="🧬 top" x="3915" y="2877" width="16" height="16" />
+    <symbol id="6:1374" name="🧬 right" x="4419" y="2877" width="16" height="16" />
+    <symbol id="6:1570" name="🧬 bottom" x="4083" y="2877" width="16" height="16" />
+    <symbol id="6:1580" name="🧬 back" x="4251" y="2877" width="16" height="16" />
+    <symbol id="3268:48329" name="🧬 arrow-left-bold" x="3915" y="2807" width="16" height="16" />
+    <symbol id="3268:48328" name="🧬 arrow-up-bold" x="4083" y="2807" width="16" height="16" />
+    <symbol id="3268:48336" name="🧬 arrow-right-bold" x="4251" y="2807" width="16" height="16" />
+    <symbol id="3268:48335" name="🧬 arrow-down-bold" x="4419" y="2807" width="16" height="16" />
+  </frame>
+  <frame id="5233:52600" name="Document" x="3243" y="3159" width="1192" height="226">
+    <symbol id="6:1136" name="🧬 list" x="4083" y="3369" width="16" height="16" />
+    <symbol id="6:1176" name="🧬 document" x="3411" y="3159" width="16" height="16" />
+    <symbol id="6:1178" name="🧬 document-add" x="3243" y="3159" width="16" height="16" />
+    <symbol id="6:1348" name="🧬 trend-charts" x="4419" y="3369" width="16" height="16" />
+    <symbol id="6:1332" name="🧬 ticket" x="4251" y="3369" width="16" height="16" />
+    <symbol id="6:1336" name="🧬 release" x="3915" y="3369" width="16" height="16" />
+    <symbol id="6:1370" name="🧬 claim" x="3747" y="3369" width="16" height="16" />
+    <symbol id="6:1350" name="🧬 management" x="3579" y="3369" width="16" height="16" />
+    <symbol id="6:1526" name="🧬 data-line" x="3411" y="3369" width="16" height="16" />
+    <symbol id="6:1384" name="🧬 reading" x="3243" y="3369" width="16" height="16" />
+    <symbol id="6:1496" name="🧬 folder-add" x="4251" y="3299" width="16" height="16" />
+    <symbol id="6:1498" name="🧬 first-aid-kit" x="4419" y="3299" width="16" height="16" />
+    <symbol id="6:1512" name="🧬 document-remove" x="4083" y="3299" width="16" height="16" />
+    <symbol id="6:1516" name="🧬 document-copy" x="3915" y="3299" width="16" height="16" />
+    <symbol id="6:1488" name="🧬 folder-remove" x="3747" y="3299" width="16" height="16" />
+    <symbol id="6:1490" name="🧬 folder-opened" x="3411" y="3299" width="16" height="16" />
+    <symbol id="6:1492" name="🧬 folder-delete" x="3579" y="3299" width="16" height="16" />
+    <symbol id="6:1486" name="🧬 folder" x="3243" y="3299" width="16" height="16" />
+    <symbol id="6:1504" name="🧬 files" x="4419" y="3229" width="16" height="16" />
+    <symbol id="6:1494" name="🧬 folder-checked" x="4251" y="3229" width="16" height="16" />
+    <symbol id="6:1536" name="🧬 copy-document" x="4083" y="3229" width="16" height="16" />
+    <symbol id="6:1530" name="🧬 data-analysis" x="3915" y="3229" width="16" height="16" />
+    <symbol id="6:1528" name="🧬 data-board" x="3747" y="3229" width="16" height="16" />
+    <symbol id="6:1518" name="🧬 document-checked" x="3579" y="3229" width="16" height="16" />
+    <symbol id="6:1514" name="🧬 document-delete" x="3411" y="3229" width="16" height="16" />
+    <symbol id="6:1320" name="🧬 set-up" x="3243" y="3229" width="16" height="16" />
+    <symbol id="6:1566" name="🧬 scale-to-original" x="4419" y="3159" width="16" height="16" />
+    <symbol id="6:1394" name="🧬 postcard" x="4251" y="3159" width="16" height="16" />
+    <symbol id="6:1542" name="🧬 collection" x="4083" y="3159" width="16" height="16" />
+    <symbol id="6:1286" name="🧬 tickets" x="3747" y="3159" width="16" height="16" />
+    <symbol id="6:1420" name="🧬 memo" x="3915" y="3159" width="16" height="16" />
+    <symbol id="6:1422" name="🧬 notebook" x="3579" y="3159" width="16" height="16" />
+  </frame>
+  <frame id="5233:52640" name="Media" x="3243" y="3510" width="1192" height="156">
+    <symbol id="6:1162" name="🧬 bell-filled" x="3579" y="3650" width="16" height="16" />
+    <symbol id="6:1564" name="🧬 camera-filed" x="3411" y="3650" width="16" height="16" />
+    <symbol id="6:1340" name="🧬 platform" x="3243" y="3650" width="16" height="16" />
+    <symbol id="6:1402" name="🧬 picture-folled" x="4419" y="3580" width="16" height="16" />
+    <symbol id="6:1256" name="🧬 video-camera-filled" x="4251" y="3580" width="16" height="16" />
+    <symbol id="6:1434" name="🧬 iphone" x="4083" y="3580" width="16" height="16" />
+    <symbol id="6:1432" name="🧬 cellphone" x="3915" y="3580" width="16" height="16" />
+    <symbol id="6:1406" name="🧬 picture-rounded" x="3747" y="3580" width="16" height="16" />
+    <symbol id="6:1404" name="🧬 picture" x="3579" y="3580" width="16" height="16" />
+    <symbol id="6:1562" name="🧬 camera" x="3411" y="3580" width="16" height="16" />
+    <symbol id="6:1502" name="🧬 film" x="3243" y="3580" width="16" height="16" />
+    <symbol id="6:1428" name="🧬 monitor" x="4419" y="3510" width="16" height="16" />
+    <symbol id="6:1469" name="🧬 headset" x="4251" y="3510" width="16" height="16" />
+    <symbol id="6:1254" name="🧬 video-camera" x="4083" y="3510" width="16" height="16" />
+    <symbol id="6:1250" name="🧬 video-play" x="3747" y="3510" width="16" height="16" />
+    <symbol id="6:1252" name="🧬 video-pause" x="3915" y="3510" width="16" height="16" />
+    <symbol id="6:1262" name="🧬 turn-off-microphone" x="3411" y="3510" width="16" height="16" />
+    <symbol id="6:1438" name="🧬 microphone" x="3243" y="3510" width="16" height="16" />
+    <symbol id="6:1440" name="🧬 mic" x="3579" y="3510" width="16" height="16" />
+  </frame>
+  <frame id="5233:52671" name="Traffic" x="3243" y="3792" width="1192" height="86">
+    <symbol id="6:1452" name="🧬 location" x="3915" y="3862" width="16" height="16" />
+    <symbol id="6:1400" name="🧬 place" x="3579" y="3862" width="16" height="16" />
+    <symbol id="6:1538" name="🧬 coordinate" x="3243" y="3862" width="16" height="16" />
+    <symbol id="6:1586" name="🧬 add-location" x="3915" y="3792" width="16" height="16" />
+    <symbol id="6:1446" name="🧬 map-location" x="3243" y="3792" width="16" height="16" />
+    <symbol id="6:1471" name="🧬 guide" x="4419" y="3792" width="16" height="16" />
+    <symbol id="6:1330" name="🧬 school" x="4251" y="3792" width="16" height="16" />
+    <symbol id="6:1416" name="🧬 office-building" x="4083" y="3792" width="16" height="16" />
+    <symbol id="6:1576" name="🧬 bicycle" x="3411" y="3862" width="16" height="16" />
+    <symbol id="6:1454" name="🧬 location" x="3411" y="3792" width="16" height="16" />
+    <symbol id="6:1456" name="🧬 location-information" x="3579" y="3792" width="16" height="16" />
+    <symbol id="6:1524" name="🧬 delete-location" x="3747" y="3792" width="16" height="16" />
+    <symbol id="3268:48662" name="🧬 Van" x="3747" y="3862" width="16" height="16" />
+  </frame>
+  <frame id="5233:52720" name="Food" x="3243" y="4004" width="1192" height="296">
+    <symbol id="6:1480" name="🧬 goblet" x="3411" y="4284" width="16" height="16" />
+    <symbol id="6:1482" name="🧬 goblet-square" x="3579" y="4284" width="16" height="16" />
+    <symbol id="6:1412" name="🧬 orange" x="3243" y="4284" width="16" height="16" />
+    <symbol id="6:1548" name="🧬 cherry" x="4419" y="4214" width="16" height="16" />
+    <symbol id="3268:49103" name="🧬 watermelon" x="3243" y="4004" width="16" height="16" />
+    <symbol id="3268:49101" name="🧬 water-cup" x="3915" y="4004" width="16" height="16" />
+    <symbol id="3268:49096" name="🧬 tableware" x="3411" y="4074" width="16" height="16" />
+    <symbol id="3268:49086" name="🧬 sugar" x="3243" y="4074" width="16" height="16" />
+    <symbol id="3268:49085" name="🧬 smoking" x="3747" y="4004" width="16" height="16" />
+    <symbol id="3268:49092" name="🧬 potato-strips" x="3915" y="4214" width="16" height="16" />
+    <symbol id="3268:49080" name="🧬 pear" x="3411" y="4004" width="16" height="16" />
+    <symbol id="3268:49071" name="🧬 no-smoking" x="3579" y="4004" width="16" height="16" />
+    <symbol id="3268:49098" name="🧬 milk-tea" x="3747" y="4074" width="16" height="16" />
+    <symbol id="3268:49079" name="🧬 lollipop" x="3915" y="4074" width="16" height="16" />
+    <symbol id="3268:49078" name="🧬 knife-fork" x="4419" y="4004" width="16" height="16" />
+    <symbol id="3268:49087" name="🧬 ice-tea" x="3243" y="4144" width="16" height="16" />
+    <symbol id="3268:49097" name="🧬 ice-drink" x="3579" y="4074" width="16" height="16" />
+    <symbol id="3268:49077" name="🧬 ice-cream" x="3915" y="4144" width="16" height="16" />
+    <symbol id="3268:49076" name="🧬 ice-cream-square" x="4251" y="4144" width="16" height="16" />
+    <symbol id="3268:49074" name="🧬 ice-cream-round" x="3243" y="4214" width="16" height="16" />
+    <symbol id="3268:49072" name="🧬 hot-water" x="3411" y="4214" width="16" height="16" />
+    <symbol id="3268:49083" name="🧬 grape" x="3747" y="4214" width="16" height="16" />
+    <symbol id="3268:49067" name="🧬 goblet-square-full" x="4083" y="4004" width="16" height="16" />
+    <symbol id="3268:49105" name="🧬 goblet-full" x="4251" y="4004" width="16" height="16" />
+    <symbol id="3268:49066" name="🧬 fork-spoon" x="4419" y="4144" width="16" height="16" />
+    <symbol id="3268:49065" name="🧬 food" x="3579" y="4214" width="16" height="16" />
+    <symbol id="3268:49094" name="🧬 dish" x="4419" y="4074" width="16" height="16" />
+    <symbol id="3268:49089" name="🧬 dish-1" x="3747" y="4144" width="16" height="16" />
+    <symbol id="3268:49063" name="🧬 dessert" x="4083" y="4144" width="16" height="16" />
+    <symbol id="3268:49061" name="🧬 cold-drink" x="3411" y="4144" width="16" height="16" />
+    <symbol id="3268:49100" name="🧬 coffee" x="4083" y="4074" width="16" height="16" />
+    <symbol id="3268:49060" name="🧬 coffee-cup" x="3579" y="4144" width="16" height="16" />
+    <symbol id="3268:49057" name="🧬 chicken" x="4251" y="4074" width="16" height="16" />
+    <symbol id="3268:49056" name="🧬 burger" x="4251" y="4214" width="16" height="16" />
+    <symbol id="3268:49050" name="🧬 apple" x="4083" y="4214" width="16" height="16" />
+  </frame>
+  <frame id="5233:52797" name="Items" x="3243" y="4426" width="1192" height="436">
+    <symbol id="6:1126" name="🧬 shopping-cart-full" x="3579" y="4706" width="16" height="16" />
+    <symbol id="6:1128" name="🧬 shopping-cart" x="3411" y="4706" width="16" height="16" />
+    <symbol id="6:1154" name="🧬 paperclip" x="3243" y="4636" width="16" height="16" />
+    <symbol id="6:1184" name="🧬 calendar" x="3411" y="4426" width="16" height="16" />
+    <symbol id="6:1372" name="🧬 stamp" x="4419" y="4846" width="16" height="16" />
+    <symbol id="6:1366" name="🧬 briefcase" x="4251" y="4846" width="16" height="16" />
+    <symbol id="6:1346" name="🧬 brush-filled" x="4083" y="4846" width="16" height="16" />
+    <symbol id="6:1358" name="🧬 flag" x="3915" y="4846" width="16" height="16" />
+    <symbol id="6:1356" name="🧬 goods-filled" x="3747" y="4846" width="16" height="16" />
+    <symbol id="6:1360" name="🧬 finance-filled" x="3579" y="4846" width="16" height="16" />
+    <symbol id="6:1408" name="🧬 phone-filled" x="3411" y="4846" width="16" height="16" />
+    <symbol id="6:1342" name="🧬 opportunity" x="3243" y="4846" width="16" height="16" />
+    <symbol id="6:1248" name="🧬 wallet" x="4419" y="4776" width="16" height="16" />
+    <symbol id="6:1390" name="🧬 price-tag" x="4251" y="4776" width="16" height="16" />
+    <symbol id="6:1290" name="🧬 takeaway-box" x="4083" y="4776" width="16" height="16" />
+    <symbol id="6:1544" name="🧬 collection-tag" x="3915" y="4776" width="16" height="16" />
+    <symbol id="6:1281" name="🧬 timer" x="3747" y="4776" width="16" height="16" />
+    <symbol id="6:1298" name="🧬 stopwatch" x="3579" y="4776" width="16" height="16" />
+    <symbol id="6:1266" name="🧬 trophy" x="3243" y="4776" width="16" height="16" />
+    <symbol id="6:1268" name="🧬 trophy-base" x="3411" y="4776" width="16" height="16" />
+    <symbol id="6:1314" name="🧬 handbag" x="4251" y="4706" width="16" height="16" />
+    <symbol id="6:1316" name="🧬 shopping-bag" x="4419" y="4706" width="16" height="16" />
+    <symbol id="6:1328" name="🧬 scissors" x="4083" y="4706" width="16" height="16" />
+    <symbol id="6:1410" name="🧬 phone" x="3915" y="4706" width="16" height="16" />
+    <symbol id="6:1312" name="🧬 shopping-cart-trolley" x="3747" y="4706" width="16" height="16" />
+    <symbol id="6:1464" name="🧬 key" x="3243" y="4706" width="16" height="16" />
+    <symbol id="6:1324" name="🧬 sell" x="4419" y="4636" width="16" height="16" />
+    <symbol id="6:1310" name="🧬 sold-out" x="4251" y="4636" width="16" height="16" />
+    <symbol id="6:1478" name="🧬 goods" x="4083" y="4636" width="16" height="16" />
+    <symbol id="6:1450" name="🧬 magic-stick" x="3411" y="4636" width="16" height="16" />
+    <symbol id="6:1426" name="🧬 mouse" x="3243" y="4566" width="16" height="16" />
+    <symbol id="6:1392" name="🧬 present" x="4419" y="4496" width="16" height="16" />
+    <symbol id="6:1442" name="🧬 medal" x="4083" y="4496" width="16" height="16" />
+    <symbol id="6:1444" name="🧬 gold-medal" x="4251" y="4496" width="16" height="16" />
+    <symbol id="6:1582" name="🧬 alarm-clock" x="3915" y="4496" width="16" height="16" />
+    <symbol id="6:1258" name="🧬 umbrella" x="3747" y="4496" width="16" height="16" />
+    <symbol id="6:1294" name="🧬 suitcase" x="3411" y="4496" width="16" height="16" />
+    <symbol id="6:1296" name="🧬 suitcase-line" x="3579" y="4496" width="16" height="16" />
+    <symbol id="6:1534" name="🧬 cpu" x="4251" y="4426" width="16" height="16" />
+    <symbol id="6:1380" name="🧬 refrigerator" x="4083" y="4426" width="16" height="16" />
+    <symbol id="6:1430" name="🧬 money" x="3915" y="4426" width="16" height="16" />
+    <symbol id="6:1568" name="🧬 box" x="3747" y="4426" width="16" height="16" />
+    <symbol id="6:1578" name="🧬 credit-card" x="3579" y="4426" width="16" height="16" />
+    <symbol id="6:1388" name="🧬 printer" x="3243" y="4426" width="16" height="16" />
+    <symbol id="3268:49099" name="🧬 watch" x="3411" y="4566" width="16" height="16" />
+    <symbol id="3268:49104" name="🧬 watch-1" x="3579" y="4566" width="16" height="16" />
+    <symbol id="3268:49093" name="🧬 toilet-paper" x="4251" y="4566" width="16" height="16" />
+    <symbol id="3268:49064" name="🧬 table-lamp" x="4419" y="4566" width="16" height="16" />
+    <symbol id="3268:49090" name="🧬 soccer" x="4083" y="4566" width="16" height="16" />
+    <symbol id="3268:49070" name="🧬 help" x="3915" y="4566" width="16" height="16" />
+    <symbol id="3268:49069" name="🧬 football" x="3579" y="4636" width="16" height="16" />
+    <symbol id="3268:49075" name="🧬 coin" x="3915" y="4636" width="16" height="16" />
+    <symbol id="3268:49055" name="🧬 brush" x="3243" y="4496" width="16" height="16" />
+    <symbol id="3268:49054" name="🧬 basketball" x="4419" y="4426" width="16" height="16" />
+    <symbol id="3268:49053" name="🧬 baseball" x="3747" y="4636" width="16" height="16" />
+    <symbol id="3268:49051" name="🧬 attract" x="3747" y="4566" width="16" height="16" />
+  </frame>
+  <frame id="5233:52840" name="Weather" x="3243" y="4988" width="1192" height="86">
+    <symbol id="6:1462" name="🧬 lightning" x="3747" y="4988" width="16" height="16" />
+    <symbol id="3268:49091" name="🧬 sunset" x="4251" y="4988" width="16" height="16" />
+    <symbol id="3268:49073" name="🧬 sunrise" x="4419" y="4988" width="16" height="16" />
+    <symbol id="3268:49081" name="🧬 sunrise-1" x="3243" y="4988" width="16" height="16" />
+    <symbol id="3268:49088" name="🧬 sunny" x="3411" y="4988" width="16" height="16" />
+    <symbol id="3268:49084" name="🧬 ship" x="3579" y="4988" width="16" height="16" />
+    <symbol id="3268:49095" name="🧬 partly-cloudy" x="3915" y="4988" width="16" height="16" />
+    <symbol id="3268:49082" name="🧬 moon" x="3747" y="5058" width="16" height="16" />
+    <symbol id="3268:49102" name="🧬 moon-night" x="3915" y="5058" width="16" height="16" />
+    <symbol id="3268:49062" name="🧬 light-rain" x="3243" y="5058" width="16" height="16" />
+    <symbol id="3268:49068" name="🧬 heavy-rain" x="3411" y="5058" width="16" height="16" />
+    <symbol id="3268:49059" name="🧬 cloudy" x="3579" y="5058" width="16" height="16" />
+    <symbol id="3268:49058" name="🧬 cloudy-and-sunny" x="4083" y="4988" width="16" height="16" />
+  </frame>
+  <frame id="5233:52841" name="Other" x="3243" y="5200" width="1192" height="86">
+    <symbol id="6:1264" name="🧬 truck" x="3243" y="5200" width="16" height="16" />
+    <symbol id="6:1508" name="🧬 eleme" x="4083" y="5200" width="16" height="16" />
+    <symbol id="1209:25933" name="🧬 element" x="4251" y="5200" width="16" height="16" />
+    <symbol id="6:1334" name="🧬 s-shop" x="3579" y="5200" width="16" height="16" />
+    <symbol id="6:1352" name="🧬 s-help" x="3747" y="5200" width="16" height="16" />
+    <symbol id="6:1398" name="🧬 platform-eleme" x="3915" y="5200" width="16" height="16" />
+    <symbol id="105:26459" name="🧬 separator" x="4419" y="5200" width="16" height="16" />
+    <symbol id="3268:49106" name="🧬 wind-power" x="3411" y="5200" width="16" height="16" />
+    <symbol id="3277:48159" name="🧬 element-plus" x="3243" y="5270" width="16" height="16" />
+    <symbol id="3277:48164" name="🧬 ChromeFilled" x="3411" y="5270" width="16" height="16" />
+    <symbol id="3277:48168" name="🧬 SwitchFilled" x="3579" y="5270" width="16" height="16" />
+    <symbol id="3313:59831" name="🧬 Language" x="3747" y="5270" width="16" height="16" />
+    <symbol id="3898:52312" name="🧬 github" x="3915" y="5270" width="16" height="16" />
+  </frame>
+  <symbol id="8339:56150" name="PaceTrust -logo" x="3427" y="5863" width="153.7974853515625" height="30.001829147338867" />
+  <symbol id="8339:56151" name="PaceTrust - icon-wrapper" x="3427" y="5790" width="32.5474853515625" height="30.001829147338867" />
+  <frame id="8411:1780" name="Frame 1" x="4781" y="1327" width="846" height="3490">
+    <frame id="8411:2407" name="Action" x="40" y="40" width="766" height="830">
+      <text id="8411:2403" name="Action" x="0" y="0" width="766" height="40" />
+      <frame id="8411:1788" name="action" x="0" y="52" width="766" height="778">
+        <symbol id="8411:2644" name="Action/add" x="32" y="40" width="32" height="32" />
+        <symbol id="8411:2697" name="Action/remove" x="106.4000015258789" y="40" width="32" height="32" />
+        <symbol id="8411:2699" name="Action/add-square" x="180.8000030517578" y="40" width="32" height="32" />
+        <symbol id="8411:2700" name="Action/add-circle" x="255.20001220703125" y="40" width="32" height="32" />
+        <symbol id="8411:2684" name="Action/add-to-list" x="329.6000061035156" y="40" width="32" height="32" />
+        <symbol id="8411:2666" name="Action/check" x="404" y="40" width="32" height="32" />
+        <symbol id="8411:2660" name="Action/check-double" x="478.3999938964844" y="40" width="32" height="32" />
+        <symbol id="8411:2656" name="Action/check-circle-1" x="552.7999877929688" y="40" width="32" height="32" />
+        <symbol id="8411:2691" name="Action/check-circle-2" x="627.2000122070312" y="40" width="32" height="32" />
+        <symbol id="8411:2689" name="Action/check-square" x="701.6000366210938" y="40" width="32" height="32" />
+        <symbol id="8411:2688" name="Action/log-out-1" x="32" y="114" width="32" height="32" />
+        <symbol id="8411:2683" name="Action/eye-closed" x="106.4000015258789" y="114" width="32" height="32" />
+        <symbol id="8411:2681" name="Action/eye-open" x="180.8000030517578" y="114" width="32" height="32" />
+        <symbol id="8411:2675" name="Action/eye-hidden" x="255.20001220703125" y="114" width="32" height="32" />
+        <symbol id="8411:2654" name="Action/heart-add" x="329.6000061035156" y="114" width="32" height="32" />
+        <symbol id="8411:2670" name="Action/heart" x="404" y="114" width="32" height="32" />
+        <symbol id="8411:2669" name="Action/error" x="478.3999938964844" y="114" width="32" height="32" />
+        <symbol id="8411:2667" name="Action/info" x="552.7999877929688" y="114" width="32" height="32" />
+        <symbol id="8411:2674" name="Action/lock" x="627.2000122070312" y="114" width="32" height="32" />
+        <symbol id="8411:2664" name="Action/lock-open" x="701.6000366210938" y="114" width="32" height="32" />
+        <symbol id="8411:2694" name="Action/settings" x="32" y="188" width="32" height="32" />
+        <symbol id="8411:2692" name="Action/warning" x="106.4000015258789" y="188" width="32" height="32" />
+        <symbol id="8411:2686" name="Action/build" x="180.8000030517578" y="188" width="32" height="32" />
+        <symbol id="8411:2662" name="Action/block" x="255.20001220703125" y="188" width="32" height="32" />
+        <symbol id="8411:2661" name="Action/search" x="329.6000061035156" y="188" width="32" height="32" />
+        <symbol id="8411:2659" name="Action/search-01" x="404" y="188" width="32" height="32" />
+        <symbol id="8411:2663" name="Action/zoom-in" x="478.3999938964844" y="188" width="32" height="32" />
+        <symbol id="8411:2647" name="Action/zoom-out" x="552.7999877929688" y="188" width="32" height="32" />
+        <symbol id="8411:2655" name="Action/help" x="627.2000122070312" y="188" width="32" height="32" />
+        <symbol id="8411:2649" name="Action/verified" x="701.6000366210938" y="188" width="32" height="32" />
+        <symbol id="8411:2680" name="Action/calendar" x="32" y="262" width="32" height="32" />
+        <symbol id="8411:2648" name="Action/calendar-event" x="106.4000015258789" y="262" width="32" height="32" />
+        <symbol id="8411:2696" name="Action/hand" x="180.8000030517578" y="262" width="32" height="32" />
+        <symbol id="8411:2682" name="Action/remove-circle" x="255.20001220703125" y="262" width="32" height="32" />
+        <symbol id="8411:2672" name="Action/work" x="329.6000061035156" y="262" width="32" height="32" />
+        <symbol id="8411:2679" name="Action/work-alt" x="404" y="262" width="32" height="32" />
+        <symbol id="8411:2640" name="Action/bookmark" x="701.6000366210938" y="262" width="32" height="32" />
+        <symbol id="8411:2650" name="Action/hourglass-empty" x="32" y="336" width="32" height="32" />
+        <symbol id="8411:2652" name="Action/log-in-1" x="106.4000015258789" y="336" width="32" height="32" />
+        <symbol id="8411:2645" name="Action/copy-1" x="180.8000030517578" y="336" width="32" height="32" />
+        <symbol id="8411:2639" name="Action/copy-2" x="255.20001220703125" y="336" width="32" height="32" />
+        <symbol id="8411:2636" name="Action/delete-1" x="329.6000061035156" y="336" width="32" height="32" />
+        <symbol id="8411:2635" name="Action/delete-2" x="404" y="336" width="32" height="32" />
+        <symbol id="8411:2657" name="Action/save" x="478.3999938964844" y="336" width="32" height="32" />
+        <symbol id="8411:2634" name="Action/edit-01" x="552.7999877929688" y="336" width="32" height="32" />
+        <symbol id="8411:2631" name="Action/edit-02" x="627.2000122070312" y="336" width="32" height="32" />
+        <symbol id="8411:2630" name="Action/edit-03" x="701.6000366210938" y="336" width="32" height="32" />
+        <symbol id="8411:2629" name="Action/link-1" x="32" y="410" width="32" height="32" />
+        <symbol id="8411:2643" name="Action/link-2" x="106.4000015258789" y="410" width="32" height="32" />
+        <symbol id="8411:2633" name="Action/link-3" x="180.8000030517578" y="410" width="32" height="32" />
+        <symbol id="8411:2628" name="Action/infinite" x="255.20001220703125" y="410" width="32" height="32" />
+        <symbol id="8411:2627" name="Action/format-list-bulleted" x="329.6000061035156" y="410" width="32" height="32" />
+        <symbol id="8411:2625" name="Action/layers-three" x="404" y="410" width="32" height="32" />
+        <symbol id="8411:2624" name="Action/format-align-left" x="478.3999938964844" y="410" width="32" height="32" />
+        <symbol id="8411:2693" name="Action/format-align-right" x="552.7999877929688" y="410" width="32" height="32" />
+        <symbol id="8411:2622" name="Action/format-align-center" x="627.2000122070312" y="410" width="32" height="32" />
+        <symbol id="8411:2621" name="Action/format-align-justify" x="701.6000366210938" y="410" width="32" height="32" />
+        <symbol id="8411:2642" name="Action/format-indent-increase" x="106.4000015258789" y="484" width="32" height="32" />
+        <symbol id="8411:2618" name="Action/format-indent-decrease" x="180.8000030517578" y="484" width="32" height="32" />
+        <symbol id="8411:2616" name="Action/gps-on" x="255.20001220703125" y="484" width="32" height="32" />
+        <symbol id="8411:2665" name="Action/bar-chart" x="329.6000061035156" y="484" width="32" height="32" />
+        <symbol id="8411:2617" name="Action/map" x="404" y="484" width="32" height="32" />
+        <symbol id="8411:2658" name="Action/store" x="478.3999938964844" y="484" width="32" height="32" />
+        <symbol id="8411:2623" name="Action/village" x="552.7999877929688" y="484" width="32" height="32" />
+        <symbol id="8411:2641" name="Action/company" x="627.2000122070312" y="484" width="32" height="32" />
+        <symbol id="8411:2632" name="Action/location" x="32" y="558" width="32" height="32" />
+        <symbol id="8411:2614" name="Action/pin-drop" x="106.4000015258789" y="558" width="32" height="32" />
+        <symbol id="8411:2668" name="Action/copyright" x="180.8000030517578" y="558" width="32" height="32" />
+        <symbol id="8411:2613" name="Action/ticket" x="255.20001220703125" y="558" width="32" height="32" />
+        <symbol id="8411:2695" name="Action/gift" x="329.6000061035156" y="558" width="32" height="32" />
+        <symbol id="8411:2638" name="Action/award" x="404" y="558" width="32" height="32" />
+        <symbol id="8411:2698" name="Action/school" x="478.3999938964844" y="558" width="32" height="32" />
+        <symbol id="8411:2685" name="Action/token" x="552.7999877929688" y="558" width="32" height="32" />
+        <symbol id="8411:2690" name="Action/umbrella" x="627.2000122070312" y="558" width="32" height="32" />
+        <symbol id="8411:2612" name="Action/box" x="701.6000366210938" y="558" width="32" height="32" />
+        <symbol id="8411:2626" name="Action/gem" x="32" y="632" width="32" height="32" />
+        <symbol id="8411:2620" name="Action/command" x="106.4000015258789" y="632" width="32" height="32" />
+        <symbol id="8411:2673" name="Action/book-open" x="180.8000030517578" y="632" width="32" height="32" />
+        <symbol id="8411:2611" name="Action/compass" x="255.20001220703125" y="632" width="32" height="32" />
+        <symbol id="8411:2687" name="Action/bolt-1" x="32" y="706" width="32" height="32" />
+        <symbol id="8411:2607" name="Action/bolt-1-off" x="106.4000015258789" y="706" width="32" height="32" />
+        <symbol id="8411:2606" name="Action/bolt-2" x="180.8000030517578" y="706" width="32" height="32" />
+        <symbol id="8411:2637" name="Action/rocket-launch" x="255.20001220703125" y="706" width="32" height="32" />
+        <symbol id="8411:2605" name="Action/close-circle" x="329.6000061035156" y="706" width="32" height="32" />
+        <symbol id="8411:2653" name="Action/close-circle-1" x="404" y="706" width="32" height="32" />
+        <symbol id="8411:2610" name="Action/toolbox" x="478.3999938964844" y="262" width="32" height="32" />
+        <symbol id="8413:5286" name="Action/layout" x="552.7999877929688" y="262" width="32" height="32" />
+        <symbol id="8411:2619" name="Action/columns-three" x="627.2000122070312" y="262" width="32" height="32" />
+        <symbol id="8411:2615" name="Action/globe" x="32" y="484" width="32" height="32" />
+        <symbol id="8411:2676" name="Action/offer" x="701.6000366210938" y="484" width="32" height="32" />
+        <symbol id="8411:2671" name="Action/atom" x="329.6000061035156" y="632" width="32" height="32" />
+        <symbol id="8411:2609" name="Action/droplet" x="404" y="632" width="32" height="32" />
+        <symbol id="8411:2608" name="Action/planet" x="478.3999938964844" y="632" width="32" height="32" />
+        <symbol id="8411:2678" name="Action/link-external" x="552.7999877929688" y="632" width="32" height="32" />
+        <symbol id="8411:2677" name="Action/bulb" x="627.2000122070312" y="632" width="32" height="32" />
+        <symbol id="8411:2651" name="Action/click" x="701.6000366210938" y="632" width="32" height="32" />
+      </frame>
+    </frame>
+    <frame id="8411:2408" name="Arrow" x="40" y="910" width="766" height="386">
+      <text id="8411:2409" name="Arrow" x="0" y="0" width="766" height="40" />
+      <frame id="8411:2410" name="Arrow" x="0" y="52" width="766" height="334">
+        <symbol id="8411:3087" name="Arrow/arrow-forward-long" x="32" y="40" width="32" height="32" />
+        <symbol id="8411:3086" name="Arrow/arrow-back-long" x="106.4000015258789" y="40" width="32" height="32" />
+        <symbol id="8411:3081" name="Arrow/arrow-down" x="180.8000030517578" y="40" width="32" height="32" />
+        <symbol id="8411:3062" name="Arrow/arrow-up" x="255.20001220703125" y="40" width="32" height="32" />
+        <symbol id="8411:3080" name="Arrow/arrow-forward" x="329.6000061035156" y="40" width="32" height="32" />
+        <symbol id="8411:3075" name="Arrow/arrow-back" x="404" y="40" width="32" height="32" />
+        <symbol id="8411:3078" name="Arrow/arrow-down-simple" x="478.3999938964844" y="40" width="32" height="32" />
+        <symbol id="8411:3069" name="Arrow/arrow-up-simple" x="552.7999877929688" y="40" width="32" height="32" />
+        <symbol id="8411:3072" name="Arrow/arrow-forward-simple" x="627.2000122070312" y="40" width="32" height="32" />
+        <symbol id="8411:3071" name="Arrow/arrow-back-simple" x="701.6000366210938" y="40" width="32" height="32" />
+        <symbol id="8411:3074" name="Arrow/chevron-down" x="32" y="114" width="32" height="32" />
+        <symbol id="8411:3070" name="Arrow/chevron-up" x="106.4000015258789" y="114" width="32" height="32" />
+        <symbol id="8411:3068" name="Arrow/chevron-Left" x="180.8000030517578" y="114" width="32" height="32" />
+        <symbol id="8411:3067" name="Arrow/chevron-right" x="255.20001220703125" y="114" width="32" height="32" />
+        <symbol id="8411:3066" name="Arrow/arrow-turn-right" x="329.6000061035156" y="114" width="32" height="32" />
+        <symbol id="8411:3064" name="Arrow/arrow-turn-left" x="404" y="114" width="32" height="32" />
+        <symbol id="8411:3058" name="Arrow/arrow-subdirectory-forward" x="478.3999938964844" y="114" width="32" height="32" />
+        <symbol id="8411:3063" name="Arrow/arrow-subdirectory-back" x="552.7999877929688" y="114" width="32" height="32" />
+        <symbol id="8411:3061" name="Arrow/download-2" x="32" y="188" width="32" height="32" />
+        <symbol id="8411:3059" name="Arrow/download-3" x="106.4000015258789" y="188" width="32" height="32" />
+        <symbol id="8411:3057" name="Arrow/download-4" x="180.8000030517578" y="188" width="32" height="32" />
+        <symbol id="8411:3082" name="Arrow/download-1" x="255.20001220703125" y="188" width="32" height="32" />
+        <symbol id="8411:3056" name="Arrow/arrow-down-long" x="329.6000061035156" y="188" width="32" height="32" />
+        <symbol id="8411:3077" name="Arrow/arrow-up-long" x="404" y="188" width="32" height="32" />
+        <symbol id="8411:3055" name="Arrow/redo" x="627.2000122070312" y="114" width="32" height="32" />
+        <symbol id="8411:3053" name="Arrow/undo" x="701.6000366210938" y="114" width="32" height="32" />
+        <symbol id="8411:3050" name="Arrow/arrow-forward-double" x="478.3999938964844" y="188" width="32" height="32" />
+        <symbol id="8411:3049" name="Arrow/arrow-back-double" x="552.7999877929688" y="188" width="32" height="32" />
+        <symbol id="8411:3052" name="Arrow/arrow-down-circle" x="627.2000122070312" y="188" width="32" height="32" />
+        <symbol id="8411:3054" name="Arrow/arrow-up-circle" x="701.6000366210938" y="188" width="32" height="32" />
+        <symbol id="8411:3065" name="Arrow/share-1" x="32" y="262" width="32" height="32" />
+        <symbol id="8413:4061" name="Arrow/share-2" x="106.4000015258789" y="262" width="32" height="32" />
+        <symbol id="8411:3048" name="Arrow/upload" x="255.20001220703125" y="262" width="32" height="32" />
+        <symbol id="8411:3073" name="Arrow/outgoing" x="329.6000061035156" y="294" width="32" height="32" />
+        <symbol id="8411:3047" name="Arrow/swap-alt" x="404" y="262" width="32" height="32" />
+        <symbol id="8411:3084" name="Arrow/sync" x="478.3999938964844" y="262" width="32" height="32" />
+        <symbol id="8411:3083" name="Arrow/flows-1" x="552.7999877929688" y="262" width="32" height="32" />
+        <symbol id="8411:3046" name="Arrow/flow" x="627.2000122070312" y="262" width="32" height="32" />
+        <symbol id="8413:4065" name="Arrow/share-3" x="180.8000030517578" y="262" width="32" height="32" />
+      </frame>
+    </frame>
+    <frame id="8413:5287" name="Fill" x="40" y="1336" width="766" height="238">
+      <text id="8413:5288" name="Fill" x="0" y="0" width="766" height="40" />
+      <frame id="8413:5289" name="Fill" x="0" y="52" width="766" height="186">
+        <symbol id="8413:5560" name="Fill/lock-1" x="32" y="114" width="32" height="32" />
+        <symbol id="8413:5559" name="Fill/heart" x="106.4000015258789" y="114" width="32" height="32" />
+        <symbol id="8413:5557" name="Fill/arrow solid - left" x="32" y="40" width="32" height="32" />
+        <symbol id="8413:5552" name="Fill/arrow solid - Right" x="106.4000015258789" y="40" width="32" height="32" />
+        <symbol id="8413:5556" name="Fill/arrow solid - Up" x="180.8000030517578" y="40" width="32" height="32" />
+        <symbol id="8413:5554" name="Fill/arrow solid " x="255.20001220703125" y="40" width="32" height="32" />
+        <symbol id="8413:5551" name="Fill/arrow solid - Down" x="329.6000061035156" y="40" width="32" height="32" />
+        <symbol id="8413:5550" name="Fill/close-circle-1" x="404" y="40" width="32" height="32" />
+        <symbol id="8413:5553" name="Fill/Question	" x="478.3999938964844" y="40" width="32" height="32" />
+        <symbol id="8413:5549" name="Fill/Warning" x="552.7999877929688" y="40" width="32" height="32" />
+        <symbol id="8413:5547" name="Fill/Info" x="627.2000122070312" y="40" width="32" height="32" />
+        <symbol id="8413:5546" name="Fill/star" x="180.8000030517578" y="114" width="32" height="32" />
+        <symbol id="8413:5548" name="Fill/success" x="255.20001220703125" y="114" width="32" height="32" />
+        <symbol id="8413:5558" name="Fill/close" x="329.6000061035156" y="114" width="32" height="32" />
+        <symbol id="8413:5555" name="Fill/Circle Checkmark" x="404" y="114" width="24" height="24" />
+        <symbol id="8413:5545" name="Fill/Checked Indeterminate" x="478.3999938964844" y="114" width="24" height="24" />
+        <symbol id="8413:5544" name="Fill/Checkbox" x="552.7999877929688" y="114" width="24" height="24" />
+      </frame>
+    </frame>
+    <frame id="8411:2956" name="Other" x="40" y="1614" width="766" height="756">
+      <text id="8411:2957" name="Other" x="0" y="0" width="766" height="40" />
+      <frame id="8411:2958" name="Other" x="0" y="52" width="766" height="704">
+        <symbol id="8411:3679" name="Other/scale-1" x="255.20001220703125" y="114" width="32" height="32" />
+        <symbol id="8411:3649" name="Other/close" x="32" y="188" width="32" height="32" />
+        <symbol id="8411:3663" name="Other/close-circle" x="106.4000015258789" y="188" width="32" height="32" />
+        <symbol id="8411:3659" name="Other/more-vertical" x="404" y="188" width="32" height="32" />
+        <symbol id="8411:3645" name="Other/full-screen-exit" x="255.20001220703125" y="262" width="32" height="32" />
+        <symbol id="8411:3689" name="Other/coffee" x="404" y="262" width="32" height="32" />
+        <symbol id="8411:3666" name="Other/cake" x="478.3999938964844" y="262" width="32" height="32" />
+        <symbol id="8411:3664" name="Other/wifi-tethering" x="701.6000366210938" y="262" width="32" height="32" />
+        <symbol id="8411:3637" name="Other/orientation-locked" x="329.6000061035156" y="336" width="32" height="32" />
+        <symbol id="8411:3635" name="Other/gauge-high" x="404" y="336" width="32" height="32" />
+        <symbol id="8411:3660" name="Other/flip" x="478.3999938964844" y="336" width="32" height="32" />
+        <symbol id="8411:3676" name="Other/disk" x="552.7999877929688" y="336" width="32" height="32" />
+        <symbol id="8411:3632" name="Other/scan" x="627.2000122070312" y="336" width="32" height="32" />
+        <symbol id="8411:3669" name="Other/home-1" x="32" y="40" width="32" height="32" />
+        <symbol id="8411:3668" name="Other/home-2" x="106.4000015258789" y="40" width="32" height="32" />
+        <symbol id="8411:3667" name="Other/home-3" x="180.8000030517578" y="40" width="32" height="32" />
+        <symbol id="8411:3690" name="Other/crop-alt" x="329.6000061035156" y="114" width="32" height="32" />
+        <symbol id="8411:3652" name="Other/clock" x="255.20001220703125" y="40" width="32" height="32" />
+        <symbol id="8411:3670" name="Other/alarm" x="329.6000061035156" y="40" width="32" height="32" />
+        <symbol id="8411:3671" name="Other/fast-forward" x="32" y="336" width="32" height="32" />
+        <symbol id="8411:3640" name="Other/fast-rewind" x="106.4000015258789" y="336" width="32" height="32" />
+        <symbol id="8411:3657" name="Other/forward" x="255.20001220703125" y="336" width="32" height="32" />
+        <symbol id="8411:3644" name="Other/update" x="404" y="40" width="32" height="32" />
+        <symbol id="8411:3638" name="Other/headset" x="552.7999877929688" y="40" width="32" height="32" />
+        <symbol id="8411:3651" name="Other/headset-mic" x="627.2000122070312" y="40" width="32" height="32" />
+        <symbol id="8411:3677" name="Other/image" x="701.6000366210938" y="40" width="32" height="32" />
+        <symbol id="8411:3634" name="Other/history" x="478.3999938964844" y="40" width="32" height="32" />
+        <symbol id="8411:3683" name="Other/camera" x="32" y="114" width="32" height="32" />
+        <symbol id="8411:3636" name="Other/camera-add-photo" x="106.4000015258789" y="114" width="32" height="32" />
+        <symbol id="8411:3682" name="Other/videocam" x="180.8000030517578" y="114" width="32" height="32" />
+        <symbol id="8411:3658" name="Other/play-square" x="404" y="114" width="32" height="32" />
+        <symbol id="8411:3678" name="Other/camera-timer" x="478.3999938964844" y="114" width="32" height="32" />
+        <symbol id="8411:3687" name="Other/cast" x="552.7999877929688" y="114" width="32" height="32" />
+        <symbol id="8411:3674" name="Other/grid-alt" x="627.2000122070312" y="114" width="32" height="32" />
+        <symbol id="8411:3661" name="Other/menu" x="701.6000366210938" y="114" width="32" height="32" />
+        <symbol id="8411:3680" name="Other/loop" x="180.8000030517578" y="336" width="32" height="32" />
+        <symbol id="8411:3685" name="Other/crop" x="180.8000030517578" y="188" width="32" height="32" />
+        <symbol id="8411:3648" name="Other/full-screen" x="255.20001220703125" y="188" width="32" height="32" />
+        <symbol id="8411:3655" name="Other/app-menu" x="329.6000061035156" y="188" width="32" height="32" />
+        <symbol id="8411:3647" name="Other/refresh" x="552.7999877929688" y="188" width="32" height="32" />
+        <symbol id="8411:3653" name="Other/more-horizontal" x="478.3999938964844" y="188" width="32" height="32" />
+        <symbol id="8411:3654" name="Other/filter-list" x="32" y="262" width="32" height="32" />
+        <symbol id="8411:3656" name="Other/filter-list-add" x="106.4000015258789" y="262" width="32" height="32" />
+        <symbol id="8411:3643" name="Other/face-id" x="627.2000122070312" y="188" width="32" height="32" />
+        <symbol id="8411:3626" name="Other/print" x="701.6000366210938" y="188" width="32" height="32" />
+        <symbol id="8411:3681" name="Other/library" x="180.8000030517578" y="262" width="32" height="32" />
+        <symbol id="8411:3641" name="Other/storage" x="552.7999877929688" y="262" width="32" height="32" />
+        <symbol id="8411:3662" name="Other/podcast" x="627.2000122070312" y="262" width="32" height="32" />
+        <symbol id="8411:3688" name="Other/sliders" x="329.6000061035156" y="262" width="32" height="32" />
+        <symbol id="8411:3673" name="Other/AR" x="701.6000366210938" y="336" width="32" height="32" />
+        <symbol id="8411:3646" name="Other/loading-2" x="32" y="484" width="32" height="32" />
+        <symbol id="8411:3672" name="Other/loading-1" x="106.4000015258789" y="484" width="32" height="32" />
+        <symbol id="8411:3633" name="Other/loading-3" x="180.8000030517578" y="484" width="32" height="32" />
+        <symbol id="8411:3624" name="Other/loading-4" x="255.20001220703125" y="484" width="32" height="32" />
+        <symbol id="8411:3623" name="Other/BreadcrumbSlash" x="329.6000061035156" y="484" width="32" height="32" />
+        <symbol id="8411:3625" name="Other/airplay" x="106.4000015258789" y="410" width="32" height="32" />
+        <symbol id="8411:3686" name="Other/power" x="180.8000030517578" y="410" width="32" height="32" />
+        <symbol id="8411:3639" name="Other/phone-call-1" x="255.20001220703125" y="410" width="32" height="32" />
+        <symbol id="8411:3630" name="Other/phone-call-2" x="329.6000061035156" y="410" width="32" height="32" />
+        <symbol id="8411:3629" name="Other/phone-missed" x="404" y="410" width="32" height="32" />
+        <symbol id="8411:3675" name="Other/phone-add" x="478.3999938964844" y="410" width="32" height="32" />
+        <symbol id="8411:3642" name="Other/phone" x="552.7999877929688" y="410" width="32" height="32" />
+        <symbol id="8411:3627" name="Other/phone-call-end" x="627.2000122070312" y="410" width="32" height="32" />
+        <symbol id="8411:3628" name="Other/signal-cellular-3-bar" x="32" y="410" width="32" height="32" />
+        <symbol id="8413:4350" name="Other/add-block" x="32" y="558" width="32" height="32" />
+        <symbol id="8413:4343" name="Other/note-02" x="106.4000015258789" y="558" width="32" height="32" />
+        <symbol id="8413:4340" name="Other/file-2" x="180.8000030517578" y="558" width="28.000001907348633" height="32" />
+        <symbol id="8413:4346" name="Other/file" x="255.20001220703125" y="558" width="32" height="32" />
+        <symbol id="8413:4344" name="Other/add-page" x="329.6000061035156" y="558" width="32" height="32" />
+        <symbol id="8413:4345" name="Other/note-01" x="404" y="558" width="32" height="32" />
+        <symbol id="8413:4349" name="Other/file-copy" x="478.3999938964844" y="558" width="32" height="32" />
+        <symbol id="8413:4348" name="Other/clipboard" x="552.7999877929688" y="558" width="32" height="32" />
+        <symbol id="8413:4342" name="Other/folder" x="627.2000122070312" y="558" width="32" height="32" />
+        <symbol id="8413:4341" name="Other/add-folder" x="701.6000366210938" y="558" width="32" height="32" />
+        <symbol id="8413:4339" name="Other/cloud-upload" x="32" y="632" width="32" height="32" />
+        <symbol id="8413:4338" name="Other/cloud-download" x="106.4000015258789" y="632" width="32" height="32" />
+        <symbol id="8413:4347" name="Other/inbox" x="180.8000030517578" y="632" width="32" height="32" />
+        <symbol id="8413:4337" name="Other/list" x="255.20001220703125" y="632" width="32" height="32" />
+      </frame>
+    </frame>
+    <frame id="8413:3691" name="Social + communication" x="40" y="2410" width="766" height="312">
+      <text id="8413:3692" name="Social + communication" x="0" y="0" width="766" height="40" />
+      <frame id="8413:3693" name="Social + communication" x="0" y="52" width="766" height="260">
+        <symbol id="8413:4095" name="Social/youtube" x="32" y="188" width="32" height="32" />
+        <symbol id="8413:4086" name="Social/user" x="32" y="40" width="32" height="32" />
+        <symbol id="8413:4072" name="Social/user-add" x="106.4000015258789" y="40" width="32" height="32" />
+        <symbol id="8413:4084" name="Social/users" x="404" y="40" width="32" height="32" />
+        <symbol id="8413:4094" name="Social/user-remove" x="180.8000030517578" y="40" width="32" height="32" />
+        <symbol id="8413:4093" name="Social/user-circle" x="255.20001220703125" y="40" width="32" height="32" />
+        <symbol id="8413:4092" name="Social/user-group" x="329.6000061035156" y="40" width="32" height="32" />
+        <symbol id="8413:4090" name="Social/mail" x="478.3999938964844" y="40" width="32" height="32" />
+        <symbol id="8413:4078" name="Social/mail-open" x="552.7999877929688" y="40" width="32" height="32" />
+        <symbol id="8413:4087" name="Social/forward-to-inbox" x="627.2000122070312" y="40" width="32" height="32" />
+        <symbol id="8413:4073" name="Social/@" x="701.6000366210938" y="40" width="32" height="32" />
+        <symbol id="8413:4085" name="Social/star" x="32" y="114" width="32" height="32" />
+        <symbol id="8413:4083" name="Social/star-circle" x="106.4000015258789" y="114" width="32" height="32" />
+        <symbol id="8413:4082" name="Social/thumb-up" x="180.8000030517578" y="114" width="32" height="32" />
+        <symbol id="8413:4091" name="Social/thumb-down" x="255.20001220703125" y="114" width="32" height="32" />
+        <symbol id="8413:4080" name="Social/notifications" x="329.6000061035156" y="114" width="32" height="32" />
+        <symbol id="8413:4077" name="Social/notifications-active" x="404" y="114" width="32" height="32" />
+        <symbol id="8413:4079" name="Social/notifications-off" x="478.3999938964844" y="114" width="32" height="32" />
+        <symbol id="8413:4088" name="Social/notifications-paused" x="552.7999877929688" y="114" width="32" height="32" />
+        <symbol id="8413:4076" name="Social/megaphone" x="627.2000122070312" y="114" width="32" height="32" />
+        <symbol id="8413:4081" name="Social/send" x="701.6000366210938" y="114" width="32" height="32" />
+        <symbol id="8413:4075" name="Social/chat" x="106.4000015258789" y="188" width="32" height="32" />
+        <symbol id="8413:4074" name="Social/chat-empty" x="180.8000030517578" y="188" width="32" height="32" />
+        <symbol id="8413:4071" name="Social/add-comment" x="255.20001220703125" y="188" width="32" height="32" />
+        <symbol id="8413:4070" name="Social/facebook" x="329.6000061035156" y="188" width="32" height="32" />
+        <symbol id="8413:4069" name="Social/linkedin" x="404" y="188" width="32" height="32" />
+        <symbol id="8413:4068" name="Social/twitter" x="478.3999938964844" y="188" width="32" height="32" />
+        <symbol id="8413:4067" name="Social/pinterest" x="552.7999877929688" y="188" width="32" height="32" />
+        <symbol id="8413:4089" name="Social/rss-feed" x="627.2000122070312" y="188" width="32" height="32" />
+        <symbol id="8413:4066" name="Social/share-1" x="701.6000366210938" y="188" width="32" height="32" />
+      </frame>
+    </frame>
+    <frame id="8413:4096" name="Payment" x="40" y="2762" width="766" height="312">
+      <text id="8413:4097" name="Payment" x="0" y="0" width="766" height="40" />
+      <frame id="8413:4098" name="Payment" x="0" y="52" width="766" height="260">
+        <instance id="8413:4188" name="Payment/calculate-2" x="627.2000122070312" y="40" width="32" height="32" />
+        <instance id="8413:4191" name="Payment/calculate-1" x="701.6000366210938" y="40" width="32" height="32" />
+        <instance id="8413:4194" name="Payment/euro" x="32" y="114" width="32" height="32" />
+        <instance id="8413:4197" name="Payment/percent" x="106.4000015258789" y="114" width="32" height="32" />
+        <instance id="8413:4200" name="Payment/credit-card-percent" x="404" y="40" width="32" height="32" />
+        <instance id="8413:4203" name="Payment/credit-card-check" x="478.3999938964844" y="40" width="32" height="32" />
+        <instance id="8413:4164" name="Payment/wallet-2" x="106.4000015258789" y="40" width="32" height="32" />
+        <instance id="8413:4209" name="Payment/wallet-1" x="180.8000030517578" y="40" width="32" height="32" />
+        <instance id="8413:4221" name="Payment/credit-card" x="255.20001220703125" y="40" width="32" height="32" />
+        <instance id="8413:4212" name="Payment/credit-card-secure" x="329.6000061035156" y="40" width="32" height="32" />
+        <instance id="8413:4224" name="Payment/bank" x="32" y="40" width="32" height="32" />
+        <instance id="8413:4176" name="Payment/coins" x="552.7999877929688" y="40" width="32" height="32" />
+        <instance id="8413:4206" name="Payment/bitcoin-2" x="180.8000030517578" y="114" width="32" height="32" />
+        <instance id="8413:4167" name="Payment/dollar-2" x="255.20001220703125" y="114" width="32" height="32" />
+        <instance id="8413:4170" name="Payment/bitcoin-1" x="329.6000061035156" y="114" width="32" height="32" />
+        <instance id="8413:4173" name="Payment/Rmb" x="404" y="114" width="32" height="32" />
+        <instance id="8413:4185" name="Payment/dollar-1" x="478.3999938964844" y="114" width="32" height="32" />
+        <instance id="8413:4179" name="Payment/contactless-2" x="32" y="188" width="32" height="32" />
+        <instance id="8413:4215" name="Payment/contactless-1" x="106.4000015258789" y="188" width="32" height="32" />
+        <instance id="8413:4218" name="Payment/shopping-cart" x="180.8000030517578" y="188" width="32" height="32" />
+        <instance id="8413:4182" name="Payment/shopping-bag" x="255.20001220703125" y="188" width="32" height="32" />
+      </frame>
+    </frame>
+    <frame id="8413:4351" name="Payment" x="40" y="3114" width="766" height="336">
+      <text id="8413:4352" name="Payment" x="0" y="0" width="766" height="40" />
+      <frame id="8413:4353" name="Payment" x="0" y="52" width="842" height="284">
+        <symbol id="8413:5268" name="Document/TXT" x="442" y="40" width="40" height="40" />
+        <symbol id="8413:5278" name="Document/Web" x="606" y="40" width="40" height="40" />
+        <symbol id="8413:5275" name="Document/link" x="688" y="40" width="40" height="40" />
+        <symbol id="8413:5271" name="Document/Excel" x="196" y="122" width="40" height="40" />
+        <symbol id="8413:5270" name="Document/CAD" x="278" y="122" width="40" height="40" />
+        <symbol id="8413:5273" name="Document/API" x="360" y="122" width="40" height="40" />
+        <symbol id="8413:5263" name="Document/SQL" x="442" y="122" width="40" height="40" />
+        <symbol id="8413:5265" name="Document/img" x="196" y="40" width="40" height="40" />
+        <symbol id="8413:5264" name="Document/Word" x="32" y="40" width="40" height="40" />
+        <symbol id="8413:5267" name="Document/PPT" x="114" y="40" width="40" height="40" />
+        <symbol id="8413:5277" name="Document/PDF" x="278" y="40" width="40" height="40" />
+        <symbol id="8413:5272" name="Document/compressed file" x="360" y="40" width="40" height="40" />
+        <symbol id="8413:5276" name="Document/XLS" x="524" y="40" width="40" height="40" />
+        <symbol id="8413:5266" name="Document/chart" x="114" y="122" width="40" height="40" />
+        <symbol id="8413:5262" name="Document/Folder" x="32" y="122" width="40" height="40" />
+        <symbol id="8413:5261" name="Document/audio" x="524" y="122" width="40" height="40" />
+        <symbol id="8413:5269" name="Document/video" x="606" y="122" width="40" height="40" />
+        <symbol id="8413:5260" name="Document/General" x="32" y="204" width="40" height="40" />
+        <symbol id="8413:5274" name="Document/GIF" x="114" y="204" width="40" height="40" />
+      </frame>
+    </frame>
+  </frame>
+</canvas>
+
+IMPORTANT: After you call this tool, you MUST call get_design_context if trying to implement the design, since this tool only returns metadata. If you do not call get_design_context, the agent will not be able to implement the design.
+
+Figma recommends using the remote MCP server for workflows between design and code: https://developers.figma.com/docs/figma-mcp-server/remote-server-installation/

@@ -1,0 +1,131 @@
+.pt-form {
+  --pt-form-label-width: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--pt-spacing-xl, 16px);
+  width: 100%;
+  max-width: 400px;
+}
+
+.pt-form__items {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pt-spacing-xl, 16px);
+  width: 100%;
+}
+
+.pt-form-actions {
+  display: flex;
+  gap: var(--pt-space-8, 8px);
+  min-height: 32px;
+  width: 100%;
+}
+
+.pt-form-actions--horizontal {
+  padding-left: calc(var(--pt-form-label-width) + var(--pt-spacing-lg, 12px));
+}
+
+.pt-form-label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0;
+  flex-shrink: 0;
+}
+
+.pt-form-label--default {
+  min-height: 32px;
+}
+
+.pt-form-label--large {
+  min-height: 40px;
+}
+
+.pt-form-label--small {
+  min-height: 24px;
+}
+
+.pt-form-label--align-right {
+  align-items: flex-end;
+}
+
+.pt-form-label__row {
+  display: flex;
+  align-items: center;
+  gap: var(--pt-space-4, 4px);
+  width: 100%;
+}
+
+.pt-form-label__required {
+  flex-shrink: 0;
+  font-family: var(--el-font-family);
+  font-size: var(--el-font-size-base);
+  line-height: var(--el-font-line-height-base);
+  font-weight: var(--el-font-weight-regular);
+  color: var(--el-color-danger);
+}
+
+.pt-form-label__text {
+  font-family: var(--el-font-family);
+  font-size: var(--el-font-size-base);
+  line-height: var(--el-font-line-height-base);
+  font-weight: var(--el-font-weight-regular);
+  color: var(--el-text-color-primary);
+  white-space: nowrap;
+  text-align: right;
+}
+
+.pt-form-item {
+  width: 100%;
+  max-width: 400px;
+}
+
+.pt-form-item--horizontal {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--pt-spacing-lg, 12px);
+}
+
+.pt-form-item--vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0;
+}
+
+.pt-form-item__label-col {
+  width: var(--pt-form-label-width, 100px);
+  flex-shrink: 0;
+}
+
+.pt-form-item--vertical .pt-form-label__text {
+  text-align: left;
+}
+
+.pt-form-item__control {
+  display: flex;
+  flex: 1 1 0;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+}
+
+.pt-form-item--vertical .pt-form-item__control {
+  flex: none;
+  width: 100%;
+  margin-top: 0;
+}
+
+.pt-form-item__prompt {
+  margin-top: 0;
+  font-size: 10px;
+  line-height: 20px;
+  color: var(--el-text-color-secondary);
+}
+
+.pt-form-item__error {
+  margin-top: var(--pt-spacing-xs, 4px);
+  font-size: var(--el-font-size-base);
+  line-height: var(--el-font-line-height-base);
+  color: var(--el-color-danger);
+}

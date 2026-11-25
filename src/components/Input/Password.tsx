@@ -4,7 +4,9 @@ import {
   type InputHTMLAttributes,
 } from "react";
 import { cn } from "@/lib/cn";
+import { EdsIconById, PT_EDS_ICONS } from "@/components/Icon/EdsIconById";
 import type { InputSize, InputState } from "./Input";
+import { inputSizeClasses } from "./inputFieldStyles";
 
 /** Figma Password — docs/COMPONENTS.md */
 export type PasswordProps = Omit<
@@ -19,35 +21,11 @@ export type PasswordProps = Omit<
 
 function EyeIcon({ hidden }: { hidden: boolean }) {
   return (
-    <svg
-      width="14"
-      height="14"
-      viewBox="0 0 14 14"
-      fill="none"
-      aria-hidden
+    <EdsIconById
+      id={hidden ? PT_EDS_ICONS.eyeHidden : PT_EDS_ICONS.eyeOpen}
+      size={14}
       className="text-el-text-placeholder"
-    >
-      {hidden ? (
-        <>
-          <path
-            d="M1 7s2.5-4 6-4 6 4 6 4-2.5 4-6 4-6-4-6-4Z"
-            stroke="currentColor"
-            strokeWidth="1.2"
-          />
-          <circle cx="7" cy="7" r="1.75" stroke="currentColor" strokeWidth="1.2" />
-          <path d="M2 2l10 10" stroke="currentColor" strokeWidth="1.2" />
-        </>
-      ) : (
-        <>
-          <path
-            d="M1 7s2.5-4 6-4 6 4 6 4-2.5 4-6 4-6-4-6-4Z"
-            stroke="currentColor"
-            strokeWidth="1.2"
-          />
-          <circle cx="7" cy="7" r="1.75" stroke="currentColor" strokeWidth="1.2" />
-        </>
-      )}
-    </svg>
+    />
   );
 }
 
@@ -69,12 +47,6 @@ export const Password = forwardRef<HTMLInputElement, PasswordProps>(
     const isDisabled = state === "Disabled";
     const visualState = focused && state === "Default" ? "Focus" : state;
 
-    const sizeClasses: Record<InputSize, string> = {
-      Default: "min-h-10 px-pt-12 py-pt-8 text-el-base leading-el-base",
-      Large: "min-h-11 px-pt-3xl py-pt-8 text-el-base leading-el-base",
-      Small: "min-h-6 px-pt-8 py-pt-4 text-el-base leading-el-base",
-    };
-
     const stateClasses =
       visualState === "Error"
         ? "border-el-danger"
@@ -87,8 +59,8 @@ export const Password = forwardRef<HTMLInputElement, PasswordProps>(
     return (
       <div
         className={cn(
-          "flex w-full items-center gap-pt-8 overflow-hidden rounded-el-base border bg-el-fill-blank",
-          sizeClasses[size],
+          "pt-input-field flex w-full items-center overflow-hidden rounded-el-base border bg-el-fill-blank",
+          inputSizeClasses[size],
           stateClasses,
           className,
         )}

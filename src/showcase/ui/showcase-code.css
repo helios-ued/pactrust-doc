@@ -1,0 +1,116 @@
+/* Showcase 代码块 · VS Code Light+ 风格（与 EDS 预览区协调） */
+.showcase-code-block {
+  overflow-x: auto;
+  margin: 0;
+  padding: var(--pt-spacing-xl) var(--pt-spacing-3xl);
+  border-radius: var(--el-border-radius-base);
+  border: 1px solid var(--ds-stroke-divider);
+  background: #fafafa;
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+  font-size: 13px;
+  line-height: 1.65;
+  tab-size: 2;
+}
+
+.showcase-code-block code.hljs {
+  display: block;
+  padding: 0;
+  background: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  white-space: pre;
+  word-break: normal;
+}
+
+.showcase-code-block .hljs-comment,
+.showcase-code-block .hljs-quote {
+  color: #6a737d;
+  font-style: italic;
+}
+
+.showcase-code-block .hljs-keyword,
+.showcase-code-block .hljs-selector-tag,
+.showcase-code-block .hljs-built_in,
+.showcase-code-block .hljs-type {
+  color: #0033b3;
+  font-weight: 500;
+}
+
+.showcase-code-block .hljs-string,
+.showcase-code-block .hljs-regexp,
+.showcase-code-block .hljs-symbol,
+.showcase-code-block .hljs-template-variable {
+  color: #067d17;
+}
+
+.showcase-code-block .hljs-title,
+.showcase-code-block .hljs-section,
+.showcase-code-block .hljs-name,
+.showcase-code-block .hljs-tag {
+  color: #800000;
+}
+
+.showcase-code-block .hljs-attr,
+.showcase-code-block .hljs-attribute,
+.showcase-code-block .hljs-variable,
+.showcase-code-block .hljs-template-tag {
+  color: #994500;
+}
+
+.showcase-code-block .hljs-number,
+.showcase-code-block .hljs-literal,
+.showcase-code-block .hljs-meta {
+  color: #1750eb;
+}
+
+.showcase-code-block .hljs-punctuation {
+  color: #393a34;
+}
+
+.showcase-code-block .hljs-params {
+  color: #393a34;
+}
+
+html[data-theme="dark"] .showcase-code-block {
+  background: #1e1e1e;
+  border-color: var(--el-border-color);
+}
+
+html[data-theme="dark"] .showcase-code-block .hljs-comment,
+html[data-theme="dark"] .showcase-code-block .hljs-quote {
+  color: #6a9955;
+  font-style: italic;
+}
+
+html[data-theme="dark"] .showcase-code-block .hljs-keyword,
+html[data-theme="dark"] .showcase-code-block .hljs-built_in,
+html[data-theme="dark"] .showcase-code-block .hljs-type {
+  color: #569cd6;
+}
+
+html[data-theme="dark"] .showcase-code-block .hljs-string {
+  color: #ce9178;
+}
+
+html[data-theme="dark"] .showcase-code-block .hljs-title,
+html[data-theme="dark"] .showcase-code-block .hljs-name,
+html[data-theme="dark"] .showcase-code-block .hljs-tag {
+  color: #569cd6;
+}
+
+html[data-theme="dark"] .showcase-code-block .hljs-attr,
+html[data-theme="dark"] .showcase-code-block .hljs-attribute {
+  color: #9cdcfe;
+}
+
+html[data-theme="dark"] .showcase-code-block .hljs-number,
+html[data-theme="dark"] .showcase-code-block .hljs-literal {
+  color: #b5cea8;
+}
+
+html[data-theme="dark"] .showcase-code-block .hljs-punctuation,
+html[data-theme="dark"] .showcase-code-block .hljs-params {
+  color: #d4d4d4;
+}

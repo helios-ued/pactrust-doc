@@ -1,0 +1,42 @@
+.pt-input-field__affix {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  color: var(--el-text-color-placeholder);
+}
+
+.pt-input-field__affix-btn {
+  display: flex;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  color: inherit;
+}
+
+.pt-input-field__affix-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.pt-input-range {
+  display: flex;
+  width: 100%;
+  max-width: 280px;
+  align-items: center;
+  gap: var(--pt-space-8, 8px);
+}
+
+.pt-input-range__sep {
+  flex-shrink: 0;
+  font-family: var(--el-font-family);
+  font-size: var(--el-font-size-base);
+  line-height: var(--el-font-line-height-base);
+  color: var(--el-text-color-secondary);
+}
+
+.pt-input-range .pt-input-field {
+  min-width: 0;
+  flex: 1 1 0;
+}

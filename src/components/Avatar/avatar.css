@@ -1,0 +1,130 @@
+.pt-avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: var(--el-fill-color-darker);
+  color: var(--el-text-color-secondary);
+  font-family: var(--el-font-family);
+  font-weight: var(--el-font-weight-regular);
+  vertical-align: middle;
+}
+
+.pt-avatar__inner {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: inherit;
+}
+
+.pt-avatar--shape-square {
+  border-radius: var(--el-border-radius-base);
+}
+
+.pt-avatar--shape-circle {
+  border-radius: var(--el-border-radius-circle);
+}
+
+.pt-avatar--type-image {
+  background: transparent;
+}
+
+.pt-avatar--type-image .pt-avatar__inner {
+  background: transparent;
+}
+
+.pt-avatar--type-text {
+  background: var(--el-color-primary);
+  color: var(--el-text-color-write);
+  font-weight: var(--el-font-weight-bold);
+  line-height: 1;
+}
+
+.pt-avatar--type-text .pt-avatar__inner {
+  color: inherit;
+}
+
+.pt-avatar__initial {
+  font-weight: var(--el-font-weight-bold);
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.pt-avatar__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.pt-avatar-group {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  width: max-content;
+  max-width: 100%;
+}
+
+/**
+ * Figma Copy me overlap（6109:33944）· 挖空描边与容器背景同色
+ */
+.pt-avatar-group--overlap .pt-avatar {
+  position: relative;
+  overflow: visible;
+  background: transparent;
+  box-sizing: border-box;
+  border: var(--pt-avatar-overlap-border-width, 3px) solid
+    var(--pt-avatar-overlap-border, var(--el-bg-color));
+}
+
+.pt-avatar-group--overlap .pt-avatar--type-icon .pt-avatar__inner {
+  background: var(--el-fill-color-darker);
+  color: var(--el-text-color-secondary);
+}
+
+.pt-avatar-group--overlap .pt-avatar--type-text .pt-avatar__inner {
+  background: var(--el-color-primary);
+  color: var(--el-text-color-write);
+}
+
+.pt-avatar-group--overlap .pt-avatar:not(:first-child) {
+  margin-inline-start: calc(var(--pt-avatar-overlap-step, 34px) - var(--pt-avatar-size, 48px));
+}
+
+.pt-avatar-group--overlap .pt-avatar:nth-child(1) {
+  z-index: 1;
+}
+.pt-avatar-group--overlap .pt-avatar:nth-child(2) {
+  z-index: 2;
+}
+.pt-avatar-group--overlap .pt-avatar:nth-child(3) {
+  z-index: 3;
+}
+.pt-avatar-group--overlap .pt-avatar:nth-child(4) {
+  z-index: 4;
+}
+.pt-avatar-group--overlap .pt-avatar:nth-child(5) {
+  z-index: 5;
+}
+.pt-avatar-group--overlap .pt-avatar:nth-child(6) {
+  z-index: 6;
+}
+.pt-avatar-group--overlap .pt-avatar:nth-child(7) {
+  z-index: 7;
+}
+.pt-avatar-group--overlap .pt-avatar:nth-child(8) {
+  z-index: 8;
+}
+
+.pt-avatar-group--gap {
+  gap: 8px;
+}
+
+.pt-avatar-group--gap .pt-avatar {
+  overflow: hidden;
+}

@@ -1,0 +1,109 @@
+/* 浮层箭头 · Popconfirm / Popover / Tooltip · 纵 14×8 / 横 8×14 原生几何 */
+
+.pt-floating__arrow-row {
+  display: flex;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: var(--pt-floating-arrow-h, 8px);
+  padding: 0 var(--pt-space-16, 16px);
+  overflow: visible;
+}
+
+.pt-floating__arrow-row--start {
+  justify-content: flex-start;
+}
+
+.pt-floating__arrow-row--center {
+  justify-content: center;
+}
+
+.pt-floating__arrow-row--end {
+  justify-content: flex-end;
+}
+
+.pt-floating__arrow-rail {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 var(--pt-floating-arrow-h, 8px);
+  box-sizing: border-box;
+  width: var(--pt-floating-arrow-h, 8px);
+  align-self: stretch;
+  align-items: stretch;
+  /* 与纵轴 arrow-row 的 px 16 对称 · 大盘可用 --pt-floating-arrow-rail-pad 覆盖（如 Tooltip） */
+  padding: var(--pt-floating-arrow-rail-pad, var(--pt-space-large-16, 16px)) 0;
+  overflow: visible;
+}
+
+.pt-floating__arrow-rail--start {
+  justify-content: flex-start;
+}
+
+.pt-floating__arrow-rail--center {
+  justify-content: center;
+}
+
+.pt-floating__arrow-rail--end {
+  justify-content: flex-end;
+}
+
+.pt-floating__arrow-rail-slot {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: var(--pt-floating-arrow-h, 8px);
+  height: var(--pt-floating-arrow-w, 14px);
+  overflow: visible;
+}
+
+.pt-floating__arrow-shape {
+  display: block;
+  flex-shrink: 0;
+  line-height: 0;
+}
+
+.pt-floating__arrow-shape svg {
+  display: block;
+}
+
+.pt-floating__arrow-shape--down svg,
+.pt-floating__arrow-shape--up svg {
+  width: var(--pt-floating-arrow-w, 14px);
+  height: var(--pt-floating-arrow-h, 8px);
+}
+
+.pt-floating__arrow-shape--left svg,
+.pt-floating__arrow-shape--right svg {
+  width: var(--pt-floating-arrow-h, 8px);
+  height: var(--pt-floating-arrow-w, 14px);
+}
+
+.pt-floating__arrow-fill {
+  fill: var(--el-fill-color-blank);
+}
+
+.pt-floating__arrow-stroke {
+  fill: none;
+  stroke: var(--el-border-color-light);
+  stroke-width: 1;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.pt-floating__arrow-shape--down {
+  margin-top: -1px;
+}
+
+.pt-floating__arrow-shape--up {
+  margin-bottom: -1px;
+}
+
+.pt-floating__arrow-shape--right {
+  margin-left: -1px;
+}
+
+.pt-floating__arrow-shape--left {
+  margin-right: -1px;
+}

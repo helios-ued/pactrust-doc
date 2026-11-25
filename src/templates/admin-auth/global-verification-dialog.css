@@ -1,0 +1,54 @@
+/* 07-全局验证 · Dialog `8375:24330` · 480 */
+
+.pt-global-verification-dialog {
+  display: flex;
+  width: 480px;
+  max-width: calc(100vw - 48px);
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: var(--el-border-radius-round, 20px);
+  background: var(--el-fill-color-blank);
+  box-shadow: var(--el-box-shadow-light);
+  font-family: var(--el-font-family);
+}
+
+.pt-global-verification-dialog__header {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: flex-end;
+  min-height: 26px;
+  padding: var(--pt-space-24, 24px);
+  padding-bottom: 0;
+}
+
+.pt-global-verification-dialog__close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: var(--el-text-color-placeholder);
+  cursor: pointer;
+}
+
+.pt-global-verification-dialog__body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pt-space-24, 24px);
+  padding: var(--pt-space-24, 24px) var(--pt-space-24, 24px) var(--pt-spacing-4xl);
+}
+
+.pt-global-verification-dialog__field {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: var(--pt-spacing-3xl);
+  align-items: flex-start;
+  padding-top: var(--pt-space-24, 24px);
+}
+
+.pt-global-verification-dialog .pt-admin-verification__otp.pt-input-otp {
+  width: 100%;
+}

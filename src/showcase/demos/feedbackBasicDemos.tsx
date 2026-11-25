@@ -1,0 +1,10 @@
+export { AlertDemo, alertCode as alertDemoCode } from "./AlertDemo";
+export { DialogDemo, dialogDemoCode } from "./DialogDemo";
+export { DrawerDemo, drawerDemoCode } from "./DrawerDemo";
+export { LoadingDemo, loadingDemoCode } from "./LoadingDemo";
+export { MessageDemo, messageDemoCode } from "./MessageDemo";
+export { MessageBoxDemo, messageBoxDemoCode } from "./MessageBoxDemo";
+export { NotificationDemo, notificationDemoCode } from "./NotificationDemo";
+export { PopconfirmDemo, popconfirmDemoCode } from "./PopconfirmDemo";
+export { PopoverDemo, popoverDemoCode } from "./PopoverDemo";
+export { TooltipDemo, tooltipDemoCode } from "./TooltipDemo";

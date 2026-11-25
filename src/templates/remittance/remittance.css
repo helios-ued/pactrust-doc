@@ -1,0 +1,482 @@
+/* 汇款表单 · 居中（复用 module-screen 宽度，略放宽） */
+
+/* Layout-04 白卡：顶栏下 32px 即内容；底留滚动余量 */
+.pt-remittance.pt-module-screen__body {
+  padding: var(--pt-spacing-4xl, 32px) var(--pt-space-40, 40px) 120px;
+  align-items: center;
+}
+
+.pt-remittance__content.pt-module-screen__content {
+  width: 100%;
+  max-width: clamp(
+    400px,
+    calc(640px - (1200px - 100vw) * 0.3),
+    640px
+  );
+  gap: 0;
+}
+
+.pt-remittance__content > .pt-remittance-type-segmented {
+  margin-top: 0;
+  margin-bottom: var(--pt-spacing-4xl, 32px);
+}
+
+.pt-remittance__form,
+.pt-remittance__rate-row,
+.pt-remittance__summary {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* 对齐 Showcase 预览/代码分段控件 · 圆角 8px · 与表单列同宽 */
+.pt-remittance-type-segmented {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  height: 48px;
+  box-sizing: border-box;
+  align-items: stretch;
+  gap: 2px;
+  padding: 3px;
+  border-radius: 8px;
+  background: var(--el-color-info-light-9);
+}
+
+.pt-remittance-type-segmented__item {
+  display: flex;
+  flex: 1 1 0;
+  min-width: 0;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 8px;
+  padding: 0 1.25rem;
+  font-family: var(--el-font-family);
+  font-size: var(--el-font-size-large);
+  font-weight: 500;
+  line-height: var(--el-font-line-height-large);
+  color: var(--el-text-color-primary);
+  background: transparent;
+  cursor: pointer;
+  transition:
+    background-color 0.15s ease,
+    box-shadow 0.15s ease,
+    color 0.15s ease;
+}
+
+.pt-remittance-type-segmented__item:hover:not(.is-active) {
+  color: var(--el-text-color-primary);
+}
+
+.pt-remittance-type-segmented__item.is-active {
+  background: var(--ds-preview-code-thumb-bg, var(--el-fill-color-blank));
+  box-shadow: 0 1px 2px color-mix(in srgb, var(--el-text-color-primary) 8%, transparent);
+}
+
+.pt-remittance__field,
+.pt-remittance__form .pt-select {
+  width: 100%;
+}
+
+/* 覆盖 Form 默认 max-width 400px · 与居中列同宽 */
+.pt-remittance__form.pt-form {
+  width: 100%;
+  max-width: 100%;
+}
+
+.pt-remittance__form .pt-form-item {
+  width: 100%;
+  max-width: 100%;
+}
+
+.pt-remittance__form .pt-form-item__control {
+  width: 100%;
+  align-items: stretch;
+}
+
+.pt-remittance__form .pt-select {
+  width: 100%;
+  max-width: none;
+}
+
+.pt-remittance__form .pt-remittance__upload.pt-upload,
+.pt-remittance__form .pt-upload {
+  width: 100%;
+  max-width: none;
+  box-sizing: border-box;
+  align-items: stretch;
+  align-self: stretch;
+}
+
+.pt-remittance__form .pt-remittance__upload .pt-upload__drag,
+.pt-remittance__form .pt-upload__drag {
+  width: 100%;
+  max-width: none;
+  box-sizing: border-box;
+}
+
+.pt-remittance__form .pt-upload__hint {
+  width: 100%;
+  max-width: none;
+  white-space: normal;
+}
+
+/* 表单项内汇率/摘要与上下控件同宽（在 Form 内） */
+.pt-remittance__form .pt-remittance__rate-row,
+.pt-remittance__form .pt-remittance__summary {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* 汇出/应付 · 卡式金额（标签在卡内，外框圆角） */
+.pt-remittance__amount-item .pt-form-label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.pt-remittance__amount-card {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid var(--el-border-color);
+  border-radius: var(--el-border-radius-base);
+  background: var(--el-fill-color-blank);
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.pt-remittance__amount-card:focus-within {
+  border-color: var(--el-color-primary);
+  box-shadow: var(--el-box-shadow-lighter);
+}
+
+.pt-remittance__amount-card__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--pt-space-8, 8px);
+  padding: var(--pt-space-12, 12px) var(--pt-space-16, 16px) 0;
+}
+
+.pt-remittance__amount-card__label {
+  font-size: var(--el-font-size-small);
+  font-weight: var(--el-font-weight-regular);
+  line-height: var(--el-font-line-height-small);
+  color: var(--el-text-color-secondary);
+}
+
+.pt-remittance__amount-card__meta {
+  margin-left: auto;
+  text-align: right;
+}
+
+.pt-remittance__hint {
+  font-size: var(--el-font-size-small);
+  font-weight: var(--el-font-weight-regular);
+  line-height: var(--el-font-line-height-small);
+  color: var(--el-text-color-secondary);
+}
+
+.pt-remittance__hint strong {
+  font-weight: var(--el-font-weight-primary);
+  color: var(--el-text-color-primary);
+}
+
+.pt-remittance__all {
+  margin-left: var(--pt-space-8, 8px);
+  font-size: inherit;
+  cursor: pointer;
+  user-select: none;
+}
+
+.pt-remittance__all:active {
+  opacity: 0.72;
+}
+
+.pt-remittance__amount-card--fill-flash {
+  animation: pt-remittance-amount-flash 0.48s ease;
+}
+
+@keyframes pt-remittance-amount-flash {
+  0% {
+    border-color: var(--el-color-primary);
+    box-shadow: var(--el-box-shadow-lighter);
+  }
+  100% {
+    border-color: var(--el-border-color);
+    box-shadow: none;
+  }
+}
+
+.pt-remittance__amount-card__body {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  min-height: 52px;
+}
+
+.pt-remittance__amount-card__body .pt-remittance__amount-card__input.pt-input-field {
+  flex: 1 1 auto;
+  min-width: 0;
+  height: auto;
+  min-height: 52px;
+  padding: var(--pt-space-8, 8px) var(--pt-space-16, 16px) var(--pt-space-12, 12px);
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  background: transparent;
+}
+
+.pt-remittance__amount-card__body .pt-remittance__amount-card__input.pt-input-field:hover,
+.pt-remittance__amount-card__body .pt-remittance__amount-card__input.pt-input-field:focus-within {
+  border: none;
+  box-shadow: none;
+}
+
+.pt-remittance__amount-card__body .pt-remittance__amount-card__input input {
+  font-size: 28px;
+  font-weight: var(--el-font-weight-primary);
+  line-height: 1.25;
+  color: var(--el-text-color-primary);
+}
+
+.pt-remittance__amount-card__body .pt-remittance__amount-card__input input::placeholder {
+  color: var(--el-text-color-placeholder);
+  font-weight: var(--el-font-weight-primary);
+}
+
+.pt-remittance__currency-select {
+  position: relative;
+  flex-shrink: 0;
+  align-self: stretch;
+}
+
+.pt-remittance__currency-select__trigger {
+  display: inline-flex;
+  height: 100%;
+  min-height: 52px;
+  align-items: center;
+  justify-content: center;
+  gap: var(--pt-space-4, 4px);
+  box-sizing: border-box;
+  min-width: 104px;
+  padding: 0 var(--pt-space-16, 16px);
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  font-family: var(--el-font-family);
+  font-size: var(--el-font-size-base);
+  line-height: var(--el-font-line-height-base);
+  font-weight: var(--el-font-weight-primary);
+  color: var(--el-text-color-primary);
+  cursor: pointer;
+  transition: color 0.15s ease;
+}
+
+.pt-remittance__currency-select__trigger:hover {
+  color: var(--el-color-primary);
+}
+
+.pt-remittance__currency-select__trigger.is-open {
+  color: var(--el-color-primary);
+}
+
+.pt-remittance__currency-select__label {
+  white-space: nowrap;
+}
+
+.pt-remittance__currency-select__chevron {
+  flex-shrink: 0;
+  color: var(--el-text-color-secondary);
+  transition: transform 0.15s ease;
+}
+
+.pt-remittance__currency-select__trigger.is-open .pt-remittance__currency-select__chevron {
+  transform: rotate(180deg);
+  color: var(--el-color-primary);
+}
+
+.pt-remittance__currency-select__panel {
+  left: auto;
+  right: 0;
+  width: max-content;
+  min-width: 10rem;
+  max-width: min(14rem, 100vw);
+}
+
+.pt-remittance__currency-select__option {
+  align-items: center;
+}
+
+.pt-remittance__currency-select__check {
+  flex-shrink: 0;
+  margin-left: auto;
+  color: var(--el-color-primary);
+}
+
+.pt-remittance__currency-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: var(--el-border-radius-circle);
+  background: var(--el-color-primary);
+}
+
+.pt-remittance__currency-dot--usdt {
+  background: var(--el-color-success);
+}
+
+.pt-remittance__currency-dot--muted {
+  background: var(--el-text-color-placeholder);
+}
+
+.pt-remittance__rate-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--pt-space-8, 8px);
+  font-size: var(--el-font-size-small);
+  line-height: var(--el-font-line-height-small);
+  color: var(--el-text-color-secondary);
+}
+
+.pt-remittance__rate-meta {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--pt-space-12, 12px);
+}
+
+.pt-remittance__refresh {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--pt-space-4, 4px);
+  border: none;
+  background: transparent;
+  padding: 0;
+  color: var(--el-color-primary);
+  font-size: inherit;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+.pt-remittance__refresh:hover:not(:disabled) {
+  opacity: 0.85;
+}
+
+.pt-remittance__refresh:disabled {
+  cursor: wait;
+  opacity: 0.72;
+}
+
+.pt-remittance__refresh.is-loading .pt-remittance__refresh-icon {
+  animation: pt-remittance-refresh-spin 0.72s linear infinite;
+}
+
+@keyframes pt-remittance-refresh-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.pt-remittance__rate-time.is-updating {
+  color: var(--el-text-color-placeholder);
+}
+
+.pt-remittance__stack {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: var(--pt-spacing-xl, 16px);
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.pt-remittance__summary {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: var(--pt-space-16, 16px);
+  border-radius: var(--el-border-radius-base);
+  background: var(--el-color-info-light-9);
+}
+
+.pt-remittance__summary-list {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--pt-space-12, 12px);
+}
+
+.pt-remittance__summary-list div {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--pt-space-16, 16px);
+  font-size: var(--el-font-size-base);
+  line-height: var(--el-font-line-height-base);
+}
+
+.pt-remittance__summary-list dt {
+  margin: 0;
+  color: var(--el-text-color-secondary);
+}
+
+.pt-remittance__summary-list dd {
+  margin: 0;
+  color: var(--el-text-color-primary);
+}
+
+.pt-remittance__fee-pct {
+  color: var(--el-color-success);
+}
+
+.pt-remittance__warn {
+  margin: var(--pt-space-12, 12px) 0 0;
+  font-size: var(--el-font-size-small);
+  line-height: var(--el-font-line-height-small);
+  color: var(--el-color-danger);
+}
+
+.pt-remittance__warn--submit {
+  margin-top: var(--pt-space-8, 8px);
+}
+
+.pt-remittance__sub-link {
+  display: inline-block;
+  margin-top: var(--pt-space-8, 8px);
+  font-size: var(--el-font-size-base);
+}
+
+.pt-remittance__sub-link--add {
+  font-weight: var(--el-font-weight-primary);
+}
+
+.pt-remittance__textarea {
+  width: 100%;
+  min-height: 120px;
+  box-sizing: border-box;
+  padding: var(--pt-space-12, 12px);
+  font-size: var(--el-font-size-base);
+  line-height: var(--el-font-line-height-base);
+}
+
+.pt-remittance__actions {
+  display: flex;
+  gap: var(--pt-space-12, 12px);
+  padding-top: var(--pt-space-8, 8px);
+}
+
+.pt-template-viewport--remittance .pt-dashboard-shell--template {
+  min-height: 100vh;
+  min-height: 100dvh;
+}

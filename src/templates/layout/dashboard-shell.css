@@ -1,0 +1,156 @@
+/* Figma ✨ Layout · 四帧见 layoutFrameSpecs.ts · 菜单复用 Sidebar Style 01–04 */
+
+.pt-dashboard-shell {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  background: var(--el-fill-color);
+  color: var(--el-text-color-primary);
+  font-family: var(--el-font-family);
+}
+
+.pt-dashboard-shell--page-bg {
+  background: var(--el-bg-color-page);
+}
+
+.pt-dashboard-shell .pt-sidebar--layout.pt-sidebar--unfolded {
+  width: 240px;
+  flex-shrink: 0;
+  min-height: 100vh;
+}
+
+/* Unfold off · 58px 图标轨（Figma `3313:56233` · 壳层宽度小于 1000px 自动） */
+.pt-dashboard-shell .pt-sidebar--layout.pt-sidebar--collapsed {
+  width: 58px;
+  flex-shrink: 0;
+  min-height: 100vh;
+}
+
+/* Layout-01 · 侧栏与画布同色 · Footer hidden */
+.pt-dashboard-shell[data-variant="layout-01"] .pt-sidebar--layout {
+  background: var(--el-fill-color);
+  border-right: none;
+  box-shadow: none;
+}
+
+.pt-dashboard-shell[data-variant="layout-01"] .pt-menu--embedded.pt-menu--sidebar {
+  background: transparent;
+}
+
+/* Layout-02 / 03 / 04 · Fill/Blank + shadow */
+.pt-dashboard-shell[data-variant="layout-02"] .pt-sidebar--layout,
+.pt-dashboard-shell[data-variant="layout-03"] .pt-sidebar--layout,
+.pt-dashboard-shell[data-variant="layout-04"] .pt-sidebar--layout {
+  background: var(--el-fill-color-blank);
+  border-right: 1px solid var(--el-border-color-light);
+  box-shadow: var(--el-box-shadow-light);
+}
+
+.pt-dashboard-shell[data-variant="layout-02"] .pt-menu--embedded.pt-menu--sidebar,
+.pt-dashboard-shell[data-variant="layout-03"] .pt-menu--embedded.pt-menu--sidebar,
+.pt-dashboard-shell[data-variant="layout-04"] .pt-menu--embedded.pt-menu--sidebar {
+  background: var(--el-fill-color-blank);
+}
+
+/* Figma Layout Logo · 文案 18 / 行高 26 · bold */
+.pt-sidebar--layout .pt-sidebar__logo-text {
+  font-size: var(--el-font-size-large);
+  line-height: var(--el-font-line-height-large);
+  font-weight: var(--el-font-weight-bold);
+}
+
+/* Layout-01 · Style 02 菜单：无默认白底胶囊（Menu 文档 Showcase 不变） */
+.pt-dashboard-shell[data-variant="layout-01"]
+  .pt-sidebar--layout[data-sidebar-style="02"]
+  .pt-menu__item--vertical {
+  background: transparent;
+}
+
+.pt-dashboard-shell[data-variant="layout-01"]
+  .pt-sidebar--layout[data-sidebar-style="02"]
+  .pt-menu__item--vertical.pt-menu__item--level-2.pt-menu__item--selected {
+  background: var(--el-color-primary-light-9);
+}
+
+.pt-dashboard-shell[data-variant="layout-01"]
+  .pt-sidebar--layout[data-sidebar-style="02"]
+  .pt-menu__item--vertical.pt-menu__item--level-1:hover:not(:disabled):not(.pt-menu__item--disabled),
+.pt-dashboard-shell[data-variant="layout-01"]
+  .pt-sidebar--layout[data-sidebar-style="02"]
+  .pt-menu__item--vertical.pt-menu__item--level-1.pt-menu__item--hover:not(:disabled),
+.pt-dashboard-shell[data-variant="layout-01"]
+  .pt-sidebar--layout[data-sidebar-style="02"]
+  .pt-menu__item--vertical.pt-menu__item--level-2:hover:not(:disabled):not(.pt-menu__item--disabled):not(
+    .pt-menu__item--selected
+  ),
+.pt-dashboard-shell[data-variant="layout-01"]
+  .pt-sidebar--layout[data-sidebar-style="02"]
+  .pt-menu__item--vertical.pt-menu__item--level-2.pt-menu__item--hover:not(:disabled):not(.pt-menu__item--selected) {
+  background: var(--el-color-primary-light-9);
+}
+
+.pt-dashboard-shell__main {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.pt-dashboard-shell__main--page-stack {
+  min-height: 0;
+}
+
+.pt-dashboard-shell__page {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 0;
+  box-sizing: border-box;
+}
+
+/* 模板页（C1 等）：主内容可滚动，避免窄屏裁切权限表 */
+.pt-dashboard-shell--template {
+  min-height: 100vh;
+  height: 100%;
+}
+
+.pt-dashboard-shell--template .pt-dashboard-shell__main {
+  min-height: 0;
+}
+
+.pt-dashboard-shell--template .pt-page-layout-card {
+  flex: 1 1 auto;
+  min-height: 0;
+}
+
+.pt-dashboard-shell--template .pt-page-layout-card__content {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.pt-dashboard-shell--template[data-variant="layout-04"] .pt-page-layout-card--page-frame {
+  min-height: 0;
+}
+
+.pt-dashboard-shell--template .pt-dashboard-shell__page--direct {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.pt-dashboard-shell--template:not([data-variant="layout-04"]) .pt-page-layout-card__canvas {
+  align-items: stretch;
+  justify-content: flex-start;
+  flex: 1 1 auto;
+  width: 100%;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  border-radius: var(--el-border-radius-large, 12px);
+}

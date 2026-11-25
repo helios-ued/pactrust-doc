@@ -1,0 +1,134 @@
+/* Figma 03 · Dialog `8375:23598` · 387 × 228 */
+
+.pt-image-captcha-dialog {
+  display: flex;
+  width: 387px;
+  max-width: calc(100vw - 48px);
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: var(--el-border-radius-round, 20px);
+  background: var(--el-fill-color-blank);
+  box-shadow: var(--el-box-shadow-light);
+  font-family: var(--el-font-family);
+}
+
+.pt-image-captcha-dialog__header {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--pt-space-8, 8px);
+  padding: var(--pt-space-24, 24px);
+}
+
+.pt-image-captcha-dialog__title {
+  margin: 0;
+  font-size: var(--el-font-size-large);
+  line-height: var(--el-font-line-height-large);
+  font-weight: var(--el-font-weight-bold);
+  color: var(--el-text-color-primary);
+}
+
+.pt-image-captcha-dialog__close {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--el-text-color-placeholder);
+  cursor: pointer;
+}
+
+.pt-image-captcha-dialog__close:hover {
+  color: var(--el-text-color-regular);
+}
+
+.pt-image-captcha-dialog__body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--pt-space-default-12, 12px);
+  padding: 0 var(--pt-space-24, 24px) var(--pt-space-16, 16px);
+}
+
+.pt-image-captcha-dialog__row {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: var(--pt-space-8, 8px);
+}
+
+.pt-image-captcha-dialog__input {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.pt-image-captcha-dialog__image {
+  flex-shrink: 0;
+  width: 115px;
+  height: 40px;
+  overflow: hidden;
+  border: 1px solid var(--el-border-color);
+  border-radius: var(--el-border-radius-base);
+  background: var(--el-fill-color-blank);
+}
+
+.pt-image-captcha-dialog__image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pt-image-captcha-dialog__refresh {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0;
+  border: none;
+  background: none;
+  font-family: var(--el-font-family);
+  font-size: var(--el-font-size-base);
+  line-height: var(--el-font-line-height-base);
+  font-weight: var(--el-font-weight-regular);
+  color: var(--el-color-primary);
+  cursor: pointer;
+}
+
+.pt-image-captcha-dialog__refresh:hover {
+  opacity: 0.85;
+}
+
+.pt-image-captcha-dialog__footer {
+  flex-shrink: 0;
+  padding: 0 var(--pt-space-24, 24px) var(--pt-space-24, 24px);
+}
+
+.pt-image-captcha-dialog__footer .pt-button {
+  width: 100%;
+  max-width: none;
+}
+
+.pt-login-flow-scrim {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  background: var(--pt-overlay-scrim);
+}
+
+.pt-login-flow-dialog-layer {
+  position: fixed;
+  inset: 0;
+  z-index: 2001;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--pt-space-24, 24px);
+  pointer-events: none;
+}
+
+.pt-login-flow-dialog-layer > * {
+  pointer-events: auto;
+}

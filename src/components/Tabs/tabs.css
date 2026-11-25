@@ -1,0 +1,328 @@
+/* Figma `4-Tabs 标签页` · Tabs-top / card / vertical */
+
+.pt-tabs {
+  display: flex;
+  width: 100%;
+  max-width: 800px;
+  font-family: var(--el-font-family);
+}
+
+.pt-tabs--top {
+  flex-direction: column;
+}
+
+.pt-tabs--left,
+.pt-tabs--right {
+  flex-direction: row;
+  align-items: stretch;
+  min-height: 400px;
+}
+
+.pt-tabs__nav {
+  display: flex;
+  flex-shrink: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pt-tabs__nav > li {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.pt-tabs--top .pt-tabs__nav {
+  align-items: flex-start;
+  width: 100%;
+}
+
+.pt-tabs--top.pt-tabs--align-center .pt-tabs__nav {
+  justify-content: center;
+}
+
+.pt-tabs--top.pt-tabs--align-right .pt-tabs__nav {
+  justify-content: flex-end;
+}
+
+.pt-tabs--left .pt-tabs__nav,
+.pt-tabs--right .pt-tabs__nav {
+  flex-direction: column;
+  align-items: stretch;
+  width: 100px;
+  min-width: 100px;
+  box-sizing: border-box;
+}
+
+.pt-tabs--right .pt-tabs__nav {
+  order: 2;
+}
+
+.pt-tabs--right .pt-tabs__panel {
+  order: 1;
+}
+
+/* Default · Tabs-top */
+.pt-tabs--default.pt-tabs--top .pt-tabs__nav {
+  border-bottom: 2px solid var(--el-border-color-light);
+}
+
+.pt-tabs--default .pt-tabs__item {
+  display: inline-flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  gap: var(--pt-space-8, 8px);
+  padding: var(--pt-space-8, 8px) var(--pt-space-20, 20px);
+  border: 0;
+  background: transparent;
+  font-size: var(--el-font-size-base);
+  line-height: var(--el-font-line-height-base);
+  font-weight: var(--el-font-weight-regular);
+  color: var(--el-text-color-primary);
+  white-space: nowrap;
+  cursor: default;
+}
+
+.pt-tabs--default.pt-tabs--top .pt-tabs__item {
+  border-bottom: 2px solid var(--el-border-color-light);
+  margin-bottom: -2px;
+}
+
+.pt-tabs--default.pt-tabs--left .pt-tabs__nav {
+  border-right: 2px solid var(--el-border-color-light);
+}
+
+.pt-tabs--default.pt-tabs--right .pt-tabs__nav {
+  border-left: 2px solid var(--el-border-color-light);
+}
+
+.pt-tabs--default.pt-tabs--left .pt-tabs__item,
+.pt-tabs--default.pt-tabs--right .pt-tabs__item {
+  position: relative;
+  width: 100%;
+  border: 0;
+  margin: 0;
+}
+
+/* Figma `3149:58033` · 整轨 2px，仅选中段 primary */
+.pt-tabs--default.pt-tabs--left .pt-tabs__item--selected::after,
+.pt-tabs--default.pt-tabs--right .pt-tabs__item--selected::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--el-color-primary);
+  content: "";
+  z-index: 1;
+}
+
+.pt-tabs--default.pt-tabs--left .pt-tabs__item--selected::after {
+  right: -2px;
+}
+
+.pt-tabs--default.pt-tabs--right .pt-tabs__item--selected::after {
+  left: -2px;
+}
+
+.pt-tabs__item.pt-tabs__item--selected {
+  font-weight: var(--el-font-weight-bold);
+  color: var(--el-color-primary);
+}
+
+.pt-tabs--default.pt-tabs--top .pt-tabs__item--selected {
+  border-bottom-color: var(--el-color-primary);
+}
+
+.pt-tabs__item--hover {
+  color: var(--el-color-primary);
+}
+
+.pt-tabs__item--layout-left {
+  flex-direction: row;
+}
+
+.pt-tabs__item--layout-right {
+  flex-direction: row-reverse;
+}
+
+.pt-tabs__item--layout-center {
+  justify-content: center;
+}
+
+/* Card · Figma `3149:58119` */
+.pt-tabs--card.pt-tabs--top .pt-tabs__nav {
+  border-bottom: var(--el-border-width) solid var(--el-border-color-light);
+}
+
+.pt-tabs--card .pt-tabs__item {
+  display: inline-flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  gap: var(--pt-space-8, 8px);
+  padding: var(--pt-space-8, 8px) var(--pt-space-20, 20px);
+  margin-bottom: calc(-1 * var(--el-border-width));
+  border-color: var(--el-border-color-light);
+  border-style: solid;
+  border-width: 0;
+  border-top-width: var(--el-border-width);
+  border-bottom-width: var(--el-border-width);
+  border-left-width: var(--el-border-width);
+  background: var(--el-fill-color-blank, #fff);
+  font-size: var(--el-font-size-base);
+  line-height: var(--el-font-line-height-base);
+  font-weight: var(--el-font-weight-regular);
+  color: var(--el-text-color-primary);
+  white-space: nowrap;
+}
+
+.pt-tabs--card .pt-tabs__nav > li + li .pt-tabs__item {
+  margin-left: calc(-1 * var(--el-border-width));
+}
+
+.pt-tabs--card .pt-tabs__item--card-first {
+  border-top-left-radius: var(--el-border-radius-base);
+}
+
+.pt-tabs--card .pt-tabs__item--card-last {
+  border-right-width: var(--el-border-width);
+  border-top-right-radius: var(--el-border-radius-base);
+}
+
+.pt-tabs--card .pt-tabs__item--selected {
+  font-weight: var(--el-font-weight-bold);
+  color: var(--el-color-primary);
+}
+
+/* Border-card · Figma `3149:58324` */
+.pt-tabs--border-card.pt-tabs--top .pt-tabs__nav {
+  box-sizing: border-box;
+  border: var(--el-border-width) solid var(--el-border-color-light);
+  border-bottom: 0;
+  border-top-left-radius: var(--el-border-radius-base);
+  border-top-right-radius: var(--el-border-radius-base);
+  background: var(--el-fill-color-light);
+}
+
+/* Figma `3149:58324` · 标签右侧灰底延申 */
+.pt-tabs--border-card .pt-tabs__nav-tail {
+  flex: 1 1 auto;
+  align-self: stretch;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: var(--el-border-width) solid var(--el-border-color-light);
+  border-bottom: var(--el-border-width) solid var(--el-border-color-light);
+  border-top-right-radius: var(--el-border-radius-base);
+  background: var(--el-fill-color-light);
+}
+
+.pt-tabs--border-card .pt-tabs__item {
+  display: inline-flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  gap: var(--pt-space-8, 8px);
+  padding: var(--pt-space-8, 8px) var(--pt-space-20, 20px);
+  border: 0;
+  background: transparent;
+  font-size: var(--el-font-size-base);
+  line-height: var(--el-font-line-height-base);
+  font-weight: var(--el-font-weight-regular);
+  color: var(--el-text-color-primary);
+  white-space: nowrap;
+}
+
+.pt-tabs--border-card .pt-tabs__item--bc-first {
+  border-color: var(--el-border-color-light);
+  border-style: solid;
+  border-width: 0;
+  border-left-width: var(--el-border-width);
+  border-top-width: var(--el-border-width);
+  border-bottom-width: var(--el-border-width);
+  border-top-left-radius: var(--el-border-radius-base);
+}
+
+.pt-tabs--border-card .pt-tabs__item--bc-segment {
+  border-color: var(--el-border-color-light);
+  border-style: solid;
+  border-width: 0;
+  border-top-width: var(--el-border-width);
+  border-bottom-width: var(--el-border-width);
+}
+
+.pt-tabs--border-card .pt-tabs__item--bc-selected-first {
+  border-top-left-radius: var(--el-border-radius-base);
+}
+
+.pt-tabs--border-card .pt-tabs__item--bc-selected-last {
+  border-top-right-radius: var(--el-border-radius-base);
+}
+
+.pt-tabs--border-card .pt-tabs__item--bc-selected {
+  z-index: 1;
+  border-color: var(--el-border-color-light);
+  border-style: solid;
+  border-width: 0;
+  border-left-width: var(--el-border-width);
+  border-right-width: var(--el-border-width);
+  border-top-width: var(--el-border-width);
+  border-bottom-width: 0;
+  background: var(--el-fill-color-blank, #fff);
+  font-weight: var(--el-font-weight-bold);
+  color: var(--el-color-primary);
+}
+
+.pt-tabs--border-card .pt-tabs__panel--border-cap {
+  display: block;
+  min-height: 24px;
+  border: var(--el-border-width) solid var(--el-border-color-light);
+  border-top: 0;
+  background: var(--el-fill-color-blank, #fff);
+}
+
+.pt-tabs__panel {
+  flex: 1 1 auto;
+  min-width: 0;
+  min-height: 0;
+}
+
+.pt-tabs--top:not(.pt-tabs--border-card) .pt-tabs__panel {
+  display: none;
+}
+
+.pt-tabs--left .pt-tabs__panel,
+.pt-tabs--right .pt-tabs__panel {
+  flex: 1;
+  min-height: 400px;
+  background: var(--el-fill-color-blank, #fff);
+}
+
+.pt-tabs__icon {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  color: currentColor;
+}
+
+.pt-tabs__label {
+  word-break: break-word;
+  text-align: center;
+}
+
+.pt-tabs__item-preview-wrap {
+  width: auto;
+  max-width: none;
+  min-height: 0;
+}
+
+.pt-tabs__item-preview-wrap.pt-tabs--left,
+.pt-tabs__item-preview-wrap.pt-tabs--right {
+  min-height: 0;
+}
+
+.pt-tabs__item-preview {
+  width: auto;
+}
