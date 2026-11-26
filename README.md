@@ -24,10 +24,10 @@ npm run dev
 
 **远程仓库（当前）：**
 
-`https://github.com/hanyangfei007-stack/pacstrust-design.github.io`
+`https://github.com/helios-ued/pactrust-design.github.io`
 
 ```bash
-git remote add origin https://github.com/hanyangfei007-stack/pacstrust-design.github.io.git
+git remote add origin https://github.com/helios-ued/pactrust-design.github.io.git
 git push -u origin main
 ```
 
