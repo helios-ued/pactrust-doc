@@ -39,7 +39,7 @@ export function TemplateShowcasePage() {
     return (
       <div>
         <h1 className="text-2xl font-bold">未找到模板</h1>
-        <Link to="/overview" className="text-[color:var(--el-color-primary)]">
+        <Link to="/doc/overview" className="text-[color:var(--el-color-primary)]">
           返回概览
         </Link>
       </div>

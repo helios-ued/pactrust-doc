@@ -40,14 +40,18 @@ jobs:
             echo "vite_base=/${{ github.event.repository.name }}/" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Build for GitHub Pages
+      - name: Build unified showcase (local dev parity)
         env:
           VITE_BASE: ${{ steps.pages_base.outputs.vite_base }}
+          VITE_SHOWCASE_PRODUCT: all
         run: npm run build
 
       # SPA 深链：刷新 /components/menu 等路径时回退到 index
       - name: SPA fallback
         run: cp dist/index.html dist/404.html
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
 
       - uses: actions/upload-pages-artifact@v3
         with:
@@ -61,4 +65,4 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5

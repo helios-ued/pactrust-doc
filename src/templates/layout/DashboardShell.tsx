@@ -2,6 +2,8 @@ import { GlobalHeader } from "@/components/Menu/GlobalHeader";
 import { Sidebar } from "@/components/Menu/Sidebar";
 import { cn } from "@/lib/cn";
 import { useCallback, useRef, useState, type ReactNode } from "react";
+import { isPrototypeDelivery } from "@/prototype/isPrototypeDelivery";
+import { PrototypeSidebarMenu } from "@/prototype/PrototypeSidebarMenu";
 import { LayoutFrameMenu } from "./LayoutFrameMenu";
 import {
   LAYOUT_FRAME_SPECS,
@@ -58,7 +60,7 @@ export function DashboardShell({
       layoutFrame
       headerDivider={spec.globalHeaderDivider}
       pageTitle={spec.globalHeaderPageTitle ?? ""}
-      avatarSrc="/login-hero-mascot.jpg"
+      avatarSrc={`${import.meta.env.BASE_URL}login-hero-mascot.jpg`}
     />
   );
 
@@ -95,7 +97,11 @@ export function DashboardShell({
         showFooter={spec.showSidebarFooter}
         logoTitle="PacsTrust"
       >
-        <LayoutFrameMenu variant={variant} />
+        {isPrototypeDelivery() ? (
+          <PrototypeSidebarMenu />
+        ) : (
+          <LayoutFrameMenu variant={variant} />
+        )}
       </Sidebar>
       {spec.frameKind === "global-plus-page" ? (
         <div className="pt-dashboard-shell__main pt-dashboard-shell__main--page-stack">

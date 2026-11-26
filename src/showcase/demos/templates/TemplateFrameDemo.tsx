@@ -1,4 +1,5 @@
 import { cn } from "@/lib/cn";
+import { showcasePublicPath } from "@/showcase/lib/showcasePublicPath";
 import { templateFullscreenPath } from "@/showcase/nav";
 
 export type TemplateFrameSlug =
@@ -19,7 +20,7 @@ export type TemplateFrameSlug =
   | "api-management";
 
 export function TemplateFrameDemo({ slug }: { slug: TemplateFrameSlug }) {
-  const src = templateFullscreenPath(slug);
+  const src = showcasePublicPath(templateFullscreenPath(slug));
   return (
     <div
       className={cn(

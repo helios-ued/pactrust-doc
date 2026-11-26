@@ -17,7 +17,7 @@ type DemoComponent = ((props: ShowcaseDemoProps) => ReactNode) | undefined;
 export function ComponentShowcasePage() {
   const { slug = "" } = useParams();
   if (slug === "text") {
-    return <Navigate to="/tokens#text-style" replace />;
+    return <Navigate to="/doc/tokens#text-style" replace />;
   }
   const meta = componentNav.find((c) => c.slug === slug);
   const doc = getComponentDoc(slug);
@@ -52,7 +52,7 @@ export function ComponentShowcasePage() {
     return (
       <div>
         <h1 className="text-2xl font-bold">未找到组件</h1>
-        <Link to="/overview" className="text-[color:var(--el-color-primary)]">
+        <Link to="/doc/overview" className="text-[color:var(--el-color-primary)]">
           返回概览
         </Link>
       </div>

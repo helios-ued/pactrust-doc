@@ -5,7 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "dev:doc": "VITE_SHOWCASE_PRODUCT=doc vite",
     "build": "tsc --noEmit && vite build",
+    "build:desktop": "tsc --noEmit && VITE_SHOWCASE_PRODUCT=desktop vite build",
+    "build:doc": "tsc --noEmit && VITE_SHOWCASE_PRODUCT=doc vite build",
     "preview": "vite preview",
     "icons:manifest": "node scripts/generate-ep-icon-manifest.mjs",
     "icons:figma": "node scripts/generate-figma-icon-catalog.mjs",

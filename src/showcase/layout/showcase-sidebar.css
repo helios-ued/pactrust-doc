@@ -143,3 +143,13 @@
   border: 1px solid var(--ds-stroke-divider);
   text-align: center;
 }
+
+.showcase-sidebar-template-flat {
+  margin: 0;
+  padding: 0 var(--showcase-sidebar-inset-x, var(--pt-spacing-xl));
+  list-style: none;
+}
+
+.showcase-sidebar-template-flat .showcase-sidebar-l3-link {
+  padding-left: 12px;
+}

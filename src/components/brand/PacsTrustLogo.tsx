@@ -1,6 +1,6 @@
 import { cn } from "@/lib/cn";
 
-const LOGO_SRC = "/pacstrust-logo.svg";
+const LOGO_SRC = `${import.meta.env.BASE_URL}pacstrust-logo.svg`;
 
 export type PacsTrustLogoProps = {
   className?: string;

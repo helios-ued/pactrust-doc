@@ -1,6 +1,6 @@
 import { cn } from "@/lib/cn";
 
-const ICON_WRAPPER_SRC = "/pacstrust-icon-wrapper.svg";
+const ICON_WRAPPER_SRC = `${import.meta.env.BASE_URL}pacstrust-icon-wrapper.svg`;
 
 const LOGO_SIZE = 24;
 

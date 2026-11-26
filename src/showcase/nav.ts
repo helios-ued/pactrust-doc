@@ -1,6 +1,7 @@
 import figmaSource from "../../figma-source.json";
 import { isInteractiveDoc } from "./registry";
 import { listInteractiveLayoutSlugs } from "./registry/layoutFormSpecs";
+import { getShowcaseProduct } from "./showcaseProduct";
 
 export type NavItem = {
   slug: string;
@@ -151,11 +152,36 @@ export const layoutSidebarNav: NavItem[] = (figmaSource.layoutPages ?? []).map((
   implemented: listInteractiveLayoutSlugs().includes(p.slug),
 }));
 
-export const sidebarComponentNav: NavItem[] = [
-  ...componentSidebarNav,
-  ...templateSidebarNav,
+/** Desktop · 设计组件（EDS Desktop `/components/*`） */
+export const desktopComponentNav: NavItem[] = componentSidebarNav;
+
+/** 设计规范侧栏：组件 + Layout 帧 */
+export const designSpecComponentNav: NavItem[] = [
+  ...desktopComponentNav,
   ...layoutSidebarNav,
 ];
+
+/** Desktop · 界面展示（仅模板） */
+export const desktopUiNav: NavItem[] = [...templateSidebarNav];
+
+/** @deprecated 使用 desktopComponentNav + desktopUiNav */
+export const sidebarComponentNav: NavItem[] = [
+  ...desktopComponentNav,
+  ...desktopUiNav,
+];
+
+export const docExplorePath = "/doc/explore";
+
+export function docTokensPath(): string {
+  return getShowcaseProduct() === "desktop" ? "/tokens" : "/doc/tokens";
+}
+
+export function docOverviewPath(): string {
+  return getShowcaseProduct() === "desktop" ? "/overview" : "/doc/overview";
+}
+
+/** @deprecated 常量请改用 docTokensPath() */
+export const docTokensPathLegacy = "/doc/tokens";
 
 export const categoryLabels: Record<string, string> = {
   Basic: "基础",
@@ -180,11 +206,15 @@ export const categoryOrder = [
 ] as const;
 
 export function componentShowcasePath(slug: string): string {
-  return `/components/${slug}`;
+  const prefix =
+    getShowcaseProduct() === "desktop" ? "/components" : "/desktop/components";
+  return `${prefix}/${slug}`;
 }
 
 export function templateShowcasePath(slug: string): string {
-  return `/templates/${slug}`;
+  const prefix =
+    getShowcaseProduct() === "doc" ? "/templates" : "/desktop/templates";
+  return `${prefix}/${slug}`;
 }
 
 /** 模板全屏示例（与 Layout `/examples/layout/*` 同级） */
@@ -193,8 +223,16 @@ export function templateFullscreenPath(slug: string): string {
 }
 
 export function layoutShowcasePath(slug: string): string {
-  return `/layout/${slug}`;
+  const product = getShowcaseProduct();
+  if (product === "desktop") return `/layout/${slug}`;
+  return `/desktop/layout/${slug}`;
 }
+
+export const defaultDesktopPath = componentShowcasePath(
+  desktopComponentNav.find((i) => i.slug === "button")?.slug ??
+    desktopComponentNav[0]?.slug ??
+    "button",
+);
 
 export function layoutFullscreenPath(slug: string): string {
   return `/examples/layout/${slug}`;
@@ -209,29 +247,77 @@ export function navItemPath(item: NavItem): string {
 export function isNavItemActive(item: NavItem, pathname: string): boolean {
   const path = navItemPath(item);
   if (item.category === "Templates") {
-    return pathname === path || pathname === templateFullscreenPath(item.slug);
+    return (
+      pathname === path ||
+      pathname === `/templates/${item.slug}` ||
+      pathname === `/desktop/templates/${item.slug}` ||
+      pathname === templateFullscreenPath(item.slug)
+    );
   }
   if (item.category === "Layout") {
     return (
       pathname === path ||
       pathname.endsWith(`/layout/${item.slug}`) ||
+      pathname.endsWith(`/desktop/layout/${item.slug}`) ||
       pathname === layoutFullscreenPath(item.slug)
     );
   }
-  return pathname.endsWith(`/components/${item.slug}`);
+  const legacy = pathname.endsWith(`/components/${item.slug}`);
+  const desktop = pathname.endsWith(`/desktop/components/${item.slug}`);
+  return legacy || desktop;
 }
 
+/** 设计规范侧栏 · 组件 + Layout（不含模板） */
 export function isComponentsAreaPath(pathname: string): boolean {
   return (
+    pathname.startsWith("/desktop/components/") ||
     pathname.startsWith("/components/") ||
-    pathname.startsWith("/examples/") ||
+    pathname.startsWith("/desktop/layout/") ||
     pathname.startsWith("/layout/") ||
-    pathname.startsWith("/templates/")
+    pathname.startsWith("/examples/layout/")
   );
 }
 
-export function groupByCategory(items: NavItem[]) {
-  return categoryOrder.map((cat) => ({
+/** Desktop 展示侧栏 · 仅模板页面与模板全屏示例 */
+export function isUiShowcaseAreaPath(pathname: string): boolean {
+  if (
+    pathname.startsWith("/desktop/layout/") ||
+    pathname.startsWith("/layout/") ||
+    pathname.startsWith("/examples/layout/")
+  ) {
+    return false;
+  }
+  return (
+    pathname.startsWith("/desktop/templates/") ||
+    pathname.startsWith("/templates/") ||
+    pathname.startsWith("/examples/")
+  );
+}
+
+export function isDocAreaPath(pathname: string): boolean {
+  if (getShowcaseProduct() === "desktop") {
+    return (
+      pathname === "/tokens" ||
+      pathname === "/overview" ||
+      pathname.startsWith("/doc/")
+    );
+  }
+  return pathname.startsWith("/doc/");
+}
+
+export function isDesignShellPath(pathname: string): boolean {
+  return isDocAreaPath(pathname) || isComponentsAreaPath(pathname);
+}
+
+export function isTemplateShellPath(pathname: string): boolean {
+  return isUiShowcaseAreaPath(pathname);
+}
+
+export function groupByCategory(
+  items: NavItem[],
+  order: readonly string[] = categoryOrder,
+) {
+  return order.map((cat) => ({
     category: cat,
     label: categoryLabels[cat],
     items: items.filter((i) => i.category === cat),

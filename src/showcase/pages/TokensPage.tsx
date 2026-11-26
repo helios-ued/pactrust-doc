@@ -129,7 +129,7 @@ export function TokensPage() {
             ))}
           </div>
           <p className="mt-4 text-xs">
-            <Link to="/components/icon" className="text-[color:var(--eds-toc-active)] hover:underline">
+            <Link to="/desktop/components/icon" className="text-[color:var(--eds-toc-active)] hover:underline">
               打开 Icon 组件图库 →
             </Link>
           </p>
