@@ -1,6 +1,9 @@
+# pactrust-doc：仅中台模板原型（登录流 + /examples，无设计令牌）
 name: Deploy pactrust-doc to GitHub Pages
 
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -14,6 +17,7 @@ concurrency:
 
 jobs:
   build:
+    if: github.repository == 'helios-ued/pactrust-doc'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -32,7 +36,7 @@ jobs:
           else
             echo "vite_base=/${{ github.event.repository.name }}/" >> "$GITHUB_OUTPUT"
           fi
-      - name: Build doc showcase (templates)
+      - name: Build doc prototype
         env:
           VITE_BASE: ${{ steps.pages_base.outputs.vite_base }}
           VITE_SHOWCASE_PRODUCT: doc
@@ -43,13 +47,14 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
-          name: github-pages-doc
+
   deploy:
     needs: build
+    if: needs.build.result == 'success'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5

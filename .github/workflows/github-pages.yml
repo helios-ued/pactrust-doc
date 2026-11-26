@@ -1,5 +1,5 @@
-# 推送到 main 后在 GitHub 云端构建并发布 Pages，不改动你本机工程目录。
-name: Deploy Showcase to GitHub Pages
+# pactrust-desktop：仅设计令牌 + 组件（无模板文档、无 /examples 合体）
+name: Deploy pactrust-desktop to GitHub Pages
 
 on:
   push:
@@ -12,11 +12,14 @@ permissions:
   id-token: write
 
 concurrency:
-  group: pages
+  group: pages-desktop
   cancel-in-progress: false
 
 jobs:
   build:
+    if: >-
+      github.repository == 'helios-ued/pactrust-desktop' ||
+      github.repository == 'helios-ued/pactrust-design.github.io'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -26,8 +29,7 @@ jobs:
           node-version: "22"
           cache: npm
 
-      - name: Install
-        run: npm ci
+      - run: npm ci
 
       - name: Resolve Pages base path
         id: pages_base
@@ -40,25 +42,22 @@ jobs:
             echo "vite_base=/${{ github.event.repository.name }}/" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Build unified showcase (local dev parity)
+      - name: Build desktop showcase
         env:
           VITE_BASE: ${{ steps.pages_base.outputs.vite_base }}
-          VITE_SHOWCASE_PRODUCT: all
-        run: npm run build
+          VITE_SHOWCASE_PRODUCT: desktop
+          VITE_DOC_SITE_URL: https://helios-ued.github.io/pactrust-doc
+        run: npm run build:desktop
 
-      # SPA 深链：刷新 /components/menu 等路径时回退到 index
-      - name: SPA fallback
-        run: cp dist/index.html dist/404.html
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-
+      - run: cp dist/index.html dist/404.html
+      - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
 
   deploy:
     needs: build
+    if: needs.build.result == 'success'
     runs-on: ubuntu-latest
     environment:
       name: github-pages

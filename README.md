@@ -31,7 +31,14 @@ git remote add origin https://github.com/helios-ued/pactrust-design.github.io.gi
 git push -u origin main
 ```
 
-**Pages（可选，域名/组织以后再配）：** 仓库 **Settings → Pages → Source → GitHub Actions**；CI 会按「用户站 or 项目站」自动设置 `VITE_BASE`（仓库名等于 `<owner>.github.io` 时为 `/`，否则为 `/<repo>/`）。本地 dev 仍为 `/`。
+**Pages · 双站点（强制分开）：**
+
+| 仓库 | 地址 |
+|------|------|
+| `pactrust-desktop` | 设计令牌 + 组件 → `https://helios-ued.github.io/pactrust-desktop/` |
+| `pactrust-doc` | 中台模板原型（无设计规范）→ `https://helios-ued.github.io/pactrust-doc/` |
+
+见 [docs/DEPLOY-TWO-SITES.md](./docs/DEPLOY-TWO-SITES.md)。本地合体：`npm run dev`；本地原型：`npm run dev:doc`。
 
 ## 快速阅读
 
