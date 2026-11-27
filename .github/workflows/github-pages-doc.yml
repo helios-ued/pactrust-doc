@@ -1,4 +1,4 @@
-# pactrust-doc：仅中台模板原型（登录流 + /examples，无设计令牌）
+# pactrust-doc：设计说明站（职责对标 EverGreen eds-doc，仓库名仍为 pactrust-doc）
 name: Deploy pactrust-doc to GitHub Pages
 
 on:
@@ -36,11 +36,12 @@ jobs:
           else
             echo "vite_base=/${{ github.event.repository.name }}/" >> "$GITHUB_OUTPUT"
           fi
-      - name: Build doc prototype
+      - name: Build design doc site
         env:
           VITE_BASE: ${{ steps.pages_base.outputs.vite_base }}
           VITE_SHOWCASE_PRODUCT: doc
           VITE_DESKTOP_SITE_URL: https://helios-ued.github.io/pactrust-desktop
+          VITE_PROTOTYPE_SITE_URL: https://helios-ued.github.io/pactrust-prototype
         run: npm run build:doc
       - run: cp dist/index.html dist/404.html
       - uses: actions/configure-pages@v5

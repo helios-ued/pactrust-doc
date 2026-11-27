@@ -101,9 +101,9 @@ Figma 帧 **Container**（node `5845:16955`）定义 Element 栅格与 `Element 
 
 模板 iframe（`TemplateFrameDemo`）与 Layout iframe（`LayoutFrameDemo`）预览区约 **720–900px** 宽：须可滚动或断点堆叠，与全屏 `/examples/*` 共用组件 CSS（`login-page.css`、`permission-management.css` 等）。
 
-Figma **✨ Layout** 页（`8655:41369`）四帧：**01** 侧栏 240 画布色 · Sidebar **Style 02** · Main **16** · Layout **圆角 20** · Footer 隐藏 · **02** 侧栏白+阴影 · **Style 01** · Footer **40** · Main 满铺 · **03** 同 02 壳 · **Style 04** 分组菜单 · Global-header **无**底部分割线 · Content **`8px 24px 24px`** · **04** 根 **page** 灰 · **Style 01** · Footer 隐藏 · **Global-header** 在 Main 顶（无页标题）· **Page 16** · **Page Layout 圆角 4** · 内 **标题区** + Content **24**。见 `layoutFrameSpecs.ts`。
+Figma **✨ Layout** 页（`8655:41369` / `9096:7416`）四帧：**01** 侧栏 **220** 画布色 · **Style 02** · **User** 底栏 · Main **16** · **BasePanel** Default · **02** 侧栏白+阴影 · **Style 01** · User 底栏 · **03** **Style 04** · Global-header **无**分割线 · **04** 根 **page** 灰 · **Global-header** + **BasePanel**。见 `layoutFrameSpecs.ts`。
 
-**模板 C1 · Layout-01–04**：`DashboardShell` 壳层宽度 **&lt; 1000px** 时侧栏自动 **Unfold off**（**58px** 图标轨，Figma `3313:56233`）；≥ 1000px 恢复 **240px** 展开（用户可用手动收起，窄屏下强制收起）。以壳层 `ResizeObserver` 为准（Showcase 预览区 &lt; 1000px 同样生效）。
+**模板 C1 · Layout-01–04**：`DashboardShell` 壳层宽度 **&lt; 1000px** 时侧栏自动 **Unfold off**（**58px** 图标轨，Figma `3313:56233`）；≥ 1000px 恢复 **220px** 展开（用户可用手动收起，窄屏下强制收起）。以壳层 `ResizeObserver` 为准（Showcase 预览区 &lt; 1000px 同样生效）。
 
 **C1 权限管理内容区**：侧栏收起不改变 **用户组 240px + 权限表** 横向分栏与样式，仅 **权限区可用宽度**增加；表格过窄时在 `.pt-perm-matrix__table-wrap` 内横向滚动，禁止改为上下堆叠。
 

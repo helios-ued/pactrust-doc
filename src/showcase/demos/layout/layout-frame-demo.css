@@ -1,7 +1,14 @@
 .pt-layout-frame-demo.pt-frame-demo-viewport {
   overflow: auto;
+  width: 100%;
+  min-height: 520px;
 }
 
 .pt-layout-frame-demo .pt-dashboard-shell {
-  min-height: 100%;
+  min-height: 520px;
+  height: 100%;
+}
+
+.pt-layout-frame-demo .pt-page-layout-card--rounded {
+  min-height: 480px;
 }

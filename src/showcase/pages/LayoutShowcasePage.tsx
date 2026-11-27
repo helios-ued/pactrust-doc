@@ -1,8 +1,9 @@
 import { useEffect, useMemo, useState, type ReactNode } from "react";
-import { Link, useParams } from "react-router-dom";
-import { layoutFullscreenPath } from "../nav";
+import { Link, Navigate, useLocation, useParams } from "react-router-dom";
+import type { FigmaLayoutVariant } from "@/templates/layout/layoutFrameSpecs";
+import { layoutFullscreenPath, layoutShowcasePath } from "../nav";
 import figmaSource from "../../../figma-source.json";
-import { layoutSidebarNav } from "../nav";
+import { layoutSidebarNav, moduleSidebarNav } from "../nav";
 import { getLayoutDoc } from "../registry/layoutFormSpecs";
 import { PreviewCodeSegmented } from "../ui/PreviewCodeSegmented";
 import { ShowcaseCodeBlock } from "../ui/ShowcaseCodeBlock";
@@ -13,9 +14,34 @@ import type { ShowcaseDemoProps } from "../demos/types";
 
 type DemoComponent = ((props: ShowcaseDemoProps) => ReactNode) | undefined;
 
+const LAYOUT_FRAME_SLUGS = new Set<FigmaLayoutVariant>([
+  "layout-01",
+  "layout-02",
+  "layout-03",
+  "layout-04",
+]);
+
+function LayoutFullscreenLink() {
+  const location = useLocation();
+  const variant =
+    (location.state as { variant?: FigmaLayoutVariant } | null)?.variant ?? "layout-01";
+  const frame = LAYOUT_FRAME_SLUGS.has(variant) ? variant : "layout-01";
+  return (
+    <Link
+      to={layoutFullscreenPath(frame)}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-sm text-[color:var(--el-color-primary)] hover:opacity-80"
+    >
+      全屏预览
+    </Link>
+  );
+}
+
 export function LayoutShowcasePage() {
   const { slug = "" } = useParams();
-  const meta = layoutSidebarNav.find((c) => c.slug === slug);
+  const meta =
+    moduleSidebarNav.find((c) => c.slug === slug) ?? layoutSidebarNav.find((c) => c.slug === slug);
   const doc = getLayoutDoc(slug);
   const [tab, setTab] = useState<"preview" | "code">("preview");
 
@@ -30,6 +56,16 @@ export function LayoutShowcasePage() {
     layoutPage && "examplePath" in layoutPage
       ? (layoutPage as { examplePath?: string }).examplePath
       : undefined;
+
+  if (LAYOUT_FRAME_SLUGS.has(slug as FigmaLayoutVariant)) {
+    return (
+      <Navigate
+        to={layoutShowcasePath("layout")}
+        replace
+        state={{ variant: slug as FigmaLayoutVariant }}
+      />
+    );
+  }
 
   if (!meta || !doc) {
     return (
@@ -60,33 +96,38 @@ export function LayoutShowcasePage() {
         ) : null}
       </header>
 
-      <ShowcasePlaygroundFrame
-        preview={
-          <PreviewShell>
-            <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
+      {Demo ? (
+        <Demo
+          key={slug}
+          part="all"
+          splitRender={({ customize, preview }) => (
+            <ShowcasePlaygroundFrame
+              preview={
+                <PreviewShell>
+                  <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
+                    <PreviewCodeSegmented value={tab} onChange={setTab} />
+                    {tab === "preview" ? <LayoutFullscreenLink /> : null}
+                  </div>
+                  {tab === "preview" ? (
+                    <DemoStage className="pt-demo-stage--fill">{preview}</DemoStage>
+                  ) : (
+                    <ShowcaseCodeBlock className="w-full text-left" code={doc.codeTemplate ?? ""} />
+                  )}
+                </PreviewShell>
+              }
+              customize={customize}
+            />
+          )}
+        />
+      ) : (
+        <ShowcasePlaygroundFrame
+          preview={
+            <PreviewShell>
               <PreviewCodeSegmented value={tab} onChange={setTab} />
-              {tab === "preview" && Demo ? (
-                <Link
-                  to={layoutFullscreenPath(slug)}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm text-[color:var(--el-color-primary)] hover:opacity-80"
-                >
-                  全屏预览
-                </Link>
-              ) : null}
-            </div>
-            {tab === "preview" && Demo ? (
-              <DemoStage className="pt-demo-stage--fill">
-                <Demo />
-              </DemoStage>
-            ) : null}
-            {tab === "code" ? (
-              <ShowcaseCodeBlock className="w-full text-left" code={doc.codeTemplate ?? ""} />
-            ) : null}
-          </PreviewShell>
-        }
-      />
+            </PreviewShell>
+          }
+        />
+      )}
 
       {!Demo ? (
         <p className="mt-8 text-sm text-[color:var(--ds-text-secondary)]">该布局示意待补充。</p>

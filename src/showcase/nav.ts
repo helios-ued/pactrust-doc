@@ -19,12 +19,19 @@ export function toSlug(name: string): string {
     .replace(/[()]/g, "");
 }
 
+/** 侧栏分组「模块」· Layout + BasePanel */
+export const MODULE_CATEGORY = "Module" as const;
+
+/** @deprecated 使用 MODULE_CATEGORY */
+export const PAGE_LAYOUT_CATEGORY = MODULE_CATEGORY;
+
 export const componentNav: NavItem[] = figmaSource.componentPages.map((p) => {
   const slug = toSlug(p.name);
+  const category = slug === "basepanel" ? MODULE_CATEGORY : p.category;
   return {
     slug,
     name: p.name,
-    category: p.category,
+    category,
     nodeId: p.nodeId,
     version: "version" in p ? (p as { version?: string }).version : undefined,
     implemented: isInteractiveDoc(slug),
@@ -144,10 +151,11 @@ export const templateSidebarNav: NavItem[] = [
 ];
 
 /** 页面布局：Figma 设计基础 Container + 🎨 模块界面 Layout 帧 */
+/** Figma ✨ Layout 帧（路由 `layout-01`…，侧栏归并在「模块 → Layout」） */
 export const layoutSidebarNav: NavItem[] = (figmaSource.layoutPages ?? []).map((p) => ({
   slug: p.slug,
   name: p.name,
-  category: "Layout",
+  category: MODULE_CATEGORY,
   nodeId: p.nodeId,
   implemented: listInteractiveLayoutSlugs().includes(p.slug),
 }));
@@ -155,10 +163,28 @@ export const layoutSidebarNav: NavItem[] = (figmaSource.layoutPages ?? []).map((
 /** Desktop · 设计组件（EDS Desktop `/components/*`） */
 export const desktopComponentNav: NavItem[] = componentSidebarNav;
 
-/** 设计规范侧栏：组件 + Layout 帧 */
+/** 「模块」分组侧栏项 */
+export const moduleSidebarNav: NavItem[] = [
+  {
+    slug: "layout",
+    name: "Layout",
+    category: MODULE_CATEGORY,
+    nodeId: "9096:7416",
+    implemented: listInteractiveLayoutSlugs().length > 0,
+  },
+  {
+    slug: "basepanel",
+    name: "BasePanel",
+    category: MODULE_CATEGORY,
+    nodeId: "9146:3168",
+    implemented: isInteractiveDoc("basepanel"),
+  },
+];
+
+/** 设计规范侧栏：组件（BasePanel 归入「模块」，不重复出现在「其他」） */
 export const designSpecComponentNav: NavItem[] = [
-  ...desktopComponentNav,
-  ...layoutSidebarNav,
+  ...componentSidebarNav.filter((i) => i.category !== MODULE_CATEGORY),
+  ...moduleSidebarNav,
 ];
 
 /** Desktop · 界面展示（仅模板） */
@@ -172,12 +198,21 @@ export const sidebarComponentNav: NavItem[] = [
 
 export const docExplorePath = "/doc/explore";
 
+function usesRootDocPaths(): boolean {
+  const product = getShowcaseProduct();
+  return product === "desktop" || product === "doc";
+}
+
 export function docTokensPath(): string {
-  return getShowcaseProduct() === "desktop" ? "/tokens" : "/doc/tokens";
+  return usesRootDocPaths() ? "/tokens" : "/doc/tokens";
 }
 
 export function docOverviewPath(): string {
-  return getShowcaseProduct() === "desktop" ? "/overview" : "/doc/overview";
+  return usesRootDocPaths() ? "/overview" : "/doc/overview";
+}
+
+export function docExplorePathForProduct(): string {
+  return usesRootDocPaths() ? "/explore" : "/doc/explore";
 }
 
 /** @deprecated 常量请改用 docTokensPath() */
@@ -191,7 +226,7 @@ export const categoryLabels: Record<string, string> = {
   Feedback: "反馈",
   Others: "其他",
   Templates: "模板",
-  Layout: "Layout",
+  Module: "模块",
 };
 
 export const categoryOrder = [
@@ -200,21 +235,19 @@ export const categoryOrder = [
   "Data",
   "Navigation",
   "Feedback",
+  "Module",
   "Others",
   "Templates",
-  "Layout",
 ] as const;
 
 export function componentShowcasePath(slug: string): string {
-  const prefix =
-    getShowcaseProduct() === "desktop" ? "/components" : "/desktop/components";
+  const prefix = usesRootDocPaths() ? "/components" : "/desktop/components";
   return `${prefix}/${slug}`;
 }
 
 export function templateShowcasePath(slug: string): string {
-  const prefix =
-    getShowcaseProduct() === "doc" ? "/templates" : "/desktop/templates";
-  return `${prefix}/${slug}`;
+  if (getShowcaseProduct() === "prototype") return `/templates/${slug}`;
+  return `/desktop/templates/${slug}`;
 }
 
 /** 模板全屏示例（与 Layout `/examples/layout/*` 同级） */
@@ -223,9 +256,7 @@ export function templateFullscreenPath(slug: string): string {
 }
 
 export function layoutShowcasePath(slug: string): string {
-  const product = getShowcaseProduct();
-  if (product === "desktop") return `/layout/${slug}`;
-  return `/desktop/layout/${slug}`;
+  return usesRootDocPaths() ? `/layout/${slug}` : `/desktop/layout/${slug}`;
 }
 
 export const defaultDesktopPath = componentShowcasePath(
@@ -238,9 +269,17 @@ export function layoutFullscreenPath(slug: string): string {
   return `/examples/layout/${slug}`;
 }
 
+function isLayoutFrameSlug(slug: string): boolean {
+  return slug.startsWith("layout-");
+}
+
 export function navItemPath(item: NavItem): string {
   if (item.category === "Templates") return templateShowcasePath(item.slug);
-  if (item.category === "Layout") return layoutShowcasePath(item.slug);
+  if (item.category === MODULE_CATEGORY) {
+    if (item.slug === "layout") return layoutShowcasePath("layout");
+    if (isLayoutFrameSlug(item.slug)) return layoutShowcasePath(item.slug);
+    return componentShowcasePath(item.slug);
+  }
   return componentShowcasePath(item.slug);
 }
 
@@ -254,7 +293,15 @@ export function isNavItemActive(item: NavItem, pathname: string): boolean {
       pathname === templateFullscreenPath(item.slug)
     );
   }
-  if (item.category === "Layout") {
+  if (item.category === MODULE_CATEGORY && item.slug === "layout") {
+    return (
+      pathname.endsWith("/layout/layout") ||
+      pathname.endsWith("/desktop/layout/layout") ||
+      pathname.includes("/layout/layout-") ||
+      pathname.startsWith("/examples/layout/")
+    );
+  }
+  if (item.category === MODULE_CATEGORY && isLayoutFrameSlug(item.slug)) {
     return (
       pathname === path ||
       pathname.endsWith(`/layout/${item.slug}`) ||
@@ -295,10 +342,11 @@ export function isUiShowcaseAreaPath(pathname: string): boolean {
 }
 
 export function isDocAreaPath(pathname: string): boolean {
-  if (getShowcaseProduct() === "desktop") {
+  if (usesRootDocPaths()) {
     return (
       pathname === "/tokens" ||
       pathname === "/overview" ||
+      pathname === "/explore" ||
       pathname.startsWith("/doc/")
     );
   }

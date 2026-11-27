@@ -18,8 +18,8 @@ const designComponentGroups = groupByCategory(designSpecComponentNav, [
   "Data",
   "Navigation",
   "Feedback",
+  "Module",
   "Others",
-  "Layout",
 ]);
 
 /** 设计规范：设计令牌 + 组件（含 Layout，不含模板） */
@@ -32,7 +32,7 @@ export function DesignLayout() {
     <ShowcaseShell
       nav={
         <>
-          {product === "all" ? <ProductSwitcher /> : null}
+          {product === "all" || product === "doc" ? <ProductSwitcher /> : null}
           <NavLink
             to={docTokensPath()}
             className={({ isActive }) =>

@@ -1,4 +1,4 @@
-/** pactrust-doc · 中台原型侧栏（挂到 `/examples/*` 全屏页） */
+/** pactrust-prototype · 中台原型侧栏（挂到 `/examples/*` 全屏页） */
 export type PrototypeRoute = {
   slug: string;
   label: string;

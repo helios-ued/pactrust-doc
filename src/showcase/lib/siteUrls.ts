@@ -1,27 +1,52 @@
 import { getShowcaseProduct } from "../showcaseProduct";
-import { docTokensPath, templateShowcasePath } from "../nav";
+import { docOverviewPath, docTokensPath, templateShowcasePath } from "../nav";
 
 export function designProductEntry(): string {
-  if (getShowcaseProduct() === "all" || getShowcaseProduct() === "desktop") {
+  const product = getShowcaseProduct();
+  if (product === "all" || product === "desktop" || product === "doc") {
     return docTokensPath();
   }
-  const url = import.meta.env.VITE_DESKTOP_SITE_URL;
-  return url?.replace(/\/$/, "") || docTokensPath();
+  const url = import.meta.env.VITE_DOC_SITE_URL;
+  return url ? `${url.replace(/\/$/, "")}/overview` : docOverviewPath();
 }
 
 export function templateProductEntry(): string {
-  if (getShowcaseProduct() === "all" || getShowcaseProduct() === "doc") {
-    return templateShowcasePath("login");
+  const product = getShowcaseProduct();
+  if (product === "all") return templateShowcasePath("login");
+  if (product === "prototype") return templateShowcasePath("login");
+  if (product === "doc") {
+    const desktopUrl = import.meta.env.VITE_DESKTOP_SITE_URL;
+    return desktopUrl
+      ? `${desktopUrl.replace(/\/$/, "")}/tokens`
+      : templateShowcasePath("login");
   }
-  const url = import.meta.env.VITE_DOC_SITE_URL;
-  return url
-    ? `${url.replace(/\/$/, "")}/templates/login`
-    : templateShowcasePath("login");
+  const prototypeUrl = import.meta.env.VITE_PROTOTYPE_SITE_URL;
+  if (prototypeUrl) {
+    return `${prototypeUrl.replace(/\/$/, "")}/examples/login`;
+  }
+  return templateShowcasePath("login");
 }
 
-export function isExternalProductLink(mode: "design" | "template"): boolean {
+export function prototypeProductEntry(): string {
+  const url = import.meta.env.VITE_PROTOTYPE_SITE_URL;
+  return url?.replace(/\/$/, "") || "/examples/login";
+}
+
+export function isExternalProductLink(
+  mode: "design" | "template" | "prototype",
+): boolean {
   const product = getShowcaseProduct();
   if (product === "all") return false;
-  if (mode === "design") return product === "doc" && Boolean(import.meta.env.VITE_DESKTOP_SITE_URL);
-  return product === "desktop" && Boolean(import.meta.env.VITE_DOC_SITE_URL);
+  if (mode === "design") {
+    return product === "desktop" && Boolean(import.meta.env.VITE_DOC_SITE_URL);
+  }
+  if (mode === "template") {
+    if (product === "doc") return Boolean(import.meta.env.VITE_DESKTOP_SITE_URL);
+    if (product === "desktop") return Boolean(import.meta.env.VITE_PROTOTYPE_SITE_URL);
+    return false;
+  }
+  return (
+    (product === "doc" || product === "desktop") &&
+    Boolean(import.meta.env.VITE_PROTOTYPE_SITE_URL)
+  );
 }

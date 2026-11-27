@@ -32,6 +32,12 @@ import { ExplorePage } from "./pages/ExplorePage";
 import { TokensPage } from "./pages/TokensPage";
 import { docTokensPath, templateShowcasePath } from "./nav";
 import { getShowcaseProduct } from "./showcaseProduct";
+import { DocSiteShell } from "./doc/DocSiteShell";
+import { ColorSystemDocPage } from "./doc/pages/ColorSystemDocPage";
+import { ScaleSystemDocPage } from "./doc/pages/ScaleSystemDocPage";
+import { DocStubPage } from "./doc/pages/DocStubPage";
+import { DocStartedOverviewPage } from "./doc/pages/DocStartedOverviewPage";
+import { DocExploreInShellPage } from "./doc/pages/DocExploreInShellPage";
 
 const templateExamples = (
   <>
@@ -123,7 +129,42 @@ export function ShowcaseApp() {
     );
   }
 
+  /** pactrust-doc · eds-doc 式文档站（无 /examples） */
   if (product === "doc") {
+    return (
+      <Routes>
+        <Route element={<DocSiteShell />}>
+          <Route path="/" element={<Navigate to="/atoms/color-system" replace />} />
+          <Route path="/explore" element={<DocExploreInShellPage />} />
+          <Route path="/started/overview" element={<DocStartedOverviewPage />} />
+          <Route path="/atoms/color-system" element={<ColorSystemDocPage />} />
+          <Route path="/atoms/scale-system" element={<ScaleSystemDocPage />} />
+          <Route
+            path="/atoms/typography"
+            element={<DocStubPage title="Typography" />}
+          />
+          <Route
+            path="/atoms/text-styles"
+            element={<DocStubPage title="Text Styles" />}
+          />
+          <Route path="/atoms/icons" element={<DocStubPage title="Icons" />} />
+          <Route
+            path="/molecules/overview"
+            element={<DocStubPage title="Molecules Overview" />}
+          />
+        </Route>
+        <Route path="/tokens" element={<Navigate to="/atoms/color-system" replace />} />
+        <Route path="/overview" element={<Navigate to="/started/overview" replace />} />
+        <Route
+          path="/examples/*"
+          element={<Navigate to="/atoms/color-system" replace />}
+        />
+        <Route path="*" element={<Navigate to="/atoms/color-system" replace />} />
+      </Routes>
+    );
+  }
+
+  if (product === "prototype") {
     return (
       <Routes>
         <Route path="/" element={<Navigate to="/examples/login" replace />} />

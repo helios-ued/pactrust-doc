@@ -16,14 +16,15 @@ export function LayoutFullscreenPage() {
   const { slug = "" } = useParams();
 
   if (!isLayoutVariant(slug)) {
-    return <Navigate to="/layout/layout-01" replace />;
+    return <Navigate to="/examples/layout/layout-01" replace />;
   }
 
   return (
     <div className="pt-layout-fullscreen-page">
       <div className="pt-layout-fullscreen-page__toolbar">
         <Link
-          to={layoutShowcasePath(slug)}
+          to={layoutShowcasePath("layout")}
+          state={{ variant: slug }}
           className="text-sm text-[color:var(--el-color-primary)] hover:opacity-80"
         >
           返回文档

@@ -7,7 +7,7 @@ import type { FigmaSidebarMenuStyle } from "./sidebarMenuStyles";
 import "./sidebar.css";
 import "./sidebar-menu-styles.css";
 
-/** Figma Sidebar · Unfold=on | off */
+/** Figma Sidebar · State=Expanded | Collapsed */
 export type SidebarUnfold = boolean;
 
 type SidebarContextValue = {
@@ -26,18 +26,22 @@ export function useSidebarMenuStyle(): FigmaSidebarMenuStyle | undefined {
 }
 
 export type SidebarProps = {
-  /** Figma Unfold=on（展开 200px） */
+  /** Figma State=Expanded（220px）| Collapsed（58px） */
   unfolded?: boolean;
   defaultUnfolded?: boolean;
   onUnfoldedChange?: (unfolded: boolean) => void;
+  /** Figma showLogo */
+  showLogo?: boolean;
   logoTitle?: string;
-  /** Figma Layout 帧 footer 为 hidden */
+  /** 旧 Showcase 折叠底栏（Figma 组件集无 Footer 变体） */
   showFooter?: boolean;
-  /** Figma Sidebar Style 01–04（Menu 文档；Layout 不传） */
+  /** Figma Style 01–04 */
   sidebarStyle?: FigmaSidebarMenuStyle;
-  /** Figma Style 04 · Setting / User 槽（替代底栏 Fold） */
+  /** Figma Style 04 · Setting / User 槽；Layout Style 01–03 · 技术支持区 */
   settingSlot?: ReactNode;
   userSlot?: ReactNode;
+  /** Figma `8862:25750` · 底栏 User 条（70px） */
+  profileFooter?: ReactNode;
   className?: string;
   children?: ReactNode;
 };
@@ -46,11 +50,13 @@ export function Sidebar({
   unfolded: controlledUnfolded,
   defaultUnfolded = true,
   onUnfoldedChange,
+  showLogo = true,
   logoTitle = "UI Design",
   showFooter = true,
   sidebarStyle,
   settingSlot,
   userSlot,
+  profileFooter,
   className,
   children,
 }: SidebarProps) {
@@ -77,15 +83,20 @@ export function Sidebar({
         )}
         aria-label="Sidebar"
         {...(sidebarStyle ? { "data-sidebar-style": sidebarStyle } : {})}
+        data-sidebar-state={unfolded ? "Expanded" : "Collapsed"}
+        data-node-id="3313:56233"
       >
-        <div className="pt-sidebar__logo">
-          <PacsTrustLogoIcon />
-          {unfolded ? <span className="pt-sidebar__logo-text">{logoTitle}</span> : null}
-        </div>
+        {showLogo ? (
+          <div className="pt-sidebar__logo">
+            <PacsTrustLogoIcon />
+            {unfolded ? <span className="pt-sidebar__logo-text">{logoTitle}</span> : null}
+          </div>
+        ) : null}
         <div className="pt-sidebar__body">{children}</div>
-        {settingSlot ? <div className="pt-sidebar__slot pt-sidebar__slot--setting">{settingSlot}</div> : null}
-        {userSlot ? <div className="pt-sidebar__slot pt-sidebar__slot--user">{userSlot}</div> : null}
-        {showFooter ? (
+        {settingSlot ? <div className="pt-sidebar__utility">{settingSlot}</div> : null}
+        {userSlot ? <div className="pt-sidebar__utility">{userSlot}</div> : null}
+        {profileFooter ? <div className="pt-sidebar__profile-footer">{profileFooter}</div> : null}
+        {showFooter && !profileFooter ? (
           <div className="pt-sidebar__footer">
             <button
               type="button"

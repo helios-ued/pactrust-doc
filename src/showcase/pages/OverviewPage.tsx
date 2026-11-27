@@ -3,27 +3,8 @@ export function OverviewPage() {
     <div className="mx-auto max-w-3xl prose prose-sm dark:prose-invert">
       <h1 className="text-3xl font-bold">Element —— PacsTrust Design</h1>
       <p className="text-[color:var(--ds-text-regular)]">
-        本页属于{" "}
-        <strong>设计文档</strong>（对齐{" "}
-        <a
-          href="https://eds-ued.github.io/eds-doc/explore"
-          className="text-[color:var(--el-color-primary)]"
-          target="_blank"
-          rel="noreferrer"
-        >
-          EDS Doc
-        </a>
-        ）；组件预览、模板与 Layout 界面在侧栏切换到{" "}
-        <strong>Desktop 展示</strong>（对齐{" "}
-        <a
-          href="https://eds-ued.github.io/eds-desktop/components/button-text"
-          className="text-[color:var(--el-color-primary)]"
-          target="_blank"
-          rel="noreferrer"
-        >
-          EDS Desktop
-        </a>
-        ）。
+        本仓库线上站 <strong>pactrust-doc</strong> 按 EverGreen <strong>eds-doc</strong> 同类职责运营：设计说明、令牌与组件规范索引；交互预览与中台原型在{" "}
+        <strong>Desktop 预览</strong> 与 <code>pactrust-prototype</code>。
       </p>
       <ul className="mt-6 list-disc space-y-2 pl-5 text-[color:var(--ds-text-regular)]">
         <li>绿点：已在仓库内实现 React 预览组件</li>

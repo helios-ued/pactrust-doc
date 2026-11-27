@@ -20,7 +20,7 @@ export type RemittanceShellProps = {
 
 /**
  * 汇款原型 · Layout-04 + Sidebar Style 04
- * 内容区对齐模块 A3：Global-header + Page Layout 白卡 + `pageBar` + 居中 body
+ * 内容区对齐 Layout-04：Global-header + BasePanel（槽内 `pageBar` + body）
  */
 export function RemittanceShell({ children, pageBar, className }: RemittanceShellProps) {
   const shellRef = useRef<HTMLDivElement>(null);
@@ -62,25 +62,20 @@ export function RemittanceShell({ children, pageBar, className }: RemittanceShel
       <div className="pt-dashboard-shell__main pt-dashboard-shell__main--page-stack">
         <GlobalHeader
           logo={false}
-          foldButton
+          collapseButton
           layoutFrame
           headerDivider={LAYOUT_04.globalHeaderDivider}
-          pageTitle="全球汇款"
+          pageTitleText="全球汇款"
           avatarSrc="/login-hero-mascot.jpg"
         />
-        <div
-          className="pt-dashboard-shell__page"
-          style={LAYOUT_04.pagePadding ? { padding: LAYOUT_04.pagePadding } : undefined}
+        <PageLayoutCard
+          variant="layout-04"
+          pageBarTitle={false}
+          pageBar={pageBar}
+          contentPadding="0"
         >
-          <PageLayoutCard
-            variant="layout-04"
-            pageBarTitle={false}
-            pageBar={pageBar}
-            contentPadding="0"
-          >
-            {children}
-          </PageLayoutCard>
-        </div>
+          {children}
+        </PageLayoutCard>
       </div>
     </div>
   );

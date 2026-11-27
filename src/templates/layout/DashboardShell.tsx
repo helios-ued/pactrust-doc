@@ -6,6 +6,10 @@ import { isPrototypeDelivery } from "@/prototype/isPrototypeDelivery";
 import { PrototypeSidebarMenu } from "@/prototype/PrototypeSidebarMenu";
 import { LayoutFrameMenu } from "./LayoutFrameMenu";
 import {
+  LayoutFrameSidebarProfile,
+  LayoutFrameSidebarUtility,
+} from "./LayoutFrameSidebarExtras";
+import {
   LAYOUT_FRAME_SPECS,
   type FigmaLayoutVariant,
 } from "./layoutFrameSpecs";
@@ -56,11 +60,13 @@ export function DashboardShell({
   const globalHeader = (
     <GlobalHeader
       logo={false}
-      foldButton
+      collapseButton
       layoutFrame
       headerDivider={spec.globalHeaderDivider}
-      pageTitle={spec.globalHeaderPageTitle ?? ""}
+      pageTitle={spec.globalHeaderPageTitle ?? true}
+      pageTitleText={spec.globalHeaderTitleText ?? ""}
       avatarSrc={`${import.meta.env.BASE_URL}login-hero-mascot.jpg`}
+      userName="Lily-Rose"
     />
   );
 
@@ -75,6 +81,9 @@ export function DashboardShell({
       {children}
     </PageLayoutCard>
   );
+
+  const mainPad =
+    spec.mainPaddingPx > 0 ? { padding: `${spec.mainPaddingPx}px` } : undefined;
 
   return (
     <div
@@ -95,6 +104,8 @@ export function DashboardShell({
         onUnfoldedChange={onSidebarUnfoldedChange}
         sidebarStyle={spec.sidebarMenuStyle}
         showFooter={spec.showSidebarFooter}
+        settingSlot={spec.showSidebarProfileExtras ? <LayoutFrameSidebarUtility /> : undefined}
+        profileFooter={spec.showSidebarProfileExtras ? <LayoutFrameSidebarProfile /> : undefined}
         logoTitle="PacsTrust"
       >
         {isPrototypeDelivery() ? (
@@ -106,22 +117,14 @@ export function DashboardShell({
       {spec.frameKind === "global-plus-page" ? (
         <div className="pt-dashboard-shell__main pt-dashboard-shell__main--page-stack">
           {globalHeader}
-          <div
-            className={cn(
-              "pt-dashboard-shell__page",
-              pageSlot === "direct" && "pt-dashboard-shell__page--direct",
-            )}
-            style={spec.pagePadding ? { padding: spec.pagePadding } : undefined}
-          >
-            {pageSlot === "direct" && children ? children : pageCard}
-            {pageSlot === "direct" && !children && showPh ? pageCard : null}
-          </div>
+          {pageSlot === "direct" && children ? (
+            <div className="pt-dashboard-shell__page pt-dashboard-shell__page--direct">{children}</div>
+          ) : (
+            pageCard
+          )}
         </div>
       ) : (
-        <div
-          className="pt-dashboard-shell__main"
-          style={{ padding: spec.mainPaddingPx }}
-        >
+        <div className="pt-dashboard-shell__main" style={mainPad}>
           <PageLayoutCard variant={variant} placeholder={showPh} header={globalHeader}>
             {children}
           </PageLayoutCard>

@@ -6,6 +6,7 @@ import {
   templateProductEntry,
 } from "../lib/siteUrls";
 import { isDesignShellPath, isTemplateShellPath } from "../nav";
+import { getShowcaseProduct } from "../showcaseProduct";
 
 function SwitchTab({
   active,
@@ -44,6 +45,9 @@ export function ProductSwitcher() {
   const { pathname } = useLocation();
   const designActive = isDesignShellPath(pathname);
   const templateActive = isTemplateShellPath(pathname);
+  const docSite = getShowcaseProduct() === "doc";
+
+  const secondaryLabel = docSite ? "Desktop 预览" : "Desktop 展示";
 
   return (
     <div
@@ -56,14 +60,14 @@ export function ProductSwitcher() {
         href={designProductEntry()}
         external={isExternalProductLink("design")}
       >
-        设计规范
+        {docSite ? "设计说明" : "设计规范"}
       </SwitchTab>
       <SwitchTab
         active={templateActive}
         href={templateProductEntry()}
         external={isExternalProductLink("template")}
       >
-        Desktop 展示
+        {secondaryLabel}
       </SwitchTab>
     </div>
   );

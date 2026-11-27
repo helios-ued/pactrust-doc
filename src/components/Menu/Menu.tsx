@@ -1,6 +1,7 @@
 import { EdsIconById } from "@/components/Icon/EdsIconById";
 import { cn } from "@/lib/cn";
 import { MENU_EDS_ICONS } from "./menuFigmaIcons";
+import { sidebarMenuIconId } from "./sidebarMenuItemIcons";
 import {
   Children,
   cloneElement,
@@ -564,6 +565,7 @@ export function MenuSidebarStyle04Sample({
               label={item.label}
               selected={item.selected}
               visualState={item.visualState}
+              iconId={sidebarMenuIconId(item.label)}
             />
           ))}
         </MenuGroup>
@@ -579,7 +581,12 @@ export const MenuSidebarStyle03Sample = MenuSidebarStyle04Sample;
 export function MenuSidebarSample({ menuSize = "Default", embedded = false }: { menuSize?: MenuSize; embedded?: boolean }) {
   return (
     <Menu menuType="Sidebar" menuSize={menuSize} embedded={embedded}>
-      <MenuSidebarSection label="Dashboard" flyoutTitle="平台数据" selected>
+      <MenuSidebarSection
+        label="Dashboard"
+        flyoutTitle="平台数据"
+        selected
+        iconId={sidebarMenuIconId("Dashboard")}
+      >
         <MenuItem level={2} selected>
           主控台
         </MenuItem>
@@ -587,7 +594,12 @@ export function MenuSidebarSample({ menuSize = "Default", embedded = false }: { 
         <MenuItem level={2}>工作台</MenuItem>
       </MenuSidebarSection>
       {SIDEBAR_RAIL_LABELS.slice(1).map((label) => (
-        <MenuSidebarSection key={label} label={label} flyoutTitle={label}>
+        <MenuSidebarSection
+          key={label}
+          label={label}
+          flyoutTitle={label}
+          iconId={sidebarMenuIconId(label)}
+        >
           <MenuItem level={2}>{label}</MenuItem>
         </MenuSidebarSection>
       ))}

@@ -12,7 +12,7 @@
 }
 
 .pt-sidebar--unfolded {
-  width: 200px;
+  width: 220px;
 }
 
 .pt-sidebar--collapsed {
@@ -34,8 +34,8 @@
 }
 
 .pt-sidebar--unfolded .pt-sidebar__logo {
-  gap: var(--pt-space-4, 4px);
-  padding: var(--pt-space-12, 12px) var(--pt-space-20, 20px);
+  gap: var(--pt-space-8, 8px);
+  padding: var(--pt-space-8, 8px) var(--pt-space-20, 20px);
 }
 
 .pt-sidebar--collapsed .pt-sidebar__logo {
@@ -96,4 +96,25 @@
 
 .pt-sidebar__toggle:hover {
   color: var(--el-color-primary);
+}
+
+.pt-sidebar__utility {
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
+  gap: var(--pt-space-2, 2px);
+  box-sizing: border-box;
+  width: 100%;
+  padding: var(--pt-space-8, 8px);
+}
+
+.pt-sidebar__profile-footer {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  height: 70px;
+  padding: var(--pt-space-8, 8px);
+  border-top: 1px solid var(--el-border-color-lighter);
 }

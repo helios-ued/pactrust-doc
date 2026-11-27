@@ -1,3 +1,4 @@
+import { BasePanel } from "@/components/Layout/BasePanel";
 import { cn } from "@/lib/cn";
 import type { ReactNode } from "react";
 import type { FigmaLayoutVariant } from "./layoutFrameSpecs";
@@ -6,24 +7,20 @@ import "./page-layout-card.css";
 
 export type PageLayoutCardProps = {
   variant: FigmaLayoutVariant;
-  /** Layout 01–03 · Global-header；Layout-04 用 pageBar */
+  /** Layout 01–03 · Global-header；Layout-04 标题在 BasePanel 槽内 */
   header?: ReactNode;
   children?: ReactNode;
   className?: string;
-  /** Figma `8661:44880` 占位文案 */
   placeholder?: boolean;
   placeholderText?: string;
-  /** Figma Layout-04 · `8745:2606` Page Layout */
+  /** Figma Layout-04 · `8745:2603` */
   pageFrame?: boolean;
-  /** Layout-04 标题区；`false` 隐藏（C1 等由业务面板自带标题） */
   pageBarTitle?: string | false;
-  /** 覆盖 `layoutFrameSpecs` 的 Page Body 内边距（Figma A1：16/16/18） */
   contentPadding?: string;
-  /** A2 等：自定义 Page Layout Header（替代默认标题条） */
   pageBar?: ReactNode;
 };
 
-/** Figma Main 内层 `Layout` / `Page Layout` 帧 */
+/** Figma Main 内层 `Layout` / `8745:2603` + BasePanel */
 export function PageLayoutCard({
   variant,
   header,
@@ -37,20 +34,63 @@ export function PageLayoutCard({
   pageBar,
 }: PageLayoutCardProps) {
   const spec = LAYOUT_FRAME_SPECS[variant];
-  const bodyPadding = contentPadding ?? spec.contentPadding;
   const usePageFrame = pageFrame ?? spec.frameKind === "global-plus-page";
   const showPageBar = pageBarTitle !== false;
   const barTitle =
     typeof pageBarTitle === "string" ? pageBarTitle : spec.pageBarTitle ?? "标题区域";
+  const bodyPadding = contentPadding ?? spec.contentPadding;
+
+  const pageBarNode =
+    pageBar ??
+    (showPageBar ? <header className="pt-page-layout-card__page-bar">{barTitle}</header> : null);
+
+  if (usePageFrame && variant === "layout-04") {
+    return (
+      <section
+        className={cn("pt-page-layout-card", "pt-page-layout-card--layout-04-main", className)}
+        data-node-id={spec.layoutNodeId}
+      >
+        <BasePanel
+          padding={spec.basePanelPadding}
+          slotPadding={spec.basePanelSlotPadding}
+          placeholder={false}
+          className="pt-page-layout-card__base-panel"
+        >
+          {pageBarNode}
+          {placeholder && !children ? (
+            <div className="pt-page-layout-card__canvas pt-page-layout-card__canvas--fill">
+              <p className="pt-page-layout-card__placeholder">{placeholderText}</p>
+            </div>
+          ) : (
+            <div
+              className="pt-page-layout-card__canvas pt-page-layout-card__canvas--fill"
+              style={bodyPadding ? { padding: bodyPadding } : undefined}
+            >
+              {children}
+            </div>
+          )}
+        </BasePanel>
+      </section>
+    );
+  }
 
   const canvas = (
-    <div className="pt-page-layout-card__canvas">
-      {placeholder && !children ? (
-        <p className="pt-page-layout-card__placeholder">{placeholderText}</p>
-      ) : (
-        children
-      )}
-    </div>
+    <BasePanel
+      padding={spec.basePanelPadding}
+      slotPadding={spec.basePanelSlotPadding}
+      placeholder={placeholder && !children}
+      placeholderText={placeholderText}
+      className="pt-page-layout-card__base-panel"
+    >
+      {children ? (
+        <div
+          className="pt-page-layout-card__canvas"
+          style={bodyPadding ? { padding: bodyPadding } : undefined}
+        >
+          {children}
+        </div>
+      ) : null}
+    </BasePanel>
   );
 
   if (usePageFrame) {
@@ -64,14 +104,8 @@ export function PageLayoutCard({
         )}
         data-node-id={spec.layoutNodeId}
       >
-        {pageBar ??
-          (showPageBar ? (
-            <header className="pt-page-layout-card__page-bar">{barTitle}</header>
-          ) : null)}
-        <div
-          className="pt-page-layout-card__content pt-page-layout-card__content--page-frame"
-          style={{ padding: bodyPadding }}
-        >
+        {pageBarNode}
+        <div className="pt-page-layout-card__content pt-page-layout-card__content--page-frame">
           {canvas}
         </div>
       </section>
@@ -88,12 +122,7 @@ export function PageLayoutCard({
       data-node-id={spec.layoutNodeId}
     >
       {header}
-      <div
-        className="pt-page-layout-card__content"
-        style={{ padding: spec.contentPadding }}
-      >
-        {canvas}
-      </div>
+      <div className="pt-page-layout-card__content">{canvas}</div>
     </section>
   );
 }

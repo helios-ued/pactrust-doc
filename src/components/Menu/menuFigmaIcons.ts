@@ -4,6 +4,8 @@ export const MENU_EDS_ICONS = {
   notifications: "eds-social-notifications",
   lock: "eds-action-lock",
   headset: "eds-other-headset",
+  /** Setting 槽 · 与 menu-vertical/1st 同 18px 线稿 */
+  setting: "eds-action-settings",
   globe: "eds-action-globe",
   /** menu-vertical/1st · 18px 宫格 */
   menuGrid: "eds-other-grid-alt",

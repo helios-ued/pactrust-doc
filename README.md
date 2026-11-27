@@ -31,14 +31,15 @@ git remote add origin https://github.com/helios-ued/pactrust-design.github.io.gi
 git push -u origin main
 ```
 
-**Pages · 双站点（强制分开）：**
+**Pages · 三站点（对齐 EDS）：**
 
 | 仓库 | 地址 |
 |------|------|
-| `pactrust-desktop` | 设计令牌 + 组件 → `https://helios-ued.github.io/pactrust-desktop/` |
-| `pactrust-doc` | 中台模板原型（无设计规范）→ `https://helios-ued.github.io/pactrust-doc/` |
+| `pactrust-doc` | 设计说明站（对标 EverGreen **eds-doc** 角色，仓库名不变）→ `https://helios-ued.github.io/pactrust-doc/` |
+| `pactrust-desktop` | 组件 / Layout 交互预览 → `https://helios-ued.github.io/pactrust-desktop/` |
+| `pactrust-prototype` | 中台可点击原型 → `https://helios-ued.github.io/pactrust-prototype/` |
 
-见 [docs/DEPLOY-TWO-SITES.md](./docs/DEPLOY-TWO-SITES.md)。本地合体：`npm run dev`；本地原型：`npm run dev:doc`。
+见 [docs/DEPLOY-TWO-SITES.md](./docs/DEPLOY-TWO-SITES.md)。本地：`npm run dev` · `npm run dev:doc` · `npm run dev:prototype`。
 
 ## 快速阅读
 

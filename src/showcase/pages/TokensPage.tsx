@@ -27,10 +27,6 @@ export function TokensPage() {
           <h1 className="mt-1 text-2xl font-bold tracking-tight text-[color:var(--eds-panel-fg)]">
             Tokens
           </h1>
-          <p className="mt-2 max-w-2xl text-sm leading-relaxed text-[color:var(--eds-panel-muted)]">
-            布局与章节结构参考 EDS Desktop Showcase；数值来自 Figma「设计基础」与{" "}
-            <code className="text-xs">docs/FOUNDATIONS.md</code>。
-          </p>
         </header>
 
         <TokensEdsSection

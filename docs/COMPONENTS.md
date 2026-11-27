@@ -525,7 +525,7 @@ Showcase **Type** 另含 **`Global-header`**（中后台独立顶栏，非 `el-m
 
 | 子组件 | 说明 |
 | --- | --- |
-| Sidebar | 宽 **200** · 右边框 **2px** `--el-border-color-light` · 纵向栈 |
+| Sidebar | 宽 **220** · 右边框 **1px** `--el-border-color-light` · 纵向栈 |
 | Top | 底边框 **1px** · 横向 `el-menu` horizontal |
 | Size Large | `py` **16** · `px` **20**（一级）· 行高 **54px** |
 | Size Default | `py` **12** · 一/二级行高 **42px**（Figma `110:26128` / `3004:58477`）· 二/三级左缩进 **46px / 60px** |
@@ -538,7 +538,7 @@ Showcase **Type** 另含 **`Global-header`**（中后台独立顶栏，非 `el-m
 | --- | --- |
 | State | `Default` · `Hover`（`--el-color-primary-light-9`）· `Selected`（primary 文案/图标）· `Disable` |
 | Unfold | `false` `ArrowDown` **12** · `true` `ArrowUp` **12** |
-| Leading icon | 一级 **18px** `Menu`（可选） |
+| Leading icon | 一级 **18px** `Menu`（默认 `Other/grid-alt` · Layout `menu-item*10` 按项 `eds-*` 见 `sidebarMenuItemIcons.ts`） |
 | Child icon | 一/二级展开箭头（三级无） |
 
 ### menu-horizontal/1st
@@ -556,17 +556,22 @@ Figma：`Sidebar`（`3313:56233`）
 
 ```ts
 type SidebarProps = {
-  unfolded?: boolean // Figma Unfold=on | off
-  sidebarStyle?: "01" | "02" | "03" | "04"
+  style?: "01" | "02" | "03" | "04" // Figma Style
+  state?: "Expanded" | "Collapsed" // Figma State · 代码 `unfolded` = Expanded
+  showLogo?: boolean
+  menuGroup?: boolean // 主菜单槽
+  setting?: boolean // Setting 区槽
+  user?: boolean // User 底栏 / Style 04 User 槽
+  dropdownMenu?: boolean // Figma 展示态 · 随 `user` 为 true · Showcase 悬停 User 出 `SidebarUserDropdownShowcase`
   logoTitle?: string
 }
 ```
 
-| Unfold | 说明 |
+| State | 说明 |
 | --- | --- |
-| on | 宽 **200** · Logo **64** 高（28 图标 + 标题）· 完整 `el-menu` |
-| off | 宽 **58** · 轨格 **42**（Style 04 高 **38**）· 槽 **pt-8**；02–04 **`px-8`** · 项间 **gap 2** · 悬浮窗 **200**、`p-8` |
-| Footer | 高 **40** · 展开时 **Expand 16** · 收起时 **Fold 16**（底栏切换） |
+| Expanded | 宽 **220** · Logo **64** 高（**py-8 px-20**）· 完整 `el-menu` · 底 **User** 区 **70px** |
+| Collapsed | 宽 **58** · 轨格 **42**（Style 04 高 **38**）· 槽 **pt-8**；02–04 **`px-8`** · 项间 **gap 2** · 悬浮窗 **200**、`p-8` |
+| Footer | 组件集无 Footer 变体 · Layout 帧 **技术支持 + User** 底栏 · 代码 `showFooter` 仅旧 Showcase |
 
 | Style | 说明 |
 | --- | --- |
@@ -577,7 +582,7 @@ type SidebarProps = {
 
 侧栏壳：`1px` 右边线 · `--el-box-shadow-light` · Logo 文案 **18 bold**（与 Layout 帧无关，见 `sidebar-menu-styles.css`）。
 
-**映射**：`el-menu` · `collapse` · `collapse-transition`；Showcase **Sidebar Style** 切换上表三样式。
+**映射**：`el-menu` · `collapse` · `collapse-transition`；Showcase **Type=Sidebar** 定制区 **Style · State · showLogo · menuGroup · setting · user**（`user` 开启即含 dropdownMenu 悬停态 · `3313:56233`）。
 
 ### Global-header
 
@@ -585,23 +590,51 @@ Figma：`Global-header`（`3319:51837`）
 
 ```ts
 type GlobalHeaderProps = {
-  headerType?: "Default" | "Large" | "Small" // 高 56 | 64 | 48
+  headerType?: "Default" | "Large" | "Small" // Figma `type` · 高 56 | 64 | 48
   logo?: boolean
-  foldButton?: boolean // Action/layout · 切换 Sidebar Unfold
-  crumbs?: boolean
+  collapseButton?: boolean // Action/layout · 切换 Sidebar Unfold
+  pageTitle?: boolean // Figma 布尔 · 展示 PageTitle 区
+  pageTitleText?: string // PageTitle 文案 · 默认「安全中心」
+  breadcrumb?: boolean
   flushedButton?: boolean
-  headerMenu?: boolean
+  menu?: boolean
+  actionIcons?: boolean // 通知 / 锁 / 客服 · ActionIcons `9107:5574`
+  user?: boolean // Avatar 32 + 用户名 14 medium
+  showDropdownMenu?: boolean // 随 user · Showcase 悬停 · UserDropdown + 语言二级
 }
 ```
 
 | 区域 | 说明 |
 | --- | --- |
-| 左 | Logo `ElementPlus` **16** · **Action/layout 20**（`eds-action-layout`）· 安全中心 / Breadcrumb / 内嵌 Top Menu |
-| 右 | `Social/notifications` · `Action/lock` · `Other/headset` · Avatar **32** · `Action/globe`（eds-*） |
+| 左轨 **220** | Logo **16 bold** + 文案 **16**（`pt-global-header__logo-rail`） |
+| 操作区 | **Action/layout 20** · **pageTitle** 开时页标题 **16 medium** / breadcrumb / menu |
+| 右 | **actionIcons** 开：`Social/notifications` **20** · `Action/lock` · `Other/headset` · **User**（`user`）Avatar **32** + 用户名 **14 medium** |
+| dropdownMenu | 浮层 **UserDropdown** `8952:22001` + 语言 **220** · 底边齐平 · 语言在主菜单左侧（`8941:5752`） |
 | Menu 项 | **Other/grid-alt 18** · **Arrow/chevron 12**（eds-arrow-chevron-*） |
 | 组合 | 与 `Sidebar` 分开展示；落地用 `el-container` · `el-header` + `el-aside` |
 
-**映射**：`el-header`（高度同 Type）· `foldButton` 联动业务侧 `el-menu` `collapse`。
+**映射**：`el-header`（高度同 Type）· `box-shadow` → `--el-box-shadow-light` · `collapseButton` 联动业务侧 `el-menu` `collapse`。
+
+### BasePanel
+
+Figma：`BasePanel`（`9146:3168`）
+
+```ts
+type BasePanelProps = {
+  layout?: "Single" | "Vertical" | "Horizontal"
+  padding?: "Default" | "None" // 外槽 · Default → 20
+}
+```
+
+| 变体 | 说明 |
+| --- | --- |
+| **Padding Default** | 外 **20** · 槽间 **page 灰** · Single 白槽内 **16** |
+| **Padding None** | 外 **0** · Single 占位区 **inset 16**（`9150:8357`） |
+| **Layout Single** | 单 **Content-Slot** |
+| **Layout Vertical** | **Content-Slot** + **Actions** + **Footer** · **gap 24** 纵向 |
+| **Layout Horizontal** | 三槽横向均分 · **gap 24** |
+
+**映射**：`pt-base-panel` + `Content-Slot`；Layout 01–04 主区替代原灰底 `canvas`。
 
 ### Page Header
 

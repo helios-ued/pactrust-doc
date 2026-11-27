@@ -1,0 +1,184 @@
+/* Figma Sidebar · dropdownMenu · UserDropdown + 语言二级 */
+
+/* 锚点仅包裹侧栏本体宽高；下拉浮层不占流式布局 */
+.pt-sidebar-preview-anchor {
+  position: relative;
+  display: inline-flex;
+  flex-shrink: 0;
+  width: fit-content;
+  max-width: 100%;
+  margin-inline: auto;
+  overflow: visible;
+  vertical-align: top;
+}
+
+.pt-sidebar-user-dropdown-layer {
+  position: absolute;
+  inset: 0;
+  z-index: 35;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.pt-sidebar-user-dropdown-layer > .pt-sidebar-user-dropdown--primary {
+  pointer-events: auto;
+}
+
+.pt-sidebar-user-dropdown {
+  position: absolute;
+  box-sizing: border-box;
+  width: 220px;
+  border: 1px solid var(--el-border-color-light);
+  border-radius: var(--el-border-radius-base);
+  background: var(--el-fill-color-blank);
+  padding: var(--pt-space-4, 4px) 0;
+  box-shadow: var(--el-box-shadow-lighter);
+  font-family: var(--el-font-family);
+}
+
+/* 主面板底边与侧栏底边对齐（Figma 锚点） */
+.pt-sidebar-user-dropdown--primary {
+  bottom: 0;
+  left: 209px;
+  /* 语言二级 · 相对主面板底对齐 */
+  overflow: visible;
+}
+
+.pt-sidebar-user-dropdown-layer--collapsed .pt-sidebar-user-dropdown--primary {
+  left: 58px;
+}
+
+.pt-sidebar-user-dropdown__user {
+  width: 100%;
+  border-radius: var(--el-border-radius-large, 8px);
+}
+
+.pt-sidebar-user-dropdown__divider {
+  height: 1px;
+  margin: 0;
+  border: none;
+  background: var(--el-border-color-lighter);
+}
+
+.pt-sidebar-user-dropdown__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pt-space-2, 2px);
+  padding: var(--pt-space-4, 4px) 0;
+}
+
+.pt-sidebar-user-dropdown__list--sub {
+  padding: var(--pt-space-4, 4px) 0;
+}
+
+.pt-sidebar-user-dropdown__option-wrap {
+  position: relative;
+}
+
+.pt-sidebar-user-dropdown__option {
+  display: flex;
+  align-items: center;
+  gap: var(--pt-space-8, 8px);
+  width: 100%;
+  min-height: 40px;
+  box-sizing: border-box;
+  padding: var(--pt-space-4, 4px) var(--pt-space-16, 16px);
+  border: none;
+  background: transparent;
+  font-size: var(--el-font-size-base);
+  line-height: var(--el-font-line-height-base);
+  font-weight: var(--el-font-weight-regular);
+  color: var(--el-text-color-primary);
+  text-align: left;
+  cursor: default;
+}
+
+.pt-sidebar-user-dropdown__option--trigger {
+  cursor: pointer;
+}
+
+.pt-sidebar-user-dropdown__option--trigger:hover,
+.pt-sidebar-user-dropdown__option--hover {
+  background: var(--el-color-primary-light-9);
+}
+
+.pt-sidebar-user-dropdown__option--selected .pt-sidebar-user-dropdown__option-label {
+  font-weight: var(--el-font-weight-primary);
+  color: var(--el-color-primary);
+}
+
+.pt-sidebar-user-dropdown__option-label {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.pt-sidebar-user-dropdown__option-arrow,
+.pt-sidebar-user-dropdown__option-check {
+  flex-shrink: 0;
+  color: var(--el-text-color-primary);
+}
+
+.pt-sidebar-user-dropdown__option--selected .pt-sidebar-user-dropdown__option-check {
+  color: var(--el-color-primary);
+}
+
+/* 语言二级 · 主/副菜单底边齐平（Figma `8875:6399`） */
+.pt-sidebar-user-dropdown--language-flyout {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: calc(100% + 2px);
+  width: 220px;
+  pointer-events: auto;
+}
+
+/* Style 01–03 · 收起底栏轨 */
+.pt-sidebar-profile-rail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 42px;
+  min-height: 54px;
+  margin-inline: auto;
+  padding: 0;
+  border: none;
+  background: transparent;
+  border-radius: var(--el-border-radius-large, 8px);
+  cursor: pointer;
+}
+
+.pt-sidebar-profile-rail:hover,
+.pt-sidebar-profile-rail[data-active="true"] {
+  background: var(--el-color-primary-light-9);
+}
+
+.pt-sidebar-profile-trigger {
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+  text-align: left;
+}
+
+.pt-sidebar-profile-trigger:hover,
+.pt-sidebar-profile-trigger[data-active="true"] .pt-sidebar-user-row {
+  background: var(--el-color-primary-light-9);
+  border-radius: var(--el-border-radius-large, 8px);
+}
+
+.pt-sidebar[data-sidebar-style="01"].pt-sidebar--collapsed .pt-sidebar__utility,
+.pt-sidebar[data-sidebar-style="02"].pt-sidebar--collapsed .pt-sidebar__utility,
+.pt-sidebar[data-sidebar-style="03"].pt-sidebar--collapsed .pt-sidebar__utility {
+  padding: var(--pt-space-8, 8px) 0 0;
+}
+
+.pt-sidebar[data-sidebar-style="01"].pt-sidebar--collapsed .pt-sidebar__profile-footer,
+.pt-sidebar[data-sidebar-style="02"].pt-sidebar--collapsed .pt-sidebar__profile-footer,
+.pt-sidebar[data-sidebar-style="03"].pt-sidebar--collapsed .pt-sidebar__profile-footer {
+  justify-content: center;
+  height: 70px;
+  padding: var(--pt-space-8, 8px);
+}

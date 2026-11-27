@@ -129,29 +129,30 @@
     { "category": "Feedback", "name": "Popover", "nodeId": "1470:49087" },
     { "category": "Feedback", "name": "Tooltip", "nodeId": "68:18412" },
     { "category": "Others", "name": "Divider", "nodeId": "1470:49088" },
-    { "category": "Others", "name": "Watermark", "nodeId": "6153:12319", "version": "2.4.0" }
+    { "category": "Others", "name": "Watermark", "nodeId": "6153:12319", "version": "2.4.0" },
+    { "category": "Others", "name": "BasePanel", "nodeId": "9146:3168" }
   ],
   "layoutPages": [
     {
       "slug": "layout-01",
       "name": "Layout-01",
-      "nodeId": "8655:41370",
+      "nodeId": "9096:7415",
       "figmaPageKey": "layout",
       "variant": "layout-01",
-      "description": "侧栏 240 画布色 · Menu Style 02 · Footer 隐藏 · Main 16 · Layout 圆角 20"
+      "description": "侧栏 220 画布色 · Style 02 · User 底栏 · Main 16 · BasePanel Default"
     },
     {
       "slug": "layout-02",
       "name": "Layout-02",
-      "nodeId": "8661:44593",
+      "nodeId": "9096:7414",
       "figmaPageKey": "layout",
       "variant": "layout-02",
-      "description": "侧栏 240 白+阴影 · Menu Style 01 · Footer 40 · Main 满铺 · Header 分割线"
+      "description": "侧栏 220 白+阴影 · Style 01 · User 底栏 · BasePanel slot 16"
     },
     {
       "slug": "layout-03",
       "name": "Layout-03",
-      "nodeId": "8661:44736",
+      "nodeId": "9096:7413",
       "figmaPageKey": "layout",
       "variant": "layout-03",
       "description": "侧栏 240 白+阴影 · Menu Style 04 分组 · Footer 40 · Header 无分割线 · Content pt-8"
@@ -159,7 +160,7 @@
     {
       "slug": "layout-04",
       "name": "Layout-04",
-      "nodeId": "8745:2586",
+      "nodeId": "9096:7412",
       "figmaPageKey": "layout",
       "variant": "layout-04",
       "description": "画布 page 灰 · 侧栏 Style 01 无 Footer · Global-header 满宽 · Page 16 · Page Layout 圆角 4 · 标题区 + Content 24"

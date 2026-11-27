@@ -508,12 +508,20 @@ export function buildElMenuCode(options: {
   onlyIcon: boolean;
   sidebarUnfolded: boolean;
   sidebarStyle?: "01" | "02" | "03" | "04";
+  sidebarState?: "Expanded" | "Collapsed";
+  sidebarShowLogo?: boolean;
+  sidebarMenuGroup?: boolean;
+  sidebarSetting?: boolean;
+  sidebarUser?: boolean;
   headerType: "Default" | "Large" | "Small";
   headerLogo: boolean;
-  headerFold: boolean;
-  headerCrumbs: boolean;
+  headerCollapseButton: boolean;
+  headerPageTitle?: boolean;
+  headerBreadcrumb: boolean;
   headerMenu: boolean;
-  headerFlush: boolean;
+  headerFlushedButton: boolean;
+  headerActionIcons: boolean;
+  headerUser?: boolean;
 }): string {
   void options.itemState;
   void options.unfold;
@@ -522,12 +530,20 @@ export function buildElMenuCode(options: {
   void options.onlyIcon;
   void options.level;
   void options.sidebarUnfolded;
+  void options.sidebarState;
+  void options.sidebarShowLogo;
+  void options.sidebarMenuGroup;
+  void options.sidebarSetting;
+  void options.sidebarUser;
   void options.headerType;
   void options.headerLogo;
-  void options.headerFold;
-  void options.headerCrumbs;
+  void options.headerCollapseButton;
+  void options.headerPageTitle;
+  void options.headerBreadcrumb;
   void options.headerMenu;
-  void options.headerFlush;
+  void options.headerFlushedButton;
+  void options.headerActionIcons;
+  void options.headerUser;
   if (options.demoType === "Global-header") {
     const h = options.headerType === "Large" ? 64 : options.headerType === "Small" ? 48 : 56;
     return buildVueSfc({

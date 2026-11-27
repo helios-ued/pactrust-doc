@@ -1,0 +1,61 @@
+# pactrust-prototype：中台模板原型（登录流 + /examples）
+name: Deploy pactrust-prototype to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages-prototype
+  cancel-in-progress: false
+
+jobs:
+  build:
+    if: github.repository == 'helios-ued/pactrust-prototype'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+      - run: npm ci
+      - name: Resolve Pages base path
+        id: pages_base
+        run: |
+          OWNER_LC="$(echo "${{ github.repository_owner }}" | tr '[:upper:]' '[:lower:]')"
+          REPO_LC="$(echo "${{ github.event.repository.name }}" | tr '[:upper:]' '[:lower:]')"
+          if [ "$REPO_LC" = "${OWNER_LC}.github.io" ]; then
+            echo "vite_base=/" >> "$GITHUB_OUTPUT"
+          else
+            echo "vite_base=/${{ github.event.repository.name }}/" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Build prototype
+        env:
+          VITE_BASE: ${{ steps.pages_base.outputs.vite_base }}
+          VITE_SHOWCASE_PRODUCT: prototype
+          VITE_DOC_SITE_URL: https://helios-ued.github.io/pactrust-doc
+          VITE_DESKTOP_SITE_URL: https://helios-ued.github.io/pactrust-desktop
+        run: npm run build:prototype
+      - run: cp dist/index.html dist/404.html
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    if: needs.build.result == 'success'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5

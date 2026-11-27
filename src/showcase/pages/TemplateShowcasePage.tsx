@@ -54,11 +54,6 @@ export function TemplateShowcasePage() {
         </p>
         <h1 className="mt-1 text-3xl font-bold">{doc.title}</h1>
         <p className="mt-2 max-w-3xl text-[color:var(--ds-text-regular)]">{doc.subtitle}</p>
-        {doc.elementMapping ? (
-          <p className="mt-1 text-sm text-[color:var(--ds-text-secondary)]">
-            Element Plus 映射：{doc.elementMapping}
-          </p>
-        ) : null}
       </header>
 
       <ShowcasePlaygroundFrame

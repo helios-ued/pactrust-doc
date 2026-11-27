@@ -7,10 +7,9 @@
   justify-content: space-between;
   box-sizing: border-box;
   width: 100%;
-  padding: 0 var(--pt-spacing-xl, 24px);
   border-bottom: 1px solid var(--el-border-color-light);
   background: var(--el-fill-color-blank);
-  box-shadow: var(--el-box-shadow-lighter);
+  box-shadow: var(--el-box-shadow-light);
   font-family: var(--el-font-family);
 }
 
@@ -44,22 +43,19 @@
   height: 48px;
 }
 
-.pt-global-header__left {
-  display: flex;
-  flex: 1 1 auto;
-  align-items: center;
-  gap: var(--pt-spacing-xl, 16px);
-  min-width: 0;
-  height: 100%;
+.pt-global-header--with-logo-rail {
+  padding: 0;
 }
 
-.pt-global-header__logo {
+.pt-global-header__logo-rail {
   display: flex;
-  align-items: center;
-  height: 100%;
-  padding: var(--pt-space-12, 12px) var(--pt-space-20, 20px) var(--pt-space-12, 12px) 0;
-  gap: var(--pt-space-4, 4px);
   flex-shrink: 0;
+  align-items: center;
+  box-sizing: border-box;
+  width: 220px;
+  height: 100%;
+  gap: var(--pt-space-4, 4px);
+  padding: var(--pt-space-12, 12px) var(--pt-space-20, 20px);
 }
 
 .pt-global-header__logo-text {
@@ -68,6 +64,26 @@
   font-weight: var(--el-font-weight-bold);
   color: var(--el-text-color-primary);
   white-space: nowrap;
+}
+
+.pt-global-header__actions {
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 0;
+  height: 100%;
+  padding: 0 var(--pt-space-20, 20px);
+  gap: var(--pt-space-16, 16px);
+}
+
+.pt-global-header__left {
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+  gap: var(--pt-space-16, 16px);
+  min-width: 0;
+  height: 100%;
 }
 
 .pt-global-header__fold {
@@ -109,6 +125,7 @@
   cursor: pointer;
 }
 
+.pt-global-header__breadcrumb,
 .pt-global-header__crumbs {
   display: flex;
   align-items: center;
@@ -136,6 +153,13 @@
   gap: var(--pt-space-4, 4px);
 }
 
+.pt-global-header__action-icons {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: var(--pt-space-4, 4px);
+}
+
 .pt-global-header__tool {
   display: flex;
   align-items: center;
@@ -151,10 +175,58 @@
   align-items: center;
   gap: var(--pt-space-8, 8px);
   padding: var(--pt-space-4, 4px) var(--pt-space-12, 12px);
+  white-space: nowrap;
+  border-radius: var(--el-border-radius-large, 8px);
+}
+
+.pt-global-header__user[role="button"] {
+  cursor: pointer;
+}
+
+.pt-global-header__user[role="button"]:hover,
+.pt-global-header__user[data-active="true"] {
+  background: var(--el-color-primary-light-9);
+}
+
+/* Showcase · `showDropdownMenu` 浮层锚点（不占流式宽度） */
+.pt-global-header-preview-anchor {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow: visible;
+}
+
+.pt-global-header-dropdown-layer {
+  position: absolute;
+  top: 100%;
+  right: var(--pt-space-20, 20px);
+  z-index: 45;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.pt-global-header-dropdown-layer > .pt-sidebar-user-dropdown-layer {
+  position: static;
+  inset: auto;
+  pointer-events: auto;
+}
+
+.pt-global-header-dropdown-layer .pt-sidebar-user-dropdown--primary {
+  position: relative;
+  bottom: auto;
+  left: auto;
+}
+
+.pt-global-header-dropdown-layer .pt-sidebar-user-dropdown--language-flyout {
+  left: auto;
+  right: calc(100% + 2px);
+}
+
+.pt-global-header__user-name {
   font-size: var(--el-font-size-base);
   line-height: var(--el-font-line-height-base);
+  font-weight: var(--el-font-weight-primary);
   color: var(--el-text-color-primary);
-  white-space: nowrap;
 }
 
 .pt-global-header__avatar {

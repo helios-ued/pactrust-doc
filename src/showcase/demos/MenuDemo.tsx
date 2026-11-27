@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useCallback, useRef, useState } from "react";
 import {
   Menu,
   MenuItem,
@@ -11,11 +11,16 @@ import {
 } from "@/components/Menu/Menu";
 import { GlobalHeader, type GlobalHeaderType } from "@/components/Menu/GlobalHeader";
 import { Sidebar } from "@/components/Menu/Sidebar";
+import { SidebarShowcaseSetting, SidebarShowcaseUser } from "@/components/Menu/SidebarShowcaseSlots";
+import { SidebarUserDropdownShowcase } from "@/components/Menu/SidebarUserDropdownShowcase";
 import { SidebarStyle04Setting, SidebarStyle04User } from "@/components/Menu/SidebarStyle04Slots";
 import {
-  FIGMA_SIDEBAR_SHOWCASE_OPTIONS,
+  FIGMA_SIDEBAR_STATE_VALUES,
+  FIGMA_SIDEBAR_STYLE_VALUES,
+  figmaSidebarStateToUnfolded,
   type FigmaSidebarMenuStyle,
   type FigmaSidebarShowcaseVariant,
+  type FigmaSidebarState,
 } from "@/components/Menu/sidebarMenuStyles";
 import { useReportElementPlusCode } from "../hooks/useReportElementPlusCode";
 import { buildElMenuCode } from "../lib/elementPlusCode/builders";
@@ -50,13 +55,27 @@ export function MenuDemo({ part = "all", splitRender, reportElementPlusCode }: S
   const [showIcon, setShowIcon] = useState(true);
   const [onlyIcon, setOnlyIcon] = useState(false);
   const [sidebarStyle, setSidebarStyle] = useState<FigmaSidebarMenuStyle>("01");
-  const [sidebarUnfolded, setSidebarUnfolded] = useState(true);
+  const [sidebarState, setSidebarState] = useState<FigmaSidebarState>("Expanded");
+  const [sidebarShowLogo, setSidebarShowLogo] = useState(true);
+  const [sidebarMenuGroup, setSidebarMenuGroup] = useState(true);
+  const [sidebarSetting, setSidebarSetting] = useState(true);
+  const [sidebarUser, setSidebarUser] = useState(true);
+  const [userDropdownOpen, setUserDropdownOpen] = useState(false);
+  const userDropdownCloseTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const sidebarUnfolded = figmaSidebarStateToUnfolded(sidebarState);
+  const setSidebarUnfolded = (next: boolean) =>
+    setSidebarState(next ? "Expanded" : "Collapsed");
   const [headerType, setHeaderType] = useState<GlobalHeaderType>("Default");
   const [headerLogo, setHeaderLogo] = useState(true);
-  const [headerFold, setHeaderFold] = useState(true);
-  const [headerCrumbs, setHeaderCrumbs] = useState(false);
+  const [headerCollapseButton, setHeaderCollapseButton] = useState(true);
+  const [headerPageTitle, setHeaderPageTitle] = useState(true);
+  const [headerBreadcrumb, setHeaderBreadcrumb] = useState(false);
   const [headerMenu, setHeaderMenu] = useState(false);
-  const [headerFlush, setHeaderFlush] = useState(false);
+  const [headerFlushedButton, setHeaderFlushedButton] = useState(false);
+  const [headerActionIcons, setHeaderActionIcons] = useState(true);
+  const [headerUser, setHeaderUser] = useState(true);
+  const [headerUserDropdownOpen, setHeaderUserDropdownOpen] = useState(false);
+  const headerUserDropdownCloseTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const isMenu = demoType === "Sidebar" || demoType === "Top";
   const isSidebar = demoType === "Sidebar";
@@ -77,12 +96,20 @@ export function MenuDemo({ part = "all", splitRender, reportElementPlusCode }: S
         onlyIcon,
         sidebarUnfolded,
         sidebarStyle,
+        sidebarState,
+        sidebarShowLogo,
+        sidebarMenuGroup,
+        sidebarSetting,
+        sidebarUser,
         headerType,
         headerLogo,
-        headerFold,
-        headerCrumbs,
+        headerCollapseButton,
+        headerPageTitle,
+        headerBreadcrumb,
         headerMenu,
-        headerFlush,
+        headerFlushedButton,
+        headerActionIcons,
+        headerUser,
       }),
     [
       demoType,
@@ -96,17 +123,56 @@ export function MenuDemo({ part = "all", splitRender, reportElementPlusCode }: S
       onlyIcon,
       sidebarUnfolded,
       sidebarStyle,
+      sidebarState,
+      sidebarShowLogo,
+      sidebarMenuGroup,
+      sidebarSetting,
+      sidebarUser,
       headerType,
       headerLogo,
-      headerFold,
-      headerCrumbs,
+      headerCollapseButton,
+      headerPageTitle,
+      headerBreadcrumb,
       headerMenu,
-      headerFlush,
+      headerFlushedButton,
+      headerActionIcons,
+      headerUser,
     ],
   );
 
   const previewLevel = demoType === "Top" ? 1 : level;
   const canOnlyIcon = isSidebar && menuSize === "Small" && previewLevel === 1;
+
+  /** Figma：`user=true` ⇒ `dropdownMenu=true`（定制区不单独展示） */
+  const userDropdownEnabled = sidebarUser;
+
+  const openUserDropdown = useCallback(() => {
+    if (!userDropdownEnabled) return;
+    if (userDropdownCloseTimer.current) clearTimeout(userDropdownCloseTimer.current);
+    setUserDropdownOpen(true);
+  }, [userDropdownEnabled]);
+
+  const scheduleCloseUserDropdown = useCallback(() => {
+    if (userDropdownCloseTimer.current) clearTimeout(userDropdownCloseTimer.current);
+    userDropdownCloseTimer.current = setTimeout(() => setUserDropdownOpen(false), 160);
+  }, []);
+
+  const showUserDropdown = userDropdownEnabled && userDropdownOpen;
+
+  const headerUserDropdownEnabled = headerUser;
+
+  const openHeaderUserDropdown = useCallback(() => {
+    if (!headerUserDropdownEnabled) return;
+    if (headerUserDropdownCloseTimer.current) clearTimeout(headerUserDropdownCloseTimer.current);
+    setHeaderUserDropdownOpen(true);
+  }, [headerUserDropdownEnabled]);
+
+  const scheduleCloseHeaderUserDropdown = useCallback(() => {
+    if (headerUserDropdownCloseTimer.current) clearTimeout(headerUserDropdownCloseTimer.current);
+    headerUserDropdownCloseTimer.current = setTimeout(() => setHeaderUserDropdownOpen(false), 160);
+  }, []);
+
+  const showHeaderUserDropdown = headerUserDropdownEnabled && headerUserDropdownOpen;
 
   return (
     <CustomizeRoot
@@ -136,7 +202,7 @@ export function MenuDemo({ part = "all", splitRender, reportElementPlusCode }: S
                 ))}
               </CustomizeSelect>
             </CustomizeField>
-          ) : (
+          ) : !(isSidebar && !previewItem) ? (
             <CustomizeField label="Size">
               <CustomizeSelect value={menuSize} onChange={(e) => setMenuSize(e.target.value as MenuSize)}>
                 {menuSizes.map((s) => (
@@ -146,7 +212,7 @@ export function MenuDemo({ part = "all", splitRender, reportElementPlusCode }: S
                 ))}
               </CustomizeSelect>
             </CustomizeField>
-          )}
+          ) : null}
           {isMenu ? (
             <CustomizeBooleanField
               label="Preview item"
@@ -155,52 +221,102 @@ export function MenuDemo({ part = "all", splitRender, reportElementPlusCode }: S
             />
           ) : null}
           {!previewItem && isSidebar ? (
-            <CustomizeField label="Sidebar Style">
-              <CustomizeSelect
-                value={sidebarStyle}
+            <>
+              <CustomizeField label="Style">
+                <CustomizeSelect
+                  value={sidebarStyle}
+                  onChange={(e) => {
+                    const next = e.target.value as FigmaSidebarShowcaseVariant;
+                    setSidebarStyle(next);
+                    if (next === "04" && level > 1) setLevel(1);
+                  }}
+                >
+                  {FIGMA_SIDEBAR_STYLE_VALUES.map((v) => (
+                    <option key={v} value={v}>
+                      {v}
+                    </option>
+                  ))}
+                </CustomizeSelect>
+              </CustomizeField>
+              <CustomizeField label="State">
+                <CustomizeSelect
+                  value={sidebarState}
+                  onChange={(e) => setSidebarState(e.target.value as FigmaSidebarState)}
+                >
+                  {FIGMA_SIDEBAR_STATE_VALUES.map((s) => (
+                    <option key={s} value={s}>
+                      {s}
+                    </option>
+                  ))}
+                </CustomizeSelect>
+              </CustomizeField>
+              <CustomizeBooleanField
+                label="showLogo"
+                checked={sidebarShowLogo}
+                onChange={(e) => setSidebarShowLogo(e.target.checked)}
+              />
+              <CustomizeBooleanField
+                label="menuGroup"
+                checked={sidebarMenuGroup}
+                onChange={(e) => setSidebarMenuGroup(e.target.checked)}
+              />
+              <CustomizeBooleanField
+                label="setting"
+                checked={sidebarSetting}
+                onChange={(e) => setSidebarSetting(e.target.checked)}
+              />
+              <CustomizeBooleanField
+                label="user"
+                checked={sidebarUser}
                 onChange={(e) => {
-                  const next = e.target.value as FigmaSidebarShowcaseVariant;
-                  setSidebarStyle(next);
-                  if (next === "04" && level > 1) setLevel(1);
+                  const next = e.target.checked;
+                  setSidebarUser(next);
+                  if (!next) setUserDropdownOpen(false);
                 }}
-              >
-                {FIGMA_SIDEBAR_SHOWCASE_OPTIONS.map((s) => (
-                  <option key={s.id} value={s.id}>
-                    {s.label}
-                  </option>
-                ))}
-              </CustomizeSelect>
-            </CustomizeField>
-          ) : null}
-          {!previewItem && isSidebar ? (
-            <CustomizeField label="Unfold">
-              <CustomizeSelect
-                value={sidebarUnfolded ? "on" : "off"}
-                onChange={(e) => setSidebarUnfolded(e.target.value === "on")}
-              >
-                <option value="on">Unfold=on</option>
-                <option value="off">Unfold=off</option>
-              </CustomizeSelect>
-            </CustomizeField>
+              />
+            </>
           ) : null}
           {!previewItem && isGlobalHeader ? (
             <>
-              <CustomizeBooleanField label="Logo" checked={headerLogo} onChange={(e) => setHeaderLogo(e.target.checked)} />
+              <CustomizeBooleanField label="logo" checked={headerLogo} onChange={(e) => setHeaderLogo(e.target.checked)} />
               <CustomizeBooleanField
-                label="Fold button"
-                checked={headerFold}
-                onChange={(e) => setHeaderFold(e.target.checked)}
+                label="collapseButton"
+                checked={headerCollapseButton}
+                onChange={(e) => setHeaderCollapseButton(e.target.checked)}
               />
               <CustomizeBooleanField
-                label="Crumbs"
-                checked={headerCrumbs}
-                onChange={(e) => setHeaderCrumbs(e.target.checked)}
+                label="pageTitle"
+                checked={headerPageTitle}
+                onChange={(e) => setHeaderPageTitle(e.target.checked)}
               />
-              <CustomizeBooleanField label="Menu" checked={headerMenu} onChange={(e) => setHeaderMenu(e.target.checked)} />
               <CustomizeBooleanField
-                label="Flushed button"
-                checked={headerFlush}
-                onChange={(e) => setHeaderFlush(e.target.checked)}
+                label="breadcrumb"
+                checked={headerBreadcrumb}
+                onChange={(e) => setHeaderBreadcrumb(e.target.checked)}
+              />
+              <CustomizeBooleanField
+                label="menu"
+                checked={headerMenu}
+                onChange={(e) => setHeaderMenu(e.target.checked)}
+              />
+              <CustomizeBooleanField
+                label="flushedButton"
+                checked={headerFlushedButton}
+                onChange={(e) => setHeaderFlushedButton(e.target.checked)}
+              />
+              <CustomizeBooleanField
+                label="actionIcons"
+                checked={headerActionIcons}
+                onChange={(e) => setHeaderActionIcons(e.target.checked)}
+              />
+              <CustomizeBooleanField
+                label="user"
+                checked={headerUser}
+                onChange={(e) => {
+                  const next = e.target.checked;
+                  setHeaderUser(next);
+                  if (!next) setHeaderUserDropdownOpen(false);
+                }}
               />
             </>
           ) : null}
@@ -262,19 +378,22 @@ export function MenuDemo({ part = "all", splitRender, reportElementPlusCode }: S
       }
       preview={
         <DemoStage
+          className={isSidebar || isGlobalHeader ? "overflow-visible" : undefined}
           minHeight={
             previewItem
               ? 56
               : isGlobalHeader
-                ? 72
+                ? 320
                 : isSidebar && sidebarStyle === "04"
                   ? 1080
                   : isSidebar
-                    ? 460
+                    ? sidebarUnfolded
+                      ? 460
+                      : 480
                     : 80
           }
         >
-          <EdsPreviewStack className="max-w-full items-center">
+          <EdsPreviewStack className="max-w-full items-center justify-center overflow-visible">
             {previewItem && isMenu ? (
               <Menu menuType={demoType === "Top" ? "Top" : "Sidebar"} menuSize={menuSize}>
                 <MenuItem
@@ -289,34 +408,94 @@ export function MenuDemo({ part = "all", splitRender, reportElementPlusCode }: S
                 </MenuItem>
               </Menu>
             ) : isGlobalHeader ? (
-              <div className="w-full max-w-4xl">
+              <div
+                className="pt-global-header-preview-anchor w-full max-w-4xl"
+                onMouseLeave={scheduleCloseHeaderUserDropdown}
+              >
                 <GlobalHeader
                   headerType={headerType}
                   logo={headerLogo}
-                  foldButton={headerFold}
-                  crumbs={headerCrumbs}
-                  headerMenu={headerMenu}
-                  flushedButton={headerFlush}
+                  collapseButton={headerCollapseButton}
+                  pageTitle={headerPageTitle}
+                  breadcrumb={headerBreadcrumb}
+                  menu={headerMenu}
+                  flushedButton={headerFlushedButton}
+                  actionIcons={headerActionIcons}
+                  user={headerUser}
+                  userActive={showHeaderUserDropdown}
+                  onUserMouseEnter={openHeaderUserDropdown}
+                  onUserMouseLeave={scheduleCloseHeaderUserDropdown}
+                  avatarSrc={`${import.meta.env.BASE_URL}login-hero-mascot.jpg`}
                 />
+                {showHeaderUserDropdown ? (
+                  <div
+                    className="pt-global-header-dropdown-layer"
+                    onMouseEnter={openHeaderUserDropdown}
+                    onMouseLeave={scheduleCloseHeaderUserDropdown}
+                  >
+                    <SidebarUserDropdownShowcase
+                      avatarSrc={`${import.meta.env.BASE_URL}login-hero-mascot.jpg`}
+                    />
+                  </div>
+                ) : null}
               </div>
             ) : isSidebar ? (
-              <Sidebar
-                unfolded={sidebarUnfolded}
-                onUnfoldedChange={setSidebarUnfolded}
-                sidebarStyle={sidebarStyle}
-                logoTitle={sidebarStyle === "04" ? "PacsTrust" : undefined}
-                showFooter={sidebarStyle !== "04"}
-                settingSlot={
-                  sidebarStyle === "04" ? <SidebarStyle04Setting /> : undefined
-                }
-                userSlot={sidebarStyle === "04" ? <SidebarStyle04User /> : undefined}
+              <div
+                className="pt-sidebar-preview-anchor"
+                onMouseLeave={scheduleCloseUserDropdown}
+                data-figma-sidebar-variant={`Style=${sidebarStyle}, State=${sidebarState}`}
               >
-                {sidebarStyle === "04" ? (
-                  <MenuSidebarStyle04Sample menuSize={menuSize} embedded />
-                ) : (
-                  <MenuSidebarSample menuSize={menuSize} embedded />
-                )}
-              </Sidebar>
+                <Sidebar
+                  unfolded={sidebarUnfolded}
+                  onUnfoldedChange={setSidebarUnfolded}
+                  sidebarStyle={sidebarStyle}
+                  showLogo={sidebarShowLogo}
+                  logoTitle={sidebarStyle === "04" ? "PacsTrust" : "PacsTrust"}
+                  showFooter={false}
+                  settingSlot={
+                    sidebarSetting
+                      ? sidebarStyle === "04"
+                        ? <SidebarStyle04Setting />
+                        : <SidebarShowcaseSetting menuSize={menuSize} />
+                      : undefined
+                  }
+                  userSlot={
+                    sidebarUser && sidebarStyle === "04" ? (
+                      <SidebarStyle04User
+                        active={showUserDropdown}
+                        onMouseEnter={openUserDropdown}
+                        onMouseLeave={scheduleCloseUserDropdown}
+                      />
+                    ) : undefined
+                  }
+                  profileFooter={
+                    sidebarUser && sidebarStyle !== "04" ? (
+                      <SidebarShowcaseUser
+                        avatarSrc={`${import.meta.env.BASE_URL}login-hero-mascot.jpg`}
+                        active={showUserDropdown}
+                        onMouseEnter={openUserDropdown}
+                        onMouseLeave={scheduleCloseUserDropdown}
+                      />
+                    ) : undefined
+                  }
+                >
+                  {sidebarMenuGroup ? (
+                    sidebarStyle === "04" ? (
+                      <MenuSidebarStyle04Sample menuSize={menuSize} embedded />
+                    ) : (
+                      <MenuSidebarSample menuSize={menuSize} embedded />
+                    )
+                  ) : null}
+                </Sidebar>
+                {showUserDropdown ? (
+                  <SidebarUserDropdownShowcase
+                    avatarSrc={`${import.meta.env.BASE_URL}login-hero-mascot.jpg`}
+                    collapsed={!sidebarUnfolded}
+                    onMouseEnter={openUserDropdown}
+                    onMouseLeave={scheduleCloseUserDropdown}
+                  />
+                ) : null}
+              </div>
             ) : (
               <MenuTopSample menuSize={menuSize} />
             )}
@@ -340,8 +519,10 @@ export const menuDemoCode = buildElMenuCode({
   sidebarUnfolded: true,
   headerType: "Default",
   headerLogo: true,
-  headerFold: true,
-  headerCrumbs: false,
+  headerCollapseButton: true,
+  headerPageTitle: true,
+  headerBreadcrumb: false,
   headerMenu: false,
-  headerFlush: false,
+  headerFlushedButton: false,
+  headerActionIcons: true,
 });

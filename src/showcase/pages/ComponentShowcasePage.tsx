@@ -78,11 +78,6 @@ export function ComponentShowcasePage() {
         <p className="mt-2 max-w-3xl text-[color:var(--ds-text-regular)]">
           {activeSub?.description ?? doc?.subtitle ?? "见 docs/COMPONENTS.md"}
         </p>
-        {doc?.elementMapping ? (
-          <p className="mt-1 text-sm text-[color:var(--ds-text-secondary)]">
-            Element Plus：{doc.elementMapping}
-          </p>
-        ) : null}
       </div>
 
       {subVariants.length > 0 ? (

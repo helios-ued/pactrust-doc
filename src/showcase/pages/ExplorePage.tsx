@@ -55,7 +55,7 @@ export function ExplorePage() {
           >
             模板界面
           </Link>
-          （Layout 帧在设计规范的「组件 → Layout」）
+          （Layout 与 BasePanel 在「组件 → 模块」）
           （可交互 / 全屏示例）
         </li>
       </ul>

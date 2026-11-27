@@ -22,6 +22,24 @@
   box-sizing: border-box;
 }
 
+.pt-page-layout-card__base-panel {
+  flex: 1 1 auto;
+  min-height: 0;
+}
+
+.pt-page-layout-card--layout-04-main {
+  flex: 1 1 auto;
+  min-height: 0;
+  background: transparent;
+}
+
+.pt-page-layout-card--layout-04-main .pt-page-layout-card__page-bar {
+  height: 56px;
+  flex-shrink: 0;
+  padding: var(--pt-space-8, 8px) var(--pt-space-16, 16px);
+  border-bottom: 1px solid var(--el-border-color-light);
+}
+
 .pt-page-layout-card__canvas {
   display: flex;
   flex: 1 1 auto;
@@ -31,6 +49,15 @@
   min-height: 200px;
   border-radius: var(--el-border-radius-large, 12px);
   background: var(--el-bg-color-page);
+}
+
+.pt-page-layout-card__canvas--fill {
+  flex: 1 1 auto;
+  min-height: 0;
+  align-items: stretch;
+  justify-content: flex-start;
+  border-radius: 0;
+  background: transparent;
 }
 
 /* Layout-04 · 模块界面（A1 等）：Page Body 顶对齐，无占位灰底 */

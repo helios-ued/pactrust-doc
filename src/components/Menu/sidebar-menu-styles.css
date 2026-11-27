@@ -5,6 +5,16 @@
   padding: var(--pt-space-8, 8px) 0 0;
 }
 
+/* Setting 槽水平内边距与 `__body` 一致，避免 L1 相对主菜单偏右 */
+.pt-sidebar[data-sidebar-style="01"].pt-sidebar--unfolded .pt-sidebar__utility {
+  padding: var(--pt-space-8, 8px) 0 0;
+}
+
+.pt-sidebar[data-sidebar-style="02"].pt-sidebar--unfolded .pt-sidebar__utility,
+.pt-sidebar[data-sidebar-style="03"].pt-sidebar--unfolded .pt-sidebar__utility {
+  padding: var(--pt-space-8, 8px) var(--pt-space-8, 8px) 0;
+}
+
 .pt-sidebar[data-sidebar-style="01"] .pt-menu--embedded.pt-menu--sidebar {
   display: flex;
   flex-direction: column;
@@ -579,6 +589,15 @@
   min-height: 54px;
   padding: 6px 12px;
   border-radius: var(--el-border-radius-large, 8px);
+}
+
+.pt-sidebar[data-sidebar-style="04"] .pt-sidebar__user--unfolded.pt-sidebar-profile-trigger {
+  cursor: pointer;
+}
+
+.pt-sidebar[data-sidebar-style="04"] .pt-sidebar__user--unfolded.pt-sidebar-profile-trigger:hover,
+.pt-sidebar[data-sidebar-style="04"] .pt-sidebar__user--unfolded.pt-sidebar-profile-trigger[data-active="true"] {
+  background: var(--el-color-primary-light-9);
 }
 
 .pt-sidebar[data-sidebar-style="04"] .pt-sidebar__user-info {

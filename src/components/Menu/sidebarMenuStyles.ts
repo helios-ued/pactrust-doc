@@ -1,28 +1,41 @@
-/** Figma `Sidebar` · `3313:56233` · Style 01–04（Unfold 与 Style 独立） */
+/** Figma `Sidebar` · `3313:56233` · 变体 Style × State */
 export type FigmaSidebarMenuStyle = "01" | "02" | "03" | "04";
 
-/** Showcase · Sidebar Style 下拉 */
+export type FigmaSidebarState = "Expanded" | "Collapsed";
+
 export type FigmaSidebarShowcaseVariant = FigmaSidebarMenuStyle;
+
+/** Figma 组件集 · Style=0n, State=Expanded|Collapsed */
+export const FIGMA_SIDEBAR_STYLE_VALUES: FigmaSidebarMenuStyle[] = ["01", "02", "03", "04"];
+
+export const FIGMA_SIDEBAR_STATE_VALUES: FigmaSidebarState[] = ["Expanded", "Collapsed"];
 
 export const FIGMA_SIDEBAR_STYLE_NODE_IDS: Record<
   FigmaSidebarMenuStyle,
-  { unfoldOn: string; unfoldOff: string }
+  { Expanded: string; Collapsed: string }
 > = {
-  "01": { unfoldOn: "3313:56229", unfoldOff: "3313:56228" },
-  "02": { unfoldOn: "8739:830", unfoldOff: "8850:3823" },
-  "03": { unfoldOn: "8837:507", unfoldOff: "8837:1803" },
-  "04": { unfoldOn: "8739:1936", unfoldOff: "8832:3994" },
+  "01": { Expanded: "3313:56229", Collapsed: "3313:56228" },
+  "02": { Expanded: "8739:830", Collapsed: "8832:3813" },
+  "03": { Expanded: "8837:507", Collapsed: "8850:3823" },
+  "04": { Expanded: "8739:1936", Collapsed: "8832:3994" },
 };
+
+export function figmaSidebarStateToUnfolded(state: FigmaSidebarState): boolean {
+  return state === "Expanded";
+}
+
+export function figmaSidebarNodeId(style: FigmaSidebarMenuStyle, state: FigmaSidebarState): string {
+  return FIGMA_SIDEBAR_STYLE_NODE_IDS[style][state];
+}
 
 export const FIGMA_SIDEBAR_SHOWCASE_OPTIONS: {
   id: FigmaSidebarShowcaseVariant;
   label: string;
   nodeId: string;
-}[] = [
-  { id: "01", label: "Style 01", nodeId: FIGMA_SIDEBAR_STYLE_NODE_IDS["01"].unfoldOn },
-  { id: "02", label: "Style 02", nodeId: FIGMA_SIDEBAR_STYLE_NODE_IDS["02"].unfoldOn },
-  { id: "03", label: "Style 03", nodeId: FIGMA_SIDEBAR_STYLE_NODE_IDS["03"].unfoldOn },
-  { id: "04", label: "Style 04", nodeId: FIGMA_SIDEBAR_STYLE_NODE_IDS["04"].unfoldOn },
-];
+}[] = FIGMA_SIDEBAR_STYLE_VALUES.map((id) => ({
+  id,
+  label: id,
+  nodeId: FIGMA_SIDEBAR_STYLE_NODE_IDS[id].Expanded,
+}));
 
 export const FIGMA_SIDEBAR_MENU_STYLES = FIGMA_SIDEBAR_SHOWCASE_OPTIONS;

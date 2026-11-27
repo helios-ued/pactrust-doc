@@ -6,9 +6,11 @@
   "scripts": {
     "dev": "vite",
     "dev:doc": "VITE_SHOWCASE_PRODUCT=doc vite",
+    "dev:prototype": "VITE_SHOWCASE_PRODUCT=prototype vite",
     "build": "tsc --noEmit && vite build",
     "build:desktop": "tsc --noEmit && VITE_SHOWCASE_PRODUCT=desktop vite build",
     "build:doc": "tsc --noEmit && VITE_SHOWCASE_PRODUCT=doc vite build",
+    "build:prototype": "tsc --noEmit && VITE_SHOWCASE_PRODUCT=prototype vite build",
     "preview": "vite preview",
     "icons:manifest": "node scripts/generate-ep-icon-manifest.mjs",
     "icons:figma": "node scripts/generate-figma-icon-catalog.mjs",

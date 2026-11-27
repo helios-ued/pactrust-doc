@@ -1,0 +1,86 @@
+/* Figma `BasePanel` · `9146:3168` */
+
+.pt-base-panel {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 0;
+  overflow: hidden;
+  font-family: var(--el-font-family);
+}
+
+.pt-base-panel--single {
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+
+.pt-base-panel--vertical {
+  flex-direction: column;
+  flex: 1 1 auto;
+  gap: var(--pt-space-24, 24px);
+}
+
+.pt-base-panel--horizontal {
+  flex-direction: row;
+  align-items: stretch;
+  flex: 1 1 auto;
+  gap: var(--pt-space-24, 24px);
+}
+
+.pt-base-panel--pad-default {
+  padding: var(--pt-space-20, 20px);
+  background: var(--el-bg-color-page);
+}
+
+.pt-base-panel--pad-none {
+  padding: 0;
+  background: var(--el-fill-color-blank);
+}
+
+.pt-base-panel__slot {
+  display: flex;
+  flex: 1 1 0;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 0;
+  box-sizing: border-box;
+  overflow: hidden auto;
+  background: var(--el-fill-color-blank);
+}
+
+.pt-base-panel--single.pt-base-panel--pad-none {
+  min-height: 100%;
+}
+
+.pt-base-panel__slot--pad-default {
+  padding: var(--pt-space-16, 16px);
+}
+
+/* Single · Padding=None · 占位 `9150:8357` 内 inset 16 */
+.pt-base-panel__slot--single-none {
+  min-height: 100%;
+}
+
+.pt-base-panel__slot--single-none .pt-base-panel__placeholder-wrap {
+  flex: 1 1 auto;
+  box-sizing: border-box;
+  padding: var(--pt-space-16, 16px);
+}
+
+.pt-base-panel__placeholder-wrap {
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+  justify-content: center;
+  min-height: 120px;
+}
+
+.pt-base-panel__placeholder {
+  margin: 0;
+  font-size: var(--el-font-size-extra-large);
+  line-height: var(--el-font-line-height-extra-large);
+  font-weight: var(--el-font-weight-regular);
+  color: var(--el-text-color-disabled);
+  text-align: center;
+  white-space: nowrap;
+}
